@@ -1,0 +1,92 @@
+.asb_content{
+	width: 500px;
+	margin: 0 auto;
+    margin-bottom: 50px;
+	overflow: hidden;
+}
+.asb_content form {
+	font-size: 15px;
+	overflow: hidden;
+}
+.asb_list,.asb_img{
+	float: left;
+    position: relative;
+    margin-top: 20px;
+    margin-left: 30px;
+    font-size: 14px;
+    color: #666;
+    width: 380px;
+    line-height: 45px;
+    border: 1px solid #ddd;
+}
+.asb_list label,.asb_img label {
+    display: inline-block;
+    padding-left: 10px;
+    color: #0db394;
+    letter-spacing: 0.05em;
+    width: 75px;
+}
+.asb_list input {
+    width: 295px;
+    height: 45px;
+    line-height: 45px;
+    border: none;
+    outline: none;
+    float: right;
+}
+.asb_list input::-webkit-input-placeholder,.asb_list textarea::-webkit-input-placeholder{ 
+	color: #999; 
+	-webkit-transition: color.5s; 
+}
+.asb_list textarea::-webkit-input-placeholder{
+	line-height: 70px;
+}
+.asb_list input:focus::-webkit-input-placeholder,.asb_list textarea:focus::-webkit-input-placeholder{ 
+	color: white; 
+	-webkit-transition: color.5s; 
+}
+.alarm{
+	color: #00C7B4;
+    float: left;
+    margin: 36px 0 0 14px;
+    font-size: 16px;
+}
+.degrees{
+	width: 270px;
+    height: 45px;
+    border: none;
+    text-align: center;
+    margin-left: 10px;
+    outline: black;
+}
+.aa{
+	height: 90px;
+}
+.aa1{
+	margin-bottom: 40px;
+}
+.bb{
+	margin-top: 20px;
+}
+.asb_img{
+	border: none;
+}
+.asblist_content{
+    float: right;
+    margin: 5px;
+    width: 285px;
+    height: 80px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+.asb_submit{
+    display: block;
+    width: 100px;
+    height: 35px;
+    margin-left: 160px;
+    color: white;
+    background: #01C8B5;
+    border: none;
+    outline: none;
+}

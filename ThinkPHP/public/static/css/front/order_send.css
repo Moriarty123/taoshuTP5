@@ -1,0 +1,139 @@
+.order_send{
+	width: 973px;
+	margin: 0 auto;
+	margin-bottom: 80px;
+}
+.os_msg{
+	height: 40px;
+	line-height: 40px;
+	background: #ecfdfc;
+	padding-left: 20px;
+    font-size: 14px;
+    color: #555;
+    letter-spacing: 0.04em;
+}
+.os_msg_content{
+	height: 40px;
+	line-height: 40px;
+	padding-left: 40px;
+	font-size: 15px;
+	color: #333;
+	margin-top: 10px;
+    margin-bottom: 50px;
+}
+.os_msg_content dd{
+	/*float: left;*/
+	display: inline-block;
+}
+.setMsg{
+	display: inline-block;
+	color: #00C7B4;
+	margin-left: 25px;
+}
+.setMsg:hover{
+	cursor: pointer;
+	text-decoration: underline;
+}
+.setMsg_div{
+	display: none;
+	width: 600px;
+	height: 500px;
+	background: white;
+}
+.os_content{
+	margin-top: 15px;
+}
+.os_top{
+	height: 40px;
+	line-height: 40px;
+	font-size: 15px;
+	background: #f5f5f5;
+}
+.top_list{
+	float: left;
+	width: 110px;
+	text-align: center;
+	font-weight: bold;
+	color: #666;
+	border-right: 1px solid #DDDDDD;
+}
+.top_list:last-child,.os_li2:last-child{
+	border-right: none;
+}
+.top1{
+	width: 410px;
+}
+.os_detail{
+	margin-top: 10px;
+	overflow: hidden;
+	background: #fbfcff;
+}
+.os_detail li{
+	overflow: hidden;
+	color: #555;
+	font-size: 14px;
+    border-bottom: 1px dotted #ddd;
+}
+.os_li1{
+	float: left;
+	width: 410px;
+	padding-bottom: 10px;
+	/*border-right: 1px solid #eee;*/
+}
+.os_li1 img{
+	width: 40px;
+    height: 60px;
+    padding: 4px;
+    border: 1px solid #ddd;
+    vertical-align: middle;
+    margin: 10px 10px 0 45px;
+}
+.os_li1 a{
+	color: #00C7B4;
+}
+.os_li1 .os_name{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 260px;
+    display: inline-block;
+}
+.os_li1 a:hover{
+	text-decoration: underline;
+}
+.os_li2{
+	float: left;
+	width: 110px;
+	line-height: 90px;
+	text-align: center;
+	/*border-right: 1px solid #eee;*/
+}
+.os_li2 a{
+	color: #00C7B4;
+}
+.send{
+	display: inline-block;
+    width: 100px;
+    text-align: center;
+    background: #00C7B4;
+    color: #fff;
+    line-height: 39px;
+    float: right;
+    margin-top: 20px;
+    margin-right: 10px;
+    border: none;
+    outline: none;
+}
+.send:hover{
+	cursor: pointer;
+}
+.return_car{
+	float: right;
+    color: #555;
+    font-size: 14px;
+    margin: 30px 10px 0 0;
+}
+.return_car:hover{
+	color: #00C7B4;
+	text-decoration: underline;
+}

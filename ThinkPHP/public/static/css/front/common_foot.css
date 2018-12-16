@@ -1,0 +1,18 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.foot{
+	border-top: 2px solid #00C7B4;
+	margin-top: 30px;
+}
+.foot_a{
+	width: 80%;
+	height: 50px;
+	margin: 20px auto;
+	font-size: 13px;
+	color: #999999;
+	letter-spacing: 0.1em;
+	line-height: 20px;
+	text-align: center;
+}

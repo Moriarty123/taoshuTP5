@@ -1,0 +1,69 @@
+#MainForm{
+	float: left; 
+	font-size:12px; 
+	background: white; 
+	margin: 10px 15px 75px 20px;
+	width: 1092px;
+}
+#MainForm .a {
+    background-color: #f9f9f9;
+    font-size: 16px;
+    padding: 15px 20px 12px 20px;
+    color: #333;
+    font-weight: normal;
+    border-bottom: #e8e8e8 solid 1px;
+}
+#MainForm h2{
+	position: relative;
+	display: inline-block;
+	font-size: 16px;
+}
+.sale_c{
+	max-width: 100px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.addUser{
+	display: inline-block;
+	float: right;
+	color: #233;
+}
+.addUser:hover{
+	color: #19a97b;
+}
+.form_boxA table {
+    width: 100%;
+}
+.form_boxA th {
+    border-bottom: #e3e3e3 solid 2px;
+    text-align: center;
+    font-size: 14px;
+    padding: 10px 0px;
+}
+.form_boxA td {
+    border-bottom: #e3e3e3 solid 1px;
+    text-align: center;
+    font-size: 14px;
+    padding: 12px 8px;
+}
+.form_boxA td a{
+	color: #444;
+}
+.form_boxA td a:hover{
+	color: #19a97b;
+}
+.op i{
+	font-size: 12px;
+	margin: 0 2px;
+}
+.msg {
+	display: inline-block;
+    padding: 15px 0px 25px 10px;
+}
+.user_img{
+	width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    margin-right: 3px;
+}

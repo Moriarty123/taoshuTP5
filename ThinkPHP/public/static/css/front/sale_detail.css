@@ -1,0 +1,248 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+ul li{
+	list-style: none;
+}
+.w{
+	width: 1161px;
+	margin: 0 auto;
+}
+.location{
+	font-size: 14px;
+	color: #888888;
+	margin: 4px 0 8px 20px;
+}
+.location span{
+	margin: 0 4px;
+}
+.location a{
+	color: #888888;
+}
+.location a:hover{
+	color: #00C7B4;
+}
+
+.book_info,.content_info{
+	width: 935px;
+	margin: 0 auto;
+	margin-top: 30px;
+	overflow: hidden;
+}
+.imgdiv{
+	position: relative;
+	float: left;
+	margin: 0px 32px 10px 50px;
+	width: 305px;
+	height: 333px;
+	border: 1px solid #eaeaea;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 333px;
+}
+.imgdiv img{
+	position: absolute; 
+	left:50%; 
+	top: 50%; 
+	margin-left: -90px;
+	margin-top: -125px;
+	width: 180px;
+	height: 255px;
+	max-width: 305px;
+    max-height: 333px;
+}
+.info,.detail_info{
+	width: 500px;
+	float: left;
+	overflow: hidden;
+}
+.info{
+	border-bottom: 1px dotted #DDDDDD;
+	padding-bottom: 15px;
+}
+.title{
+	font-size: 18px;
+	font-weight: bold;
+	color: #555;
+	letter-spacing: 0.05em;
+	margin: 16px 5px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.info_left,.info_right{
+	width: 220px;
+	float: left;
+	font-size: 14px;
+	color: #888888;
+	letter-spacing: 0.02em;
+	line-height: 23px;
+	margin-right: 55px;
+}
+.info_left dd,.info_right dd{
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.info_right{
+	margin-right: 0px;
+}
+.info2{
+	float: left;
+	width: 500px;
+	margin-top: 25px;
+	padding-bottom: 25px;
+	overflow: hidden;
+	border-bottom: 1px dotted #DDDDDD;
+}
+.price{
+	float: left;
+	color: #444444;
+	margin-right: 20px;
+	line-height: 27px;
+}
+.price span{
+	color: #00a082;
+	font-weight: bold;
+}
+.pre_price{
+	float: left;
+	font-size: 14px;
+	line-height: 27px;
+	color: #999999;
+}
+.pre_price span{
+	text-decoration: line-through;
+}
+
+.content_info{
+	margin-bottom: 50px;
+	overflow: hidden;
+}
+.content_title{
+	margin: 0 20px 0 25px;
+	border-bottom: 2px solid #00C7B4;
+}
+.content_title span{
+	display: block;
+	line-height: 28px;
+	padding-left: 20px;
+    width: 99px;
+    height: 25px;
+    color: #FFF;
+	background: url(../../../../../img/item.sprite.png) no-repeat 0 -5px;
+	overflow: hidden;
+}
+.content{
+	margin: 20px 40px 0 47px;
+	color: #666;
+	font-size: 14px;
+	letter-spacing: 0.1em;
+	line-height: 20px;
+	text-align: justify;
+}
+
+.operation{
+	float: left;
+	width: 300px;
+	height: 40px;
+	margin-top: 30px;
+}
+.collect,.buy{
+	display: inline-block;
+	width: 105px;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	color: #000;
+	letter-spacing: 0.2em;
+	font-size: 14.5px;
+	background: #66ddd2;
+}
+.collect:hover,.buy:hover{
+	background: #01C8B5;
+	color: #fff;
+}
+.collect{
+	width: 135px;
+}
+.buy{
+	margin-left: 30px;
+}
+
+.bcomment{
+	
+}
+.bcomment textarea{
+	outline: none;
+	font-size: 15px;
+	padding: 5px;
+}
+.bcomment input{
+	float: right;
+	margin-right: 13px;
+	margin-top: 10px;
+    width: 90px;
+    height: 35px;
+    border: none;
+    outline: none;
+    background: #00C7B4;
+    color: white;
+}
+.bcomment input:hover{
+	background: #00A082;
+	cursor: pointer;
+}
+.bcomment span{
+	float: right;
+    margin-top: 18px;
+    margin-right: 10px;
+}
+.bc_detail{
+	margin-top: 25px;
+    width: 835px;
+    border-top: 1px dotted #00C7B4;
+    float: left;
+}
+.bc_detail li{
+	margin-top: 25px;
+	overflow: hidden;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #999;
+}
+.bcUser{
+	float: left;
+    overflow: hidden;
+    width: 125px;
+    text-align: center;
+    line-height: 1.5;
+}
+.bcUser img{
+	width: 40px;
+	height: 40px;
+}
+.name_txt{
+	font-size: 12px;
+	margin-top: 5px;
+}
+.name_txt a{
+	color: #666;	
+}
+.name_txt a:hover{
+	color: #00C7B4;
+	text-decoration: underline;	
+}
+.bc_content{
+	float: left;
+	width: 660px;
+	line-height: 25px;
+}
+.bc_time{
+	font-size: 12px;
+    color: #aaa;
+    margin-top: 10px;
+}

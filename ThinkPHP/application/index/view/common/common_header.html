@@ -1,0 +1,75 @@
+<div class="q" id="q">
+	<div class="top_content">
+		<div class="welcome_txt">
+			你好，欢迎来到淘书街！
+		</div>
+		<div class="right">
+			请 <a href='?c=user&a=login' target="_blank">登录</a> 
+			<a href='?c=user&a=reg' style='color: #00CFBE; padding-left: 4px;' target="_blank">免费注册</a>
+			<span class='shu'>|</span>
+			<a href='?c=shopcar&a=showShopCar' target="_blank">购物车</a> <span class='shu'>|</span>
+			<a href='?c=saleBook&a=addSale' target="_blank">我要出售</a> <span class='shu'>|</span>
+			<a href='?c=inquiry&a=addInquiry' target="_blank">我要求购</a> <span class='shu'>|</span>
+			<a href='?p=back&c=admin&a=login' target="_blank">进入后台</a>
+		</div>
+	</div>
+</div>
+<div class="q" id="q1">
+	<div class="top_content">
+		<div class="welcome_txt">
+			你好，欢迎来到淘书街！
+		</div>
+		<div class="right">
+			<a href="?c=user&a=showPersonal&id="></a> <span class='shu'>|</span>
+			<a href='?c=shopcar&a=showShopCar'>购物车</a> <span class='shu'>|</span>
+			<a href='?c=saleBook&a=addSale' target="_blank">我要出售</a> <span class='shu'>|</span>
+			<a href='?c=inquiry&a=addInquiry' target="_blank">我要求购</a> <span class='shu'>|</span>
+			<a href='?p=back&c=admin&a=login' target="_blank">进入后台</a>
+		</div>
+	</div>
+</div>
+<?php
+if(!isset($_SESSION['username']) || $_SESSION['username']==''){  
+echo "<script type='text/javascript'>
+	document.getElementById('q').style.display = 'block';
+	document.getElementById('q1').style.display = 'none';
+</script>";
+}
+else{
+echo "<script type='text/javascript'>
+	document.getElementById('q1').style.display = 'block';
+	document.getElementById('q').style.display = 'none';
+</script>";
+}
+?>
+<div class="w">
+	<!--头部-->
+	<div class="top">
+		<div class="logo">
+			<a href="?"><img src="/static/img/taoshujie.png" /></a>
+		</div>
+		<form action="?c=saleBook&a=search" method="post" class="search" onsubmit="return checkSearch();">
+			<div class="search_div">
+				<input type="text" placeholder="出售书籍名称" name="keyword" class="search_a"/>
+				<input type="submit" class="search_b" value="搜索"></input>
+			</div>
+		</form>
+	</div>
+</div>
+<!--导航栏-->
+<div class="nav">
+	<div class="nav_bar">
+		<div class="all_type nav_active">
+			全部图书分类
+			<span class="all_type_a"></span>
+		</div>
+		<div class="nav_r">
+			<ul>
+				<a href="?"><li class="nav_active">首页</li></a>
+				<a href="?c=type_second&a=showAllType_second"><li>分类</li></a>
+				<a href="?c=saleBook&a=showAllSale_book"><li>出售</li></a>
+				<a href="?c=inquiry&a=showAllInquiry"><li>求购</li></a>
+			</ul>
+		</div>
+	</div>
+</div>

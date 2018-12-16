@@ -1,0 +1,87 @@
+body{
+	overflow-x:hidden; 
+	background:#f1f1f1;
+}
+#main{
+	float: left; 
+	font-size:12px; 
+	background: white; 
+	margin: 10px 15px 0 20px;
+	width: 1092px;
+}
+#main span.time{ 
+	font-size:14px; 
+	color:#528dc5; 
+	width:100%; 
+	padding-bottom:10px; 
+	float:left;
+	margin-top: 21px;
+}
+#main div.top{ 
+	width:100%; 
+	padding:0 0 0 295px; 
+	line-height:35px; 
+	float:left; 
+}
+#main div.sec{ 
+	width:100%; 
+	line-height:35px; 
+	float:left;
+	height: 55px;
+}
+#main td{
+	text-align: center;
+	border-bottom: 1px solid #ddd;
+}
+.left{ 
+	float:left;
+	display: inline-block;
+}
+#main div a{ 
+	float:left;
+}
+#main span.num{  
+	padding: 0 5px;
+	font-size:30px; 
+	color:#538ec6; 
+	font-family:"Georgia","Tahoma","Arial";
+}
+.left{ 
+	float:left;
+}
+div.main-tit{ 
+	font-size:14px; 
+	font-weight:bold; 
+	color:#4e4e4e; 
+	width:100%; 
+	padding:30px 0 0 20px; 
+	float:left;
+}
+div.main-con{ 
+	width:100%; 
+	float:left; 
+	padding:10px 0 0 20px; 
+	line-height:36px;
+	margin-bottom: 20px;
+}
+div.main-corpy{ 
+	font-size:14px; 
+	font-weight:bold; 
+	color:#4e4e4e; 
+	width:100%; 
+	padding: 30px 0 10px 0px; 
+	float:left;
+}
+div.main-order{ 
+	line-height:30px; 
+	padding:10px 0 0 0;
+	margin-bottom: 30px;
+}
+.addAdmin{
+	display: inline-block;
+	margin-left: 50px;
+	color: #233;	
+}
+.addAdmin:hover{
+	color: #19a97b;
+}

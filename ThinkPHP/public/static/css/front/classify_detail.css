@@ -1,0 +1,176 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+li{
+	list-style: none;
+}
+.classify_detail{
+	width: 1161px;
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 50px;
+	letter-spacing: 0.03em;
+	overflow: hidden;
+	font-size: 14px;
+}
+.detail_left{
+	float: left;
+	width: 250px;
+	overflow: hidden;
+}
+.detail_head{
+	height: 35px;
+	color: #fff;
+	font-weight: bold;
+	line-height: 35px;
+	background: #00cfbe;
+	border-radius: 4px 4px 0 0;
+}
+.fa-circle-o{
+	padding: 0 8px 0 15px ;
+}
+.detail_body{
+	border: 1px solid #ddd;
+}
+.on{
+	font-weight: bold;
+}
+.detail_body li{
+	height: 38px;
+	line-height: 38px;
+	border-bottom: 1px dotted #ddd;
+	background: url(../../img/point.gif) no-repeat 19px 18px;
+}
+.detail_body li:last-child{
+	border: none;
+}
+.detail_body li a{
+	padding-left: 39px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	display: inline-block;
+	color: #666;
+}
+.detail_body li a:hover{
+	text-decoration: underline;
+}
+
+.detail_right{
+	width: 855px;
+	margin-left: 25px;
+	float: left;
+}
+.right_head{
+	padding-left: 40px;
+	background: #ecfdfc;
+	height: 40px;
+	line-height: 40px;
+	color: #666;
+}
+.head{
+	font-weight: bold;
+}
+.number{
+	float: right;
+	margin-right: 20px;
+}
+.right_body{
+	padding-left: 20px;
+	overflow: hidden;
+}
+.right_body li{
+	margin-top: 20px;
+	overflow: hidden;
+	border-bottom: 1px dashed #999999;
+}
+.right_img{
+	float: left;
+	margin-bottom: 10px;
+}
+.right_img img{
+	width: 120px;
+	height: 170px;
+}
+.info{
+	float: left;
+	width: 660px;
+	margin-left: 30px;
+}
+.title{
+	margin-top: 5px;
+	padding-bottom: 15px;
+}
+.title a{
+	color: #01c8b5;
+}
+.title a:hover{
+	text-decoration: underline;
+}
+.more{
+	color: #777;
+	padding-bottom: 15px;
+}
+.xie{
+	padding: 0 2px;
+}
+.pre_price{
+	text-decoration: line-through;
+}
+.price{
+	color: #00C7B4;;
+}
+.summary{
+	color: #999;
+	font-size: 12px;
+	line-height: 20px;
+	margin-bottom: 15px;
+	word-break:break-all;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	display: -webkit-box; /** 对象作为伸缩盒子模型显示 **/
+    -webkit-box-orient: vertical; /** 设置或检索伸缩盒对象的子元素的排列方式 **/
+    -webkit-line-clamp: 2; /** 显示的行数 **/
+}
+.owner{
+	display: inline-block;
+	margin-bottom: 15px;
+	font-size: 12px;
+	line-height: 23px;
+	color: #666666;
+}
+.owner span{
+	padding-right: 9px;
+}
+
+.operation{
+	float: right;
+	width: 275px;
+	height: 40px;
+	/*margin-right: 100px;*/
+}
+.collect,.buy{
+	display: inline-block;
+	width: 80px;
+	text-align: center;
+	height: 35px;
+	line-height: 35px;
+	color: #000;
+	letter-spacing: 0.2em;
+	font-size: 14.5px;
+	background: #66ddd2;
+}
+.collect{
+	width: 135px;
+}
+.collect:hover,.buy:hover{
+	background: #01C8B5;
+	color: #fff;
+}
+.buy{
+	margin-left: 30px;
+}
