@@ -42,12 +42,12 @@ return [
 
 
     //模板替换
-    'view_replace_str'  =>  [
-        '__PUBLIC__'        =>'/public/',
-        '__ROOT__'          => '/',
-        '__CSS__'           =>  '/static/css',
-        '__IMG__'           =>  '/static/images'
-    ],
+    // 'view_replace_str'  =>  [
+    //     '__PUBLIC__'        =>'/public/',
+    //     '__ROOT__'          => '/',
+    //     '__CSS__'           =>  '/static/css',
+    //     '__IMG__'           =>  '/static/images'
+    // ],
 
 
     //验证码设置
