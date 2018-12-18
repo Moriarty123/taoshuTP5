@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<title>淘书街后台管理首页</title>
-		<link rel="shortcut icon" href="img/shu.ico" />
-		<link rel="stylesheet" href="__CSS__/back/index.css" />
-		<link rel="stylesheet" href="__CSS__/back/common.css" />
-		<link rel="stylesheet" href="/static/font/css/font-awesome.min.css" />
-		
-		<script type="text/javascript" src="__JS__/back/jquery.min.js"></script>
-		<script type="text/javascript" src="__JS__/back/public.js"></script>
-	</head>
-	<body>
-		
+<head>
+	<meta charset="UTF-8">
+	<title>淘书街后台管理首页</title>
+	<link rel="shortcut icon" href="img/shu.ico" />
+	<link rel="stylesheet" href="__CSS__/back/index.css" />
+	<link rel="stylesheet" href="__CSS__/back/common.css" />
+	<link rel="stylesheet" href="/static/font/css/font-awesome.min.css" />
+
+	<script type="text/javascript" src="__JS__/back/jquery.min.js"></script>
+	<script type="text/javascript" src="__JS__/back/public.js"></script>
+</head>
+<body>
+
 	<!-- 头部	 -->
 	{include file="../application/admin/view/common/header.html"}
 	<!-- 头部结束	 -->
@@ -23,32 +23,39 @@
 	
 	<!--main开始-->
 	<table width="99%" border="0" cellspacing="0" cellpadding="0" id="main">
-	  	<tr>
+		<tr>
 			<td colspan="2">
-			    <span class="time">
-			    	<a href="?p=back&c=admin&a=add" class="addAdmin"><i class="fa fa-plus-circle"></i> 登录</a>
-			    </span>
-				    <div class="top">
-				    	<span class="left">您上次的登录时间： 2018-12-17 22:29:23 &nbsp;&nbsp;&nbsp;&nbsp;如非您本人操作，请及时</span>
-				    	<a href="?p=back&c=admin&a=pwd" style="color: #538ec6;">更改密码</a>
-				    </div>
-				    <div class="sec">这是您第<span class="num">1</span>次登录！</div>
+				<span class="time" style="color: black;">
+
+					{eq name="Think.session.admin_id" value=""}
+					<a href="/admin/login/index" class=""><i class="fa fa-plus-circle"></i> 登录</a>
+					{else}
+					<span>管理员账号：{$Think.session.admin_name}</span>&nbsp;&nbsp;
+					<a href="" class=""><i class="fa fa-plus-circle"></i> 添加新管理员</a>
+					<div class="top">
+						<span class="left">您上次的登录时间： {$Think.session.lastLoginTime} &nbsp;&nbsp;&nbsp;&nbsp;如非您本人操作，请及时</span>
+						<a href="/admin/admin/updatePwdPage" style="color: #538ec6;">【更改密码】</a>
+					</div>
+					<div class="sec">这是您第<span class="num">{$Think.session.count}</span>次登录！</div>
+					{/eq}
+				</span>
+
 			</td>
 		</tr>
 		<tr>
-		    <td align="left" valign="top" colspan="2">
-			    <div class="main-tit">服务器信息</div>
-			    <div class="main-con">
+			<td align="left" valign="top" colspan="2">
+				<div class="main-tit">服务器信息</div>
+				<div class="main-con">
 					服务器软件：Apache/2.4.27(Win64) PHP/5.6.31<br/>
 					PHP版本：5.6.31<br/>
 					MYSQL版本： 5.7.19, for Win64 (x86)<br/>
-			    </div>
-		    </td>
-	 	</tr>
+				</div>
+			</td>
+		</tr>
 		<tr>
-		    <td colspan="2" align="left" valign="top">
-			    <div class="main-corpy">系统提示</div>
-			    <div class="main-order">1=>欢迎来到淘书街后台管理系统<br/>
+			<td colspan="2" align="left" valign="top">
+				<div class="main-corpy">系统提示</div>
+				<div class="main-order">1=>欢迎来到淘书街后台管理系统<br/>
 					2=>强烈建议您将IE7以上版本或其他的浏览器
 				</div>
 			</td>
@@ -56,5 +63,5 @@
 	</table>
 	<!--main结束-->
 	
-	</body>
+</body>
 </html>

@@ -11,7 +11,13 @@
         </span>
         <br />
         <div class="head_op">
-			<a href="/admin/login/index" >【登录】</a>
+	    	{eq name="Think.session.admin_id" value=""}
+	    	<a href="/admin/login/index" >【登录】</a>
+	    	{else}
+	    	<span>欢迎你，</span>
+	    	<a href="" >【{$Think.session.admin_name}】</a>
+	    	<a href="/admin/login/logout" >【安全退出】</a>
+	    	{/eq}
 			<a href="/index/index/index">【回到前台】</a>
         </div>
 	</div>
