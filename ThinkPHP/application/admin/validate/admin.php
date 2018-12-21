@@ -4,7 +4,7 @@ namespace app\admin\validate;
 
 use think\Validate;
 
-class admin extends Validate
+class Admin extends Validate
 {
 	protected $rule = [
         'name|用户名'      =>  'require|max:25',

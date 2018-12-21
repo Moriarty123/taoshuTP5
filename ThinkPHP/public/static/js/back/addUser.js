@@ -2,11 +2,13 @@
 function Name(){
 	var name = document.getElementsByName("name")[0];
 	name.style.border = "1px solid #a9a9a9";
+
 }
 function checkName(){
 	var name = document.getElementsByName("name")[0];
 	if(name.value.length >=4 && name.value.length <= 15){
 		name.style.border = "1px solid #a9a9a9";
+		// alert("请输入正确的学号");
 		return true;
 	}
 	else{
