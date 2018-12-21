@@ -11,6 +11,13 @@
 		<script type="text/javascript" src="__JS__/back/jquery.min.js"></script>
 		<script type="text/javascript" src="__JS__/back/public.js"></script>
 		<script type="text/javascript" src="__JS__/back/addUser.js"></script>
+
+		<style>
+			.tip {
+				display: none; padding-left: 83px; padding-top: 5px; color: red;
+			}
+		</style>
+
 	</head>
 	<body>
 	<!-- 头部	 -->
@@ -27,15 +34,16 @@
 			<div class="a">
 				<h2>淘书街添加新会员</h2>
 			</div>
-			<form action="" method="post" enctype="multipart/form-data" class="add_form" onsubmit="return checkAddUser()">
+			<form action="/admin/user/userAdd" method="post" enctype="multipart/form-data" class="add_form" onsubmit="return checkAddUser()">
 				<div class="add_list">
 					<label class="add_label"><span class="xing">*</span>学号：</label>
-					<input type="text" name="name" placeholder="4-15位字符" class="add_input" onfocus="Name()" onblur="checkName()"/>
-					<span style="display: block; padding-left: 83px; padding-top: 5px; color: red;">请输入正确的学号</span>
+					<input type="text" name="name" placeholder="输入学号" class="add_input" onfocus="Name()" onblur="checkName()"/>
+					<span class="tip" id="tip-name">请输入12位的学号</span>
 				</div>
 				<div class="add_list">
 					<label class="add_label"><span class="xing">*</span>密码：</label>
 					<input type="password" name="pwd" placeholder="字母数字组合，6-16位字符" class="add_input" onfocus="Pwd()" onblur="checkPwd()"/>
+					<span class="tip" id="tip-pwd">请输入6-16位的密码</span>
 				</div>
 				<div class="add_list">
 					<label class="add_label"><span class="xing">*</span>性别：</label>
@@ -45,18 +53,24 @@
 				<div class="add_list">
 					<label class="add_label"><span class="xing">*</span>真实姓名：</label>
 					<input type="text" name="realname" placeholder="输入真实姓名" class="add_input" onfocus="Real()" onblur="checkReal()"/>
+					<span class="tip" id="tip-realname">请输入真实姓名</span>
 				</div>
 				<div class="add_list">
 					<label class="add_label">头像：</label>
-					<input type="file" name="img" />
+					<input type="file" name="img" onchange="uploadsimage(this);" />
+					<!-- <span class="tip">请选择头像</span> -->
+					<div id="imgBox"></div>
+					<input type="hidden" name="headImg" id="headImg" value="">
 				</div>
 				<div class="add_list">
 					<label class="add_label"><span class="xing">*</span>联系方式：</label>
 					<input type="text" name="tel" placeholder="输入联系方式" class="add_input" onfocus="Tel()" onblur="checkTel()"/>
+					<span class="tip" id="tip-tel">请输入联系方式</span>
 				</div>
 				<div class="add_list">
 					<label class="add_label"><span class="xing">*</span>地址：</label>
 					<input type="text" name="addr" placeholder="输入详细地址" class="add_input" onfocus="Addr()" onblur="checkAddr()"/>
+					<span class="tip" id="tip-addr">请输入详细地址</span>
 				</div>
 				<div class="add_list">
 					<label class="add_label"><span class="xing">*</span>年级：</label>
@@ -100,4 +114,40 @@
 	user.getElementsByClassName("coin22")[0].style.display = "none";
 	user.getElementsByClassName("cks")[0].setAttribute("class", "menu_chioce2");
 	user.getElementsByTagName("dd")[0].style.display = "block";
+</script>
+
+<script type="text/javascript">
+//上传图片
+function uploadsimage(obj) {
+	if ( obj.value == "" ) return;
+
+	var formdata = new FormData();
+
+    formdata.append("image" , $(obj)[0].files[0]);//$(obj)[0].files[0]为文件对象
+
+    $.ajax({
+    	type : 'post',
+    	url : '/admin/common/UserImage',
+    	data : formdata,
+    	cache : false,
+        processData : false, // 不处理发送的数据，因为data值是Formdata对象，不需要对数据做处理
+        contentType : false, // 不设置Content-type请求头
+        success : function(ret){
+        	var html = '<img src="'+ret+'" style="width:120px">';
+
+
+         	console.log(html);
+         	$('#imgBox').html(html);
+         	
+         	
+        	console.log(ret);
+        	// $('#headImg').val(ret);
+        	$('#headImg').attr('value', ret);
+        },
+        error : function(){ 
+        	alert('图片上传失败');
+        }
+    });
+}
+
 </script>
