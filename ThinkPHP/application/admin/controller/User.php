@@ -204,4 +204,36 @@ class User extends Controller
 		$this->success('修改密码成功！', '/admin/user/userList');
 
 	}
+
+	//删除用户
+	public function userDelete()
+	{
+		// dump($_GET);
+
+		$user_id = input('get.user_id');
+		$where = "user_id = {$user_id}";
+
+		// $user = Db::table('user')->where($where)->find();
+
+		//删除关联数据
+		// if (!empty($user)) {
+		// 	Db::table('sale_book')->where($where)->delete();
+		// 	Db::table('inquiry_book')->where($where)->delete();
+		// 	Db::table('scomment')->where($where)->delete();
+		// 	Db::table('bcomment')->where($where)->delete();
+		// 	Db::table('shopcar')->where($where)->delete();
+		// 	Db::table('shoporder')->where($where)->delete();
+		// }
+
+		//暂时取消外链，删除后恢复
+		Db::query('SET FOREIGN_KEY_CHECKS = 0;');
+		$ret = Db::table('user')->where($where)->delete();
+		Db::query('SET FOREIGN_KEY_CHECKS = 1;');
+
+		if ($ret == false) {
+			$this->error('删除用户失败！');
+		}
+
+		$this->success('删除用户成功！', '/admin/user/userList');
+	}
 }

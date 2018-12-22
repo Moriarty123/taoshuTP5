@@ -36,7 +36,7 @@
 				</form>
 				<a href="/admin/user/addPage" class="addUser"><i class="fa fa-plus-circle"></i> 添加新用户</a>
 			</div>
-			<form action="?p=back&c=user&a=delCheck" method="post">
+			<form action="" method="post">
 			<table cellpadding="0" cellspacing="0">
 				<tr>
 					<th><input type="checkbox" name="fullChoose" onclick="fullChecked(this)" /></th>
@@ -69,7 +69,7 @@
 					<td>
 						<a href="/admin/user/editPage?user_id={$vo.user_id}" class="op"><i class="fa fa-edit" title="编辑"></i></a> 
 						<a href="/admin/user/pwdPage?user_id={$vo.user_id}" class="op"><i class="fa fa-key" title="修改密码"></i></a> 
-						<a href="" class="op" onclick="return del()">
+						<a href="/admin/user/userDelete?user_id={$vo.user_id}" class="op" onclick="return del()">
 							<i class="fa fa-trash-o" title="删除"></i>
 						</a> 
 					</td>
