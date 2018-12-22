@@ -77,6 +77,7 @@ use app\admin\validate\Admin as adminValidate;
 		$loginTime = date('Y-m-d H:i:s', time());
 		Db::table('admin')->where($where)->setField('last_time', $loginTime);	
 
+
 		// return $this->fetch('index/index');
 		$this->success('登录成功', '/admin/index/index');//不能使用success，this->assign()失效
 

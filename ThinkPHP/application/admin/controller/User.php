@@ -48,6 +48,18 @@ class User extends Controller
 		return $this->fetch('userEdit');
 	}
 
+	//修改密码页面
+	public function pwdPage()
+	{
+		//查找特定ID的用户
+		$user_id = input('get.user_id');
+		$where = "user_id = {$user_id}";
+		$user = Db::table('user')->where($where)->find();
+		$this->assign('user', $user);
+
+		return $this->fetch('pwdEdit');
+	}
+
 	//添加用户
 	public function userAdd()
 	{
@@ -168,6 +180,28 @@ class User extends Controller
 		$this->assign('userNumber', $userNumber);
 
 		return $this->fetch('userList');
+
+	}
+
+	//修改密码
+	public function pwdUpdate()
+	{
+		// dump($_POST);
+
+		//1.获取数据
+		$id = input('post.id');
+		$pwd = input('post.pwd');
+
+		//修改密码
+		$where = "user_id = {$id}";
+		$pwd = md5($pwd);
+		$ret = Db::table('user')->where($where)->update(['user_pwd' => $pwd]);
+
+		if ($ret == false) {
+			$this->error('修改密码失败！');
+		}
+
+		$this->success('修改密码成功！', '/admin/user/userList');
 
 	}
 }
