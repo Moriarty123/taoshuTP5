@@ -13,6 +13,13 @@
 		<script type="text/javascript" src="__JS__/back/public.js"></script>
 		<script type="text/javascript" src="__JS__/back/addUser.js"></script>
 		<!-- <script type="text/javascript" src="__JS__/back/showImg.js"></script> -->
+
+
+		<style>
+			.tip {
+				display: none; padding-left: 83px; padding-top: 5px; color: red;
+			}
+		</style>
 	</head>
 	<body>
 	<!-- 头部	 -->
@@ -50,14 +57,17 @@
 				<div class="add_list">
 					<label class="add_label"><span class="xing">*</span>真实姓名：</label>
 					<input type="text" name="realname" class="add_input" placeholder="请输入真实姓名" value="{$user.user_realname}" onfocus="Real()" onblur="checkReal()" />
+					<span class="tip" id="tip-realname">请输入真实姓名</span>
 				</div>
 				<div class="add_list">
 					<label class="add_label"><span class="xing">*</span>联系方式：</label>
 					<input type="text" name="tel" placeholder="输入联系方式" class="add_input" value="{$user.user_tel}" onfocus="Tel()" onblur="checkTel()"/>
+					<span class="tip" id="tip-tel">请输入联系方式</span>
 				</div>
 				<div class="add_list">
 					<label class="add_label"><span class="xing">*</span>地址：</label>
 					<input type="text" name="addr" placeholder="输入详细地址" class="add_input" value="{$user.user_addr}" onfocus="Addr()" onblur="checkAddr()"/>
+					<span class="tip" id="tip-addr">请输入详细地址</span>
 				</div>
 				<div class="add_list">
 					<label class="add_label"><span class="xing">*</span>年级：</label>
@@ -71,13 +81,10 @@
 				<div class="add_list">
 					<label class="add_label"><span class="xing">*</span>专业：</label>
 					<select name="class" class="add_input">
-						
+
 						{volist name="classes" id="class"}
-							{eq name="class.class_id" value="user.class_id"}
-								<option value="{$class.class_id}" selected="true">{$class.class_name}</option>
-							{else}
-								<option value="{$class.class_id}">{$class.class_name}</option>
-							{/eq}
+							
+							<option value="{$class.class_id}" <?php if ($class['class_id'] ==$user['class_id'] ) {echo "selected";} ?> >{$class.class_name}</option>
 						{/volist}
 					</select>
 				</div>

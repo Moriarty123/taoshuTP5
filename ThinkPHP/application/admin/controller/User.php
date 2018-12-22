@@ -17,7 +17,7 @@ class User extends Controller
 	{
 		$userList = Db::table('user')->paginate(15);
 		$userNumber = Db::table('user')->count();
-
+		// dump($userList);
 		$this->assign('userList', $userList); 
 		$this->assign('userNumber', $userNumber);
 
@@ -142,4 +142,32 @@ class User extends Controller
 		$this->success('更新用户信息成功', '/admin/user/userList');
 	}
 
+	//模糊查找
+	public function userSearch()
+	{
+		// dump($_POST);
+		$search = input('post.search');
+
+		if(!empty($search)) {
+			session('usersearch', $search);
+			$where['user_name'] = array('like','%'.$search.'%');//封装模糊查询 赋值到数组	
+		}
+		else 
+		{
+			$search = session('usersearch');
+			$where['user_name'] = array('like','%'.$search.'%');	
+		}
+
+		
+		$userList = Db::table('user')->where($where)->paginate(15);
+		// dump($userList);
+		$this->assign('userList', $userList);
+
+		$userNumber = Db::table('user')->where($where)->count();
+		dump($userNumber);
+		$this->assign('userNumber', $userNumber);
+
+		return $this->fetch('userList');
+
+	}
 }
