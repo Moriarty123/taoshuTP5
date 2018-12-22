@@ -236,4 +236,24 @@ class User extends Controller
 
 		$this->success('删除用户成功！', '/admin/user/userList');
 	}
+
+	public function checkedUserDelete()
+	{
+		// dump($_POST);
+		//TP5的post方法不能提交数组，在表单name添加/a表示要提交有关数组，获取时同样要添加/a
+		$ids = input('post.ids/a');
+		// dump($ids);
+		// $count = count($ids);
+
+		foreach ($ids as $key => $id) {
+			$where = "user_id = {$id}";
+			//暂时取消外链，删除后恢复
+			Db::query('SET FOREIGN_KEY_CHECKS = 0;');
+			$ret = Db::table('user')->where($where)->delete();
+			Db::query('SET FOREIGN_KEY_CHECKS = 1;');
+		}
+
+		$this->success('删除用户成功！', '/admin/user/userList');
+
+	}
 }
