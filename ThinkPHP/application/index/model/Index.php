@@ -122,5 +122,27 @@ class index extends Controller
 		$data = Db::query($sql);
 		return $data;
 	}
+
+	//获取所有书籍类型
+	function getBookType() 
+	{
+		$sql = "select * from book_type";
+		$data = Db::query($sql);
+		return $data;
+	}
+
+
+	//获取特定类型的书籍
+	function getTypeSecond($type_id) {
+
+		$where = "type_id = {$type_id}";
+		dump($where);
+		$sql = "select * from type_second where = {$where}";
+
+		$data = Db::query($sql);
+
+		return $data;
+
+	}
 }
 ?>
