@@ -39,7 +39,7 @@
 					<input type="text" class="search" placeholder="书名" name="search" />
 					<input type="submit" class="search_button" value="搜索" />
 				</form>
-				<a href="" class="addUser"><i class="fa fa-plus-circle"></i> 添加新出售</a>
+				<a href="/admin/sale/addPage" class="addUser"><i class="fa fa-plus-circle"></i> 添加新出售</a>
 			</div>
 			<form action="" method="post">
 			<table cellpadding="0" cellspacing="0">
@@ -62,7 +62,7 @@
 					<td><input type="checkbox" name="ids[]" onclick="eachChecked()" class="eachChoose" value="{$value.sale_id}"/></td>
 					<td>{$value.sale_isbn}</td>
 					<td class="sale_c" style="max-width: 120px;">
-						<img src="/static/{$value.sale_img}" style="width: 21px;height: 30px;vertical-align: middle;" />
+						<img src="{$value.sale_img}" style="width: 21px;height: 30px;vertical-align: middle;" />
 						{$value.sale_name}
 					</td>
 					<td class="sale_c" style="max-width: 90px;">{$value.sale_author}</td>
