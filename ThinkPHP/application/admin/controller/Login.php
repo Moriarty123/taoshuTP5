@@ -5,7 +5,7 @@ namespace app\admin\controller;
 use think\Controller;
 use think\Db;
 
-use app\admin\validate\Admin as adminValidate;
+use app\admin\validate\admin as adminValidate;
 
  class Login extends Controller 
 {
