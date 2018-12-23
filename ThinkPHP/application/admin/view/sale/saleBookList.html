@@ -35,7 +35,7 @@
 		<div class="form_boxA">
 			<div class="a">
 				<h2>淘书街出售书籍列表</h2>
-				<form action="" method="post" onsubmit="return checkSearch()" class="searchform">
+				<form action="/admin/sale/saleBookSearch" method="post" onsubmit="return checkSearch()" class="searchform">
 					<input type="text" class="search" placeholder="书名" name="search" />
 					<input type="submit" class="search_button" value="搜索" />
 				</form>
@@ -63,7 +63,7 @@
 					<td>{$value.sale_isbn}</td>
 					<td class="sale_c" style="max-width: 120px;">
 						<img src="/static/{$value.sale_img}" style="width: 21px;height: 30px;vertical-align: middle;" />
-						{$value.sale_img}
+						{$value.sale_name}
 					</td>
 					<td class="sale_c" style="max-width: 90px;">{$value.sale_author}</td>
 					<td class="sale_c" style="max-width: 80px;">{$value.sale_publishing}</td>
