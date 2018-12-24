@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>淘书街求购书籍管理</title>
+		<title>淘书街出售留言管理</title>
 		<link rel="shortcut icon" href="__IMG__/shu.ico" />
 		<link rel="stylesheet" href="__CSS__/back/user.css" />
 		<link rel="stylesheet" href="__CSS__/back/common.css" />
@@ -34,65 +34,48 @@
 	<div id="MainForm">
 		<div class="form_boxA">
 			<div class="a">
-				<h2>淘书街求购书籍列表</h2>
-				<form action="/admin/inquiry/inquiryBookSearch" method="post" onsubmit="return checkSearch()" class="searchform">
-					<input type="text" class="search" placeholder="书名" name="search" />
+				<h2>淘书街出售留言列表</h2>
+				<form action="/admin/bcomment/commentSearch" method="post" onsubmit="return checkSearch()" class="searchform">
+					<input type="text" class="search" placeholder="留言内容" name="search" />
 					<input type="submit" class="search_button" value="搜索" />
 				</form>
-				<a href="/admin/inquiry/addPage" class="addUser"><i class="fa fa-plus-circle"></i> 添加新求购</a>
+				<a href="/admin/bcomment/addPage" class="addUser"><i class="fa fa-plus-circle"></i> 添加新出售留言</a>
 			</div>
-			<form action="/admin/inquiry/checkedBookDelete" method="post">
+			<form action="" method="post">
 			<table cellpadding="0" cellspacing="0">
 				<tr>
 					<th><input type="checkbox" name="fullChoose" onclick="fullChecked(this)" /></th>
-					<th>ISBN</th>
+					<th>ID</th>
 					<th>书名</th>
-					<th>作者</th>
-					<th>出版社</th>
-					<th>类型</th>
-					<th>新旧程度</th>
-					<th>价格</th>
-					<th>库存</th>
-					<th>简介</th>
-					<th>求购人</th>
+					<th>留言内容</th>
+					<th>留言时间</th>
+					<th>留言人</th>
 					<th>操作</th>
 				</tr>
-				{volist name="inquiryBookList" id="value"}
+				<?php foreach($commentList as $key => $value){ ?>
 				<tr>
-					<td><input type="checkbox" name="ids[]/a" onclick="eachChecked()" class="eachChoose" value="{$value.inquiry_id}"/></td>
-					<td>{$value.inquiry_isbn}</td>
-					<td class="inquiry_c" style="max-width: 120px;">
-						<img src="{$value.inquiry_img}" style="width: 21px;height: 30px;vertical-align: middle;" />
-						{$value.inquiry_name}
-					</td>
-					<td class="inquiry_c" style="max-width: 90px;">{$value.inquiry_author}</td>
-					<td class="inquiry_c" style="max-width: 80px;">{$value.inquiry_publishing}</td>
-					<td class="inquiry_c" style="max-width: 80px;">{$value.second_name}</td>
-					<td>{$value.inquiry_degrees}</td>
-					<td>
-						<span style="color: #19a97b;">￥{$value.inquiry_minprice}~￥{$value.inquiry_maxprice}</span>
-					</td>
-					<td>{$value.inquiry_num}</td>
-					<td class="inquiry_c" >
-						<div style="width: 200px;height: 100px; overflow: hidden; overflow-y: scroll;">{$value.inquiry_content}</div>
-					</td>
+					<td><input type="checkbox" name="ids[]/a" onclick="eachChecked()" class="eachChoose" value="{$value.bcomment_id}"/></td>
+					<td>{$value.bcomment_id}</td>
+					<td class="sale_c" style="max-width: 90px;">{$value.sale_name}</td>
+					<td class="sale_c" style="max-width: 120px;">{$value.bcomment_content}</td>
+					<td class="sale_c" style="max-width: 80px;">{$value.bcomment_time}</td>
 					<td>{$value.user_realname}</td>
 					<td>
-						<a href="/admin/inquiry/editPage?inquiry_id={$value.inquiry_id}" class="op"><i class="fa fa-edit" title="编辑"></i></a> 
-						<a href="/admin/inquiry/inquiryBookDelete?inquiry_id={$value.inquiry_id}" class="op" onclick="return del()">
+						<a href="?p=back&c=bcomment&a=edit&id={$value.bcomment_id}" class="op"><i class="fa fa-edit" title="编辑"></i></a> 
+						<a href="/admin/bcomment/commentDelete?bcomment_id={$value.bcomment_id}" class="op" onclick="return del()">
 							<i class="fa fa-trash-o" title="删除"></i>
 						</a> 
 					</td>
 				</tr>
-				{/volist}
+				<?php } ?>
 			</table>
 			<p class="msg">
 				<span id="notdisplay" style="display: none;"></span>
 				<input type="submit" value="删除选中" class="delBtn" id="delBtn" disabled="disabled" onclick='return checkdel();'/>
-				共找到 {$bookNumber} 条会员信息，每页显示15条记录
+				共找到 {$commentNumber} 条留言信息，每页显示15条记录
 			</p>
 			<div class="" style="text-align: center;margin-bottom:20px; ">
-			{$inquiryBookList->render()}
+			{$commentList->render()}
 			</div>
 			</form>
 		</div>
@@ -119,9 +102,9 @@
 	user.getElementsByTagName("dd")[0].style.display = "block";
 	
 	function del(){
-		return window.confirm("你确认要删除该书籍、包括该书籍的留言信息吗？");
+		return window.confirm("你确认要删除该留言信息吗？");
 	}
 	function checkdel(){
-		return window.confirm("你确认要删除选中的书籍、包括书籍的留言及订单信息信息吗？");
+		return window.confirm("你确认要删除选中的留言信息吗？");
 	}
 </script>

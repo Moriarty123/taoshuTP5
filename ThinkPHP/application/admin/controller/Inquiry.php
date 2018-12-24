@@ -117,29 +117,31 @@ use think\Db;
 		// die();
 
   		//1.判断是否存在该书籍
-		$isbn = input('post.isbn');
+		// $isbn = input('post.isbn');
 
-		$where = "inquiry_isbn = '{$isbn}'";
-		$res = Db::table('inquiry_book')->where($where)->find();
+		// $where = "inquiry_isbn = '{$isbn}'";
+		// $res = Db::table('inquiry_book')->where($where)->find();
 
-		if (!empty($res)) {
-			$this->error('该书籍已存在'); 	
-		} 
+		// if (!empty($res)) {
+		// 	$this->error('该书籍已存在'); 	
+		// } 
 
 		//2.获取数据
+		$isbn 		= input('post.isbn');
 		$name 		= input('post.name');
 		$author 	= input('post.author');
 		$publishing = input('post.publishing');
 		$img		= input('post.img');
-		$beprice 	= input('post.beprice');
-		$afprice 	= input('post.afprice');
+		$minprice 	= input('post.minprice');
+		$maxprice 	= input('post.maxprice');
 		$num 		= input('post.num');
 		$page 		= input('post.page');
 		$degrees 	= input('post.degrees');
 		$type 		= input('post.type');
 		$user 		= input('post.user');
 		$content 	= input('post.content');
-		$inquiry_time 	= date("Y-m-d h:i:s", time());
+		$attach		= input('post.attach');
+		$time 		= date("Y-m-d h:i:s", time());
 
 		//3.构造数据
 		$data = [
@@ -148,15 +150,16 @@ use think\Db;
 			'inquiry_author'		=>	$author,
 			'inquiry_publishing'	=>	$publishing,
 			'inquiry_img'			=>	$img,
-			'inquiry_beprice'		=>	$beprice,
-			'inquiry_afprice'		=>	$afprice,
+			'inquiry_minprice'		=>	$minprice,
+			'inquiry_maxprice'		=>	$maxprice,
 			'inquiry_num'			=>	$num,
 			'inquiry_page'			=>	$page,
 			'inquiry_degrees'		=>	$degrees,
 			'inquiry_secondtype'	=>	$type,
-			'user_id'			=>	$user,
+			'user_id'				=>	$user,
 			'inquiry_content'		=>	$content,
-			'inquiry_time'			=>	$inquiry_time
+			'inquiry_attach'		=>	$attach,
+			'inquiry_time'			=>	$time
 		];
 
 		//4.存入数据库
@@ -231,14 +234,15 @@ use think\Db;
 		$author 	= input('post.author');
 		$publishing = input('post.publishing');
 		$img		= input('post.img');
-		$beprice 	= input('post.beprice');
-		$afprice 	= input('post.afprice');
+		$minprice 	= input('post.minprice');
+		$maxprice 	= input('post.maxprice');
 		$num 		= input('post.num');
 		$page 		= input('post.page');
 		$degrees 	= input('post.degrees');
 		$type 		= input('post.type');
 		$user 		= input('post.user');
 		$content 	= input('post.content');
+		$attach     = input('post.attach');
 		$inquiry_time 	= date("Y-m-d h:i:s", time());
 
 		//2.构造数据
@@ -248,14 +252,15 @@ use think\Db;
 			'inquiry_author'		=>	$author,
 			'inquiry_publishing'	=>	$publishing,
 			'inquiry_img'			=>	$img,
-			'inquiry_beprice'		=>	$beprice,
-			'inquiry_afprice'		=>	$afprice,
+			'inquiry_minprice'		=>	$minprice,
+			'inquiry_maxprice'		=>	$maxprice,
 			'inquiry_num'			=>	$num,
 			'inquiry_page'			=>	$page,
 			'inquiry_degrees'		=>	$degrees,
 			'inquiry_secondtype'	=>	$type,
-			'user_id'			=>	$user,
+			'user_id'				=>	$user,
 			'inquiry_content'		=>	$content,
+			'inquiry_attach'		=>	$attach,
 			'inquiry_time'			=>	$inquiry_time
 		];
 

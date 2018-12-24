@@ -27,43 +27,43 @@
 	<div id="MainForm">
 		<div class="form_boxA">
 			<div class="a">
-				<h2>淘书街-修改 <?php echo $edit['sale_name']; ?> 基本信息</h2>
+				<h2>淘书街-修改 {$edit.sale_name} 基本信息</h2>
 			</div>
 			<form action="/admin/sale/saleBookEdit" method="post" enctype="multipart/form-data" class="add_form" onsubmit="return checkSale()" style="width: 700px;">
 				<div style="float: left;">
-				<input type="hidden" name="id" value="<?php echo $edit['sale_id']; ?>" />
+				<input type="hidden" name="id" value="{$edit.sale_id}" />
 				<div class="add_list">
 					<label class="add_label"><span class="xing">*</span>ISBN：</label>
-					<input type="text" name="showisbn" placeholder="请输入10位或13位ISBN码" value="<?php echo $edit['sale_isbn']; ?>" class="add_input" onfocus="Isbn()" onblur="checkISBN()" disabled="true"/>
+					<input type="text" name="showisbn" placeholder="请输入10位或13位ISBN码" value="{$edit.sale_isbn}" class="add_input" onfocus="Isbn()" onblur="checkISBN()" disabled="true"/>
 					<input type="hidden" value="{$edit.sale_isbn}" name="isbn">
 				</div>
 				<div class="add_list">
 					<label class="add_label"><span class="xing">*</span>书名：</label>
-					<input type="text" name="name" placeholder="请输入书名" class="add_input" value="<?php echo $edit['sale_name']; ?>" onfocus="Name()" onblur="checkName()"/>
+					<input type="text" name="name" placeholder="请输入书名" class="add_input" value="{$edit.sale_name}" onfocus="Name()" onblur="checkName()"/>
 				</div>
 				<div class="add_list">
 					<label class="add_label"><span class="xing">*</span>作者：</label>
-					<input type="text" name="author" placeholder="多个作者可用空格隔开" value="<?php echo $edit['sale_author']; ?>" class="add_input" onfocus="Author()" onblur="checkAuthor()"/>
+					<input type="text" name="author" placeholder="多个作者可用空格隔开" value="{$edit.sale_author}" class="add_input" onfocus="Author()" onblur="checkAuthor()"/>
 				</div>
 				<div class="add_list">
 					<label class="add_label"><span class="xing">*</span>出版社：</label>
-					<input type="text" name="publishing" placeholder="请输入出版社" value="<?php echo $edit['sale_publishing']; ?>" class="add_input" onfocus="Publishing()" onblur="checkPublishing()" />
+					<input type="text" name="publishing" placeholder="请输入出版社" value="{$edit.sale_publishing}" class="add_input" onfocus="Publishing()" onblur="checkPublishing()" />
 				</div>
 				<div class="add_list">
 					<label class="add_label"><span class="xing">*</span>原价：</label>
-					<input type="text" name="beprice" placeholder="请输入大于等于0的数字" value="<?php echo $edit['sale_beprice']; ?>" class="add_input" onfocus="Beprice()" onblur="checkBeprice()"/>
+					<input type="text" name="beprice" placeholder="请输入大于等于0的数字" value="{$edit.sale_beprice}" class="add_input" onfocus="Beprice()" onblur="checkBeprice()"/>
 				</div>
 				<div class="add_list">
 					<label class="add_label"><span class="xing">*</span>售价：</label>
-					<input type="text" name="afprice" placeholder="请输入大于等于0的数字" value="<?php echo $edit['sale_afprice']; ?>" class="add_input" onfocus="Afprice()" onblur="checkAfprice()"/>
+					<input type="text" name="afprice" placeholder="请输入大于等于0的数字" value="{$edit.sale_afprice}" class="add_input" onfocus="Afprice()" onblur="checkAfprice()"/>
 				</div>
 				<div class="add_list">
 					<label class="add_label"><span class="xing">*</span>数量：</label>
-					<input type="text" name="num" placeholder="大于0的数字" value="<?php echo $edit['sale_num']; ?>" class="add_input" onfocus="Num()" onblur="checkNum()"/>
+					<input type="text" name="num" placeholder="大于0的数字" value="{$edit.sale_num}" class="add_input" onfocus="Num()" onblur="checkNum()"/>
 				</div>
 				<div class="add_list">
 					<label class="add_label"><span class="xing">*</span>书籍页码：</label>
-					<input type="text" name="page" placeholder="请输入大于0的数字" value="<?php echo $edit['sale_page']; ?>" class="add_input" onfocus="Page()" onblur="checkPage()"/>
+					<input type="text" name="page" placeholder="请输入大于0的数字" value="{$edit.sale_page}" class="add_input" onfocus="Page()" onblur="checkPage()"/>
 				</div>
 				<div class="add_list">
 					<label class="add_label"><span class="xing">*</span>新旧程度：</label>
@@ -79,7 +79,7 @@
 					<label class="add_label"><span class="xing">*</span>书籍分类：</label>
 					<select class="add_input" name="type">
 						<?php foreach($typeSecond as $key => $value){ ?>
-						<option value="<?php echo $value['second_id']; ?>"><?php echo $value['second_name']; ?></option>
+						<option value="{$value.second_id}">{$value.second_name}</option>
 						<?php } ?>
 					</select>
 				</div>
@@ -87,19 +87,19 @@
 					<label class="add_label"><span class="xing">*</span>出售人：</label>
 					<select class="add_input" name="user">
 						<?php foreach($users as $key => $value){ ?>
-						<option value="<?php echo $value['user_id']; ?>"><?php echo $value['user_realname']; ?></option>
+						<option value="{$value.user_id}">{$value.user_realname}</option>
 						<?php } ?>
 					</select>
 				</div>
 				<div class="add_list">
 					<label class="add_label" style="margin-top: 30px;">内容简介：</label>
-					<textarea name="content" class="add_textarea"><?php echo $edit['sale_content']; ?></textarea>
+					<textarea name="content" class="add_textarea">{$edit.sale_content}</textarea>
 				</div>
 				</div>
 				<div class="sale_right">
-					<div class="img_icon" ><img src="<?php echo $edit['sale_img']; ?>" class="editSale_img" id="imgBox"/></div>
+					<div class="img_icon" ><img src="{$edit.sale_img}" class="editSale_img" id="imgBox"/></div>
 					<input type="file" name="selectImg" style="margin: 30px 63px 0 0px;" onchange="uploadsimage(this);" />
-					<input type="hidden" id="img" name="img" src="<?php echo $edit['sale_img']; ?>" value="<?php echo $edit['sale_img']; ?>">
+					<input type="hidden" id="img" name="img" src="{$edit.sale_img}" value="{$edit.sale_img}">
 				</div>
 				<input type="submit" value="修改" class="add_submit" style="margin-left: 300px;" />
 			</form>
