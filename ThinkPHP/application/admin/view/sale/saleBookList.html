@@ -41,7 +41,7 @@
 				</form>
 				<a href="/admin/sale/addPage" class="addUser"><i class="fa fa-plus-circle"></i> 添加新出售</a>
 			</div>
-			<form action="" method="post">
+			<form action="/admin/sale/checkedBookDelete" method="post">
 			<table cellpadding="0" cellspacing="0">
 				<tr>
 					<th><input type="checkbox" name="fullChoose" onclick="fullChecked(this)" /></th>
@@ -59,7 +59,7 @@
 				</tr>
 				{volist name="saleBookList" id="value"}
 				<tr>
-					<td><input type="checkbox" name="ids[]" onclick="eachChecked()" class="eachChoose" value="{$value.sale_id}"/></td>
+					<td><input type="checkbox" name="ids[]/a" onclick="eachChecked()" class="eachChoose" value="{$value.sale_id}"/></td>
 					<td>{$value.sale_isbn}</td>
 					<td class="sale_c" style="max-width: 120px;">
 						<img src="{$value.sale_img}" style="width: 21px;height: 30px;vertical-align: middle;" />
@@ -76,8 +76,8 @@
 					<td class="sale_c">{$value.sale_content}</td>
 					<td>{$value.user_realname}</td>
 					<td>
-						<a href="" class="op"><i class="fa fa-edit" title="编辑"></i></a> 
-						<a href="" class="op" onclick="return del()">
+						<a href="/admin/sale/editPage?sale_id={$value.sale_id}" class="op"><i class="fa fa-edit" title="编辑"></i></a> 
+						<a href="/admin/sale/saleBookDelete?sale_id={$value.sale_id}" class="op" onclick="return del()">
 							<i class="fa fa-trash-o" title="删除"></i>
 						</a> 
 					</td>

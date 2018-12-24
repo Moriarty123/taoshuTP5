@@ -138,11 +138,7 @@ function uploadsimage(obj) {
         processData : false, // 不处理发送的数据，因为data值是Formdata对象，不需要对数据做处理
         contentType : false, // 不设置Content-type请求头
         success : function(ret){
-        	// var html = '<img src="'+ret+'" style="width:120px" class="edituser_img" />';
 
-     
-        	// console.log(ret);
-        	// $('#headImg').val(ret);
         	$('#headImg').attr('value', ret);
  			$('#headImgBox').attr('src', ret);
         },

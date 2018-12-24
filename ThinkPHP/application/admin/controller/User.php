@@ -237,6 +237,7 @@ class User extends Controller
 		$this->success('删除用户成功！', '/admin/user/userList');
 	}
 
+	//批量删除
 	public function checkedUserDelete()
 	{
 		// dump($_POST);
