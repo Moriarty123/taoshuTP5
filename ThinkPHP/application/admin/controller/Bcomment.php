@@ -114,4 +114,30 @@ class Bcomment extends Controller
 
 	}
 
+	//删除留言
+	public function commentDelete()
+	{
+		//0.测试
+		// dump($_GET);
+
+		//1.获取id
+		$bcomment_id = input('get.bcomment_id');
+		// dump($sale_id);
+
+		//2.从数据库删除
+		$where = "bcomment_id = {$bcomment_id}";
+		// dump($where);
+
+		//暂时取消外链，删除后恢复
+		Db::query('SET FOREIGN_KEY_CHECKS = 0;');
+		$ret = Db::table('bcomment')->where($where)->delete();
+		Db::query('SET FOREIGN_KEY_CHECKS = 1;');
+
+		if ($ret == false) {
+			$this->error('删除出售书籍留言失败！','/admin/bcomment/commentList');
+		}
+
+		$this->success('删除出售书籍留言成功！', '/admin/bcomment/commentList');
+	}
+
 }
