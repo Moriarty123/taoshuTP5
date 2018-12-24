@@ -197,6 +197,7 @@ use think\Db;
 		$this->success('删除求购书籍成功！', '/admin/inquiry/inquiryBookList');
 	}
 
+
 	//批量删除
 	public function checkedBookDelete()
 	{
