@@ -3,11 +3,11 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>淘书街出售留言管理</title>
-		<link rel="shortcut icon" href="img/shu.ico" />
+		<link rel="shortcut icon" href="__IMG__/shu.ico" />
 		<link rel="stylesheet" href="__CSS__/back/user.css" />
 		<link rel="stylesheet" href="__CSS__/back/common.css" />
 		<link rel="stylesheet" href="__CSS__/back/page.css" />
-		<link rel="stylesheet" href="../../../font/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="/static/font/css/font-awesome.min.css" />
 		
 		<script type="text/javascript" src="__JS__/back/jquery.min.js"></script>
 		<script type="text/javascript" src="__JS__/back/public.js"></script>
@@ -39,7 +39,7 @@
 					<input type="text" class="search" placeholder="留言内容" name="search" />
 					<input type="submit" class="search_button" value="搜索" />
 				</form>
-				<a href="" class="addUser"><i class="fa fa-plus-circle"></i> 添加新出售留言</a>
+				<a href="/admin/bcomment/addPage" class="addUser"><i class="fa fa-plus-circle"></i> 添加新出售留言</a>
 			</div>
 			<form action="" method="post">
 			<table cellpadding="0" cellspacing="0">
@@ -72,7 +72,7 @@
 			<p class="msg">
 				<span id="notdisplay" style="display: none;"></span>
 				<input type="submit" value="删除选中" class="delBtn" id="delBtn" disabled="disabled" onclick='return checkdel();'/>
-				共找到 {$commentNumber} 条会员信息，每页显示15条记录
+				共找到 {$commentNumber} 条留言信息，每页显示15条记录
 			</p>
 			<div class="" style="text-align: center;margin-bottom:20px; ">
 			{$commentList->render()}
