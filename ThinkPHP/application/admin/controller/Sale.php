@@ -175,7 +175,20 @@ use think\Db;
 	public function checkedBookDelete()
 	{
 		//0.测试
-		dump($_POST);
+		// dump($_POST);
+
+		//TP5的post方法不能提交数组，在表单name添加/a表示要提交有关数组，获取时同样要添加/a
+		$ids = input('post.ids/a');
+
+		foreach ($ids as $key => $id) {
+			$where = "sale_id = {$id}";
+			//暂时取消外链，删除后恢复
+			Db::query('SET FOREIGN_KEY_CHECKS = 0;');
+			$ret = Db::table('sale_book')->where($where)->delete();
+			Db::query('SET FOREIGN_KEY_CHECKS = 1;');
+		}
+
+		$this->success('删除出售书籍成功！', '/admin/sale/saleBookList');
 	}
 
 }

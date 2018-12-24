@@ -59,7 +59,7 @@
 				</tr>
 				{volist name="saleBookList" id="value"}
 				<tr>
-					<td><input type="checkbox" name="ids[]" onclick="eachChecked()" class="eachChoose" value="{$value.sale_id}"/></td>
+					<td><input type="checkbox" name="ids[]/a" onclick="eachChecked()" class="eachChoose" value="{$value.sale_id}"/></td>
 					<td>{$value.sale_isbn}</td>
 					<td class="sale_c" style="max-width: 120px;">
 						<img src="{$value.sale_img}" style="width: 21px;height: 30px;vertical-align: middle;" />
