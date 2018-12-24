@@ -172,11 +172,9 @@ class User extends Controller
 
 		
 		$userList = Db::table('user')->where($where)->paginate(15);
-		// dump($userList);
 		$this->assign('userList', $userList);
 
 		$userNumber = Db::table('user')->where($where)->count();
-		dump($userNumber);
 		$this->assign('userNumber', $userNumber);
 
 		return $this->fetch('userList');

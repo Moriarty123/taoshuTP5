@@ -76,4 +76,42 @@ class Bcomment extends Controller
 
 	}
 
+	//模糊查找
+	public function commentSearch()
+	{
+		// dump($_POST);
+		$search = input('post.search');
+
+		if(!empty($search)) {
+			session('commentsearch', $search);
+			$where['bcomment_content'] = array('like','%'.$search.'%');//封装模糊查询 赋值到数组	
+		}
+		else 
+		{
+			$search = session('commentsearch');
+			$where['bcomment_content'] = array('like','%'.$search.'%');	
+		}
+
+		
+		$commentList = Db::table('bcomment')
+		->alias('a')
+		->where($where)
+		->join('sale_book b', 'a.bbook_id = b.sale_id')
+		->join('user c', 'a.user_id = c.user_id')
+		->paginate(15);
+
+		$commentNumber = Db::table('bcomment')
+		->alias('a')
+		->where($where)
+		->join('sale_book b', 'a.bbook_id = b.sale_id')
+		->join('user c', 'a.user_id = c.user_id')
+		->count();
+
+		$this->assign('commentList', $commentList);
+		$this->assign('commentNumber', $commentNumber);
+
+		return $this->fetch('commentList');
+
+	}
+
 }

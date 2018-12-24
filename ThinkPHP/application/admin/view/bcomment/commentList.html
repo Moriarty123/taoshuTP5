@@ -35,7 +35,7 @@
 		<div class="form_boxA">
 			<div class="a">
 				<h2>淘书街出售留言列表</h2>
-				<form action="?p=back&c=bcomment&a=search" method="post" onsubmit="return checkSearch()" class="searchform">
+				<form action="/admin/bcomment/commentSearch" method="post" onsubmit="return checkSearch()" class="searchform">
 					<input type="text" class="search" placeholder="留言内容" name="search" />
 					<input type="submit" class="search_button" value="搜索" />
 				</form>
@@ -54,15 +54,15 @@
 				</tr>
 				<?php foreach($commentList as $key => $value){ ?>
 				<tr>
-					<td><input type="checkbox" name="ids[]" onclick="eachChecked()" class="eachChoose" value="<?php echo $value['bcomment_id']; ?>"/></td>
-					<td><?php echo $value['bcomment_id']; ?></td>
-					<td class="sale_c" style="max-width: 90px;"><?php echo $value['sale_name']; ?></td>
-					<td class="sale_c" style="max-width: 120px;"><?php echo strip_tags($value['bcomment_content']); ?></td>
-					<td class="sale_c" style="max-width: 80px;"><?php echo $value['bcomment_time']; ?></td>
-					<td><?php echo $value['user_realname']; ?></td>
+					<td><input type="checkbox" name="ids[]/a" onclick="eachChecked()" class="eachChoose" value="{$value.bcomment_id}"/></td>
+					<td>{$value.bcomment_id}</td>
+					<td class="sale_c" style="max-width: 90px;">{$value.sale_name}</td>
+					<td class="sale_c" style="max-width: 120px;">{$value.bcomment_content}</td>
+					<td class="sale_c" style="max-width: 80px;">{$value.bcomment_time}</td>
+					<td>{$value.user_realname}</td>
 					<td>
-						<a href="?p=back&c=bcomment&a=edit&id=<?php echo $value['bcomment_id']; ?>" class="op"><i class="fa fa-edit" title="编辑"></i></a> 
-						<a href="?p=back&c=bcomment&a=del&id=<?php echo $value['bcomment_id']; ?>" class="op" onclick="return del()">
+						<a href="?p=back&c=bcomment&a=edit&id={$value.bcomment_id}" class="op"><i class="fa fa-edit" title="编辑"></i></a> 
+						<a href="?p=back&c=bcomment&a=del&id={$value.bcomment_id}" class="op" onclick="return del()">
 							<i class="fa fa-trash-o" title="删除"></i>
 						</a> 
 					</td>
