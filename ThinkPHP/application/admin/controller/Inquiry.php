@@ -242,6 +242,7 @@ use think\Db;
 		$type 		= input('post.type');
 		$user 		= input('post.user');
 		$content 	= input('post.content');
+		$attach     = input('post.attach');
 		$inquiry_time 	= date("Y-m-d h:i:s", time());
 
 		//2.构造数据
@@ -257,8 +258,9 @@ use think\Db;
 			'inquiry_page'			=>	$page,
 			'inquiry_degrees'		=>	$degrees,
 			'inquiry_secondtype'	=>	$type,
-			'user_id'			=>	$user,
+			'user_id'				=>	$user,
 			'inquiry_content'		=>	$content,
+			'inquiry_attach'		=>	$attach,
 			'inquiry_time'			=>	$inquiry_time
 		];
 
