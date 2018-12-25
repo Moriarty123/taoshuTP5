@@ -56,7 +56,7 @@
 					<td>￥{$value.order_price}</td>
 					<td>
 						{eq name="value.order_state" value="0"}
-						<a href="?p=back&c=shoporder&a=succeed&id={$value.order_id}" style="color: #00C7B4;" onclick="return queren()">未收货</a>
+						<a href="/admin/order/changeState?order_id={$value.order_id}" style="color: #00C7B4;" onclick="return queren()">未收货</a>
 						{else}
 						已收货
 						{/eq}

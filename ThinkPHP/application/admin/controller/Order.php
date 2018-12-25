@@ -85,5 +85,20 @@ class Order extends Controller
 		$this->success('添加订单成功！', '/admin/order/orderList');
 	}
 
+	public function changeState()
+	{
+		$order_id = input('get.order_id');
+
+		$where = "order_id = {$order_id}";
+
+		$ret = Db::table('shoporder')->where($where)->update(['order_state' => 1]);
+
+		if ($ret == false) {
+			$this->error('修改订单状态失败！');
+		}
+
+		$this->success('修改订单状态成功！', '/admin/order/orderList');
+	}
+
 
 }
