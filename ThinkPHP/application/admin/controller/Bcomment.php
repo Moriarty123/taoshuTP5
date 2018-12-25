@@ -193,4 +193,25 @@ class Bcomment extends Controller
 		$this->success('修改留言成功！', '/admin/bcomment/commentList');
 	}
 
+	//批量删除
+	public function checkedCommentDelete()
+	{
+		
+		//TP5的post方法不能提交数组，在表单name添加/a表示要提交有关数组，获取时同样要添加/a
+		$ids = input('post.ids/a');
+		// dump($ids);
+		// $count = count($ids);
+
+		foreach ($ids as $key => $id) {
+			$where = "bcomment_id = {$id}";
+			//暂时取消外链，删除后恢复
+			Db::query('SET FOREIGN_KEY_CHECKS = 0;');
+			$ret = Db::table('bcomment')->where($where)->delete();
+			Db::query('SET FOREIGN_KEY_CHECKS = 1;');
+		}
+
+		$this->success('删除留言成功！', '/admin/bcomment/commentList');
+
+	}
+
 }
