@@ -207,41 +207,35 @@ class Order extends Controller
 	public function orderEdit()
 	{
 		dump($_POST);
-	}
-
-	array(6) {
-	  ["id"] => string(22) "2018122516164416539480"
-	  ["user"] => string(1) "6"
-	  ["name"] => string(1) "5"
-	  ["preBook"] => string(1) "9"
-	  ["num"] => string(1) "1"
-	  ["price"] => string(4) "10.8"
-	}
 
 
 	//1.获取数据
-	$order_id = input('post.order_id');
-	$user_id 	 = input('post.user_id');
-	$sale_id 	 = input('post.name');
-	$order_num 	 = input('post.num');
-	$order_price = input('post.price');
+		$order_id 	 = input('post.id');
+		$user_id 	 = input('post.user');
+		$sale_id 	 = input('post.name');
+		$order_num 	 = input('post.num');
+		$order_price = input('post.price');
 
 	//2.构造数据
-	$data = [
-		'user_id'			=> $user_id,
-		'bcomment_content'	=> $content,
-		'bcomment_time'		=> time(),
-		'bbook_id'			=> $sale_id
-	];
-	// dump($data);die();
+		$data = [
+			'user_id'	=> $user_id,
+			'book_id'	=> $sale_id,
+			'order_sum'	=> $order_num,
+			'order_price'=> $order_price
+		];
+	dump($data);
 	//3.存入数据库
-	$where = "bcomment_id = {$bcomment_id}";
-	$ret = Db::table('bcomment')->where($where)->update($data);
-	
-	if ($ret == false) {
-		$this->error('修改留言失败！', '/admin/bcomment/commentList');
+		$where = "order_id = '{$order_id}'";
+		$sql =  Db::table('shoporder')->getLastSql();
+		dump($sql);
+		dump($where);die();
+		$ret = Db::table('shoporder')->where($where)->update($data);
+
+		
+		if ($ret == false) {
+			$this->error('修改订单失败！', '/admin/order/orderList');
+		}
+
+		$this->success('修改订单成功！', '/admin/order/orderList');
 	}
-
-	$this->success('修改留言成功！', '/admin/bcomment/commentList');
-
 }
