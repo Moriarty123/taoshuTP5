@@ -1,0 +1,23 @@
+.page{
+	margin: 0 auto;
+	text-align: center;
+	font-size: 14px;
+	color: #555;
+	margin-bottom: 50px;
+}
+.page a{
+	display: inline-block;
+	height: 25px;
+	line-height: 25px;
+	margin: 0 2px;
+	padding: 0 5px;
+	color: #555;
+	border: 1px solid #00C7B4;
+}
+.page a:last-child{
+	margin-right: 6px;
+}
+.page a:hover{
+	background: #00C7B4;
+	color: #fff;
+}

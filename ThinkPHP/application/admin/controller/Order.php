@@ -139,6 +139,25 @@ class Order extends Controller
 		return $this->fetch('orderList');
 
 	}
+
+	//删除订单
+	public function orderDelete()
+	{
+		// dump($_GET);
+		$order_id = input('get.order_id');
+		$where = "order_id = {$order_id}";
+
+		//暂时取消外链，删除后恢复
+		Db::query('SET FOREIGN_KEY_CHECKS = 0;');
+		$ret = Db::table('shoporder')->where($where)->delete();
+		Db::query('SET FOREIGN_KEY_CHECKS = 1;');
+
+		if ($ret == false) {
+			$this->error('删除订单失败！');
+		}
+
+		$this->success('删除订单成功！', '/admin/order/orderList');
+	}
 	
 
 

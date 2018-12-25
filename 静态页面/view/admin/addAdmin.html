@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>淘书街添加新会员</title>
+		<link rel="shortcut icon" href="../../static/images/shu.ico" />
+		<link rel="stylesheet" href="../../static/css/back/user.css" />
+		<link rel="stylesheet" href="../../static/css/back/common.css" />
+		<link rel="stylesheet" href="../../static/css/back/add.css" />
+	</head>
+	<body>
+	<!-- 头部 -->
+	<iframe src="./head.html" width="100%" height="92px"></iframe>
+	<!-- 左边节点 -->
+	<iframe src="./container.html" style="float: left;width: 220px;height: 280px"frameborder="0"></iframe>
+	<!--左边结点结束-->
+	
+	<!--添加用户开始-->
+	<div id="MainForm">
+		<div class="form_boxA">
+			<div class="a">
+				<h2>淘书街添加新管理员</h2>
+			</div>
+			<form action="" method="" class="add_form" onsubmit="">
+				<div class="add_list">
+					<label class="add_label"><span class="xing">*</span>用户名：</label>
+					<input type="text" name="name" placeholder="请输入用户名" class="add_input" onfocus="" onblur=""/>
+				</div>
+				<div class="add_list">
+					<label class="add_label"><span class="xing">*</span>密码：</label>
+					<input type="password" name="pwd" placeholder="请输入密码" class="add_input" onfocus="" onblur=""/>
+				</div>
+				<div class="add_list">
+					<label class="add_label"><span class="xing">*</span>确认密码：</label>
+					<input type="password" name="repwd" placeholder="请输入确认密码" class="add_input" onfocus="" onblur=""/>
+				</div>
+				<input type="submit" value="提交" class="add_submit" />
+			</form>
+		</div>
+	</div>
+	<!--添加用户结束-->
+	</body>
+</html>

@@ -1,0 +1,164 @@
+.shopcar{
+	width: 970px;
+	margin: 0 auto;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	font-size: 14px;
+	letter-spacing: 0.1em;
+	overflow: hidden;
+}
+.shopcar_title{
+	height: 40px;
+	line-height: 40px;
+	background: #ecfdfc;
+	color: #444;
+	font-weight: bold;
+	font-size: 15px;
+	padding-left: 40px;
+}
+.shopcar_body{
+	margin-top: 20px;
+	overflow: hidden;
+}
+thead{
+	color: #555;
+}
+tbody{
+	color: #333;
+	background: #fefefe;
+}
+th{
+	height: 35px;
+	line-height: 35px;
+	background: #F4F4F4;
+}
+td{
+	height: 65px;
+	font-size: 13px;
+	text-align: center;
+	border-bottom: 1px solid #d6d6d6;
+}
+.col1{
+	width: 65px;
+}
+.col2{
+	width: 303px;
+}
+#td2{
+	text-align: left;
+}
+.col2 a{
+	color: #00CFBE;
+}
+.col2 .sale_name{
+	    display: inline-block;
+    color: #00CFBE;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 240px;
+    text-overflow: ellipsis;
+}
+.col2 a:hover{
+	color: #00A082;
+}
+.col2 img{
+	width: 30px;
+	height: 40px;
+	border: 1px solid rgb(222,222,222);
+    padding: 2px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.col3{
+	width: 115px;
+}
+.col3 a{
+	color: #333;
+}
+.col3 a:hover{
+	color: #00C7B4;
+	text-decoration: underline;
+}
+.col4,.col5,.col6,.col8{
+	width: 75px;
+}
+.col7{
+	width: 130px;
+}
+.col9{
+	width: 60px;
+}
+.del{
+	color: #777;
+    font-size: 16.4px;
+}
+.op{
+	display: inline-block;
+    width: 18px;
+    color: #333;
+    text-align: center;
+    margin: 0 2px;
+    border: 1px solid #00CFBE;
+}
+.count{
+	height: 65px;
+	line-height: 65px;
+	background: #FbFbFb;
+}
+.deleteChecked{
+	color: #999;
+    margin-left: 16px;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.newdeleteChecked{
+	color: #555;
+    margin-left: 16px;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.newdeleteChecked:hover,.del:hover{
+	color: #00C7B4;
+	text-decoration: underline;	
+}
+.countnum{
+	margin-left: 410px;
+}
+.num,.money{
+	font-size: 15px;
+	color: #00C7B4;
+	font-weight: bold;
+}
+.countmoney{
+	margin-left: 30px;
+}
+.sum{  /* 旧的样式  不能点击  */
+	width: 95px;
+	height: 50px;
+	line-height: 50px;
+    text-align: center;
+	background-color: darkgrey;
+	font-size: 20px;
+	color: white;
+	border: none;
+	cursor: not-allowed;
+	float: right;
+	margin: 7px 10px 0 0;
+}
+.newnum{  /* 新的样式   按钮能点击并且功能正常 */
+	width: 95px;
+	height: 50px;
+	line-height: 50px;
+    text-align: center;
+	background-color: #00C7B4;
+	font-size: 20px;
+	color: white;
+	border: none;
+	margin: 7px 10px 0 0;
+	float: right;
+}
+.newdeleteChecked:hover,.newnum:hover{
+	cursor: pointer;
+}

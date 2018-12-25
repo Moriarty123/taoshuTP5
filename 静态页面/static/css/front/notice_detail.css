@@ -1,0 +1,73 @@
+.notice{
+	width: 1160px;
+	height: 200px;
+	margin: 0 auto;
+	margin-top: 40px;
+}
+.n_left{
+	float: left;
+	width: 193px;
+	height: 250px;
+	padding: 18px;
+	border: 1px solid #dedede;
+	overflow: hidden;
+}
+.n_title{
+	font-weight: bold;
+    letter-spacing: 0.1em;
+    text-align: center;
+    margin-bottom: 15px;
+    color: #444;
+}
+.n_left li{
+	width: 180px;
+    font-size: 13px;
+    padding-left: 9px;
+    line-height: 28px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    background: url(../../img/point.gif) no-repeat left center;
+}
+.n_left li a{
+	color: #696969;
+	letter-spacing: 0.03em;
+}
+.n_left li a:hover{
+	color: #00C7B4;
+	text-decoration: underline;
+}
+
+.n_info{
+	background: #fdfdfd;
+	float: left;
+	width: 800px;
+	margin-left: 65px;
+    padding-bottom: 30px;
+}
+.info_title{
+	text-align: center;
+    font-size: 18px;
+    margin-top: 20px;
+    letter-spacing: 0.1em;
+}
+.info_author{
+	text-align: center;
+	font-size: 12px;
+	color: #999;
+	margin-top: 10px;
+	padding-bottom: 15px;
+	border-bottom: 1px dotted ;
+}
+.info_author span{
+	display: inline-block;
+	margin-left: 10px;
+}
+.info_content{
+	padding: 0 30px;
+    margin-top: 30px;
+    line-height: 26px;
+    font-size: 15px;
+    letter-spacing: 0.06em;
+    text-indent: 2em;
+}

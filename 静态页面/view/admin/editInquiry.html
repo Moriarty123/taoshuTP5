@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>淘书街修改求购信息</title>
+		<link rel="shortcut icon" href="../../static/images/shu.ico" />
+		<link rel="stylesheet" href="../../static/css/back/user.css" />
+		<link rel="stylesheet" href="../../static/css/back/common.css" />
+		<link rel="stylesheet" href="../../static/css/back/add.css" />
+		<link rel="stylesheet" href="../../static/css/back/edit.css" />
+		
+		<script type="text/javascript" src="../../static/js/back/jquery.min.js"></script>
+		<script type="text/javascript" src="../../static/js/back/public.js"></script>
+		<script type="text/javascript" src="../../static/js/back/addSale.js"></script>
+		<script type="text/javascript" src="../../static/js/back/showImg.js"></script>
+	</head>
+	<body>
+	<!-- 头部 -->
+	<iframe src="./head.html" width="100%" height="92px"></iframe>
+	<!-- 左边节点 -->
+	<iframe src="./container.html" style="float: left;width: 220px;height: 280px"frameborder="0"></iframe>
+	<!--左边结点结束-->
+	
+	<!--main开始-->
+	<div id="MainForm">
+		<div class="form_boxA">
+			<div class="a">
+				<h2>淘书街-修改 小明 基本信息</h2>
+			</div>
+			<form action="" method="post" enctype="multipart/form-data" class="add_form" onsubmit="" style="width: 700px;">
+				<div style="float: left;">
+				<input type="hidden" name="id" value="" />
+				<div class="add_list">
+					<label class="add_label"><span class="xing">*</span>ISBN：</label>
+					<input type="text" name="isbn" placeholder="请输入10位或13位ISBN码" value="" class="add_input" onfocus="" onblur=""/>
+				</div>
+				<div class="add_list">
+					<label class="add_label"><span class="xing">*</span>书名：</label>
+					<input type="text" name="name" placeholder="请输入书名" class="add_input" value="" onfocus="" onblur=""/>
+				</div>
+				<div class="add_list">
+					<label class="add_label"><span class="xing">*</span>作者：</label>
+					<input type="text" name="author" placeholder="多个作者可用空格隔开" value="" class="add_input" onfocus="" onblur=""/>
+				</div>
+				<div class="add_list">
+					<label class="add_label"><span class="xing">*</span>出版社：</label>
+					<input type="text" name="publishing" placeholder="请输入出版社" value="" class="add_input" onfocus="" onblur="" />
+				</div>
+				<div class="add_list">
+					<label class="add_label"><span class="xing">*</span>最低价：</label>
+					<input type="text" name="beprice" placeholder="请输入大于等于0的数字" value="" class="add_input" onfocus="" onblur=""/>
+				</div>
+				<div class="add_list">
+					<label class="add_label"><span class="xing">*</span>最高价：</label>
+					<input type="text" name="afprice" placeholder="请输入大于等于0的数字" value="" class="add_input" onfocus="" onblur=""/>
+				</div>
+				<div class="add_list">
+					<label class="add_label"><span class="xing">*</span>数量：</label>
+					<input type="text" name="num" placeholder="大于0的数字" value="" class="add_input" onfocus="" onblur=""/>
+				</div>
+				<div class="add_list">
+					<label class="add_label"><span class="xing">*</span>书籍页码：</label>
+					<input type="text" name="page" placeholder="请输入大于0的数字" value="" class="add_input" onfocus="" onblur=""/>
+				</div>
+				<div class="add_list">
+					<label class="add_label"><span class="xing">*</span>新旧程度：</label>
+					<select class="add_input" name="degrees">
+						<option value="全新">全新</option>
+						<option value="九成新"> >九成新</option>
+						<option value="八成新"> >八成新</option>
+						<option value="七成新"> >七成新</option>
+						<option value="六成新及以下"> >六成新及以下</option>
+					</select>
+				</div>
+				<div class="add_list">
+					<label class="add_label"><span class="xing">*</span>书籍分类：</label>
+					<select class="add_input" name="type">
+						<option value="">经济金融</option>
+						<option value="">管理</option>
+						<option value="">语言学习</option>
+						<option value="">计算机与网络</option>
+
+					</select>
+				</div>
+				<div class="add_list">
+					<label class="add_label"><span class="xing">*</span>出售人：</label>
+					<select class="add_input" name="user">
+						<option value=""></option>
+					</select>
+				</div>
+				<div class="add_list">
+					<label class="add_label" style="margin-top: 30px;">内容简介：</label>
+					<textarea name="content" class="add_textarea"></textarea>
+				</div>
+				</div>
+				<div class="sale_right">
+					<div class="img_icon" id="preview"><img src="../../static/images/6-1.jpg" class="editSale_img" /></div>
+					<input type="file" name="img" style="margin: 30px 63px 0 0px;"/>
+				</div>
+				<input type="submit" value="修改" class="add_submit" style="margin-left: 300px;" />
+			</form>
+		</div>
+	</div>
+	<!--main结束-->
+	
+	</body>
+</html>

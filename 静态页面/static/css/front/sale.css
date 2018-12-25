@@ -1,0 +1,27 @@
+.operation{
+	float: right;
+	width: 300px;
+	height: 40px;
+	margin-right: 100px;
+}
+.collect,.buy{
+	display: inline-block;
+	width: 105px;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	color: #000;
+	letter-spacing: 0.2em;
+	font-size: 14.5px;
+	background: #66ddd2;
+}
+.collect{
+	width: 135px;
+}
+.collect:hover,.buy:hover{
+	background: #01C8B5;
+	color: #fff;
+}
+.buy{
+	margin-left: 30px;
+}

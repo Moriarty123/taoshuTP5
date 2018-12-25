@@ -1,0 +1,20 @@
+.imgdiv{
+	width: 500px;
+	overflow: hidden;
+}
+.imgdiv img{
+    width: 180px;
+    height: 180px;
+    border-radius: 90px;
+    margin-left: 133px;
+}
+.img_button{
+	width: 100px;
+    border: #00C7B4;
+    outline: none;
+    height: 32px;
+    letter-spacing: 0.2em;
+    background: #00C7B4;
+    color: white;
+    margin: 30px 0 40px 168px;
+}

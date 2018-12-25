@@ -1,0 +1,48 @@
+.shopcar{
+	width: 970px;
+	margin: 0 auto;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	font-size: 14px;
+	letter-spacing: 0.1em;
+	overflow: hidden;
+}
+.shopcar_title{
+	height: 40px;
+	line-height: 40px;
+	background: #ecfdfc;
+	color: #444;
+	font-weight: bold;
+	font-size: 15px;
+	padding-left: 40px;
+}
+.shopcar_body{
+	width: 400px;
+	margin: 0 auto;
+	margin-top: 120px;
+	margin-bottom: 100px;
+	font-size: 15px;
+    color: #666;
+    line-height: 25px;
+	overflow: hidden;
+}
+.icon_box{
+	float: left;
+	display: inline-block;
+    vertical-align: middle;
+    width: 77px;
+    height: 65px;
+	background-image: url(../../img/shopcar.png);
+	background-size: 100%;
+}
+.icon_txt{
+	float: left;
+	margin-left: 25px;
+	margin-top: 10px;
+}
+.shopcar_body a{
+	color: #00C7B4;
+}
+.shopcar_body a:hover{
+	text-decoration: underline;
+}

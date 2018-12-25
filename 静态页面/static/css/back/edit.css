@@ -1,0 +1,23 @@
+.user_right{
+	margin-top: 70px;
+	margin-right: 70px;
+	width: 180px;
+	height: 180px;
+	float: right;
+}
+.edituser_img{
+	width: 180px;
+	height: 180px;
+	border-radius: 90px;
+}
+
+.sale_right{
+	margin-top: 100px;
+    width: 140px;
+    float: right;
+    margin-right: 104px;
+}
+.editSale_img{
+	width: 140px;
+    height: 198px;
+}

@@ -1,0 +1,153 @@
+.sale_center{
+	width: 1024px;
+	margin: 0 auto;
+	overflow: hidden;
+	margin-top: 70px;
+}
+.sc_left{
+	float: left;
+	width: 240px;
+    padding-left: 18px;
+	overflow: hidden;
+	border: 1px dotted #dedede;
+	margin-bottom: 80px;
+}
+.sc_img{
+	float: left;
+	width: 220px;
+	height: 220px;
+	margin-top: 45px;
+}
+.sc_img img{
+	width: 220px;
+	height: 220px;
+	border-radius: 110px;
+}
+.sc_msg{
+	float: left;
+	width: 220px;
+	height: 145px;
+    line-height: 25px;
+    font-size: 14px;
+    color: #444;
+    margin-top: 25px;
+	text-align: center;
+}
+.sc_right{
+	float: left;
+	width: 715px;
+	margin-left: 40px;
+}
+.sc_right_head{
+	height: 40px;
+	line-height: 40px;
+	background: #ecfdfc;
+	/*padding-left: 20px;*/
+    font-size: 15px;
+    color: #444;
+}
+.sc_right_head span{
+	display: inline-block;
+    padding: 0 14px;
+    margin-top: 5px;
+    height: 35px;
+    line-height: 35px;
+}
+.sc_right_head span:hover{
+	cursor: pointer;
+}
+.sc_right_head span:first-child{
+	margin-left: 17px;
+}
+#active{
+	background: white;
+}
+.sc_right_content li{
+	overflow: hidden;
+	padding-bottom: 10px;
+	border-bottom: 1px dashed #999;
+}
+.info_div{
+	margin-top: 20px;
+}
+.info_img,.info_img img{
+	float: left;
+    width: 120px;
+    height: 180px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+.info{
+	float: left;
+	width: 515px;
+	margin-left: 30px;
+	letter-spacing: 0.04em;
+}
+.info_title a{
+	display: inline-block;
+	color: #00C7B4;
+	font-size: 17px;
+	font-weight: bold;
+	margin: 7px 0;
+	letter-spacing: 0.1em;
+}
+.info_title a:hover{
+	text-decoration: underline;
+	color: #555;
+}
+.more{
+	font-size: 14px;
+	color: #555;
+	margin-top: 5px;
+    margin-bottom: 15px;
+}
+.xie{
+	padding: 0 2px;
+}
+.pre_price{
+	text-decoration: line-through;
+}
+.price{
+	color: #00C7B4;
+}
+.summary{
+    color: #999;
+    font-size: 12px;
+    line-height: 20px;
+    margin-bottom: 15px;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+.operation{
+	float: right;
+	width: 300px;
+	height: 40px;
+	margin-top: 15px;
+	margin-right: 100px;
+}
+.collect,.buy{
+	display: inline-block;
+	width: 105px;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+	color: #000;
+	letter-spacing: 0.2em;
+	font-size: 14.5px;
+	background: #00c7b499;
+}
+.collect:hover,.buy:hover{
+	background: #01C8B5;
+	color: #fff;
+}
+.collect {
+    width: 135px;
+}
+.buy{
+	margin-left: 30px;
+}
