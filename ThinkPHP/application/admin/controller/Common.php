@@ -60,5 +60,10 @@ class Common extends Controller
 				$this->error($file->getError());
 			}
 		}
-	}      
+	}  
+
+	public function sort()
+	{
+		return $this->fetch('sort');
+	}    
 }

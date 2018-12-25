@@ -6,7 +6,8 @@ return [
 		'__ROOT__' 		=> 	'/',
 		'__CSS__'		=>	'/static/css',
 		'__JS__'		=>	'/static/js',
-		'__IMG__'		=>	'/static/img'	
+		'__IMG__'		=>	'/static/img',
+        '__FONT__'      =>  '/static/font'	
 	],
 
 	// 应用调试模式
