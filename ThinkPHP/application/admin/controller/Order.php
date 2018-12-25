@@ -46,6 +46,29 @@ class Order extends Controller
 		return $this->fetch('orderAdd');
 	}
 
+	//编辑信息填写页面
+	public function editPage()
+	{
+		//查找特定ID的订单
+		$order_id = input('get.order_id');
+		$where = "order_id = {$order_id}";
+
+		$user = Db::table('user')->select();
+		$sale_book = Db::table('sale_book')->select();
+
+		$order = Db::table('shoporder')->where($where)
+		->alias('a')
+		->join('user b', 'a.user_id = b.user_id')
+		->join('sale_book c', 'a.book_id = c.sale_id')
+		->find();
+
+		$this->assign('edit', $order);
+		$this->assign('user', $user);
+		$this->assign('book', $sale_book);
+
+		return $this->fetch('orderEdit');
+	}
+
 	//添加订单
 	public function orderAdd()
 	{
@@ -179,5 +202,46 @@ class Order extends Controller
 		$this->success('删除订单成功！', '/admin/order/orderList');
 
 	}
+
+	//更新订单
+	public function orderEdit()
+	{
+		dump($_POST);
+	}
+
+	array(6) {
+	  ["id"] => string(22) "2018122516164416539480"
+	  ["user"] => string(1) "6"
+	  ["name"] => string(1) "5"
+	  ["preBook"] => string(1) "9"
+	  ["num"] => string(1) "1"
+	  ["price"] => string(4) "10.8"
+	}
+
+
+	//1.获取数据
+	$order_id = input('post.order_id');
+	$user_id 	 = input('post.user_id');
+	$sale_id 	 = input('post.name');
+	$order_num 	 = input('post.num');
+	$order_price = input('post.price');
+
+	//2.构造数据
+	$data = [
+		'user_id'			=> $user_id,
+		'bcomment_content'	=> $content,
+		'bcomment_time'		=> time(),
+		'bbook_id'			=> $sale_id
+	];
+	// dump($data);die();
+	//3.存入数据库
+	$where = "bcomment_id = {$bcomment_id}";
+	$ret = Db::table('bcomment')->where($where)->update($data);
+	
+	if ($ret == false) {
+		$this->error('修改留言失败！', '/admin/bcomment/commentList');
+	}
+
+	$this->success('修改留言成功！', '/admin/bcomment/commentList');
 
 }
