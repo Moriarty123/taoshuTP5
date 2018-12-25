@@ -45,6 +45,28 @@ class Bcomment extends Controller
 		return $this->fetch('commentAdd');
 	}
 
+	public function editPage()
+	{
+		// dump($_GET);
+		$bcomment_id = input('get.bcomment_id');
+		$where = "bcomment_id = {$bcomment_id}";
+		$users = Db::table('user')->select();
+		$sale_book = Db::table('sale_book')->select();
+		
+		$comment = Db::table('bcomment')
+		->where($where)
+		->alias('a')
+		->join('sale_book b', 'a.bbook_id = b.sale_id')
+		->join('user c', 'a.user_id = c.user_id')
+		->find();
+
+		$this->assign('users', $users);
+		$this->assign('sale_book', $sale_book);
+		$this->assign('edit', $comment);
+
+		return $this->fetch('commentEdit');
+	}
+
 	//添加留言
 	public function commentAdd()
 	{
@@ -138,6 +160,37 @@ class Bcomment extends Controller
 		}
 
 		$this->success('删除出售书籍留言成功！', '/admin/bcomment/commentList');
+	}
+
+	//更新留言
+	public function commentEdit()
+	{
+		// dump($_POST);
+
+		//1.获取数据
+		$bcomment_id = input('post.bcomment_id');
+		$sale_id 	 = input('post.sale_id');
+		$user_id 	 = input('post.user_id');
+		$content 	 = input('post.content');
+
+		//2.构造数据
+		$data = [
+			// 'bcomment_id'		=> $bcomment_id,
+			'user_id'			=> $user_id,
+			'bcomment_content'	=> $content,
+			'bcomment_time'		=> time(),
+			'bbook_id'			=> $sale_id
+		];
+		// dump($data);die();
+		//3.存入数据库
+		$where = "bcomment_id = {$bcomment_id}";
+		$ret = Db::table('bcomment')->where($where)->update($data);
+		
+		if ($ret == false) {
+			$this->error('修改留言失败！', '/admin/bcomment/commentList');
+		}
+
+		$this->success('修改留言成功！', '/admin/bcomment/commentList');
 	}
 
 }
