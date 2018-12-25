@@ -100,5 +100,46 @@ class Order extends Controller
 		$this->success('修改订单状态成功！', '/admin/order/orderList');
 	}
 
+	//模糊查找
+	public function orderSearch()
+	{
+		// dump($_POST);
+		$search = input('post.search');
+
+		if(!empty($search)) {
+			session('ordersearch', $search);
+			$where['order_id'] = array('like','%'.$search.'%');//封装模糊查询 赋值到数组	
+		}
+		else 
+		{
+			$search = session('ordersearch');
+			$where['order_id'] = array('like','%'.$search.'%');	
+		}
+		// dump();
+		
+		//获取订单
+		$order = Db::table('shoporder')
+		->where($where)
+		->alias('a')
+		->join('user b', 'a.user_id = b.user_id')
+		->join('sale_book c', 'a.book_id = c.sale_id')
+		->order('create_time','desc')
+		->paginate(15);
+
+		$orderNumber = Db::table('shoporder')
+		->where($where)
+		->alias('a')
+		->join('user b', 'a.user_id = b.user_id')
+		->join('sale_book c', 'a.book_id = c.sale_id')
+		->count();
+
+		$this->assign('order', $order);
+		$this->assign('to', $orderNumber);
+
+		return $this->fetch('orderList');
+
+	}
+	
+
 
 }
