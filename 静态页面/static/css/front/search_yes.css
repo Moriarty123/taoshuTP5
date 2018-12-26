@@ -1,0 +1,80 @@
+.search_content{
+	width: 960px;
+	margin: 30px auto;
+	overflow: hidden;
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+}
+.search_yes{
+    overflow: hidden;
+}
+.search_yes li{
+	margin: 20px 0;
+    overflow: hidden;
+}
+.info_div{
+	overflow: hidden;
+	padding-bottom: 10px;
+	border-bottom: 1px dashed #999999;
+}
+.info_img{
+	margin-left: 45px;
+}
+.info_img, .info_img img{
+	float: left;
+	width: 165px;
+	height: 220px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+}
+.info{
+	float: left;
+    width: 650px;
+    margin-left: 30px;
+}
+.title{
+	margin-top: 3px;
+    padding-bottom: 10px;
+}
+.title a{
+	color: #666;
+    font-size: 17px;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+.title a:hover{
+	color: #00C7B4;
+	text-decoration: underline;
+}
+.more{
+	color: #777;
+    padding-bottom: 15px;
+}
+.xie {
+    padding: 0 2px;
+}
+.pre_price {
+    text-decoration: line-through;
+}
+.price {
+    color: #00C7B4;
+}
+.summary{
+	color: #999;
+    font-size: 12px;
+    line-height: 20px;
+    margin-bottom: 15px;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+.owner,.attach{
+	margin-bottom: 15px;
+    font-size: 12px;
+    line-height: 23px;
+    color: #666666;
+}

@@ -1,0 +1,50 @@
+.add_form{
+	width: 455px;
+	margin: 0 auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.add_input{
+	width: 270px;
+    height: 32px;
+    outline: none;
+    text-indent: 0.2em;
+    border: 1px solid #a9a9a9;
+}
+.add_label{
+	float: left;
+    display: inline-block;
+    width: 80px;
+    text-align: right;
+    margin-top: 7px;
+    margin-right: 3px;
+}
+.xing{
+	color: #e71304;
+	margin-top: 7px;
+    margin-right: 3px;
+}
+.add_list{
+	margin-bottom: 15px;
+}
+.add_radio{
+    margin-left: 20px;
+}
+.add_submit{
+	width: 130px;
+    height: 32px;
+    outline: none;
+    margin: 10px 135px;
+    background: #19a97b;
+    color: white;
+    border: none;
+}
+.add_submit:hover{
+	cursor: pointer;
+}
+.add_textarea{
+	width: 270px;
+	height: 80px;
+	outline: none;
+	padding: 3px;
+}

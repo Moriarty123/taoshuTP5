@@ -1,0 +1,126 @@
+.order_top{
+	width: 830px;
+	height: 38px;
+	line-height: 38px;
+	font-size: 14px;
+	color: #666;
+	margin-bottom: 30px;
+	background: #f5f5f5;
+	border: 1px solid #e5e5e5;
+}
+.a{
+	float: left;
+	width: 494px;
+	text-align: center;
+}
+.b,.c,.d{
+	float: left;
+	width: 95px;
+	text-align: center;
+}
+.e{
+	float: left;
+	width: 50px;
+	text-align: center;
+}
+
+.order_li{
+	float: left;
+	height: 135px;
+	width: 830px;
+	margin-bottom: 15px;
+	border: 1px solid #e5e5e5;
+}
+.order_head{
+	height: 40px;
+	line-height: 40px;
+    padding-left: 15px;
+    font-size: 14px;
+	background: #f5f5f5;
+}
+.order_time{
+	margin-left: 5px;
+	font-weight: bold;
+	color: #666;
+}
+.order_num{
+	margin-left: 30px;
+    font-size: 13px;
+}
+.order_info{
+	overflow: hidden;
+}
+.order_img{
+	float: left;
+	width: 40px;
+    height: 55px;
+    padding: 4px;
+	border: 1px solid #e5e5e5;
+	margin: 15px;
+	margin-left: 37px;
+}
+.order_img img{
+	width: 40px;
+    height: 55px;
+}
+.order_name{
+	float: left;
+    width: 200px;
+    height: 95px;
+    font-size: 14px;
+    letter-spacing: 0.06em;
+    line-height: 90px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    border-right: 1px solid #e5e5e5;
+}
+.order_name a{
+	color: #555;
+}
+.order_price,.order_sum,.order_pay,.order_buy,.order_sale{
+	float: left;
+	width: 95px;
+	height: 60px;
+    font-size: 14px;
+    text-align: center;
+    padding-top: 24px;
+    color: #333;
+    border-right: 1px solid #e5e5e5;
+}
+.order_price{
+	height: 72px;
+}
+.be{
+	text-decoration: line-through;
+	color: #999;
+}
+.af{
+	color: #333;
+}
+.order_sum,.order_buy,.order_sale{
+	padding-top: 36px;
+}
+.order_pay{
+	padding-top: 36px;
+	color: #00C7B4;
+	font-weight: bold;
+}
+
+.order_buy a,.order_sale a{
+	color: #333;
+}
+.order_buy a:hover,.order_sale a:hover,.order_name a:hover{
+	color: #00C7B4;
+	text-decoration: underline;
+}
+.order_info i{
+	float: right;
+    color: #666;
+    line-height: 92px;
+    font-size: 19px;
+    margin-right: 16px;
+}
+.order_info i:hover{
+	color: #00C7B4;
+}

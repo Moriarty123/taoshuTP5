@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>淘书街添加新订单</title>
+	<link rel="shortcut icon" href="../../static/images/shu.ico" />
+	<link rel="stylesheet" href="../../static/css/back/user.css" />
+	<link rel="stylesheet" href="../../static/css/back/common.css" />
+	<link rel="stylesheet" href="../../static/css/back/add.css" />	
+</head>
+<body>
+	<!-- 头部 -->
+	<iframe src="./head.html" width="100%" height="92px"></iframe>
+	<!-- 左边节点 -->
+	<iframe src="./container.html" style="float: left;width: 220px;height: 280px"frameborder="0"></iframe>
+	<!--左边结点结束-->
+	
+	<!--添加用户开始-->
+	<div id="MainForm">
+		<div class="form_boxA">
+			<div class="a">
+				<h2>淘书街添加新订单</h2>
+			</div>
+			<form action="" method="post" class="add_form" onsubmit="">
+				<div class="add_list">
+					<label class="add_label"><span class="xing">*</span>购买人：</label>
+					<select class="add_input" name="user">
+						<option value=""></option>
+					</select>
+				</div>
+				<div class="add_list">
+					<label class="add_label"><span class="xing">*</span>购买书籍：</label>
+					<select class="add_input" name="name" onchange="">
+						<option value="0">--请选择购买书籍--</option>
+						<option value="">马克思主义原理</option>
+						<option value="">计算机与网络</option>
+						<option value="">高等数学</option>
+						<option value="">线性代数</option>
+
+					</select>
+					<div class="num" style="float: right;margin-top: 5px;margin-right: 8px; display: none;">
+						<span style="display: none;" class="num_span">库存：<label> </label></span>
+						<span style="display: none;" class="price_span">单价：<label></label></span>
+					</div>
+				</div>
+				<div class="add_list">
+					<label class="add_label"><span class="xing">*</span>购买数量：</label>
+					<select class="add_input" name="num" onchange="">
+						<option value="0">--请选择购买数量--</option>
+						<option value="0">--1--</option>
+						<option value="0">--2--</option>
+						<option value="0">--3--</option>
+						<option value="0">--4--</option>
+					</select>
+				</div>
+				<div class="add_list">
+					<label class="add_label"><span class="xing">*</span>总金额：</label>
+					<input type="text" name="price" class="add_input" readonly="readonly" />
+				</div>
+				<input type="submit" value="提交" class="add_submit" />
+			</form>
+		</div>
+	</div>
+	<!--添加用户结束-->
+</body>
+</html>
+

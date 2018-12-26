@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>淘书街出售书籍管理</title>
+		<link rel="shortcut icon" href="../../static/images/shu.ico" />
+		<link rel="stylesheet" href="../../static/css/back/user.css" />
+		<link rel="stylesheet" href="../../static/css/back/common.css" />
+		<link rel="stylesheet" href="../../static/css/back/page.css" />
+		<link rel="stylesheet" href="../../static/font/css/font-awesome.min.css" />
+		
+		<script type="text/javascript" src="../../static/js/back/jquery.min.js"></script>
+		<script type="text/javascript" src="../../static/js/back/public.js"></script>
+		<script type="text/javascript" src="../../static/js/back/search.js"></script>
+		<script type="text/javascript" src="../../static/js/back/CheckBox.js"></script>
+		
+		<style>
+			.form_boxA td{
+				font-size: 13px;
+    			padding: 14px 7px;
+			}
+		</style>
+	</head>
+	<body>
+				
+	<!-- 头部 -->
+	<iframe src="./head.html" width="100%" height="92px"></iframe>
+	<!-- 左边节点 -->
+	<iframe src="./container.html" style="float: left;width: 220px;height: 280px"frameborder="0"></iframe>
+	<!--左边结点结束-->
+	
+	<!--用户列表开始-->
+	<div id="MainForm">
+		<div class="form_boxA">
+			<div class="a">
+				<h2>淘书街出售书籍列表</h2>
+				<form action="" method="post" onsubmit="" class="searchform">
+					<input type="text" class="search" placeholder="书名" name="search" />
+					<input type="submit" class="search_button" value="搜索" />
+				</form>
+				<a href="" class="addUser"><i class="fa fa-plus-circle"></i> 添加新出售</a>
+			</div>
+			<form action="" method="post">
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<th><input type="checkbox" name="fullChoose" onclick="" /></th>
+					<th>ISBN</th>
+					<th>书名</th>
+					<th>作者</th>
+					<th>出版社</th>
+					<th>类型</th>
+					<th>新旧程度</th>
+					<th>价格</th>
+					<th>库存</th>
+					<th>简介</th>
+					<th>出售人</th>
+					<th>操作</th>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="ids[]" onclick="" class="eachChoose" value=""/></td>
+					<td>1</td>
+					<td class="sale_c" style="max-width: 120px;">
+						<img src="../../static/images/6-1.jpg" style="width: 21px;height: 30px;vertical-align: middle;" />
+					</td>
+					<td class="sale_c" style="max-width: 90px;">小黄</td>
+					<td class="sale_c" style="max-width: 80px;">高等教育出版社</td>
+					<td class="sale_c" style="max-width: 80px;">数学</td>
+					<td>九成新</td>
+					<td><span style="color: #19a97b;">￥20</span><br />
+						<span style="text-decoration: line-through; font-size: 12px;">￥25</span>
+					</td>
+					<td>4</td>
+					<td class="sale_c">这本书很好。</td>
+					<td>小绿</td>
+					<td>
+						<a href="" class="op"><i class="fa fa-edit" title="编辑"></i></a> 
+						<a href="" class="op" onclick="return del()">
+							<i class="fa fa-trash-o" title="删除"></i>
+						</a> 
+					</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="ids[]" onclick="" class="eachChoose" value=""/></td>
+					<td>2</td>
+					<td class="sale_c" style="max-width: 120px;">
+						<img src="../../static/images/6-1.jpg" style="width: 21px;height: 30px;vertical-align: middle;" />
+					</td>
+					<td class="sale_c" style="max-width: 90px;">小黄</td>
+					<td class="sale_c" style="max-width: 80px;">高等教育出版社</td>
+					<td class="sale_c" style="max-width: 80px;">数学</td>
+					<td>九成新</td>
+					<td><span style="color: #19a97b;">￥20</span><br />
+						<span style="text-decoration: line-through; font-size: 12px;">￥25</span>
+					</td>
+					<td>4</td>
+					<td class="sale_c">这本书很好。</td>
+					<td>小绿</td>
+					<td>
+						<a href="" class="op"><i class="fa fa-edit" title="编辑"></i></a> 
+						<a href="" class="op" onclick="return del()">
+							<i class="fa fa-trash-o" title="删除"></i>
+						</a> 
+					</td>
+				</tr>
+				<tr>
+					<td><input type="checkbox" name="ids[]" onclick="" class="eachChoose" value=""/></td>
+					<td>3</td>
+					<td class="sale_c" style="max-width: 120px;">
+						<img src="../../static/images/6-1.jpg" style="width: 21px;height: 30px;vertical-align: middle;" />
+					</td>
+					<td class="sale_c" style="max-width: 90px;">小黄</td>
+					<td class="sale_c" style="max-width: 80px;">高等教育出版社</td>
+					<td class="sale_c" style="max-width: 80px;">数学</td>
+					<td>九成新</td>
+					<td><span style="color: #19a97b;">￥20</span><br />
+						<span style="text-decoration: line-through; font-size: 12px;">￥25</span>
+					</td>
+					<td>4</td>
+					<td class="sale_c">这本书很好。</td>
+					<td>小绿</td>
+					<td>
+						<a href="" class="op"><i class="fa fa-edit" title="编辑"></i></a> 
+						<a href="" class="op" onclick="return del()">
+							<i class="fa fa-trash-o" title="删除"></i>
+						</a> 
+					</td>
+				</tr>
+			
+			</table>
+			<p class="msg">
+				<span id="notdisplay" style="display: none;"></span>
+				<input type="submit" value="删除选中" class="delBtn" id="delBtn" disabled="disabled" onclick=''/>
+				共找到 3 条会员信息，每页显示15条记录
+			</p>
+			<div class="page">
+				
+			</div>
+			</form>
+		</div>
+	</div>
+	<!--用户列表结束-->
+	
+	</body>
+</html>
+

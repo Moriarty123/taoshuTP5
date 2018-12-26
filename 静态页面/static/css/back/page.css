@@ -1,0 +1,15 @@
+.page{
+	float: right;
+    margin-right: 30px;
+    margin-top: 15px;
+}
+.page a{
+	padding: 0 6px;
+    border: 1px solid #19a97b;
+    color: #555;
+    margin-right: 5px;
+}
+.page a:hover{
+	background: #19a97b;
+	color: white;
+}
