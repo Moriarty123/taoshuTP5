@@ -41,8 +41,9 @@
 				<div class="add_list">
 					<label class="add_label"><span class="xing">*</span>购买书籍：</label>
 					<select class="add_input" name="name" onchange="ShowNum()">
+						<option selected>--请选择购买书籍--</option>
 						{volist name="book" id="value"}
-						<option value="<?php echo $value['sale_id']; ?>"  <?php if( $edit['book_id'] == $value['sale_id'] ) echo "selected"; ?> >{$value.sale_name}</option>
+						<option value="{$value.sale_id}"   >{$value.sale_name}</option>
 						{/volist}
 					</select>
 					<div class="num" style="float: right; margin-top: 5px; margin-right: 8px; display: none;">
