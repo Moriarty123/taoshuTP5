@@ -28,13 +28,13 @@
 		<div class="form_boxA">
 			<div class="a">
 				<h2>淘书街公告列表</h2>
-				<form action="?p=back&c=notice&a=search" method="post" onsubmit="return checkSearch()" class="searchform">
+				<form action="/admin/notice/noticeSearch" method="post" onsubmit="return checkSearch()" class="searchform">
 					<input type="text" class="search" placeholder="公告标题" name="search" />
 					<input type="submit" class="search_button" value="搜索" />
 				</form>
-				<a href="#" class="addUser"><i class="fa fa-plus-circle"></i> 添加新公告</a>
+				<a href="/admin/notice/addPage" class="addUser"><i class="fa fa-plus-circle"></i> 添加新公告</a>
 			</div>
-			<form action="?p=back&c=notice&a=delCheck" method="post">
+			<form action="/admin/notice/checkedNoticeDelete" method="post">
 			<table cellpadding="0" cellspacing="0">
 				<tr>
 					<th><input type="checkbox" name="fullChoose" onclick="fullChecked(this)" /></th>
@@ -56,8 +56,8 @@
 					<td>{$value.name}</td>
 					<td>{$value.view_time}</td>
 					<td>
-						<a href="?p=back&c=notice&a=edit&id={$value.notice_id}" class="op"><i class="fa fa-edit" title="编辑"></i></a> 
-						<a href="?p=back&c=notice&a=del&id={$value.notice_id}" class="op"onclick="return del()" >
+						<a href="/admin/notice/editPage?notice_id={$value.notice_id}" class="op"><i class="fa fa-edit" title="编辑"></i></a> 
+						<a href="/admin/notice/noticeDelete?notice_id={$value.notice_id}" class="op"onclick="return del()" >
 							<i class="fa fa-trash-o" title="删除"></i>
 						</a> 
 					</td>
