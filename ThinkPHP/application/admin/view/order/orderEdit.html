@@ -29,41 +29,41 @@
 				<h2>淘书街-修改 订单 信息</h2>
 			</div>
 			<form action="/admin/order/orderEdit" method="post" class="add_form" onsubmit="return checkOrder()">
-				<input type="hidden" value="<?php echo $edit['order_id']; ?>" name="id" />	
+				<input type="hidden" value="{$edit.order_id}" name="id" />	
 				<!--购买人-->
 				<div class="add_list">
 					<label class="add_label"><span class="xing">*</span>购买人：</label>
 					<select class="add_input" name="user">
-						<option value="<?php echo $edit['user_id']; ?>" ><?php echo $edit['user_realname']; ?></option>
+						<option value="{$edit.user_id}" >{$edit.user_realname}</option>
 					</select>
 				</div>
 				<!--购买书籍-->
 				<div class="add_list">
 					<label class="add_label"><span class="xing">*</span>购买书籍：</label>
 					<select class="add_input" name="name" onchange="ShowNum()">
-						<?php foreach($book as $key => $value){ ?>
-						<option value="<?php echo $value['sale_id']; ?>"  <?php if( $edit['book_id'] == $value['sale_id'] ) echo "selected"; ?> ><?php echo $value['sale_name']; ?></option>
-						<?php } ?>
+						{volist name="book" id="value"}
+						<option value="<?php echo $value['sale_id']; ?>"  <?php if( $edit['book_id'] == $value['sale_id'] ) echo "selected"; ?> >{$value.sale_name}</option>
+						{/volist}
 					</select>
 					<div class="num" style="float: right; margin-top: 5px; margin-right: 8px; display: none;">
-						<?php foreach($book as $key => $value){ ?>
-						<span style="display: none;" class="num_span<?php echo $value['sale_id']; ?>">库存：<label><?php echo $value['sale_num']; ?></label></span>
-						<span style="display: none;" class="price_span<?php echo $value['sale_id']; ?>">单价：<label><?php echo $value['sale_afprice']; ?></label></span>
-						<?php } ?>
+						{volist name="book" id="value"}
+						<span style="display: none;" class="num_span{$value.sale_id}">库存：<label>{$value.sale_num}</label></span>
+						<span style="display: none;" class="price_span{$value.sale_id}">单价：<label>{$value.sale_afprice}</label></span>
+						{/volist}
 					</div>
 					<div class="num" style="float: right; margin-top: 5px; margin-right: 8px;">
-						单价：<label><?php echo $edit['sale_afprice']; ?></label>
+						单价：<label>{$edit.sale_afprice}</label>
 					</div>
-					<input type="hidden" name="preBook" value="<?php echo $edit['book_id']; ?>"></input>
+					<input type="hidden" name="preBook" value="{$edit.book_id}"></input>
 				</div>
 				<!--购买书籍结束-->
 				<!--购买数量-->
 				<div class="add_list">
 					<label class="add_label"><span class="xing">*</span>购买数量：</label>
 					<select class="add_input" name="num" onchange="ShowPrice()"> </select>
-					<span style="display: none;" id="allSum"><?php echo $edit['sale_num']+$edit['order_sum']; ?></span>
-					<span style="display: none;" id="orderSum"><?php echo $edit['order_sum']; ?></span>
-					<span style="display: none;" id="orderPrice"><?php echo $edit['order_price']; ?></span>
+					<span style="display: none;" id="allSum">{$edit.order_sum}</span>
+					<span style="display: none;" id="orderSum">{$edit.order_sum}</span>
+					<span style="display: none;" id="orderPrice">{$edit.order_price}</span>
 				</div>
 				<!--购买数量结束-->
 				<div class="add_list">

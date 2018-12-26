@@ -22,6 +22,8 @@ class Order extends Controller
 		->order('create_time','desc')
 		->paginate(15);
 
+		// dump($order);
+
 		$orderNumber = Db::table('shoporder')
 		->alias('a')
 		->join('user b', 'a.user_id = b.user_id')
@@ -60,7 +62,10 @@ class Order extends Controller
 		->alias('a')
 		->join('user b', 'a.user_id = b.user_id')
 		->join('sale_book c', 'a.book_id = c.sale_id')
+		->field('b.*, c.*, a.*')
 		->find();
+
+		// dump($order);
 
 		$this->assign('edit', $order);
 		$this->assign('user', $user);
@@ -206,32 +211,29 @@ class Order extends Controller
 	//更新订单
 	public function orderEdit()
 	{
-		dump($_POST);
-
-
-	//1.获取数据
+		// dump($_POST);
+		//1.获取数据
 		$order_id 	 = input('post.id');
 		$user_id 	 = input('post.user');
 		$sale_id 	 = input('post.name');
 		$order_num 	 = input('post.num');
 		$order_price = input('post.price');
 
-	//2.构造数据
+		//2.构造数据
 		$data = [
 			'user_id'	=> $user_id,
 			'book_id'	=> $sale_id,
 			'order_sum'	=> $order_num,
 			'order_price'=> $order_price
 		];
-	dump($data);
-	//3.存入数据库
+		// dump($data);
+		//3.存入数据库
 		$where = "order_id = '{$order_id}'";
-		$sql =  Db::table('shoporder')->getLastSql();
-		dump($sql);
-		dump($where);die();
-		$ret = Db::table('shoporder')->where($where)->update($data);
 
-		
+		Db::query('SET FOREIGN_KEY_CHECKS = 0;');
+		$ret = Db::table('shoporder')->where($where)->update($data);
+		Db::query('SET FOREIGN_KEY_CHECKS = 1;');
+
 		if ($ret == false) {
 			$this->error('修改订单失败！', '/admin/order/orderList');
 		}
