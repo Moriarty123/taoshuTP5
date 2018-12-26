@@ -36,6 +36,20 @@ use think\Db;
 		return $this->fetch('noticeAdd');
 	}
 
+	public function editPage()
+	{
+		$notice_id = input('get.notice_id');
+
+		$where = "notice_id = {$notice_id}";
+
+		$notice = Db::table('notice')->where($where)->find();
+
+		$this->assign('notice', $notice);
+
+		return $this->fetch('noticeEdit');
+
+	}
+
 	//添加公告
 	public function noticeAdd()
 	{
@@ -140,6 +154,31 @@ use think\Db;
 		}
 
 		$this->success('删除公告成功！', '/admin/notice/noticeList');
+
+	}
+
+	//修改公告
+	public function noticeEdit()
+	{
+		$title = input('post.title');
+		$content = input('post.content');
+		$notice_id = input('post.notice_id');
+		$where = "notice_id = {$notice_id}";
+
+		//2.
+		$data = [
+			'notice_title'	=> $title,
+			'notice_content'=> $content
+		];
+
+		//3.
+		$ret = Db::table('notice')->where($where)->update($data);
+
+		if ($ret == false) {
+			$this->error('修改公告失败！', '/admin/notice/noticeList');
+		}
+
+		$this->success('修改公告成功！', '/admin/notice/noticeList');
 
 	}
 }

@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>淘书街添加新公告</title>
+		<title>淘书街添加新订单</title>
 		<link rel="shortcut icon" href="__IMG__/shu.ico" />
 		<link rel="stylesheet" href="__CSS__/back/user.css" />
 		<link rel="stylesheet" href="__CSS__/back/common.css" />
@@ -27,15 +27,16 @@
 			<div class="a">
 				<h2>淘书街添加新订单</h2>
 			</div>
-			<form action="/admin/notice/noticeAdd" method="post" class="add_form" >
+			<form action="/admin/notice/noticeEdit" method="post" class="add_form" >
+				<input type="hidden" name="notice_id" value="{$notice.notice_id}">
 				<div class="add_list">
 					<label class="add_label"><span class="xing">*</span>公告标题：</label>
-					<input type="text" name="title" style="width: 276px;" placeholder="标题" class="add_input" onfocus="Title()" onblur="checkTitle()"/>
+					<input type="text" name="title" style="width: 276px;" placeholder="标题" class="add_input" onfocus="Title()" onblur="checkTitle()" value="{$notice.notice_title}" />
 					<span class="tip" id="tip-title">请输入公告标题</span>
 				</div>
 				<div class="add_list">
 					<label class="add_label"><span class="xing">*</span>公告内容：</label>
-					<textarea name="content" class="add_textarea" onblur="checkContent()" onfocus="Content()"></textarea>
+					<textarea name="content" class="add_textarea" onblur="checkContent()" onfocus="Content()" >{$notice.notice_content}</textarea>
 					<span class="tip" id="tip-content">请输入公告内容</span>
 				</div>
 				<input type="submit" value="提交" class="add_submit" />

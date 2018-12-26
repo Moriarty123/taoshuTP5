@@ -56,7 +56,7 @@
 					<td>{$value.name}</td>
 					<td>{$value.view_time}</td>
 					<td>
-						<a href="?p=back&c=notice&a=edit&id={$value.notice_id}" class="op"><i class="fa fa-edit" title="编辑"></i></a> 
+						<a href="/admin/notice/editPage?notice_id={$value.notice_id}" class="op"><i class="fa fa-edit" title="编辑"></i></a> 
 						<a href="/admin/notice/noticeDelete?notice_id={$value.notice_id}" class="op"onclick="return del()" >
 							<i class="fa fa-trash-o" title="删除"></i>
 						</a> 
