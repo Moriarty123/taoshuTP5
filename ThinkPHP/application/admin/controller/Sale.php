@@ -32,6 +32,30 @@ use think\Db;
 		return $this->fetch('saleBookList');
 	}
 
+	public function saleBookDetail()
+	{
+		$sale_id = input('get.sale_id');
+		$where = "sale_id = {$sale_id}";
+
+		//级联查询
+		$saleBookList = Db::table('sale_book')->alias('a')->where($where)
+		->join('type_second b', 'a.sale_secondtype = b.second_id')
+		->join('user c', 'a.user_id = c.user_id')
+		->find();
+
+		// $bookNumber = Db::table('sale_book')->alias('a')->where($where)
+		// ->join('type_second b', 'a.sale_secondtype = b.second_id')
+		// ->join('user c', 'a.user_id = c.user_id')
+		// ->count();
+
+		
+		$this->assign('value', $saleBookList);
+		// $this->assign('bookNumber', $bookNumber);
+
+
+		return $this->fetch('saleBookDetail');
+	}
+
 	//添加书籍信息填写
 	public function addPage()
 	{
@@ -104,7 +128,7 @@ use think\Db;
 		$this->assign('saleBookList', $saleBookList);
 		$this->assign('bookNumber', $bookNumber);
 
-		return $this->fetch('saleBookList');
+		return $this->fetch('saleBooklist');
 
 	}
 
@@ -268,6 +292,11 @@ use think\Db;
 
 		//4.后续操作
 		$this->success('修改出售书籍成功！', '/admin/sale/saleBookList');
+		
+	}
+
+	public function orderByVolume()
+	{
 		
 	}
 

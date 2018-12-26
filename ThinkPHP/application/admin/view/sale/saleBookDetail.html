@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>淘书街出售书籍管理</title>
+	<link rel="shortcut icon" href="img/shu.ico" />
+	<link rel="stylesheet" href="__CSS__/back/user.css" />
+	<link rel="stylesheet" href="__CSS__/back/common.css" />
+	<link rel="stylesheet" href="__CSS__/back/page.css" />
+	<link rel="stylesheet" href="__CSS__/back/saleBookDetail.css" />
+	<link rel="stylesheet" href="__FONT__/css/font-awesome.min.css" />
+
+	<script type="text/javascript" src="__JS__/back/jquery.min.js"></script>
+	<script type="text/javascript" src="__JS__/back/public.js"></script>
+	<script type="text/javascript" src="__JS__/back/search.js"></script>
+	<script type="text/javascript" src="__JS__/back/CheckBox.js"></script>
+		
+</head>
+<body>
+
+	<!-- 头部	 -->
+	{include file="../application/admin/view/common/header.html"}
+	<!-- 头部结束	 -->
+
+	<!-- 左边节点 -->
+	{include file="../application/admin/view/common/menu.html"}
+	<!--左边结点结束-->
+	
+	<!--用户列表开始-->
+	<div id="MainForm">
+		<div class="form_boxA">
+			<div class="a">
+				<h2>淘书街搜索结果详情</h2>
+				<form action="" method="post" onsubmit="" class="searchform">
+					<input type="text" class="search" placeholder="书名" name="search" value="高等数学" />
+					<input type="submit" class="search_button" value="搜索" />
+				</form>
+			</div>
+			
+		
+		<div class="sort-book">
+			<div class="book-img"><img src="{$value.sale_img}"></div>
+			<div class="item">
+				<a href="#">{$value.sale_name}</a>
+				<div class="book-table">
+					<div class="book-info">
+						<p>作者：{$value.sale_author}</p>
+						<p>出版社：{$value.sale_publishing}</p>
+						<p>ISBN：{$value.sale_isbn}</p>
+						<p>书籍分类：计算机系列丛书</p>
+						<div class="decoration">简介:{$value.sale_content}</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="item-other">
+				<div class="quality">{$value.sale_degrees}</div>
+				<div class="prize">￥{$value.sale_afprice}</div>
+				<div class="sold">销量：20</div>
+				<div class="kucun">库存：{$value.sale_num}</div>
+				<div class="owner">出售人：{$value.user_realname}</div>
+				<div class="time">上架时间：2018-12-23</div>
+				<div class="act">
+					<a href="" class="op"><i class="fa fa-edit" title="编辑"></i></a> 
+					<a href="" class="op" onclick="">
+						<i class="fa fa-trash-o" title="删除"></i>
+				    </a> 
+				</div>
+			</div>
+		</div>
+	
+	</div>
+	<!--用户列表结束-->
+	<script src="jquery.min.js"></script>
+	<script type="text/javascript">
+		$("li").click(function(){
+			$(this).addClass("selecthover").siblings().removeClass("selecthover");
+		}).hover(function(){
+			$(this).addClass("lihover");
+		},function () {
+			$(this).removeClass("lihover");
+		})
+	</script>
+</body>
+</html>
+
