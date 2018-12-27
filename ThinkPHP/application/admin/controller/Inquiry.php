@@ -2,11 +2,13 @@
 
 namespace app\admin\controller;
 
+use app\admin\controller\Common;
+
 use think\Controller;
 use think\Db;
 
- class inquiry extends Controller 
-{
+ class inquiry extends Common
+ {
 	public function index()
 	{
 		return $this->fetch('index');

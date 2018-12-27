@@ -2,10 +2,12 @@
 
 namespace app\admin\controller;
 
+use app\admin\controller\Common;
+
 use think\Controller;
 use think\Db;
 
- class Sale extends Controller 
+ class Sale extends Common
 {
 	public function index()
 	{
@@ -295,9 +297,59 @@ use think\Db;
 		
 	}
 
+	//按销量排序
 	public function orderByVolume()
 	{
+		$volume = Db::table('shoporder')
+		->alias('a')
+		->join('sale_book b', 'a.book_id = b.sale_id')
+		->join('type_second c', 'b.sale_secondtype = c.second_id')
+		->join('user d', 'b.user_id = d.user_id')
+		->group('book_id')
+		->field('sum(order_sum), b.*, c.*, d.*, a.*')
+		->order('sum(order_sum)','desc')
+		->paginate(15);
+
+		// dump($volume);
 		
+
+		$bookNumber = Db::table('shoporder')
+		->alias('a')
+		->join('sale_book b', 'a.book_id = b.sale_id')
+		->join('type_second c', 'b.sale_secondtype = c.second_id')
+		->join('user d', 'b.user_id = d.user_id')
+		->group('book_id')
+		->field('book_id, sum(order_sum), b.*')
+		->order('sum(order_sum)','desc')
+		->count();
+
+		$this->assign('saleBookList', $volume);
+		$this->assign('bookNumber', $bookNumber);
+
+		return $this->fetch('saleBooklist');
+	}
+
+	//按库存排序
+	public function orderByNumber()
+	{
+		$saleBooklist = Db::table('sale_book')
+		->alias('a')
+		->join('type_second b', 'a.sale_secondtype = b.second_id')
+		->join('user c', 'a.user_id = c.user_id')
+		->order('sale_num', 'desc')
+		->paginate(15);
+
+		// dump($volume);
+		
+
+		$bookNumber = Db::table('sale_book')
+		->order('sale_num', 'desc')
+		->count();
+
+		$this->assign('saleBookList', $saleBooklist);
+		$this->assign('bookNumber', $bookNumber);
+
+		return $this->fetch('saleBooklist');
 	}
 
 }

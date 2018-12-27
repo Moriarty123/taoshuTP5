@@ -65,6 +65,7 @@ use app\admin\validate\admin as adminValidate;
 		session('admin_id', $admin_id);
 		session('admin_name', $name);
 		session('lastLoginTime', $ret['last_time']);
+		session('loginTime', time());
 		session('count', $count);
 		//4.2页面传值
 		// $count = $ret['times'];

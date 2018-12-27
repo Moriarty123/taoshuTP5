@@ -2,10 +2,12 @@
 
 namespace app\admin\controller;
 
+use app\admin\controller\Common;
+
 use think\Controller;
 use think\Db;
 
-class Order extends Controller 
+class Order extends Common 
 {
 	public function index()
 	{

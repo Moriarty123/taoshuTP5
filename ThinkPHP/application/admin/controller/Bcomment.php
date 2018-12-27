@@ -2,10 +2,12 @@
 
 namespace app\admin\controller;
 
+use app\admin\controller\Common;
+
 use think\Controller;
 use think\Db;
 
-class Bcomment extends Controller 
+class Bcomment extends Common 
 {
 	public function index()
 	{
