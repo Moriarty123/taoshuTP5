@@ -7,7 +7,7 @@ use app\admin\controller\Common;
 use think\Controller;
 use think\Db;
 
-class User extends Conmmon
+class User extends Common
 {
 	public function index()
 	{

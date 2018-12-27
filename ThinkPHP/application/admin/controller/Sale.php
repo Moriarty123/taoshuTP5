@@ -177,6 +177,7 @@ use think\Db;
 			'sale_beprice'		=>	$beprice,
 			'sale_afprice'		=>	$afprice,
 			'sale_num'			=>	$num,
+			'sale_volume'		=>	0,
 			'sale_page'			=>	$page,
 			'sale_degrees'		=>	$degrees,
 			'sale_secondtype'	=>	$type,
@@ -344,6 +345,46 @@ use think\Db;
 
 		$bookNumber = Db::table('sale_book')
 		->order('sale_num', 'desc')
+		->count();
+
+		$this->assign('saleBookList', $saleBooklist);
+		$this->assign('bookNumber', $bookNumber);
+
+		return $this->fetch('saleBooklist');
+	}
+
+	//按价格从高到低排序
+	public function orderByPriceDesc()
+	{
+		$saleBooklist = Db::table('sale_book')
+		->alias('a')
+		->join('type_second b', 'a.sale_secondtype = b.second_id')
+		->join('user c', 'a.user_id = c.user_id')
+		->order('sale_afprice', 'desc')
+		->paginate(15);
+
+		$bookNumber = Db::table('sale_book')
+		->order('sale_afprice', 'desc')
+		->count();
+
+		$this->assign('saleBookList', $saleBooklist);
+		$this->assign('bookNumber', $bookNumber);
+
+		return $this->fetch('saleBooklist');
+	}
+
+	//按价格从低到高排序
+	public function orderByPrice()
+	{
+		$saleBooklist = Db::table('sale_book')
+		->alias('a')
+		->join('type_second b', 'a.sale_secondtype = b.second_id')
+		->join('user c', 'a.user_id = c.user_id')
+		->order('sale_afprice')
+		->paginate(15);
+
+		$bookNumber = Db::table('sale_book')
+		->order('sale_afprice')
 		->count();
 
 		$this->assign('saleBookList', $saleBooklist);
