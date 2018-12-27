@@ -7,7 +7,7 @@ use app\admin\controller\Common;
 use think\Controller;
 use think\Db;
 
- class Sale extends Common
+class Sale extends Common
 {
 	public function index()
 	{
