@@ -3,6 +3,7 @@ namespace app\admin\controller;
 
 use think\Db;
 use think\Controller;
+use think\Log;
 
 class Common extends Controller
 {
@@ -21,6 +22,7 @@ class Common extends Controller
     	if(time() - $loginTime > 3000) {
     		$this->error('登录超时，请重新登录！', 'admin/login/index');
     	}
+
     }
 
 

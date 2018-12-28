@@ -44,4 +44,19 @@ return [
     'class_suffix'           => false,
     // 控制器类后缀
     'controller_suffix'      => false,
+
+    'log'   => [
+        // 日志记录方式，支持 file socket
+        'type' => 'File',
+        //日志保存目录
+        'path' => LOG_PATH,
+        //单个日志文件的大小限制，超过后会自动记录到第二个文件
+        'file_size'     =>2097152,
+        //日志的时间格式，默认是` c `
+        'time_format'   =>'c',
+        //自动清理，文件最多30个
+        'max_files' => 30,
+        //独立日志
+        'apart_level'   =>  ['error','sql','notice'],
+    ],
 ];

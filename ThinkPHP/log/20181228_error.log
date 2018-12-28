@@ -1,0 +1,9 @@
+---------------------------------------------------------------
+[2018-12-28T15:09:09+08:00] 127.0.0.1 GET /admin/user/userList
+[ error ] [0]模板文件不存在:C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\public/../application/admin\view\user\useList.html[C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\thinkphp\library\think\view\driver\Think.php:82]
+---------------------------------------------------------------
+[2018-12-28T15:09:26+08:00] 127.0.0.1 GET /admin/user/userList
+[ error ] [0]模板文件不存在:C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\public/../application/admin\view\user\useList.html[C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\thinkphp\library\think\view\driver\Think.php:82]
+---------------------------------------------------------------
+[2018-12-28T16:05:02+08:00] 127.0.0.1 GET /admin/violation/violateList
+[ error ] [8]未定义数组索引: violate_type[C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\runtime\temp\e234da21d9f10de8f8c5ec72d0d1e36e.php:243]

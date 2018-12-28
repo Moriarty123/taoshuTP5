@@ -6,6 +6,7 @@ use app\admin\controller\Common;
 
 use think\Controller;
 use think\Db;
+use think\Log;
 
 class User extends Common
 {
@@ -23,6 +24,9 @@ class User extends Common
 		$this->assign('userList', $userList); 
 		$this->assign('userNumber', $userNumber);
 
+		//日志
+		Log::record('显示用户列表userList.html','notice');
+
 		return $this->fetch('userList');
 	}
 
@@ -32,6 +36,10 @@ class User extends Common
 		$classes = Db::table('class')->select();
 
 		$this->assign('classes', $classes);
+
+		//日志
+		Log::record('跳转到添加用户界面addPage.html','notice');
+
 		return $this->fetch('userAdd');
 	}
 
