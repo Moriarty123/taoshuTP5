@@ -1348,3 +1348,246 @@
   '/js/back/clock_js' => '',
 )
 [ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-28T17:19:02+08:00 ] 127.0.0.1 GET /js/back/clock.js
+[ info ] www.taoshutp5.org/js/back/clock.js [运行时间：0.024001s][吞吐率：41.67req/s] [内存消耗：1,088.39kb] [文件加载：32]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'back',
+    2 => 'clock.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=fj3fprcsui8iq8ccj7t9eefnd7',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.taoshutp5.org/admin/violation/violateList',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.taoshutp5.org',
+)
+[ info ] [ PARAM ] array (
+  '/js/back/clock_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-28T17:20:23+08:00 ] 127.0.0.1 GET /js/back/clock.js
+[ info ] www.taoshutp5.org/js/back/clock.js [运行时间：0.021001s][吞吐率：47.62req/s] [内存消耗：1,088.26kb] [文件加载：32]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'back',
+    2 => 'clock.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=fj3fprcsui8iq8ccj7t9eefnd7',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.taoshutp5.org/admin/',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.taoshutp5.org',
+)
+[ info ] [ PARAM ] array (
+  '/js/back/clock_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-28T17:21:13+08:00 ] 127.0.0.1 GET /js/back/clock.js
+[ info ] www.taoshutp5.org/js/back/clock.js [运行时间：0.021002s][吞吐率：47.61req/s] [内存消耗：1,088.41kb] [文件加载：32]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'back',
+    2 => 'clock.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=fj3fprcsui8iq8ccj7t9eefnd7',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.taoshutp5.org/admin/violate/violateList',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.taoshutp5.org',
+)
+[ info ] [ PARAM ] array (
+  '/js/back/clock_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-28T17:21:16+08:00 ] 127.0.0.1 GET /js/back/clock.js
+[ info ] www.taoshutp5.org/js/back/clock.js [运行时间：0.022002s][吞吐率：45.45req/s] [内存消耗：1,088.30kb] [文件加载：32]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'back',
+    2 => 'clock.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=fj3fprcsui8iq8ccj7t9eefnd7',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.taoshutp5.org/admin/violate/addPage',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.taoshutp5.org',
+)
+[ info ] [ PARAM ] array (
+  '/js/back/clock_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-28T17:21:40+08:00 ] 127.0.0.1 GET /js/back/clock.js
+[ info ] www.taoshutp5.org/js/back/clock.js [运行时间：0.020001s][吞吐率：50.00req/s] [内存消耗：1,088.30kb] [文件加载：32]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'back',
+    2 => 'clock.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=fj3fprcsui8iq8ccj7t9eefnd7',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.taoshutp5.org/admin/violate/addPage',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.taoshutp5.org',
+)
+[ info ] [ PARAM ] array (
+  '/js/back/clock_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-28T17:21:41+08:00 ] 127.0.0.1 GET /js/back/clock.js
+[ info ] www.taoshutp5.org/js/back/clock.js [运行时间：0.020001s][吞吐率：50.00req/s] [内存消耗：1,088.30kb] [文件加载：32]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'back',
+    2 => 'clock.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=fj3fprcsui8iq8ccj7t9eefnd7',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.taoshutp5.org/admin/violate/addPage',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.taoshutp5.org',
+)
+[ info ] [ PARAM ] array (
+  '/js/back/clock_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-28T17:22:57+08:00 ] 127.0.0.1 GET /js/back/clock.js
+[ info ] www.taoshutp5.org/js/back/clock.js [运行时间：0.020001s][吞吐率：50.00req/s] [内存消耗：1,088.41kb] [文件加载：32]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'back',
+    2 => 'clock.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=fj3fprcsui8iq8ccj7t9eefnd7',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.taoshutp5.org/admin/violate/violateList',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.taoshutp5.org',
+)
+[ info ] [ PARAM ] array (
+  '/js/back/clock_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-28T17:23:06+08:00 ] 127.0.0.1 GET /js/back/clock.js
+[ info ] www.taoshutp5.org/js/back/clock.js [运行时间：0.021001s][吞吐率：47.62req/s] [内存消耗：1,088.30kb] [文件加载：32]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'back',
+    2 => 'clock.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=fj3fprcsui8iq8ccj7t9eefnd7',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.taoshutp5.org/admin/violate/addPage',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.taoshutp5.org',
+)
+[ info ] [ PARAM ] array (
+  '/js/back/clock_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-28T17:23:16+08:00 ] 127.0.0.1 GET /js/back/clock.js
+[ info ] www.taoshutp5.org/js/back/clock.js [运行时间：0.020002s][吞吐率：49.99req/s] [内存消耗：1,088.41kb] [文件加载：32]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'back',
+    2 => 'clock.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=fj3fprcsui8iq8ccj7t9eefnd7',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.taoshutp5.org/admin/violate/violateList',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'connection' => 'close',
+  'host' => 'www.taoshutp5.org',
+)
+[ info ] [ PARAM ] array (
+  '/js/back/clock_js' => '',
+)
+[ info ] [ LOG ] INIT File
