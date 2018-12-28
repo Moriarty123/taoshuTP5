@@ -73,5 +73,45 @@ use think\Db;
 		$this->success('删除留言成功！', '/admin/breply/replyList');
 	}
 
+	//模糊查找
+	public function replySearch()
+	{
+		// dump($_POST);
+		$search = input('post.search');
+
+		if(!empty($search)) {
+			session('replysearch', $search);
+			$where['reply_content'] = array('like','%'.$search.'%');//封装模糊查询 赋值到数组	
+		}
+		else 
+		{
+			$search = session('replysearch');
+			$where['reply_content'] = array('like','%'.$search.'%');	
+		}
+
+		// dump($where);
+
+		$replyList = Db::table('bcomment_reply')
+		->where($where)
+		->alias('a')
+		->join('user b', 'a.user_id = b.user_id')
+		->join('bcomment c', 'a.comment_id = c.bcomment_id')
+		->paginate(15);
+
+		$replyNumber = Db::table('bcomment_reply')
+		->where($where)
+		->alias('a')
+		->join('user b', 'a.user_id = b.user_id')
+		->join('bcomment c', 'a.comment_id = c.bcomment_id')
+		->count();
+
+		$this->assign('reply', $replyList);
+		$this->assign('to', $replyNumber);
+
+		return $this->fetch('replyList');
+
+	}
+	
+
 }
 

@@ -116,7 +116,8 @@ class Bcomment extends Common
 			$where['bcomment_content'] = array('like','%'.$search.'%');	
 		}
 
-		
+		// dump($where);
+
 		$commentList = Db::table('bcomment')
 		->alias('a')
 		->where($where)

@@ -47,6 +47,7 @@
 					<th>ID</th>
 					<th>回复人</th>
 					<th>回复内容</th>
+					<th>回复评论id</th>
 					<th>回复时间</th>
 					<th>操作</th>
 				</tr>
@@ -56,6 +57,7 @@
 					<td>{$value.reply_id}</td>
 					<td>{$value.user_name}</td>
 					<td>{$value.reply_content}</td>
+					<td>{$value.bcomment_id}</td>
 					<td>{$value.addtime|date="Y-h-d h:i:s", ###}</td>
 					<td>
 						<a href="/admin/breply/editPage?bcomment_id={$value.bcomment_id}" class="op"><i class="fa fa-edit" title="屏蔽"></i></a> 
