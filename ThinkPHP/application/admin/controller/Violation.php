@@ -36,5 +36,47 @@ class Violation extends Common
 		return $this->fetch('violateList');
 	}
 
+	//添加违规页面
+	public function addPage()
+	{	
+		Log::record('添加新违规', 'notice');
+
+		$user = Db::table('user')->select();
+
+		$this->assign('user', $user);
+
+		return $this->fetch('violateAdd');
+	}
+
+	//添加违规
+	public function violateAdd()
+	{
+		// dump($_POST);
+
+		//1.
+		$user_id 		= input('post.user_id');
+		$punish_time 	= input('post.punish_time');
+		$punish_case 	= input('post.punish_case');
+		$punish_way 	= input('post.punish_way');
+
+		//2.
+		$data = [
+			'user_id' => $user_id,
+			'punish_time'=> $punish_time,
+			'punish_case' => $punish_case,
+			'punish_way' => $punish_way,
+			'add_time' => time()
+		];
+
+		$ret = Db::table('violation')->insert($data);
+
+		if($ret == false)
+		{
+			$this->error('添加新违规失败！', '/admin/violation/violateList');
+		}
+
+		$this->success('添加新违规成功！', '/admin/violation/violateList');
+
+	}
 
 }

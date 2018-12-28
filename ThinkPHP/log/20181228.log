@@ -2226,3 +2226,1527 @@
   0 => 'classes',
 ) ]
 [ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[2018-12-28T16:27:41+08:00] 127.0.0.1 GET /admin/user/addPage
+[ info ] www.taoshutp5.org/admin/user/addPage [运行时间：0.038003s][吞吐率：26.31req/s] [内存消耗：1,996.95kb] [文件加载：46]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'addPage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=fj3fprcsui8iq8ccj7t9eefnd7',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.taoshutp5.org/admin/violation/violateList',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.taoshutp5.org',
+)
+[ info ] [ PARAM ] array (
+  '/admin/user/addPage' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ RUN ] app\admin\controller\User->addPage[ C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\application\admin\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\public/../application/admin\view\user\userAdd.html [ array (
+  0 => 'classes',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[2018-12-28T16:27:43+08:00] 127.0.0.1 GET /admin/violation/violateList
+[ info ] www.taoshutp5.org/admin/violation/violateList [运行时间：0.070004s][吞吐率：14.28req/s] [内存消耗：2,172.53kb] [文件加载：52]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'violation',
+    2 => 'violateList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=fj3fprcsui8iq8ccj7t9eefnd7',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.taoshutp5.org/admin/user/addPage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.taoshutp5.org',
+)
+[ info ] [ PARAM ] array (
+  '/admin/violation/violateList' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ RUN ] app\admin\controller\Violation->violateList[ C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\application\admin\controller\Violation.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\public/../application/admin\view\violation\violateList.html [ array (
+  0 => 'violateList',
+  1 => 'violateNumber',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[2018-12-28T16:27:45+08:00] 127.0.0.1 GET /admin/violation/addPage
+[ info ] www.taoshutp5.org/admin/violation/addPage [运行时间：0.029002s][吞吐率：34.48req/s] [内存消耗：1,472.91kb] [文件加载：45]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'violation',
+    2 => 'addPage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=fj3fprcsui8iq8ccj7t9eefnd7',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.taoshutp5.org/admin/violation/violateList',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.taoshutp5.org',
+)
+[ info ] [ PARAM ] array (
+  '/admin/violation/addPage' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ RUN ] app\admin\controller\Violation->addPage[ C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\application\admin\controller\Violation.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\public/../application/admin\view\violation\violateAdd.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[2018-12-28T16:28:07+08:00] 127.0.0.1 GET /admin/violation/addPage
+[ info ] www.taoshutp5.org/admin/violation/addPage [运行时间：0.041002s][吞吐率：24.39req/s] [内存消耗：1,433.82kb] [文件加载：41]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'violation',
+    2 => 'addPage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=fj3fprcsui8iq8ccj7t9eefnd7',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.taoshutp5.org/admin/violation/violateList',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.taoshutp5.org',
+)
+[ info ] [ PARAM ] array (
+  '/admin/violation/addPage' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ RUN ] app\admin\controller\Violation->addPage[ C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\application\admin\controller\Violation.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\public/../application/admin\view\violation\violateAdd.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[2018-12-28T16:31:01+08:00] 127.0.0.1 GET /admin/violation/addPage
+[ info ] www.taoshutp5.org/admin/violation/addPage [运行时间：0.068004s][吞吐率：14.70req/s] [内存消耗：2,117.55kb] [文件加载：52]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'violation',
+    2 => 'addPage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=fj3fprcsui8iq8ccj7t9eefnd7',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.taoshutp5.org/admin/violation/violateList',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.taoshutp5.org',
+)
+[ info ] [ PARAM ] array (
+  '/admin/violation/addPage' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ RUN ] app\admin\controller\Violation->addPage[ C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\application\admin\controller\Violation.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\public/../application/admin\view\violation\violateAdd.html [ array (
+  0 => 'user',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[2018-12-28T16:31:18+08:00] 127.0.0.1 GET /admin/violation/addPage
+[ info ] www.taoshutp5.org/admin/violation/addPage [运行时间：0.046002s][吞吐率：21.74req/s] [内存消耗：2,078.30kb] [文件加载：48]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'violation',
+    2 => 'addPage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=fj3fprcsui8iq8ccj7t9eefnd7',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.taoshutp5.org/admin/violation/violateList',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.taoshutp5.org',
+)
+[ info ] [ PARAM ] array (
+  '/admin/violation/addPage' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ RUN ] app\admin\controller\Violation->addPage[ C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\application\admin\controller\Violation.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\public/../application/admin\view\violation\violateAdd.html [ array (
+  0 => 'user',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[2018-12-28T16:37:35+08:00] 127.0.0.1 GET /admin/violation/addPage
+[ info ] www.taoshutp5.org/admin/violation/addPage [运行时间：0.051003s][吞吐率：19.61req/s] [内存消耗：2,079.39kb] [文件加载：48]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'violation',
+    2 => 'addPage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=fj3fprcsui8iq8ccj7t9eefnd7',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.taoshutp5.org/admin/violation/violateList',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.taoshutp5.org',
+)
+[ info ] [ PARAM ] array (
+  '/admin/violation/addPage' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ RUN ] app\admin\controller\Violation->addPage[ C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\application\admin\controller\Violation.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\public/../application/admin\view\violation\violateAdd.html [ array (
+  0 => 'user',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[2018-12-28T16:37:53+08:00] 127.0.0.1 GET /admin/violation/addPage
+[ info ] www.taoshutp5.org/admin/violation/addPage [运行时间：0.077004s][吞吐率：12.99req/s] [内存消耗：2,078.63kb] [文件加载：48]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'violation',
+    2 => 'addPage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=fj3fprcsui8iq8ccj7t9eefnd7',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.taoshutp5.org/admin/violation/violateList',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.taoshutp5.org',
+)
+[ info ] [ PARAM ] array (
+  '/admin/violation/addPage' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ RUN ] app\admin\controller\Violation->addPage[ C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\application\admin\controller\Violation.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\public/../application/admin\view\violation\violateAdd.html [ array (
+  0 => 'user',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[2018-12-28T16:38:34+08:00] 127.0.0.1 GET /admin/violation/addPage
+[ info ] www.taoshutp5.org/admin/violation/addPage [运行时间：0.080005s][吞吐率：12.50req/s] [内存消耗：2,078.77kb] [文件加载：48]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'violation',
+    2 => 'addPage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=fj3fprcsui8iq8ccj7t9eefnd7',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.taoshutp5.org/admin/violation/violateList',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.taoshutp5.org',
+)
+[ info ] [ PARAM ] array (
+  '/admin/violation/addPage' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ RUN ] app\admin\controller\Violation->addPage[ C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\application\admin\controller\Violation.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\public/../application/admin\view\violation\violateAdd.html [ array (
+  0 => 'user',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[2018-12-28T16:40:42+08:00] 127.0.0.1 GET /admin/violation/addPage
+[ info ] www.taoshutp5.org/admin/violation/addPage [运行时间：0.077004s][吞吐率：12.99req/s] [内存消耗：2,079.24kb] [文件加载：48]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'violation',
+    2 => 'addPage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=fj3fprcsui8iq8ccj7t9eefnd7',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.taoshutp5.org/admin/violation/violateList',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.taoshutp5.org',
+)
+[ info ] [ PARAM ] array (
+  '/admin/violation/addPage' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ RUN ] app\admin\controller\Violation->addPage[ C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\application\admin\controller\Violation.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\public/../application/admin\view\violation\violateAdd.html [ array (
+  0 => 'user',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[2018-12-28T16:40:47+08:00] 127.0.0.1 POST /admin/violation/violateAdd
+[ info ] www.taoshutp5.org/admin/violation/violateAdd [运行时间：0.032002s][吞吐率：31.25req/s] [内存消耗：1,331.78kb] [文件加载：39]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'violation',
+    2 => 'violateAdd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=fj3fprcsui8iq8ccj7t9eefnd7',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.taoshutp5.org/admin/violation/addPage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryBCTS44oZ58AaObvL',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://www.taoshutp5.org',
+  'cache-control' => 'max-age=0',
+  'content-length' => '457',
+  'connection' => 'close',
+  'host' => 'www.taoshutp5.org',
+)
+[ info ] [ PARAM ] array (
+  '/admin/violation/violateAdd' => '',
+  'class' => '一小时',
+  'content' => '十分头疼',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ RUN ] app\admin\controller\Violation->violateAdd[ C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\application\admin\controller\Violation.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[2018-12-28T16:41:07+08:00] 127.0.0.1 GET /admin/violation/addPage
+[ info ] www.taoshutp5.org/admin/violation/addPage [运行时间：0.071004s][吞吐率：14.08req/s] [内存消耗：1,952.29kb] [文件加载：46]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'violation',
+    2 => 'addPage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=fj3fprcsui8iq8ccj7t9eefnd7',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.taoshutp5.org/admin/violation/violateList',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.taoshutp5.org',
+)
+[ info ] [ PARAM ] array (
+  '/admin/violation/addPage' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ RUN ] app\admin\controller\Violation->addPage[ C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\application\admin\controller\Violation.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\public/../application/admin\view\violation\violateAdd.html [ array (
+  0 => 'user',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[2018-12-28T16:41:11+08:00] 127.0.0.1 POST /admin/violation/violateAdd
+[ info ] www.taoshutp5.org/admin/violation/violateAdd [运行时间：0.032002s][吞吐率：31.25req/s] [内存消耗：1,331.78kb] [文件加载：39]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'violation',
+    2 => 'violateAdd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=fj3fprcsui8iq8ccj7t9eefnd7',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.taoshutp5.org/admin/violation/addPage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryrZZ6UIikMllJ13KQ',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://www.taoshutp5.org',
+  'cache-control' => 'max-age=0',
+  'content-length' => '457',
+  'connection' => 'close',
+  'host' => 'www.taoshutp5.org',
+)
+[ info ] [ PARAM ] array (
+  '/admin/violation/violateAdd' => '',
+  'class' => '十小时',
+  'content' => '十分头疼',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ RUN ] app\admin\controller\Violation->violateAdd[ C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\application\admin\controller\Violation.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[2018-12-28T16:41:46+08:00] 127.0.0.1 POST /admin/violation/violateAdd
+[ info ] www.taoshutp5.org/admin/violation/violateAdd [运行时间：0.031002s][吞吐率：32.26req/s] [内存消耗：1,331.80kb] [文件加载：39]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'violation',
+    2 => 'violateAdd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=fj3fprcsui8iq8ccj7t9eefnd7',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.taoshutp5.org/admin/violation/addPage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryrZZ6UIikMllJ13KQ',
+  'origin' => 'http://www.taoshutp5.org',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'content-length' => '457',
+  'connection' => 'close',
+  'host' => 'www.taoshutp5.org',
+)
+[ info ] [ PARAM ] array (
+  '/admin/violation/violateAdd' => '',
+  'class' => '十小时',
+  'content' => '十分头疼',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ RUN ] app\admin\controller\Violation->violateAdd[ C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\application\admin\controller\Violation.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[2018-12-28T16:41:48+08:00] 127.0.0.1 GET /admin/violation/addPage
+[ info ] www.taoshutp5.org/admin/violation/addPage [运行时间：0.051003s][吞吐率：19.61req/s] [内存消耗：2,079.12kb] [文件加载：48]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'violation',
+    2 => 'addPage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=fj3fprcsui8iq8ccj7t9eefnd7',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.taoshutp5.org/admin/violation/violateList',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.taoshutp5.org',
+)
+[ info ] [ PARAM ] array (
+  '/admin/violation/addPage' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ RUN ] app\admin\controller\Violation->addPage[ C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\application\admin\controller\Violation.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\public/../application/admin\view\violation\violateAdd.html [ array (
+  0 => 'user',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[2018-12-28T16:41:48+08:00] 127.0.0.1 GET /admin/violation/addPage
+[ info ] www.taoshutp5.org/admin/violation/addPage [运行时间：0.047003s][吞吐率：21.28req/s] [内存消耗：1,952.43kb] [文件加载：46]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'violation',
+    2 => 'addPage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=fj3fprcsui8iq8ccj7t9eefnd7',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.taoshutp5.org/admin/violation/violateList',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.taoshutp5.org',
+)
+[ info ] [ PARAM ] array (
+  '/admin/violation/addPage' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ RUN ] app\admin\controller\Violation->addPage[ C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\application\admin\controller\Violation.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\public/../application/admin\view\violation\violateAdd.html [ array (
+  0 => 'user',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[2018-12-28T16:41:56+08:00] 127.0.0.1 POST /admin/violation/violateAdd
+[ info ] www.taoshutp5.org/admin/violation/violateAdd [运行时间：0.029001s][吞吐率：34.48req/s] [内存消耗：1,332.00kb] [文件加载：39]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'violation',
+    2 => 'violateAdd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=fj3fprcsui8iq8ccj7t9eefnd7',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.taoshutp5.org/admin/violation/addPage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryu1AqPUxAybCgt5q6',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://www.taoshutp5.org',
+  'cache-control' => 'max-age=0',
+  'content-length' => '447',
+  'connection' => 'close',
+  'host' => 'www.taoshutp5.org',
+)
+[ info ] [ PARAM ] array (
+  '/admin/violation/violateAdd' => '',
+  'user' => '33',
+  'punish_time' => '十小时',
+  'content' => '也同样',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ RUN ] app\admin\controller\Violation->violateAdd[ C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\application\admin\controller\Violation.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[2018-12-28T16:43:01+08:00] 127.0.0.1 POST /admin/violation/violateAdd
+[ info ] www.taoshutp5.org/admin/violation/violateAdd [运行时间：0.046002s][吞吐率：21.74req/s] [内存消耗：1,331.97kb] [文件加载：39]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'violation',
+    2 => 'violateAdd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=fj3fprcsui8iq8ccj7t9eefnd7',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.taoshutp5.org/admin/violation/addPage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryu1AqPUxAybCgt5q6',
+  'origin' => 'http://www.taoshutp5.org',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'content-length' => '447',
+  'connection' => 'close',
+  'host' => 'www.taoshutp5.org',
+)
+[ info ] [ PARAM ] array (
+  '/admin/violation/violateAdd' => '',
+  'user' => '33',
+  'punish_time' => '十小时',
+  'content' => '也同样',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ RUN ] app\admin\controller\Violation->violateAdd[ C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\application\admin\controller\Violation.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[2018-12-28T16:43:02+08:00] 127.0.0.1 GET /admin/violation/addPage
+[ info ] www.taoshutp5.org/admin/violation/addPage [运行时间：0.080005s][吞吐率：12.50req/s] [内存消耗：2,079.13kb] [文件加载：48]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'violation',
+    2 => 'addPage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=fj3fprcsui8iq8ccj7t9eefnd7',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.taoshutp5.org/admin/violation/violateList',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.taoshutp5.org',
+)
+[ info ] [ PARAM ] array (
+  '/admin/violation/addPage' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ RUN ] app\admin\controller\Violation->addPage[ C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\application\admin\controller\Violation.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\public/../application/admin\view\violation\violateAdd.html [ array (
+  0 => 'user',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[2018-12-28T16:43:02+08:00] 127.0.0.1 GET /admin/violation/addPage
+[ info ] www.taoshutp5.org/admin/violation/addPage [运行时间：0.032002s][吞吐率：31.25req/s] [内存消耗：1,952.43kb] [文件加载：46]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'violation',
+    2 => 'addPage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=fj3fprcsui8iq8ccj7t9eefnd7',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.taoshutp5.org/admin/violation/violateList',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.taoshutp5.org',
+)
+[ info ] [ PARAM ] array (
+  '/admin/violation/addPage' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ RUN ] app\admin\controller\Violation->addPage[ C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\application\admin\controller\Violation.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\public/../application/admin\view\violation\violateAdd.html [ array (
+  0 => 'user',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[2018-12-28T16:43:08+08:00] 127.0.0.1 POST /admin/violation/violateAdd
+[ info ] www.taoshutp5.org/admin/violation/violateAdd [运行时间：0.032002s][吞吐率：31.25req/s] [内存消耗：1,332.13kb] [文件加载：39]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'violation',
+    2 => 'violateAdd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=fj3fprcsui8iq8ccj7t9eefnd7',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.taoshutp5.org/admin/violation/addPage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryYcXY9AWiGhHkAjAz',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://www.taoshutp5.org',
+  'cache-control' => 'max-age=0',
+  'content-length' => '457',
+  'connection' => 'close',
+  'host' => 'www.taoshutp5.org',
+)
+[ info ] [ PARAM ] array (
+  '/admin/violation/violateAdd' => '',
+  'user' => '32',
+  'punish_time' => '一小时',
+  'punish_case' => '估计',
+  'punish_way' => '特送人头',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ RUN ] app\admin\controller\Violation->violateAdd[ C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\application\admin\controller\Violation.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[2018-12-28T17:10:40+08:00] 127.0.0.1 POST /admin/violation/violateAdd
+[ info ] www.taoshutp5.org/admin/violation/violateAdd [运行时间：0.044002s][吞吐率：22.73req/s] [内存消耗：1,126.02kb] [文件加载：34]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'violation',
+    2 => 'violateAdd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=fj3fprcsui8iq8ccj7t9eefnd7',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.taoshutp5.org/admin/violation/addPage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryYcXY9AWiGhHkAjAz',
+  'origin' => 'http://www.taoshutp5.org',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'content-length' => '457',
+  'connection' => 'close',
+  'host' => 'www.taoshutp5.org',
+)
+[ info ] [ PARAM ] array (
+  '/admin/violation/violateAdd' => '',
+  'user' => '32',
+  'punish_time' => '一小时',
+  'punish_case' => '估计',
+  'punish_way' => '特送人头',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[2018-12-28T17:10:50+08:00] 127.0.0.1 POST /admin/violation/violateAdd
+[ info ] www.taoshutp5.org/admin/violation/violateAdd [运行时间：0.034002s][吞吐率：29.41req/s] [内存消耗：1,367.95kb] [文件加载：41]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'violation',
+    2 => 'violateAdd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=fj3fprcsui8iq8ccj7t9eefnd7',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.taoshutp5.org/admin/violation/addPage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryYcXY9AWiGhHkAjAz',
+  'origin' => 'http://www.taoshutp5.org',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'content-length' => '457',
+  'connection' => 'close',
+  'host' => 'www.taoshutp5.org',
+)
+[ info ] [ PARAM ] array (
+  '/admin/violation/violateAdd' => '',
+  'user' => '32',
+  'punish_time' => '一小时',
+  'punish_case' => '估计',
+  'punish_way' => '特送人头',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[2018-12-28T17:10:52+08:00] 127.0.0.1 GET /admin/login/index.html
+[ info ] www.taoshutp5.org/admin/login/index.html [运行时间：0.041002s][吞吐率：24.39req/s] [内存消耗：1,296.09kb] [文件加载：38]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=fj3fprcsui8iq8ccj7t9eefnd7',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.taoshutp5.org/admin/violation/violateAdd',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.taoshutp5.org',
+)
+[ info ] [ PARAM ] array (
+  '/admin/login/index_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\application\admin\controller\Login.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\public/../application/admin\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[2018-12-28T17:10:57+08:00] 127.0.0.1 POST /admin/login/login
+[ info ] www.taoshutp5.org/admin/login/login [运行时间：0.107007s][吞吐率：9.35req/s] [内存消耗：1,957.18kb] [文件加载：48]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=fj3fprcsui8iq8ccj7t9eefnd7',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.taoshutp5.org/admin/login/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://www.taoshutp5.org',
+  'cache-control' => 'max-age=0',
+  'content-length' => '20',
+  'connection' => 'close',
+  'host' => 'www.taoshutp5.org',
+)
+[ info ] [ PARAM ] array (
+  '/admin/login/login' => '',
+  'name' => 'admin',
+  'pwd' => 'admin',
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\application\admin\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[2018-12-28T17:11:00+08:00] 127.0.0.1 GET /admin/index/index
+[ info ] www.taoshutp5.org/admin/index/index [运行时间：0.021002s][吞吐率：47.61req/s] [内存消耗：1,290.77kb] [文件加载：38]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=fj3fprcsui8iq8ccj7t9eefnd7',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.taoshutp5.org/admin/login/login',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.taoshutp5.org',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/index' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[2018-12-28T17:11:02+08:00] 127.0.0.1 GET /admin/violation/violateList
+[ info ] www.taoshutp5.org/admin/violation/violateList [运行时间：0.037002s][吞吐率：27.03req/s] [内存消耗：2,048.01kb] [文件加载：50]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'violation',
+    2 => 'violateList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=fj3fprcsui8iq8ccj7t9eefnd7',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.taoshutp5.org/admin/index/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.taoshutp5.org',
+)
+[ info ] [ PARAM ] array (
+  '/admin/violation/violateList' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ RUN ] app\admin\controller\Violation->violateList[ C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\application\admin\controller\Violation.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\public/../application/admin\view\violation\violateList.html [ array (
+  0 => 'violateList',
+  1 => 'violateNumber',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[2018-12-28T17:11:04+08:00] 127.0.0.1 GET /admin/violation/addPage
+[ info ] www.taoshutp5.org/admin/violation/addPage [运行时间：0.042003s][吞吐率：23.81req/s] [内存消耗：2,081.50kb] [文件加载：48]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'violation',
+    2 => 'addPage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=fj3fprcsui8iq8ccj7t9eefnd7',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.taoshutp5.org/admin/violation/violateList',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.taoshutp5.org',
+)
+[ info ] [ PARAM ] array (
+  '/admin/violation/addPage' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ RUN ] app\admin\controller\Violation->addPage[ C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\application\admin\controller\Violation.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\public/../application/admin\view\violation\violateAdd.html [ array (
+  0 => 'user',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[2018-12-28T17:11:11+08:00] 127.0.0.1 POST /admin/violation/violateAdd
+[ info ] www.taoshutp5.org/admin/violation/violateAdd [运行时间：0.044003s][吞吐率：22.73req/s] [内存消耗：1,951.52kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'violation',
+    2 => 'violateAdd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=fj3fprcsui8iq8ccj7t9eefnd7',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.taoshutp5.org/admin/violation/addPage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundary2xW1LB8qtAT2tgqS',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://www.taoshutp5.org',
+  'cache-control' => 'max-age=0',
+  'content-length' => '493',
+  'connection' => 'close',
+  'host' => 'www.taoshutp5.org',
+)
+[ info ] [ PARAM ] array (
+  '/admin/violation/violateAdd' => '',
+  'user_id' => '33',
+  'punish_time' => '一小时',
+  'punish_case' => '的电饭锅地方',
+  'punish_way' => '大范甘迪发个非官方大哥',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ RUN ] app\admin\controller\Violation->violateAdd[ C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\application\admin\controller\Violation.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[2018-12-28T17:11:14+08:00] 127.0.0.1 GET /admin/violation/violateList
+[ info ] www.taoshutp5.org/admin/violation/violateList [运行时间：0.076005s][吞吐率：13.16req/s] [内存消耗：2,050.26kb] [文件加载：50]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'violation',
+    2 => 'violateList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=fj3fprcsui8iq8ccj7t9eefnd7',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.taoshutp5.org/admin/violation/violateAdd',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.taoshutp5.org',
+)
+[ info ] [ PARAM ] array (
+  '/admin/violation/violateList' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ RUN ] app\admin\controller\Violation->violateList[ C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\application\admin\controller\Violation.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\public/../application/admin\view\violation\violateList.html [ array (
+  0 => 'violateList',
+  1 => 'violateNumber',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[2018-12-28T17:11:19+08:00] 127.0.0.1 GET /admin/user/editPage?user_id=33
+[ info ] www.taoshutp5.org/admin/user/editPage?user_id=33 [运行时间：0.081004s][吞吐率：12.35req/s] [内存消耗：2,143.98kb] [文件加载：49]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'editPage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=fj3fprcsui8iq8ccj7t9eefnd7',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.taoshutp5.org/admin/violation/violateList',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.taoshutp5.org',
+)
+[ info ] [ PARAM ] array (
+  '/admin/user/editPage' => '',
+  'user_id' => '33',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ RUN ] app\admin\controller\User->editPage[ C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\application\admin\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\public/../application/admin\view\user\userEdit.html [ array (
+  0 => 'user',
+  1 => 'classes',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[2018-12-28T17:11:23+08:00] 127.0.0.1 GET /admin/violation/violateList
+[ info ] www.taoshutp5.org/admin/violation/violateList [运行时间：0.049003s][吞吐率：20.41req/s] [内存消耗：2,050.26kb] [文件加载：50]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'violation',
+    2 => 'violateList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=fj3fprcsui8iq8ccj7t9eefnd7',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.taoshutp5.org/admin/violation/violateAdd',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.taoshutp5.org',
+)
+[ info ] [ PARAM ] array (
+  '/admin/violation/violateList' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ RUN ] app\admin\controller\Violation->violateList[ C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\application\admin\controller\Violation.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\public/../application/admin\view\violation\violateList.html [ array (
+  0 => 'violateList',
+  1 => 'violateNumber',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[2018-12-28T17:11:37+08:00] 127.0.0.1 GET /admin/violation/addPage
+[ info ] www.taoshutp5.org/admin/violation/addPage [运行时间：0.071004s][吞吐率：14.08req/s] [内存消耗：1,954.63kb] [文件加载：46]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'violation',
+    2 => 'addPage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=fj3fprcsui8iq8ccj7t9eefnd7',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.taoshutp5.org/admin/violation/violateList',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.taoshutp5.org',
+)
+[ info ] [ PARAM ] array (
+  '/admin/violation/addPage' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ RUN ] app\admin\controller\Violation->addPage[ C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\application\admin\controller\Violation.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\public/../application/admin\view\violation\violateAdd.html [ array (
+  0 => 'user',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[2018-12-28T17:11:44+08:00] 127.0.0.1 POST /admin/violation/violateAdd
+[ info ] www.taoshutp5.org/admin/violation/violateAdd [运行时间：0.098005s][吞吐率：10.20req/s] [内存消耗：1,951.49kb] [文件加载：47]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'violation',
+    2 => 'violateAdd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=fj3fprcsui8iq8ccj7t9eefnd7',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.taoshutp5.org/admin/violation/addPage',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryUQjNOfVXxvfJjKZT',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://www.taoshutp5.org',
+  'cache-control' => 'max-age=0',
+  'content-length' => '478',
+  'connection' => 'close',
+  'host' => 'www.taoshutp5.org',
+)
+[ info ] [ PARAM ] array (
+  '/admin/violation/violateAdd' => '',
+  'user_id' => '32',
+  'punish_time' => '一小时',
+  'punish_case' => '让他一人呢',
+  'punish_way' => '地铁官方大哥ery',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ RUN ] app\admin\controller\Violation->violateAdd[ C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\application\admin\controller\Violation.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[2018-12-28T17:11:45+08:00] 127.0.0.1 GET /admin/violation/violateList
+[ info ] www.taoshutp5.org/admin/violation/violateList [运行时间：0.059003s][吞吐率：16.95req/s] [内存消耗：2,052.53kb] [文件加载：50]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'violation',
+    2 => 'violateList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=fj3fprcsui8iq8ccj7t9eefnd7',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.taoshutp5.org/admin/violation/violateAdd',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.taoshutp5.org',
+)
+[ info ] [ PARAM ] array (
+  '/admin/violation/violateList' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ RUN ] app\admin\controller\Violation->violateList[ C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\application\admin\controller\Violation.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\public/../application/admin\view\violation\violateList.html [ array (
+  0 => 'violateList',
+  1 => 'violateNumber',
+) ]
+[ info ] [ LOG ] INIT File

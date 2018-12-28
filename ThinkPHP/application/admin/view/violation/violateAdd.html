@@ -34,34 +34,36 @@
 			<div class="a">
 				<h2>淘书街添加新违规</h2>
 			</div>
-			<form action="/admin/user/userAdd" method="post" enctype="multipart/form-data" class="add_form" onsubmit="return checkAddUser()">
-				
+			<form action="/admin/violation/violateAdd" method="post" enctype="multipart/form-data" class="add_form" onsubmit="return checkAddUser()">
 				<div class="add_list">
-					<label class="add_label"><span class="xing">*</span>年级：</label>
-					<select name="grade" class="add_input">
-						<option value="2014">2014</option>
-						<option value="2015">2015</option>
-						<option value="2016">2016</option>
-						<option value="2017">2017</option>
-					</select>
-				</div>
-				<div class="add_list">
-					<label class="add_label"><span class="xing">*</span>专业：</label>
-					<select name="class" class="add_input">
-						{volist name="classes" id="class"}
-						<option value="{$class.class_id}">
-						{$class.class_name}
+					<label class="add_label"><span class="xing">*</span>违规用户：</label>
+					<select name="user_id" class="add_input">
+						{volist name="user" id="vo"}
+						<option value="{$vo.user_id}">
+						{$vo.user_realname}
 						</option>
 						{/volist}
 					</select>
 				</div>
 				<div class="add_list">
-					<label class="add_label" style="margin-top: 30px;">违规原因：</label>
-					<textarea name="content" class="add_textarea"></textarea>
+					<label class="add_label"><span class="xing">*</span>惩罚时间：</label>
+					<select name="punish_time" class="add_input">
+						<option value="一小时">一小时</option>
+						<option value="十小时">十小时</option>
+						<option value="一天">一天</option>
+						<option value="一周">一周</option>
+						<option value="一个月">一个月</option>
+						<option value="一年">一年</option>
+						<option value="永久">永久</option>
+					</select>
 				</div>
 				<div class="add_list">
-					<label class="add_label" style="margin-top: 30px;">违规处理：</label>
-					<textarea name="content" class="add_textarea"></textarea>
+					<label class="add_label" style="margin-top: 30px;"><span class="xing">*</span>惩罚原因：</label>
+					<textarea name="punish_case" class="add_textarea"></textarea>
+				</div>
+				<div class="add_list">
+					<label class="add_label" style="margin-top: 30px;"><span class="xing">*</span>惩罚方式：</label>
+					<textarea name="punish_way" class="add_textarea"></textarea>
 				</div>
 				<input type="submit" value="提交" class="add_submit" />
 			</form>
