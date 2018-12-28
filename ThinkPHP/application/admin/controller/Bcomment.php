@@ -2,10 +2,12 @@
 
 namespace app\admin\controller;
 
+use app\admin\controller\Common;
+
 use think\Controller;
 use think\Db;
 
-class Bcomment extends Controller 
+class Bcomment extends Common 
 {
 	public function index()
 	{
@@ -114,7 +116,8 @@ class Bcomment extends Controller
 			$where['bcomment_content'] = array('like','%'.$search.'%');	
 		}
 
-		
+		// dump($where);
+
 		$commentList = Db::table('bcomment')
 		->alias('a')
 		->where($where)

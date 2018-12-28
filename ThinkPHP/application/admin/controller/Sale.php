@@ -2,10 +2,12 @@
 
 namespace app\admin\controller;
 
+use app\admin\controller\Common;
+
 use think\Controller;
 use think\Db;
 
- class Sale extends Controller 
+class Sale extends Common
 {
 	public function index()
 	{
@@ -30,6 +32,30 @@ use think\Db;
 		$this->assign('bookNumber', $bookNumber);
 
 		return $this->fetch('saleBookList');
+	}
+
+	public function saleBookDetail()
+	{
+		$sale_id = input('get.sale_id');
+		$where = "sale_id = {$sale_id}";
+
+		//级联查询
+		$saleBookList = Db::table('sale_book')->alias('a')->where($where)
+		->join('type_second b', 'a.sale_secondtype = b.second_id')
+		->join('user c', 'a.user_id = c.user_id')
+		->find();
+
+		// $bookNumber = Db::table('sale_book')->alias('a')->where($where)
+		// ->join('type_second b', 'a.sale_secondtype = b.second_id')
+		// ->join('user c', 'a.user_id = c.user_id')
+		// ->count();
+
+		
+		$this->assign('value', $saleBookList);
+		// $this->assign('bookNumber', $bookNumber);
+
+
+		return $this->fetch('saleBookDetail');
 	}
 
 	//添加书籍信息填写
@@ -104,7 +130,7 @@ use think\Db;
 		$this->assign('saleBookList', $saleBookList);
 		$this->assign('bookNumber', $bookNumber);
 
-		return $this->fetch('saleBookList');
+		return $this->fetch('saleBooklist');
 
 	}
 
@@ -151,6 +177,7 @@ use think\Db;
 			'sale_beprice'		=>	$beprice,
 			'sale_afprice'		=>	$afprice,
 			'sale_num'			=>	$num,
+			'sale_volume'		=>	0,
 			'sale_page'			=>	$page,
 			'sale_degrees'		=>	$degrees,
 			'sale_secondtype'	=>	$type,
@@ -269,6 +296,101 @@ use think\Db;
 		//4.后续操作
 		$this->success('修改出售书籍成功！', '/admin/sale/saleBookList');
 		
+	}
+
+	//按销量排序
+	public function orderByVolume()
+	{
+		$volume = Db::table('shoporder')
+		->alias('a')
+		->join('sale_book b', 'a.book_id = b.sale_id')
+		->join('type_second c', 'b.sale_secondtype = c.second_id')
+		->join('user d', 'b.user_id = d.user_id')
+		->group('book_id')
+		->field('sum(order_sum), b.*, c.*, d.*, a.*')
+		->order('sum(order_sum)','desc')
+		->paginate(15);
+
+		// dump($volume);
+		
+
+		$bookNumber = Db::table('shoporder')
+		->alias('a')
+		->join('sale_book b', 'a.book_id = b.sale_id')
+		->join('type_second c', 'b.sale_secondtype = c.second_id')
+		->join('user d', 'b.user_id = d.user_id')
+		->group('book_id')
+		->field('book_id, sum(order_sum), b.*')
+		->order('sum(order_sum)','desc')
+		->count();
+
+		$this->assign('saleBookList', $volume);
+		$this->assign('bookNumber', $bookNumber);
+
+		return $this->fetch('saleBooklist');
+	}
+
+	//按库存排序
+	public function orderByNumber()
+	{
+		$saleBooklist = Db::table('sale_book')
+		->alias('a')
+		->join('type_second b', 'a.sale_secondtype = b.second_id')
+		->join('user c', 'a.user_id = c.user_id')
+		->order('sale_num', 'desc')
+		->paginate(15);
+
+		// dump($volume);
+		
+
+		$bookNumber = Db::table('sale_book')
+		->order('sale_num', 'desc')
+		->count();
+
+		$this->assign('saleBookList', $saleBooklist);
+		$this->assign('bookNumber', $bookNumber);
+
+		return $this->fetch('saleBooklist');
+	}
+
+	//按价格从高到低排序
+	public function orderByPriceDesc()
+	{
+		$saleBooklist = Db::table('sale_book')
+		->alias('a')
+		->join('type_second b', 'a.sale_secondtype = b.second_id')
+		->join('user c', 'a.user_id = c.user_id')
+		->order('sale_afprice', 'desc')
+		->paginate(15);
+
+		$bookNumber = Db::table('sale_book')
+		->order('sale_afprice', 'desc')
+		->count();
+
+		$this->assign('saleBookList', $saleBooklist);
+		$this->assign('bookNumber', $bookNumber);
+
+		return $this->fetch('saleBooklist');
+	}
+
+	//按价格从低到高排序
+	public function orderByPrice()
+	{
+		$saleBooklist = Db::table('sale_book')
+		->alias('a')
+		->join('type_second b', 'a.sale_secondtype = b.second_id')
+		->join('user c', 'a.user_id = c.user_id')
+		->order('sale_afprice')
+		->paginate(15);
+
+		$bookNumber = Db::table('sale_book')
+		->order('sale_afprice')
+		->count();
+
+		$this->assign('saleBookList', $saleBooklist);
+		$this->assign('bookNumber', $bookNumber);
+
+		return $this->fetch('saleBooklist');
 	}
 
 }

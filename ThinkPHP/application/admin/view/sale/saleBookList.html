@@ -8,6 +8,7 @@
 		<link rel="stylesheet" href="__CSS__/back/common.css" />
 		<link rel="stylesheet" href="__CSS__/back/page.css" />
 		<link rel="stylesheet" href="/static/font/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="__CSS__/back/saleBookDetail.css" />
 		
 		<script type="text/javascript" src="__JS__/back/jquery.min.js"></script>
 		<script type="text/javascript" src="__JS__/back/public.js"></script>
@@ -39,7 +40,29 @@
 					<input type="text" class="search" placeholder="书名" name="search" />
 					<input type="submit" class="search_button" value="搜索" />
 				</form>
-				<a href="/admin/sale/addPage" class="addUser"><i class="fa fa-plus-circle"></i> 添加新出售</a>
+				<!-- <a href="/admin/sale/addPage" class="addUser"><i class="fa fa-plus-circle"></i> 添加新出售</a> -->
+			</div>
+			<div id="sort-nav" >
+				<ul>
+					<li><a>综合排序</a></li>
+					<li><a>新旧程度</a></li>
+					<li><a href="/admin/sale/orderByVolume">销量</a></li>
+					<li><a href="/admin/sale/orderByNumber">库存</a></li>
+					<li>
+						<span class="prize-box"><a>价格</a><img src="__IMG__/coin20.png">
+						<div class="prize-content" style="width: 170px;"> 
+							<ul>
+								<li style="font-weight: normal; width: 150px;" onclick="">
+									<a href="/admin/sale/orderByPriceDesc">价格从高到低</a>
+								</li>
+								<li style="font-weight: normal; width: 150px; margin: 0px;" onclick="">
+									<a href="/admin/sale/orderByPrice">价格从低到高</a>
+								</li>
+							</ul>
+						</div>
+						</span>
+					</li>
+				</ul>
 			</div>
 			<form action="/admin/sale/checkedBookDelete" method="post">
 			<table cellpadding="0" cellspacing="0">
@@ -63,7 +86,8 @@
 					<td>{$value.sale_isbn}</td>
 					<td class="sale_c" style="max-width: 120px;">
 						<img src="{$value.sale_img}" style="width: 21px;height: 30px;vertical-align: middle;" />
-						{$value.sale_name}
+						
+						<a href="/admin/sale/saleBookDetail?sale_id={$value.sale_id}">{$value.sale_name}</a>
 					</td>
 					<td class="sale_c" style="max-width: 90px;">{$value.sale_author}</td>
 					<td class="sale_c" style="max-width: 80px;">{$value.sale_publishing}</td>
@@ -87,7 +111,7 @@
 			<p class="msg">
 				<span id="notdisplay" style="display: none;"></span>
 				<input type="submit" value="删除选中" class="delBtn" id="delBtn" disabled="disabled" onclick='return checkdel();'/>
-				共找到 {$bookNumber} 条会员信息，每页显示15条记录
+				共找到 {$bookNumber} 条书籍信息，每页显示15条记录
 			</p>
 			<div class="" style="text-align: center;margin-bottom:20px; ">
 			{$saleBookList->render()}

@@ -1,0 +1,30 @@
+---------------------------------------------------------------
+[2018-12-28T15:09:09+08:00] 127.0.0.1 GET /admin/user/userList
+[ error ] [0]模板文件不存在:C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\public/../application/admin\view\user\useList.html[C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\thinkphp\library\think\view\driver\Think.php:82]
+---------------------------------------------------------------
+[2018-12-28T15:09:26+08:00] 127.0.0.1 GET /admin/user/userList
+[ error ] [0]模板文件不存在:C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\public/../application/admin\view\user\useList.html[C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\thinkphp\library\think\view\driver\Think.php:82]
+---------------------------------------------------------------
+[2018-12-28T16:05:02+08:00] 127.0.0.1 GET /admin/violation/violateList
+[ error ] [8]未定义数组索引: violate_type[C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\runtime\temp\e234da21d9f10de8f8c5ec72d0d1e36e.php:243]
+---------------------------------------------------------------
+[2018-12-28T16:27:45+08:00] 127.0.0.1 GET /admin/violation/addPage
+[ error ] [8]未定义变量: classes[C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\runtime\temp\b1e0f74ac61110dcd18e0e7ba6bb46b2.php:232]
+---------------------------------------------------------------
+[2018-12-28T16:31:01+08:00] 127.0.0.1 GET /admin/violation/addPage
+[ error ] [8]未定义数组索引: user_id[C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\runtime\temp\b1e0f74ac61110dcd18e0e7ba6bb46b2.php:233]
+---------------------------------------------------------------
+[2018-12-28T17:10:40+08:00] 127.0.0.1 POST /admin/violation/violateAdd
+[ error ] [4]语法错误: unexpected ';', expecting ']'[C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\application\admin\controller\Violation.php:68]
+---------------------------------------------------------------
+[2018-12-28T17:20:47+08:00] 127.0.0.1 GET /admin/violate/violateList
+[ error ] [0]模板文件不存在:C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\public/../application/admin\view\violate\violateList.html[C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\thinkphp\library\think\view\driver\Think.php:82]
+---------------------------------------------------------------
+[2018-12-28T17:38:16+08:00] 127.0.0.1 GET /admin/violate/violateDelete?violate_id=2
+[ error ] [10501]SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1[C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\thinkphp\library\think\db\Connection.php:463]
+---------------------------------------------------------------
+[2018-12-28T17:39:52+08:00] 127.0.0.1 GET /admin/violate/violateDelete?violate_id=2
+[ error ] [10501]SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1[C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\thinkphp\library\think\db\Connection.php:463]
+---------------------------------------------------------------
+[2018-12-28T17:44:25+08:00] 127.0.0.1 POST /admin/violate/checkedViolateDelete
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'tao_shu.violate' doesn't exist[C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\thinkphp\library\think\db\Connection.php:390]

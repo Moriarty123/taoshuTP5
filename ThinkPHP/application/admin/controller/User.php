@@ -2,10 +2,13 @@
 
 namespace app\admin\controller;
 
+use app\admin\controller\Common;
+
 use think\Controller;
 use think\Db;
+use think\Log;
 
-class User extends Controller
+class User extends Common
 {
 	public function index()
 	{
@@ -21,6 +24,9 @@ class User extends Controller
 		$this->assign('userList', $userList); 
 		$this->assign('userNumber', $userNumber);
 
+		//日志
+		Log::record('显示用户列表userList.html','notice');
+
 		return $this->fetch('userList');
 	}
 
@@ -30,6 +36,10 @@ class User extends Controller
 		$classes = Db::table('class')->select();
 
 		$this->assign('classes', $classes);
+
+		//日志
+		Log::record('跳转到添加用户界面addPage.html','notice');
+
 		return $this->fetch('userAdd');
 	}
 

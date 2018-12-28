@@ -2,10 +2,12 @@
 
 namespace app\admin\controller;
 
+use app\admin\controller\Common;
+
 use think\Controller;
 use think\Db;
 
-class Order extends Controller 
+class Order extends Common 
 {
 	public function index()
 	{
@@ -101,10 +103,13 @@ class Order extends Controller
 			'order_buy'		=> 0,
 			'order_sale'	=> 0
 		];
-		// dump($data);
-		// die();
+
 		//3.存入数据库
 		$ret = Db::table('shoporder')->insert($data);
+		//3.1书籍库存减少
+		$res = Db::table('sale_book')
+		->where("sale_id = {$sale_id}")
+		->setDec('sale_num', $num);
 
 		if ($ret == false) {
 			$this->error('添加订单失败！');

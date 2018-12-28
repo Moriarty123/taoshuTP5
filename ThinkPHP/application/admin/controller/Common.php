@@ -3,9 +3,29 @@ namespace app\admin\controller;
 
 use think\Db;
 use think\Controller;
+use think\Log;
 
 class Common extends Controller
 {
+	//初始化函数
+	public function _initialize()
+    {
+        $id = session('admin_id');
+
+    	if($id == NULL) {
+    		$this->error('请登录！', 'admin/login/index');
+    	}
+
+    	
+
+    	$loginTime = session('loginTime');
+    	if(time() - $loginTime > 3000) {
+    		$this->error('登录超时，请重新登录！', 'admin/login/index');
+    	}
+
+    }
+
+
     //上传图片
 	public function UserImage() 
 	{
@@ -65,5 +85,10 @@ class Common extends Controller
 	public function sort()
 	{
 		return $this->fetch('sort');
+	}    
+
+	public function container()
+	{
+		return $this->fetch('container');
 	}    
 }

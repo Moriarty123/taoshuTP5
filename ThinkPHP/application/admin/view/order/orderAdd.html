@@ -34,7 +34,7 @@
 					<select class="add_input" name="user">
 						<option value="0">--请选择购买人--</option>
 						{volist name="user" id="value"}
-						<option value="<?php echo $value['user_id']; ?>"><?php echo $value['user_realname']; ?></option>
+						<option value="{$value.user_id}">{$value.user_realname}</option>
 						{/volist}
 					</select>
 				</div>
@@ -43,13 +43,13 @@
 					<select class="add_input" name="name" onchange="ShowNum()">
 						<option value="0">--请选择购买书籍--</option>
 						{volist name="book" id="value"}
-						<option value="<?php echo $value['sale_id']; ?>"><?php echo $value['sale_name']; ?></option>
+						<option value="{$value.sale_id}">{$value.sale_name}</option>
 						{/volist}
 					</select>
 					<div class="num" style="float: right;margin-top: 5px;margin-right: 8px; display: none;">
 						{volist name="book" id="value"}
-						<span style="display: none;" class="num_span<?php echo $value['sale_id']; ?>">库存：<label><?php echo $value['sale_num']; ?></label></span>
-						<span style="display: none;" class="price_span<?php echo $value['sale_id']; ?>">单价：<label><?php echo $value['sale_afprice']; ?></label></span>
+						<span style="display: none;" class="num_span{$value.sale_id}">库存：<label>{$value.sale_num}</label></span>
+						<span style="display: none;" class="price_span{$value.sale_id}">单价：<label>{$value.sale_afprice}</label></span>
 						{/volist}
 					</div>
 				</div>
