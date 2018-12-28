@@ -4613,3 +4613,577 @@
   1 => 'violateNumber',
 ) ]
 [ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[2018-12-28T17:33:17+08:00] 127.0.0.1 GET /admin/violate/violateList
+[ info ] www.taoshutp5.org/admin/violate/violateList [运行时间：0.042002s][吞吐率：23.81req/s] [内存消耗：2,066.78kb] [文件加载：50]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'violate',
+    2 => 'violateList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=fj3fprcsui8iq8ccj7t9eefnd7',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.taoshutp5.org/admin/violate/violateAdd',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.taoshutp5.org',
+)
+[ info ] [ PARAM ] array (
+  '/admin/violate/violateList' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ RUN ] app\admin\controller\Violate->violateList[ C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\application\admin\controller\Violate.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\public/../application/admin\view\violate\violateList.html [ array (
+  0 => 'violateList',
+  1 => 'violateNumber',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[2018-12-28T17:37:38+08:00] 127.0.0.1 GET /admin/violate/violateList
+[ info ] www.taoshutp5.org/admin/violate/violateList [运行时间：0.060003s][吞吐率：16.67req/s] [内存消耗：2,199.40kb] [文件加载：52]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'violate',
+    2 => 'violateList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=fj3fprcsui8iq8ccj7t9eefnd7',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.taoshutp5.org/admin/violate/violateAdd',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.taoshutp5.org',
+)
+[ info ] [ PARAM ] array (
+  '/admin/violate/violateList' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ RUN ] app\admin\controller\Violate->violateList[ C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\application\admin\controller\Violate.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\public/../application/admin\view\violate\violateList.html [ array (
+  0 => 'violateList',
+  1 => 'violateNumber',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[2018-12-28T17:38:12+08:00] 127.0.0.1 GET /admin/violate/violateList
+[ info ] www.taoshutp5.org/admin/violate/violateList [运行时间：0.080004s][吞吐率：12.50req/s] [内存消耗：2,199.23kb] [文件加载：52]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'violate',
+    2 => 'violateList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=fj3fprcsui8iq8ccj7t9eefnd7',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.taoshutp5.org/admin/violate/violateAdd',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.taoshutp5.org',
+)
+[ info ] [ PARAM ] array (
+  '/admin/violate/violateList' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ RUN ] app\admin\controller\Violate->violateList[ C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\application\admin\controller\Violate.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\public/../application/admin\view\violate\violateList.html [ array (
+  0 => 'violateList',
+  1 => 'violateNumber',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[2018-12-28T17:38:16+08:00] 127.0.0.1 GET /admin/violate/violateDelete?violate_id=2
+[ info ] www.taoshutp5.org/admin/violate/violateDelete?violate_id=2 [运行时间：0.048003s][吞吐率：20.83req/s] [内存消耗：1,988.20kb] [文件加载：51]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'violate',
+    2 => 'violateDelete',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=fj3fprcsui8iq8ccj7t9eefnd7',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.taoshutp5.org/admin/violate/violateList',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.taoshutp5.org',
+)
+[ info ] [ PARAM ] array (
+  '/admin/violate/violateDelete' => '',
+  'violate_id' => '2',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ RUN ] app\admin\controller\Violate->violateDelete[ C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\application\admin\controller\Violate.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[2018-12-28T17:39:52+08:00] 127.0.0.1 GET /admin/violate/violateDelete?violate_id=2
+[ info ] www.taoshutp5.org/admin/violate/violateDelete?violate_id=2 [运行时间：0.053003s][吞吐率：18.87req/s] [内存消耗：1,988.64kb] [文件加载：51]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'violate',
+    2 => 'violateDelete',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=fj3fprcsui8iq8ccj7t9eefnd7',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.taoshutp5.org/admin/violate/violateList',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.taoshutp5.org',
+)
+[ info ] [ PARAM ] array (
+  '/admin/violate/violateDelete' => '',
+  'violate_id' => '2',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ RUN ] app\admin\controller\Violate->violateDelete[ C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\application\admin\controller\Violate.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[2018-12-28T17:40:10+08:00] 127.0.0.1 GET /admin/violate/violateDelete?violate_id=2
+[ info ] www.taoshutp5.org/admin/violate/violateDelete?violate_id=2 [运行时间：0.038003s][吞吐率：26.31req/s] [内存消耗：1,957.70kb] [文件加载：48]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'violate',
+    2 => 'violateDelete',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=fj3fprcsui8iq8ccj7t9eefnd7',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.taoshutp5.org/admin/violate/violateList',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'www.taoshutp5.org',
+)
+[ info ] [ PARAM ] array (
+  '/admin/violate/violateDelete' => '',
+  'violate_id' => '2',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ RUN ] app\admin\controller\Violate->violateDelete[ C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\application\admin\controller\Violate.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ warning ] 删除违规记录，暂时取消外链，删除后恢复
+---------------------------------------------------------------
+[2018-12-28T17:40:11+08:00] 127.0.0.1 GET /admin/violate/violateList
+[ info ] www.taoshutp5.org/admin/violate/violateList [运行时间：0.061004s][吞吐率：16.39req/s] [内存消耗：2,064.40kb] [文件加载：50]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'violate',
+    2 => 'violateList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=fj3fprcsui8iq8ccj7t9eefnd7',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.taoshutp5.org/admin/violate/violateDelete?violate_id=2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.taoshutp5.org',
+)
+[ info ] [ PARAM ] array (
+  '/admin/violate/violateList' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ RUN ] app\admin\controller\Violate->violateList[ C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\application\admin\controller\Violate.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\public/../application/admin\view\violate\violateList.html [ array (
+  0 => 'violateList',
+  1 => 'violateNumber',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[2018-12-28T17:40:15+08:00] 127.0.0.1 GET /admin/user/editPage?user_id=32
+[ info ] www.taoshutp5.org/admin/user/editPage?user_id=32 [运行时间：0.107006s][吞吐率：9.35req/s] [内存消耗：2,143.93kb] [文件加载：49]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'editPage',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=fj3fprcsui8iq8ccj7t9eefnd7',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.taoshutp5.org/admin/violate/violateList',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.taoshutp5.org',
+)
+[ info ] [ PARAM ] array (
+  '/admin/user/editPage' => '',
+  'user_id' => '32',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ RUN ] app\admin\controller\User->editPage[ C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\application\admin\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\public/../application/admin\view\user\userEdit.html [ array (
+  0 => 'user',
+  1 => 'classes',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[2018-12-28T17:40:17+08:00] 127.0.0.1 GET /admin/violate/violateList
+[ info ] www.taoshutp5.org/admin/violate/violateList [运行时间：0.038002s][吞吐率：26.31req/s] [内存消耗：2,064.40kb] [文件加载：50]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'violate',
+    2 => 'violateList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=fj3fprcsui8iq8ccj7t9eefnd7',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.taoshutp5.org/admin/violate/violateDelete?violate_id=2',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.taoshutp5.org',
+)
+[ info ] [ PARAM ] array (
+  '/admin/violate/violateList' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ RUN ] app\admin\controller\Violate->violateList[ C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\application\admin\controller\Violate.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\public/../application/admin\view\violate\violateList.html [ array (
+  0 => 'violateList',
+  1 => 'violateNumber',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[2018-12-28T17:40:19+08:00] 127.0.0.1 GET /admin/violate/violateDelete?violate_id=5
+[ info ] www.taoshutp5.org/admin/violate/violateDelete?violate_id=5 [运行时间：0.094005s][吞吐率：10.64req/s] [内存消耗：1,957.48kb] [文件加载：48]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'violate',
+    2 => 'violateDelete',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=fj3fprcsui8iq8ccj7t9eefnd7',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.taoshutp5.org/admin/violate/violateList',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.taoshutp5.org',
+)
+[ info ] [ PARAM ] array (
+  '/admin/violate/violateDelete' => '',
+  'violate_id' => '5',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ RUN ] app\admin\controller\Violate->violateDelete[ C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\application\admin\controller\Violate.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ warning ] 删除违规记录，暂时取消外链，删除后恢复
+---------------------------------------------------------------
+[2018-12-28T17:40:21+08:00] 127.0.0.1 GET /admin/violate/violateList
+[ info ] www.taoshutp5.org/admin/violate/violateList [运行时间：0.076004s][吞吐率：13.16req/s] [内存消耗：2,062.14kb] [文件加载：50]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'violate',
+    2 => 'violateList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=fj3fprcsui8iq8ccj7t9eefnd7',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.taoshutp5.org/admin/violate/violateDelete?violate_id=5',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.taoshutp5.org',
+)
+[ info ] [ PARAM ] array (
+  '/admin/violate/violateList' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ RUN ] app\admin\controller\Violate->violateList[ C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\application\admin\controller\Violate.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\public/../application/admin\view\violate\violateList.html [ array (
+  0 => 'violateList',
+  1 => 'violateNumber',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[2018-12-28T17:40:25+08:00] 127.0.0.1 GET /admin/violate/violateDelete?violate_id=4
+[ info ] www.taoshutp5.org/admin/violate/violateDelete?violate_id=4 [运行时间：0.067004s][吞吐率：14.92req/s] [内存消耗：1,957.48kb] [文件加载：48]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'violate',
+    2 => 'violateDelete',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=fj3fprcsui8iq8ccj7t9eefnd7',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.taoshutp5.org/admin/violate/violateList',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.taoshutp5.org',
+)
+[ info ] [ PARAM ] array (
+  '/admin/violate/violateDelete' => '',
+  'violate_id' => '4',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ RUN ] app\admin\controller\Violate->violateDelete[ C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\application\admin\controller\Violate.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ warning ] 删除违规记录，暂时取消外链，删除后恢复
+---------------------------------------------------------------
+[2018-12-28T17:40:26+08:00] 127.0.0.1 GET /admin/violate/violateList
+[ info ] www.taoshutp5.org/admin/violate/violateList [运行时间：0.038002s][吞吐率：26.31req/s] [内存消耗：2,059.91kb] [文件加载：50]
+[ info ] [ LANG ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'violate',
+    2 => 'violateList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=fj3fprcsui8iq8ccj7t9eefnd7',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.taoshutp5.org/admin/violate/violateDelete?violate_id=4',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.taoshutp5.org',
+)
+[ info ] [ PARAM ] array (
+  '/admin/violate/violateList' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+  'httponly' => true,
+  'secure' => false,
+)
+[ info ] [ RUN ] app\admin\controller\Violate->violateList[ C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\application\admin\controller\Violate.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\public/../application/admin\view\violate\violateList.html [ array (
+  0 => 'violateList',
+  1 => 'violateNumber',
+) ]
+[ info ] [ LOG ] INIT File

@@ -117,4 +117,28 @@ class Violate extends Common
 
 	}
 
+	//删除违规记录
+	public function violateDelete()
+	{
+		log::record('删除违规记录', 'notice');
+
+		$violate_id = input('get.violate_id');
+		$where = "violate_id = {$violate_id}";
+
+		// dump($where);
+
+		//暂时取消外链，删除后恢复
+		Db::query('SET FOREIGN_KEY_CHECKS = 0;');
+		$ret = Db::table('violation')->where($where)->delete();
+		Db::query('SET FOREIGN_KEY_CHECKS = 1;');
+
+		log::record('删除违规记录，暂时取消外链，删除后恢复', 'warning');
+
+		if ($ret == false) {
+			$this->error('删除违规记录失败！', '/admin/violate/violateList');
+		}
+
+		$this->success('删除违规记录成功！', '/admin/violate/violateList');
+	}
+
 }

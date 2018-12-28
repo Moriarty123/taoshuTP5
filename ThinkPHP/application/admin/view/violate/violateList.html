@@ -68,7 +68,7 @@
 
 					<td>
 						<a href="/admin/user/editPage?user_id={$vo.user_id}" class="op"><i class="fa fa-edit" title="编辑"></i></a> 
-						<a href="/admin/user/userDelete?user_id={$vo.user_id}" class="op" onclick="return del()">
+						<a href="/admin/violate/violateDelete?violate_id={$vo.violate_id}" class="op" onclick="return del()">
 							<i class="fa fa-trash-alt" title="删除"></i>
 						</a> 
 					</td>
@@ -105,9 +105,9 @@
 	user.getElementsByTagName("dd")[0].style.display = "block";
 	
 	function del(){
-		return window.confirm("你确认要删除该用户、包括该用户的所有书籍和订单信息吗？");
+		return window.confirm("你确认要删除该违规信息吗？");
 	}
 	function checkdel(){
-		return window.confirm("你确认要删除选中的用户、包括用户的所有书籍和订单信息吗？");
+		return window.confirm("你确认要删除选中的违规信息吗？");
 	}
 </script>
