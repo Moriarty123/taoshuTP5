@@ -84,4 +84,9 @@ class Common extends Controller
 	{
 		return $this->fetch('sort');
 	}    
+
+	public function container()
+	{
+		return $this->fetch('container');
+	}    
 }

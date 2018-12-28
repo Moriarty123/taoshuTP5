@@ -8,8 +8,8 @@
 		<link rel="stylesheet" href="__CSS__/back/common.css" />
 		<link rel="stylesheet" href="__CSS__/back/page.css" />
 		<link rel="stylesheet" type="text/css" href="__CSS__/back/think-page.css">
-		<link rel="stylesheet" href="/static/font/css/font-awesome.min.css" />
-
+		<!-- <link rel="stylesheet" href="/static/font/css/font-awesome.min.css" /> -->
+		<link rel="stylesheet" href="/static/fontawesome-5.5.0/css/all.css" />
 		
 		<script type="text/javascript" src="__JS__/back/jquery.min.js"></script>
 		<script type="text/javascript" src="__JS__/back/public.js"></script>
@@ -71,7 +71,9 @@
 						<a href="/admin/user/editPage?user_id={$vo.user_id}" class="op"><i class="fa fa-edit" title="编辑"></i></a> 
 						<a href="/admin/user/pwdPage?user_id={$vo.user_id}" class="op"><i class="fa fa-key" title="修改密码"></i></a> 
 						<a href="/admin/user/userDelete?user_id={$vo.user_id}" class="op" onclick="return del()">
-							<i class="fa fa-trash-o" title="删除"></i>
+							<!-- <i class="fa fa-trash-o" title="删除"></i> -->
+
+							<i class="fa fa-trash-alt" title="删除"></i>
 						</a> 
 					</td>
 				</tr>

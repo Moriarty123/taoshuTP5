@@ -25,12 +25,14 @@ $(function(){
 			$(this).parent().find('.icon3').show();
 			$(this).parent().find('.icon4').hide();
 			$(this).addClass('menu_chioce1');
+			$(this).find('i').addClass('menu_chioce1');
 		}else{
 			$(this).parent().find('.icon1').hide();
 			$(this).parent().find('.icon2').show();
 			$(this).parent().find('.icon3').hide();
 			$(this).parent().find('.icon4').show();
 			$(this).removeClass('menu_chioce1');
+			$(this).find('i').removeClass('menu_chioce1');
 		}
 		$(this).parent().find('dd').removeClass("menu_chioce");
 		$(".menu_chioce").slideUp();

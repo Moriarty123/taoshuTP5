@@ -34,5 +34,27 @@ use think\Db;
 		return $this->fetch('replyList');
 	}
 
+	//删除回复
+	public function replyDelete()
+	{
+		$reply_id = input('get.reply_id');
+
+		$where = "reply_id = {$reply_id}";
+
+		
+
+		//暂时取消外链，删除后恢复
+		Db::query('SET FOREIGN_KEY_CHECKS = 0;');
+		$ret = Db::table('bcomment_reply')->where($where)->delete();
+		Db::query('SET FOREIGN_KEY_CHECKS = 1;');
+
+		if ($ret == false) {
+			$this->error('删除回复失败！','/admin/bcomment/commentList');
+		}
+
+		$this->success('删除回复成功！', '/admin/bcomment/commentList');
+
+	}
+
 
 }
