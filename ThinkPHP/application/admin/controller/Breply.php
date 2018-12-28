@@ -49,12 +49,13 @@ use think\Db;
 		Db::query('SET FOREIGN_KEY_CHECKS = 1;');
 
 		if ($ret == false) {
-			$this->error('删除回复失败！','/admin/bcomment/commentList');
+			$this->error('删除回复失败！','/admin/breply/replyList');
 		}
 
-		$this->success('删除回复成功！', '/admin/bcomment/commentList');
+		$this->success('删除回复成功！', '/admin/breply/replyList');
 
 	}
 
 
 }
+

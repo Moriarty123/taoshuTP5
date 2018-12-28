@@ -58,8 +58,8 @@
 					<td>{$value.reply_content}</td>
 					<td>{$value.addtime|date="Y-h-d h:i:s", ###}</td>
 					<td>
-						<a href="/admin/bcomment/editPage?bcomment_id={$value.bcomment_id}" class="op"><i class="fa fa-edit" title="屏蔽"></i></a> 
-						<a href="/admin/bcomment/commentDelete?bcomment_id={$value.bcomment_id}" class="op" onclick="return del()">
+						<a href="/admin/breply/editPage?bcomment_id={$value.bcomment_id}" class="op"><i class="fa fa-edit" title="屏蔽"></i></a> 
+						<a href="/admin/breply/replyDelete?reply_id={$value.reply_id}" class="op" onclick="return del()">
 							<i class="fa fa-trash-alt" title="删除"></i>
 						</a> 
 					</td>
