@@ -111,6 +111,45 @@ use think\Db;
 		return $this->fetch('replyList');
 
 	}
+
+	//屏蔽留言
+	public function changeState()
+	{
+		//1.获取数据
+		$reply_id = input('get.reply_id');
+
+		//2.获取屏蔽状态
+		//2.1查找回复
+		$where = "reply_id = {$reply_id}";
+		$reply = Db::table('bcomment_reply')->where($where)
+		->find();
+
+		if(empty($reply))
+		{
+			$this->error('找不到该回复！');
+		}
+
+		//2.2
+		$status = $reply['reply_status'];
+		$status = $status==0?1:0;
+		// dump($status);
+
+		$data = [
+			'reply_status' => $status
+		];
+
+		//暂时取消外链，删除后恢复
+		Db::query('SET FOREIGN_KEY_CHECKS = 0;');
+		$ret = Db::table('bcomment_reply')->where($where)->update($data);
+		Db::query('SET FOREIGN_KEY_CHECKS = 1;');
+
+		if ($ret == false) {
+			$this->error('修改屏蔽状态失败！','/admin/breply/replyList');
+		}
+
+		$this->success('修改屏蔽状态成功！', '/admin/breply/replyList');
+
+	}
 	
 
 }

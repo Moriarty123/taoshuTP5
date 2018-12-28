@@ -48,6 +48,7 @@
 					<th>回复人</th>
 					<th>回复内容</th>
 					<th>回复评论id</th>
+					<td>回复状态</td>
 					<th>回复时间</th>
 					<th>操作</th>
 				</tr>
@@ -58,9 +59,15 @@
 					<td>{$value.user_name}</td>
 					<td>{$value.reply_content}</td>
 					<td>{$value.bcomment_id}</td>
+					{eq name="value.reply_status" value="0"}
+					<td><a href="/admin/breply/changeState?reply_id={$value.reply_id}" style="color: #00C7B4;" onclick="return shield()">未屏蔽</a></td>
+					{else}
+					<td>已屏蔽</td>
+					{/eq}
+					
 					<td>{$value.addtime|date="Y-h-d h:i:s", ###}</td>
 					<td>
-						<a href="/admin/breply/editPage?bcomment_id={$value.bcomment_id}" class="op"><i class="fa fa-edit" title="屏蔽"></i></a> 
+						<a href="/admin/breply/changeState?reply_id={$value.reply_id}" class="op" onclick="return shield()"><i class="fa fa-edit" title="取消屏蔽"></i></a> 
 						<a href="/admin/breply/replyDelete?reply_id={$value.reply_id}" class="op" onclick="return del()">
 							<i class="fa fa-trash-alt" title="删除"></i>
 						</a> 
@@ -101,9 +108,13 @@
 	user.getElementsByTagName("dd")[0].style.display = "block";
 	
 	function del(){
-		return window.confirm("你确认要删除该留言信息吗？");
+		return window.confirm("你确认要删除该回复信息吗？");
 	}
 	function checkdel(){
-		return window.confirm("你确认要删除选中的留言信息吗？");
+		return window.confirm("你确认要删除选中的回复信息吗？");
+	}
+
+	function shield() {
+		return window.confirm("你确认要屏蔽该回复信息吗？");
 	}
 </script>
