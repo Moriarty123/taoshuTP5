@@ -25,3 +25,6 @@
 ---------------------------------------------------------------
 [2018-12-28T17:39:52+08:00] 127.0.0.1 GET /admin/violate/violateDelete?violate_id=2
 [ error ] [10501]SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')' at line 1[C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\thinkphp\library\think\db\Connection.php:463]
+---------------------------------------------------------------
+[2018-12-28T17:44:25+08:00] 127.0.0.1 POST /admin/violate/checkedViolateDelete
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'tao_shu.violate' doesn't exist[C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\thinkphp\library\think\db\Connection.php:390]

@@ -36,7 +36,7 @@
 				</form>
 				<a href="/admin/violate/addPage" class="addUser"><i class="fa fa-plus-circle"></i> 添加新违规</a>
 			</div>
-			<form action="/admin/user/checkedUserDelete" method="post">
+			<form action="/admin/violate/checkedViolateDelete" method="post">
 			<table cellpadding="0" cellspacing="0">
 				<tr>
 					<th><input type="checkbox" name="fullChoose" onclick="fullChecked(this)" /></th>
@@ -53,7 +53,7 @@
 				{volist name="violateList" id="vo"}
 				<tr>
 					<!-- TP5的post方法不能提交数组，在表单name添加/a表示要提交有关数组，获取时同样要添加/a -->
-					<td><input type="checkbox" name="ids[]/a" onclick="eachChecked()" class="eachChoose" value="{$vo.user_id}"/></td>
+					<td><input type="checkbox" name="ids[]/a" onclick="eachChecked()" class="eachChoose" value="{$vo.violate_id}"/></td>
 					<td>{$vo.violate_id}</td>
 					<td>
 						<img src="{$vo.user_img}" class="user_img"/>
@@ -67,7 +67,7 @@
 					<td>{$vo.punish_way}</td>
 
 					<td>
-						<a href="/admin/user/editPage?user_id={$vo.user_id}" class="op"><i class="fa fa-edit" title="编辑"></i></a> 
+						<a href="/admin/user/editPage?user_id={$vo.violate_id}" class="op"><i class="fa fa-edit" title="编辑"></i></a> 
 						<a href="/admin/violate/violateDelete?violate_id={$vo.violate_id}" class="op" onclick="return del()">
 							<i class="fa fa-trash-alt" title="删除"></i>
 						</a> 
