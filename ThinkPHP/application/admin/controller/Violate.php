@@ -18,6 +18,8 @@ class Violate extends Common
 	//违规用户处理列表
 	public function violateList()
 	{
+		Log::record('显示违规用户处理列表', 'notice');
+
 		$violateList = Db::table('Violation')
 		->alias('a')
 		->join('user b', 'a.user_id = b.user_id')
@@ -31,7 +33,7 @@ class Violate extends Common
 		$this->assign('violateList', $violateList);
 		$this->assign('violateNumber', $violateNumber);
 
-		Log::record('显示违规用户处理列表violateList.html', 'notice');
+		
 
 		return $this->fetch('violateList');
 	}
@@ -39,7 +41,7 @@ class Violate extends Common
 	//添加违规页面
 	public function addPage()
 	{	
-		Log::record('添加新违规页面', 'notice');
+		Log::record('添加新违规记录页面', 'notice');
 
 		$user = Db::table('user')->select();
 
@@ -48,23 +50,36 @@ class Violate extends Common
 		return $this->fetch('violateAdd');
 	}
 
+	//修改违规页面
+	public function editPage()
+	{
+		Log::record('修改违规记录页面', 'notice');
+
+		// dump($_GET);
+		$violate_id = input('get.violate_id');
+
+		$where = "violate_id = {$violate_id}";
+		$violate = Db::table('violation')
+		->where($where)
+		->alias('a')
+		->join('user b', 'a.user_id = b.user_id')
+		->find(); 
+
+		$this->assign('violate', $violate);
+
+		return $this->fetch('violateEdit');
+	}
+
 	//添加违规
 	public function violateAdd()
 	{
 		// dump($_POST);, 
-		log::record('添加新违规操作', 'notice');
+		log::record('添加新违规记录操作', 'notice');
 		//1.
 		$user_id 		= input('post.user_id');
 		$punish_time 	= input('post.punish_time');
 		$punish_case 	= input('post.punish_case');
 		$punish_way 	= input('post.punish_way');
-
-		// $punish = time() + strtotime("+1 week");
-
-		// dump(time());
-		// dump(strtotime("+1 week"));
-		// dump($punish);
-		// die();
 
 		//2.
 		$data = [
@@ -89,7 +104,7 @@ class Violate extends Common
 	//模糊查找
 	public function violateSearch()
 	{
-		log::record('模糊搜索违规用户');
+		log::record('模糊搜索违规用户', 'notice');
 		// dump($_POST);
 		$search = input('post.search');
 
@@ -118,7 +133,7 @@ class Violate extends Common
 		$this->assign('violateList', $violateList);
 		$this->assign('violateNumber', $violateNumber);
 
-		Log::record('显示违规用户处理列表', 'notice');
+		// Log::record('显示违规用户处理列表', 'notice');
 
 		return $this->fetch('violateList');
 
@@ -151,6 +166,7 @@ class Violate extends Common
 	//批量删除
 	public function checkedViolateDelete()
 	{
+		Log::record('批量删除违规记录', 'notice');
 		// dump($_POST);
 		//TP5的post方法不能提交数组，在表单name添加/a表示要提交有关数组，获取时同样要添加/a
 		$ids = input('post.ids/a');
@@ -166,6 +182,37 @@ class Violate extends Common
 		}
 
 		$this->success('删除用户成功！', '/admin/violate/violateList');
+
+	}
+
+	//修改违规记录
+	public function violateEdit()
+	{
+		// dump($_POST);, 
+		log::record('修改违规记录操作', 'notice');
+		//1.
+		$violate_id 		= input('post.violate_id');
+		$punish_time 	= input('post.punish_time');
+		$punish_case 	= input('post.punish_case');
+		$punish_way 	= input('post.punish_way');
+
+		$where = "violate_id = {$violate_id}";
+		//2.
+		$data = [
+			'punish_time'=> strtotime($punish_time),
+			'punish_case' => $punish_case,
+			'punish_way' => $punish_way,
+			// 'add_time' => time()
+		];
+
+		$ret = Db::table('violation')->where($where)->update($data);
+
+		if($ret == false)
+		{
+			$this->error('修改违规记录失败！', '/admin/violate/violateList');
+		}
+
+		$this->success('修改违规记录成功！', '/admin/violate/violateList');
 
 	}
 

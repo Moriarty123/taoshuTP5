@@ -19,3 +19,21 @@
 ---------------------------------------------------------------
 [2018-12-29T09:10:37+08:00] 127.0.0.1 GET /admin/violate/violateList
 [ error ] [2]date() expects parameter 2 to be long, string given[C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\runtime\temp\9d52820e4f73d42026cc0ca28b7daa6b.php:246]
+---------------------------------------------------------------
+[2018-12-29T09:25:28+08:00] 127.0.0.1 GET /admin/violate/editPage?violate_id=27
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'tao_shu.violate' doesn't exist[C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\thinkphp\library\think\db\Connection.php:390]
+---------------------------------------------------------------
+[2018-12-29T10:02:32+08:00] 127.0.0.1 GET /admin/violate/editPage?violate_id=27
+[ error ] [64]Cannot redeclare app\admin\controller\Violate::violateAdd()[C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\application\admin\controller\Violate.php:186]
+---------------------------------------------------------------
+[2018-12-29T10:02:35+08:00] 127.0.0.1 GET /admin/violate/editPage?violate_id=27
+[ error ] [64]Cannot redeclare app\admin\controller\Violate::violateAdd()[C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\application\admin\controller\Violate.php:186]
+---------------------------------------------------------------
+[2018-12-29T10:02:35+08:00] 127.0.0.1 GET /admin/violate/violateList
+[ error ] [64]Cannot redeclare app\admin\controller\Violate::violateAdd()[C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\application\admin\controller\Violate.php:186]
+---------------------------------------------------------------
+[2018-12-29T10:02:37+08:00] 127.0.0.1 GET /admin/violate/addPage
+[ error ] [64]Cannot redeclare app\admin\controller\Violate::violateAdd()[C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\application\admin\controller\Violate.php:186]
+---------------------------------------------------------------
+[2018-12-29T10:02:47+08:00] 127.0.0.1 GET /admin/violate/violateList
+[ error ] [64]Cannot redeclare app\admin\controller\Violate::violateAdd()[C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\application\admin\controller\Violate.php:186]

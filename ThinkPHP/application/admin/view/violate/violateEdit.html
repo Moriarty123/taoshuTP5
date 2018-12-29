@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>淘书街添加新违规记录</title>
+		<title>淘书街修改违规记录</title>
 		<link rel="shortcut icon" href="__IMG__/shu.ico" />
 		<link rel="stylesheet" href="__CSS__/back/user.css" />
 		<link rel="stylesheet" href="__CSS__/back/common.css" />
@@ -32,22 +32,17 @@
 	<div id="MainForm">
 		<div class="form_boxA">
 			<div class="a">
-				<h2>淘书街添加新违规</h2>
+				<h2>淘书街修改违规记录</h2>
 			</div>
-			<form action="/admin/violate/violateAdd" method="post" enctype="multipart/form-data" class="add_form" onsubmit="return checkAddUser()">
+			<form action="/admin/violate/violateEdit" method="post" enctype="multipart/form-data" class="add_form" onsubmit="return checkAddUser()">
 				<div class="add_list">
 					<label class="add_label"><span class="xing">*</span>违规用户：</label>
-					<select name="user_id" class="add_input">
-						{volist name="user" id="vo"}
-						<option value="{$vo.user_id}">
-						{$vo.user_realname}
-						</option>
-						{/volist}
-					</select>
+					<input type="text" name="user_realname" value="{$violate.user_realname}" disabled="true" style="width: 270px;">
+					<input type="hidden" name="violate_id" value="{$violate.violate_id}">
 				</div>
-				<div class="add_list">
+				<div class="add_list" >
 					<label class="add_label"><span class="xing">*</span>惩罚时间：</label>
-					<select name="punish_time" class="add_input">
+					<select name="punish_time" class="add_input" >
 						<option value="+1 hours">一小时</option>
 						<option value="+10 hours">十小时</option>
 						<option value="+1 day">一天</option>

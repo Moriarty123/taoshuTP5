@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>淘书街违规管理</title>
+		<title>淘书街违规记录管理</title>
 		<link rel="shortcut icon" href="__IMG__/shu.ico" />
 		<link rel="stylesheet" href="__CSS__/back/user.css" />
 		<link rel="stylesheet" href="__CSS__/back/common.css" />
@@ -67,7 +67,7 @@
 					<td>{$vo.punish_way}</td>
 
 					<td>
-						<a href="/admin/user/editPage?user_id={$vo.violate_id}" class="op"><i class="fa fa-edit" title="编辑"></i></a> 
+						<a href="/admin/violate/editPage?violate_id={$vo.violate_id}" class="op"><i class="fa fa-edit" title="编辑"></i></a> 
 						<a href="/admin/violate/violateDelete?violate_id={$vo.violate_id}" class="op" onclick="return del()">
 							<i class="fa fa-trash-alt" title="删除"></i>
 						</a> 
