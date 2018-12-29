@@ -146,11 +146,11 @@ class Sale extends Common
 		$isbn = input('post.isbn');
 
 		$where = "sale_isbn = '{$isbn}'";
-		$res = Db::table('sale_book')->where($where)->find();
+		// $res = Db::table('sale_book')->where($where)->find();
 
-		if (!empty($res)) {
-			$this->error('该书籍已存在'); 	
-		} 
+		// if (!empty($res)) {
+		// 	$this->error('该书籍已存在'); 	
+		// } 
 
 		//2.获取数据
 		$name 		= input('post.name');
@@ -167,6 +167,16 @@ class Sale extends Common
 		$content 	= input('post.content');
 		$sale_time 	= date("Y-m-d h:i:s", time());
 
+		$new = [
+			'全新'			=> 10,
+			'九成新'		=> 9,
+			'八成新'		=> 8,
+			'七成新'		=> 7,
+			'六成新及以下'	=> 6,
+		];
+
+
+
 		//3.构造数据
 		$data = [
 			'sale_isbn'			=>	$isbn,
@@ -180,6 +190,7 @@ class Sale extends Common
 			'sale_volume'		=>	0,
 			'sale_page'			=>	$page,
 			'sale_degrees'		=>	$degrees,
+			'sale_new'			=>	$new[$degrees],
 			'sale_secondtype'	=>	$type,
 			'user_id'			=>	$user,
 			'sale_content'		=>	$content,

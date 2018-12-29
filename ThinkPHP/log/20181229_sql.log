@@ -531,3 +531,233 @@
 [ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 1 [ RunTime:0.000000s ]
 [ sql ] [ SQL ] SELECT * FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 0,15 [ RunTime:0.001000s ]
 [ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[2018-12-29T10:16:43+08:00] 127.0.0.1 GET /admin/violate/addPage
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `user` [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[2018-12-29T10:17:41+08:00] 127.0.0.1 GET /admin/violate/violateList
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `Violation` [ RunTime:0.034002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 0,15 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[2018-12-29T10:19:08+08:00] 127.0.0.1 GET /admin/violate/violateList
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `Violation` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 0,15 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[2018-12-29T10:19:51+08:00] 127.0.0.1 GET /admin/violate/violateList
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `Violation` [ RunTime:0.021002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 0,15 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[2018-12-29T10:32:14+08:00] 127.0.0.1 GET /admin/violate/addPage
+[ sql ] [ DB ] CONNECT:[ UseTime:0.162009s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.350020s ]
+[ sql ] [ SQL ] SELECT * FROM `user` [ RunTime:0.128008s ]
+---------------------------------------------------------------
+[2018-12-29T10:32:14+08:00] 127.0.0.1 GET /admin/violate/addPage
+[ sql ] [ DB ] CONNECT:[ UseTime:0.090005s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.138008s ]
+[ sql ] [ SQL ] SELECT * FROM `user` [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[2018-12-29T11:04:21+08:00] 127.0.0.1 POST /admin/login/login
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.074004s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  (  name='root' and pwd='21232f297a57a5a743894a0e4a801fc3' ) LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `admin`  SET `times`=`times`+1  WHERE  (  id=2 ) [ RunTime:0.120007s ]
+[ sql ] [ SQL ] UPDATE `admin`  SET `last_time`='2018-12-29 11:04:21'  WHERE  (  id=2 ) [ RunTime:0.012001s ]
+---------------------------------------------------------------
+[2018-12-29T11:04:25+08:00] 127.0.0.1 GET /admin/sale/saleBookList
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sale_book` [ RunTime:0.032002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sale_book` `a` INNER JOIN `type_second` `b` ON `a`.`sale_secondtype`=`b`.`second_id` INNER JOIN `user` `c` ON `a`.`user_id`=`c`.`user_id` LIMIT 1 [ RunTime:0.078005s ]
+[ sql ] [ SQL ] SELECT * FROM `sale_book` `a` INNER JOIN `type_second` `b` ON `a`.`sale_secondtype`=`b`.`second_id` INNER JOIN `user` `c` ON `a`.`user_id`=`c`.`user_id` LIMIT 0,15 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sale_book` `a` INNER JOIN `type_second` `b` ON `a`.`sale_secondtype`=`b`.`second_id` INNER JOIN `user` `c` ON `a`.`user_id`=`c`.`user_id` LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[2018-12-29T11:14:47+08:00] 127.0.0.1 GET /admin/bcomment/commentList
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bcomment` [ RunTime:0.041002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `bcomment` `a` INNER JOIN `sale_book` `b` ON `a`.`bbook_id`=`b`.`sale_id` INNER JOIN `user` `c` ON `a`.`user_id`=`c`.`user_id` LIMIT 1 [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `bcomment` `a` INNER JOIN `sale_book` `b` ON `a`.`bbook_id`=`b`.`sale_id` INNER JOIN `user` `c` ON `a`.`user_id`=`c`.`user_id` LIMIT 0,15 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `bcomment` `a` INNER JOIN `sale_book` `b` ON `a`.`bbook_id`=`b`.`sale_id` INNER JOIN `user` `c` ON `a`.`user_id`=`c`.`user_id` LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[2018-12-29T11:14:59+08:00] 127.0.0.1 GET /admin/breply/replyList
+[ sql ] [ DB ] CONNECT:[ UseTime:0.019001s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bcomment_reply` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `bcomment_reply` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` INNER JOIN `bcomment` `c` ON `a`.`comment_id`=`c`.`bcomment_id` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `bcomment_reply` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` INNER JOIN `bcomment` `c` ON `a`.`comment_id`=`c`.`bcomment_id` LIMIT 0,15 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `bcomment_reply` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` INNER JOIN `bcomment` `c` ON `a`.`comment_id`=`c`.`bcomment_id` LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[2018-12-29T11:15:10+08:00] 127.0.0.1 GET /admin/bcomment/commentList
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bcomment` [ RunTime:0.025001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `bcomment` `a` INNER JOIN `sale_book` `b` ON `a`.`bbook_id`=`b`.`sale_id` INNER JOIN `user` `c` ON `a`.`user_id`=`c`.`user_id` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `bcomment` `a` INNER JOIN `sale_book` `b` ON `a`.`bbook_id`=`b`.`sale_id` INNER JOIN `user` `c` ON `a`.`user_id`=`c`.`user_id` LIMIT 0,15 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `bcomment` `a` INNER JOIN `sale_book` `b` ON `a`.`bbook_id`=`b`.`sale_id` INNER JOIN `user` `c` ON `a`.`user_id`=`c`.`user_id` LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[2018-12-29T11:15:19+08:00] 127.0.0.1 GET /admin/sale/saleBookList
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sale_book` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sale_book` `a` INNER JOIN `type_second` `b` ON `a`.`sale_secondtype`=`b`.`second_id` INNER JOIN `user` `c` ON `a`.`user_id`=`c`.`user_id` LIMIT 1 [ RunTime:0.010001s ]
+[ sql ] [ SQL ] SELECT * FROM `sale_book` `a` INNER JOIN `type_second` `b` ON `a`.`sale_secondtype`=`b`.`second_id` INNER JOIN `user` `c` ON `a`.`user_id`=`c`.`user_id` LIMIT 0,15 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sale_book` `a` INNER JOIN `type_second` `b` ON `a`.`sale_secondtype`=`b`.`second_id` INNER JOIN `user` `c` ON `a`.`user_id`=`c`.`user_id` LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[2018-12-29T11:15:25+08:00] 127.0.0.1 POST /admin/sale/saleBookSearch
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sale_book` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sale_book` `a` INNER JOIN `type_second` `b` ON `a`.`sale_secondtype`=`b`.`second_id` INNER JOIN `user` `c` ON `a`.`user_id`=`c`.`user_id` WHERE  `sale_name` LIKE '%45%' LIMIT 1 [ RunTime:0.025002s ]
+[ sql ] [ SQL ] SELECT * FROM `sale_book` `a` INNER JOIN `type_second` `b` ON `a`.`sale_secondtype`=`b`.`second_id` INNER JOIN `user` `c` ON `a`.`user_id`=`c`.`user_id` WHERE  `sale_name` LIKE '%45%' LIMIT 0,15 [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sale_book` `a` INNER JOIN `type_second` `b` ON `a`.`sale_secondtype`=`b`.`second_id` INNER JOIN `user` `c` ON `a`.`user_id`=`c`.`user_id` WHERE  `sale_name` LIKE '%45%' LIMIT 1 [ RunTime:0.009000s ]
+---------------------------------------------------------------
+[2018-12-29T11:24:14+08:00] 127.0.0.1 GET /admin/user/userList
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003001s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.032001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `user` LIMIT 0,15 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[2018-12-29T11:24:16+08:00] 127.0.0.1 GET /admin/user/addPage
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `class` [ RunTime:0.002001s ]
+[ sql ] [ SQL ] SELECT * FROM `class` [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[2018-12-29T11:25:58+08:00] 127.0.0.1 GET /admin/user/userList
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `user` LIMIT 0,15 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[2018-12-29T11:26:01+08:00] 127.0.0.1 GET /admin/user/addPage
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `class` [ RunTime:0.021001s ]
+[ sql ] [ SQL ] SELECT * FROM `class` [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[2018-12-29T11:27:40+08:00] 127.0.0.1 POST /admin/user/userAdd
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  (  user_name = 201541402315 ) LIMIT 1 [ RunTime:0.015001s ]
+---------------------------------------------------------------
+[2018-12-29T11:27:42+08:00] 127.0.0.1 GET /admin/user/addPage
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `class` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT * FROM `class` [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[2018-12-29T11:28:03+08:00] 127.0.0.1 POST /admin/user/userAdd
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  (  user_name = 201541402316 ) LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `user` (`user_name` , `user_pwd` , `user_sex` , `user_realname` , `user_img` , `user_tel` , `user_addr` , `grade` , `class_id` , `user_content`) VALUES ('201541402316' , '59b618b9fbe7f75cd16b45eb28e971b3' , '女' , '蔡思娴' , '/uploads/user/20181229\\c43222c54644ef20035f4f75fa884a42.jpg' , '13534687681' , 'dgut' , 2015 , 19 , '蔡思娴') [ RunTime:0.050003s ]
+---------------------------------------------------------------
+[2018-12-29T11:28:04+08:00] 127.0.0.1 GET /admin/user/userList
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.032002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `user` LIMIT 0,15 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `user` LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[2018-12-29T11:28:17+08:00] 127.0.0.1 GET /admin/sale/saleBookList
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sale_book` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sale_book` `a` INNER JOIN `type_second` `b` ON `a`.`sale_secondtype`=`b`.`second_id` INNER JOIN `user` `c` ON `a`.`user_id`=`c`.`user_id` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `sale_book` `a` INNER JOIN `type_second` `b` ON `a`.`sale_secondtype`=`b`.`second_id` INNER JOIN `user` `c` ON `a`.`user_id`=`c`.`user_id` LIMIT 0,15 [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sale_book` `a` INNER JOIN `type_second` `b` ON `a`.`sale_secondtype`=`b`.`second_id` INNER JOIN `user` `c` ON `a`.`user_id`=`c`.`user_id` LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[2018-12-29T11:30:32+08:00] 127.0.0.1 GET /admin/sale/saleBookList
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sale_book` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sale_book` `a` INNER JOIN `type_second` `b` ON `a`.`sale_secondtype`=`b`.`second_id` INNER JOIN `user` `c` ON `a`.`user_id`=`c`.`user_id` LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `sale_book` `a` INNER JOIN `type_second` `b` ON `a`.`sale_secondtype`=`b`.`second_id` INNER JOIN `user` `c` ON `a`.`user_id`=`c`.`user_id` LIMIT 0,15 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sale_book` `a` INNER JOIN `type_second` `b` ON `a`.`sale_secondtype`=`b`.`second_id` INNER JOIN `user` `c` ON `a`.`user_id`=`c`.`user_id` LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[2018-12-29T11:30:33+08:00] 127.0.0.1 GET /admin/sale/addPage
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `type_second` [ RunTime:0.014000s ]
+[ sql ] [ SQL ] SELECT * FROM `type_second` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `user` [ RunTime:0.001001s ]
+---------------------------------------------------------------
+[2018-12-29T11:33:08+08:00] 127.0.0.1 POST /admin/sale/saleBookAdd
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012000s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sale_book` [ RunTime:0.020001s ]
+---------------------------------------------------------------
+[2018-12-29T11:33:58+08:00] 127.0.0.1 POST /admin/sale/saleBookAdd
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sale_book` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] INSERT INTO `sale_book` (`sale_isbn` , `sale_name` , `sale_author` , `sale_publishing` , `sale_img` , `sale_beprice` , `sale_afprice` , `sale_num` , `sale_volume` , `sale_page` , `sale_degrees` , `sale_new` , `sale_secondtype` , `user_id` , `sale_content` , `sale_time`) VALUES ('4564467984135' , '教育学' , '蔡思娴' , '松山湖出版社' , '/uploads/sale/20181229\\8ccda0738a1a409b296c4c1be4e89dc6.jpg' , '50' , '40.5' , 5 , 0 , '84' , '六成新及以下' , 6 , 33 , 35 , '教育学' , '2018-12-29 11:33:57') [ RunTime:0.038003s ]
+---------------------------------------------------------------
+[2018-12-29T11:34:02+08:00] 127.0.0.1 GET /admin/sale/saleBookList
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sale_book` [ RunTime:0.020001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sale_book` `a` INNER JOIN `type_second` `b` ON `a`.`sale_secondtype`=`b`.`second_id` INNER JOIN `user` `c` ON `a`.`user_id`=`c`.`user_id` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `sale_book` `a` INNER JOIN `type_second` `b` ON `a`.`sale_secondtype`=`b`.`second_id` INNER JOIN `user` `c` ON `a`.`user_id`=`c`.`user_id` LIMIT 0,15 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sale_book` `a` INNER JOIN `type_second` `b` ON `a`.`sale_secondtype`=`b`.`second_id` INNER JOIN `user` `c` ON `a`.`user_id`=`c`.`user_id` LIMIT 1 [ RunTime:0.001001s ]
+---------------------------------------------------------------
+[2018-12-29T11:34:29+08:00] 127.0.0.1 GET /admin/sale/addPage
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `type_second` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `type_second` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `user` [ RunTime:0.001001s ]
+---------------------------------------------------------------
+[2018-12-29T11:35:49+08:00] 127.0.0.1 POST /admin/sale/saleBookAdd
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sale_book` [ RunTime:0.035002s ]
+[ sql ] [ SQL ] INSERT INTO `sale_book` (`sale_isbn` , `sale_name` , `sale_author` , `sale_publishing` , `sale_img` , `sale_beprice` , `sale_afprice` , `sale_num` , `sale_volume` , `sale_page` , `sale_degrees` , `sale_new` , `sale_secondtype` , `user_id` , `sale_content` , `sale_time`) VALUES ('fhwkejfhkjdhf' , '日本语' , '蔡思娴' , '松山湖出版社' , '/uploads/sale/20181229\\58e7aa31cbbf37b3dd3f4d03be0de881.jpg' , '45' , '35.5' , 6 , 0 , '46' , '七成新' , 7 , 35 , 32 , '日本语' , '2018-12-29 11:35:49') [ RunTime:0.099005s ]
+---------------------------------------------------------------
+[2018-12-29T11:35:53+08:00] 127.0.0.1 GET /admin/sale/saleBookList
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sale_book` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sale_book` `a` INNER JOIN `type_second` `b` ON `a`.`sale_secondtype`=`b`.`second_id` INNER JOIN `user` `c` ON `a`.`user_id`=`c`.`user_id` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `sale_book` `a` INNER JOIN `type_second` `b` ON `a`.`sale_secondtype`=`b`.`second_id` INNER JOIN `user` `c` ON `a`.`user_id`=`c`.`user_id` LIMIT 0,15 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sale_book` `a` INNER JOIN `type_second` `b` ON `a`.`sale_secondtype`=`b`.`second_id` INNER JOIN `user` `c` ON `a`.`user_id`=`c`.`user_id` LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[2018-12-29T11:41:20+08:00] 127.0.0.1 GET /admin/sale/addPage
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `type_second` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `type_second` [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `user` [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[2018-12-29T11:41:33+08:00] 127.0.0.1 GET /admin/sale/addPage
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `type_second` [ RunTime:0.048003s ]
+[ sql ] [ SQL ] SELECT * FROM `type_second` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `user` [ RunTime:0.007001s ]
+---------------------------------------------------------------
+[2018-12-29T11:42:03+08:00] 127.0.0.1 GET /admin/sale/addPage
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `type_second` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `type_second` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `user` [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[2018-12-29T11:47:33+08:00] 127.0.0.1 GET /admin/sale/addPage
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `type_second` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `type_second` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `user` [ RunTime:0.001001s ]
+---------------------------------------------------------------
+[2018-12-29T11:50:14+08:00] 127.0.0.1 GET /admin/sale/addPage
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `type_second` [ RunTime:0.022001s ]
+[ sql ] [ SQL ] SELECT * FROM `type_second` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `user` [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[2018-12-29T11:51:09+08:00] 127.0.0.1 GET /admin/sale/addPage
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `type_second` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `type_second` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `user` [ RunTime:0.000000s ]

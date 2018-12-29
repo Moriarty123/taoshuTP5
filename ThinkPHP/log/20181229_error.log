@@ -37,3 +37,9 @@
 ---------------------------------------------------------------
 [2018-12-29T10:02:47+08:00] 127.0.0.1 GET /admin/violate/violateList
 [ error ] [64]Cannot redeclare app\admin\controller\Violate::violateAdd()[C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\application\admin\controller\Violate.php:186]
+---------------------------------------------------------------
+[2018-12-29T11:32:34+08:00] 127.0.0.1 POST /admin/sale/saleBookAdd
+[ error ] [8]未定义数组索引: {$degrees}[C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\application\admin\controller\Sale.php:193]
+---------------------------------------------------------------
+[2018-12-29T11:33:08+08:00] 127.0.0.1 POST /admin/sale/saleBookAdd
+[ error ] [0]数据表字段不存在:[sale_new][C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\thinkphp\library\think\db\Builder.php:111]
