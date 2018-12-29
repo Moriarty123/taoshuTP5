@@ -1,0 +1,382 @@
+---------------------------------------------------------------
+[2018-12-29T08:40:44+08:00] 127.0.0.1 POST /admin/login/login
+[ sql ] [ DB ] CONNECT:[ UseTime:0.038002s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.083004s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  (  name='root' and pwd='21232f297a57a5a743894a0e4a801fc3' ) LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `admin`  SET `times`=`times`+1  WHERE  (  id=2 ) [ RunTime:0.032002s ]
+[ sql ] [ SQL ] UPDATE `admin`  SET `last_time`='2018-12-29 08:40:44'  WHERE  (  id=2 ) [ RunTime:0.045003s ]
+---------------------------------------------------------------
+[2018-12-29T08:40:49+08:00] 127.0.0.1 GET /admin/violate/violateList
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `Violation` [ RunTime:0.011001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 1 [ RunTime:0.013001s ]
+[ sql ] [ SQL ] SELECT * FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 0,15 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[2018-12-29T08:40:57+08:00] 127.0.0.1 GET /admin/violate/addPage
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `user` [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[2018-12-29T08:42:49+08:00] 127.0.0.1 GET /admin/violate/addPage
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `user` [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[2018-12-29T08:43:03+08:00] 127.0.0.1 GET /admin/violate/addPage
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `user` [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[2018-12-29T08:43:25+08:00] 127.0.0.1 GET /admin/violate/addPage
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `user` [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[2018-12-29T08:43:59+08:00] 127.0.0.1 POST /admin/violate/violateAdd
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `violation` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] INSERT INTO `violation` (`user_id` , `punish_time` , `punish_case` , `punish_way` , `add_time`) VALUES (33 , '十小时' , '发送色情图片' , '禁言' , '1546044239') [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[2018-12-29T08:44:01+08:00] 127.0.0.1 GET /admin/violate/violateList
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `Violation` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 0,15 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[2018-12-29T08:54:58+08:00] 127.0.0.1 GET /admin/violate/violateList
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012001s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `Violation` [ RunTime:0.046002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 1 [ RunTime:0.006001s ]
+[ sql ] [ SQL ] SELECT * FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 0,15 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[2018-12-29T08:54:59+08:00] 127.0.0.1 GET /admin/violate/addPage
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.002001s ]
+[ sql ] [ SQL ] SELECT * FROM `user` [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[2018-12-29T08:55:08+08:00] 127.0.0.1 POST /admin/violate/violateAdd
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014001s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `violation` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] INSERT INTO `violation` (`user_id` , `punish_time` , `punish_case` , `punish_way` , `add_time`) VALUES (33 , '+1 week' , 'xcsdc ' , '封号' , '1546044908') [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[2018-12-29T08:55:11+08:00] 127.0.0.1 GET /admin/violate/violateList
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015001s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `Violation` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 0,15 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[2018-12-29T08:56:11+08:00] 127.0.0.1 GET /admin/violate/addPage
+[ sql ] [ DB ] CONNECT:[ UseTime:0.017001s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `user` [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[2018-12-29T09:03:51+08:00] 127.0.0.1 GET /admin/violate/addPage
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.012000s ]
+[ sql ] [ SQL ] SELECT * FROM `user` [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[2018-12-29T09:03:57+08:00] 127.0.0.1 GET /admin/violate/violateList
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `Violation` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 1 [ RunTime:0.005000s ]
+[ sql ] [ SQL ] SELECT * FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 0,15 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[2018-12-29T09:05:16+08:00] 127.0.0.1 GET /admin/violate/violateList
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `Violation` [ RunTime:0.033002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 0,15 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[2018-12-29T09:06:12+08:00] 127.0.0.1 GET /admin/violate/violateList
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `Violation` [ RunTime:0.021002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 0,15 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[2018-12-29T09:06:14+08:00] 127.0.0.1 GET /admin/violate/addPage
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `user` [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[2018-12-29T09:06:25+08:00] 127.0.0.1 POST /admin/violate/violateAdd
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `violation` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] INSERT INTO `violation` (`user_id` , `punish_time` , `punish_case` , `punish_way` , `add_time`) VALUES (33 , '1546081585' , 'lhjkhl' , '禁言' , '1546045585') [ RunTime:0.007000s ]
+---------------------------------------------------------------
+[2018-12-29T09:06:27+08:00] 127.0.0.1 GET /admin/violate/violateList
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `Violation` [ RunTime:0.002001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 0,15 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[2018-12-29T09:07:09+08:00] 127.0.0.1 GET /admin/violate/violateList
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `Violation` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 0,15 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[2018-12-29T09:07:11+08:00] 127.0.0.1 GET /admin/violate/addPage
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] SELECT * FROM `user` [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[2018-12-29T09:07:15+08:00] 127.0.0.1 POST /admin/violate/violateAdd
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `violation` [ RunTime:0.019001s ]
+[ sql ] [ SQL ] INSERT INTO `violation` (`user_id` , `punish_time` , `punish_case` , `punish_way` , `add_time`) VALUES (32 , '1546049235' , 'werwe ' , '封号' , '1546045635') [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[2018-12-29T09:07:17+08:00] 127.0.0.1 GET /admin/violate/violateList
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `Violation` [ RunTime:0.033002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 0,15 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[2018-12-29T09:07:29+08:00] 127.0.0.1 GET /admin/violate/addPage
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `user` [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[2018-12-29T09:07:40+08:00] 127.0.0.1 POST /admin/violate/violateAdd
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `violation` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `violation` (`user_id` , `punish_time` , `punish_case` , `punish_way` , `add_time`) VALUES (34 , '1546132060' , 'sdfdfsdfwer rsdf ' , '禁言' , '1546045660') [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[2018-12-29T09:07:41+08:00] 127.0.0.1 GET /admin/violate/violateList
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `Violation` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 0,15 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[2018-12-29T09:07:54+08:00] 127.0.0.1 GET /admin/violate/addPage
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.023002s ]
+[ sql ] [ SQL ] SELECT * FROM `user` [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[2018-12-29T09:07:58+08:00] 127.0.0.1 POST /admin/violate/violateAdd
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `violation` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] INSERT INTO `violation` (`user_id` , `punish_time` , `punish_case` , `punish_way` , `add_time`) VALUES (32 , '1546650478' , 'dfef' , '封号' , '1546045678') [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[2018-12-29T09:08:00+08:00] 127.0.0.1 GET /admin/violate/violateList
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `Violation` [ RunTime:0.002001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 0,15 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[2018-12-29T09:08:06+08:00] 127.0.0.1 GET /admin/violate/addPage
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `user` [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[2018-12-29T09:08:11+08:00] 127.0.0.1 POST /admin/violate/violateAdd
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `violation` [ RunTime:0.015001s ]
+[ sql ] [ SQL ] INSERT INTO `violation` (`user_id` , `punish_time` , `punish_case` , `punish_way` , `add_time`) VALUES (32 , '1548724091' , 'wefa' , '封号' , '1546045691') [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[2018-12-29T09:08:12+08:00] 127.0.0.1 GET /admin/violate/violateList
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `Violation` [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 0,15 [ RunTime:0.007001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[2018-12-29T09:08:16+08:00] 127.0.0.1 GET /admin/violate/addPage
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `user` [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[2018-12-29T09:08:22+08:00] 127.0.0.1 POST /admin/violate/violateAdd
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `violation` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `violation` (`user_id` , `punish_time` , `punish_case` , `punish_way` , `add_time`) VALUES (32 , '1577581702' , 'qerfef' , '封号' , '1546045702') [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[2018-12-29T09:08:24+08:00] 127.0.0.1 GET /admin/violate/violateList
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014001s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `Violation` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 0,15 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[2018-12-29T09:08:31+08:00] 127.0.0.1 GET /admin/violate/violateList
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `Violation` [ RunTime:0.016001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 0,15 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[2018-12-29T09:08:44+08:00] 127.0.0.1 GET /admin/violate/addPage
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.021001s ]
+[ sql ] [ SQL ] SELECT * FROM `user` [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[2018-12-29T09:08:57+08:00] 127.0.0.1 POST /admin/violate/violateAdd
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `violation` [ RunTime:0.007001s ]
+[ sql ] [ SQL ] INSERT INTO `violation` (`user_id` , `punish_time` , `punish_case` , `punish_way` , `add_time`) VALUES (32 , '' , 'asfdsa' , '封号' , '1546045737') [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[2018-12-29T09:08:58+08:00] 127.0.0.1 GET /admin/violate/violateList
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `Violation` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 0,15 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[2018-12-29T09:09:14+08:00] 127.0.0.1 GET /admin/violate/violateList
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `Violation` [ RunTime:0.022002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 0,15 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[2018-12-29T09:09:17+08:00] 127.0.0.1 POST /admin/violate/violateAdd
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001001s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `violation` [ RunTime:0.031001s ]
+[ sql ] [ SQL ] INSERT INTO `violation` (`user_id` , `punish_time` , `punish_case` , `punish_way` , `add_time`) VALUES (32 , '' , 'asfdsa' , '封号' , '1546045757') [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[2018-12-29T09:09:18+08:00] 127.0.0.1 GET /admin/violate/violateList
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001001s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `Violation` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 0,15 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[2018-12-29T09:09:21+08:00] 127.0.0.1 GET /admin/violate/addPage
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `user` [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[2018-12-29T09:09:25+08:00] 127.0.0.1 POST /admin/violate/violateAdd
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `violation` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] INSERT INTO `violation` (`user_id` , `punish_time` , `punish_case` , `punish_way` , `add_time`) VALUES (32 , '' , 'asfdsa' , '封号' , '1546045765') [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[2018-12-29T09:09:27+08:00] 127.0.0.1 GET /admin/violate/violateList
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `Violation` [ RunTime:0.030002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 0,15 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[2018-12-29T09:09:58+08:00] 127.0.0.1 GET /admin/violate/addPage
+[ sql ] [ DB ] CONNECT:[ UseTime:0.008000s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `user` [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[2018-12-29T09:10:02+08:00] 127.0.0.1 POST /admin/violate/violateAdd
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `violation` [ RunTime:0.012001s ]
+[ sql ] [ SQL ] INSERT INTO `violation` (`user_id` , `punish_time` , `punish_case` , `punish_way` , `add_time`) VALUES (32 , '' , 'sdfsdf' , '封号' , '1546045802') [ RunTime:0.008000s ]
+---------------------------------------------------------------
+[2018-12-29T09:10:04+08:00] 127.0.0.1 GET /admin/violate/violateList
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `Violation` [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 0,15 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[2018-12-29T09:10:18+08:00] 127.0.0.1 GET /admin/violate/addPage
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `user` [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[2018-12-29T09:10:29+08:00] 127.0.0.1 GET /admin/violate/addPage
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.021001s ]
+[ sql ] [ SQL ] SELECT * FROM `user` [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[2018-12-29T09:10:35+08:00] 127.0.0.1 POST /admin/violate/violateAdd
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `violation` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `violation` (`user_id` , `punish_time` , `punish_case` , `punish_way` , `add_time`) VALUES (32 , '' , 'sdtjwrerqwewqewad' , '封号' , '1546045835') [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[2018-12-29T09:10:37+08:00] 127.0.0.1 GET /admin/violate/violateList
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `Violation` [ RunTime:0.024002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 0,15 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[2018-12-29T09:11:39+08:00] 127.0.0.1 GET /admin/violate/violateList
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `Violation` [ RunTime:0.020001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 0,15 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[2018-12-29T09:11:43+08:00] 127.0.0.1 GET /admin/violate/addPage
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `user` [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[2018-12-29T09:11:48+08:00] 127.0.0.1 POST /admin/violate/violateAdd
+[ sql ] [ DB ] CONNECT:[ UseTime:0.019001s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `violation` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] INSERT INTO `violation` (`user_id` , `punish_time` , `punish_case` , `punish_way` , `add_time`) VALUES (32 , '1577581908' , '3wrwer' , '封号' , '1546045908') [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[2018-12-29T09:11:50+08:00] 127.0.0.1 GET /admin/violate/violateList
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `Violation` [ RunTime:0.028002s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 0,15 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[2018-12-29T09:11:56+08:00] 127.0.0.1 POST /admin/violate/checkedViolateDelete
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SET FOREIGN_KEY_CHECKS = 0; [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `violation` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] DELETE FROM `violation`    WHERE  (  violate_id = 19 ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SET FOREIGN_KEY_CHECKS = 1; [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SET FOREIGN_KEY_CHECKS = 0; [ RunTime:0.001000s ]
+[ sql ] [ SQL ] DELETE FROM `violation`    WHERE  (  violate_id = 26 ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SET FOREIGN_KEY_CHECKS = 1; [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SET FOREIGN_KEY_CHECKS = 0; [ RunTime:0.001000s ]
+[ sql ] [ SQL ] DELETE FROM `violation`    WHERE  (  violate_id = 20 ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SET FOREIGN_KEY_CHECKS = 1; [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SET FOREIGN_KEY_CHECKS = 0; [ RunTime:0.001000s ]
+[ sql ] [ SQL ] DELETE FROM `violation`    WHERE  (  violate_id = 18 ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SET FOREIGN_KEY_CHECKS = 1; [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SET FOREIGN_KEY_CHECKS = 0; [ RunTime:0.000000s ]
+[ sql ] [ SQL ] DELETE FROM `violation`    WHERE  (  violate_id = 17 ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SET FOREIGN_KEY_CHECKS = 1; [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SET FOREIGN_KEY_CHECKS = 0; [ RunTime:0.000000s ]
+[ sql ] [ SQL ] DELETE FROM `violation`    WHERE  (  violate_id = 16 ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SET FOREIGN_KEY_CHECKS = 1; [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SET FOREIGN_KEY_CHECKS = 0; [ RunTime:0.000000s ]
+[ sql ] [ SQL ] DELETE FROM `violation`    WHERE  (  violate_id = 15 ) [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SET FOREIGN_KEY_CHECKS = 1; [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[2018-12-29T09:11:57+08:00] 127.0.0.1 GET /admin/violate/violateList
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `Violation` [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 0,15 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[2018-12-29T09:11:59+08:00] 127.0.0.1 GET /admin/violate/addPage
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `user` [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[2018-12-29T09:12:02+08:00] 127.0.0.1 POST /admin/violate/violateAdd
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `violation` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `violation` (`user_id` , `punish_time` , `punish_case` , `punish_way` , `add_time`) VALUES (32 , '1546049522' , 'dyurthrdfg' , '封号' , '1546045922') [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[2018-12-29T09:12:04+08:00] 127.0.0.1 GET /admin/violate/violateList
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `Violation` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 0,15 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `Violation` `a` INNER JOIN `user` `b` ON `a`.`user_id`=`b`.`user_id` LIMIT 1 [ RunTime:0.000000s ]

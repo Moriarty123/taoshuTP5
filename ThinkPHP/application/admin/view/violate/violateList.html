@@ -44,8 +44,8 @@
 					<th>违规账号</th>
 					<th>违规用户姓名</th>
 					<th>违规类型</th>
-					<th>违规时间</th>
-					<th>惩罚时间</th>
+					<th>惩罚开始时间</th>
+					<th>惩罚结束时间</th>
 					<th>惩罚原因</th>
 					<th>惩罚方式</th>
 					<th>操作</th>
@@ -61,8 +61,8 @@
 					</td>
 					<td>{$vo.user_realname}</td>
 					<td>{$vo.violation_type}</td>
-					<td>{$vo.add_time|date="Y-m-d h:i:s",###}</td>
-					<td>{$vo.punish_time}</td>
+					<td>{$vo.add_time|date="Y-m-d H:i:s",###}</td>
+					<td>{$vo.punish_time|date="Y-m-d H:i:s",###}</td>
 					<td>{$vo.punish_case}</td>
 					<td>{$vo.punish_way}</td>
 

@@ -1,0 +1,21 @@
+---------------------------------------------------------------
+[2018-12-29T09:05:16+08:00] 127.0.0.1 GET /admin/violate/violateList
+[ error ] [2]date() expects parameter 2 to be long, string given[C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\runtime\temp\9d52820e4f73d42026cc0ca28b7daa6b.php:246]
+---------------------------------------------------------------
+[2018-12-29T09:08:58+08:00] 127.0.0.1 GET /admin/violate/violateList
+[ error ] [2]date() expects parameter 2 to be long, string given[C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\runtime\temp\9d52820e4f73d42026cc0ca28b7daa6b.php:246]
+---------------------------------------------------------------
+[2018-12-29T09:09:14+08:00] 127.0.0.1 GET /admin/violate/violateList
+[ error ] [2]date() expects parameter 2 to be long, string given[C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\runtime\temp\9d52820e4f73d42026cc0ca28b7daa6b.php:246]
+---------------------------------------------------------------
+[2018-12-29T09:09:18+08:00] 127.0.0.1 GET /admin/violate/violateList
+[ error ] [2]date() expects parameter 2 to be long, string given[C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\runtime\temp\9d52820e4f73d42026cc0ca28b7daa6b.php:246]
+---------------------------------------------------------------
+[2018-12-29T09:09:27+08:00] 127.0.0.1 GET /admin/violate/violateList
+[ error ] [2]date() expects parameter 2 to be long, string given[C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\runtime\temp\9d52820e4f73d42026cc0ca28b7daa6b.php:246]
+---------------------------------------------------------------
+[2018-12-29T09:10:04+08:00] 127.0.0.1 GET /admin/violate/violateList
+[ error ] [2]date() expects parameter 2 to be long, string given[C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\runtime\temp\9d52820e4f73d42026cc0ca28b7daa6b.php:246]
+---------------------------------------------------------------
+[2018-12-29T09:10:37+08:00] 127.0.0.1 GET /admin/violate/violateList
+[ error ] [2]date() expects parameter 2 to be long, string given[C:\phpStudy\PHPTutorial\WWW\taoshuTP5\ThinkPHP\runtime\temp\9d52820e4f73d42026cc0ca28b7daa6b.php:246]

@@ -59,10 +59,17 @@ class Violate extends Common
 		$punish_case 	= input('post.punish_case');
 		$punish_way 	= input('post.punish_way');
 
+		// $punish = time() + strtotime("+1 week");
+
+		// dump(time());
+		// dump(strtotime("+1 week"));
+		// dump($punish);
+		// die();
+
 		//2.
 		$data = [
 			'user_id' => $user_id,
-			'punish_time'=> $punish_time,
+			'punish_time'=> strtotime($punish_time),
 			'punish_case' => $punish_case,
 			'punish_way' => $punish_way,
 			'add_time' => time()
