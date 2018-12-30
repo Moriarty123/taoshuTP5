@@ -3514,3 +3514,1812 @@
   '/js/back/clock_js' => '',
 )
 [ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-30T21:01:10+08:00 ] 0.0.0.0 GET /js/back/clock.js
+[ info ] taoshutp5/js/back/clock.js [运行时间：0.133311s][吞吐率：7.50req/s] [内存消耗：2,475.33kb] [文件加载：32]
+[ info ] [ LANG ] F:\study\www\taoshu\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'back',
+    2 => 'clock.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'taoshutp5',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://taoshutp5/admin/notice/noticeList',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=lute51irvuhf5hpm8uhk6iuhu7',
+)
+[ info ] [ PARAM ] array (
+  '/js/back/clock_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-30T21:01:13+08:00 ] 0.0.0.0 GET /js/back/clock.js
+[ info ] taoshutp5/js/back/clock.js [运行时间：0.134085s][吞吐率：7.46req/s] [内存消耗：2,475.14kb] [文件加载：32]
+[ info ] [ LANG ] F:\study\www\taoshu\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'back',
+    2 => 'clock.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'taoshutp5',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://taoshutp5/admin/index/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=lute51irvuhf5hpm8uhk6iuhu7',
+)
+[ info ] [ PARAM ] array (
+  '/js/back/clock_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-30T21:01:31+08:00 ] 0.0.0.0 GET /js/back/clock.js
+[ info ] taoshutp5/js/back/clock.js [运行时间：0.102113s][吞吐率：9.79req/s] [内存消耗：2,475.33kb] [文件加载：32]
+[ info ] [ LANG ] F:\study\www\taoshu\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'back',
+    2 => 'clock.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'taoshutp5',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://taoshutp5/admin/sale/saleBookList',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=lute51irvuhf5hpm8uhk6iuhu7',
+)
+[ info ] [ PARAM ] array (
+  '/js/back/clock_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-30T21:01:34+08:00 ] 0.0.0.0 GET /js/back/clock.js
+[ info ] taoshutp5/js/back/clock.js [运行时间：0.104577s][吞吐率：9.56req/s] [内存消耗：2,475.21kb] [文件加载：32]
+[ info ] [ LANG ] F:\study\www\taoshu\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'back',
+    2 => 'clock.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'taoshutp5',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://taoshutp5/admin/sale/addPage',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=lute51irvuhf5hpm8uhk6iuhu7',
+)
+[ info ] [ PARAM ] array (
+  '/js/back/clock_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-30T21:02:47+08:00 ] 0.0.0.0 GET /js/back/clock.js
+[ info ] taoshutp5/js/back/clock.js [运行时间：0.108084s][吞吐率：9.25req/s] [内存消耗：2,475.21kb] [文件加载：32]
+[ info ] [ LANG ] F:\study\www\taoshu\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'back',
+    2 => 'clock.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'taoshutp5',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://taoshutp5/admin/sale/addPage',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=lute51irvuhf5hpm8uhk6iuhu7',
+)
+[ info ] [ PARAM ] array (
+  '/js/back/clock_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-30T21:05:43+08:00 ] 0.0.0.0 GET /js/back/clock.js
+[ info ] taoshutp5/js/back/clock.js [运行时间：0.138468s][吞吐率：7.22req/s] [内存消耗：2,475.21kb] [文件加载：32]
+[ info ] [ LANG ] F:\study\www\taoshu\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'back',
+    2 => 'clock.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'taoshutp5',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://taoshutp5/admin/sale/addPage',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=lute51irvuhf5hpm8uhk6iuhu7',
+)
+[ info ] [ PARAM ] array (
+  '/js/back/clock_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-30T21:06:13+08:00 ] 0.0.0.0 GET /js/back/clock.js
+[ info ] taoshutp5/js/back/clock.js [运行时间：0.136477s][吞吐率：7.33req/s] [内存消耗：2,475.21kb] [文件加载：32]
+[ info ] [ LANG ] F:\study\www\taoshu\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'back',
+    2 => 'clock.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'taoshutp5',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://taoshutp5/admin/sale/addPage',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=lute51irvuhf5hpm8uhk6iuhu7',
+)
+[ info ] [ PARAM ] array (
+  '/js/back/clock_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-30T21:06:47+08:00 ] 0.0.0.0 GET /js/back/clock.js
+[ info ] taoshutp5/js/back/clock.js [运行时间：0.189942s][吞吐率：5.26req/s] [内存消耗：2,475.21kb] [文件加载：32]
+[ info ] [ LANG ] F:\study\www\taoshu\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'back',
+    2 => 'clock.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'taoshutp5',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://taoshutp5/admin/sale/addPage',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=lute51irvuhf5hpm8uhk6iuhu7',
+)
+[ info ] [ PARAM ] array (
+  '/js/back/clock_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-30T21:08:08+08:00 ] 0.0.0.0 GET /js/back/clock.js
+[ info ] taoshutp5/js/back/clock.js [运行时间：0.220349s][吞吐率：4.54req/s] [内存消耗：2,475.14kb] [文件加载：32]
+[ info ] [ LANG ] F:\study\www\taoshu\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'back',
+    2 => 'clock.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'taoshutp5',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://taoshutp5/admin/index/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=06aec9jhn3ke1369dcs7s99ao1',
+)
+[ info ] [ PARAM ] array (
+  '/js/back/clock_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-30T21:08:12+08:00 ] 0.0.0.0 GET /js/back/clock.js
+[ info ] taoshutp5/js/back/clock.js [运行时间：0.210265s][吞吐率：4.76req/s] [内存消耗：2,475.34kb] [文件加载：32]
+[ info ] [ LANG ] F:\study\www\taoshu\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'back',
+    2 => 'clock.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'taoshutp5',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://taoshutp5/admin/bcomment/commentList',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=06aec9jhn3ke1369dcs7s99ao1',
+)
+[ info ] [ PARAM ] array (
+  '/js/back/clock_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-30T21:08:16+08:00 ] 0.0.0.0 GET /js/back/clock.js
+[ info ] taoshutp5/js/back/clock.js [运行时间：0.160348s][吞吐率：6.24req/s] [内存消耗：2,475.39kb] [文件加载：32]
+[ info ] [ LANG ] F:\study\www\taoshu\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'back',
+    2 => 'clock.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'taoshutp5',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://taoshutp5/admin/sale/saleBookList',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=06aec9jhn3ke1369dcs7s99ao1',
+)
+[ info ] [ PARAM ] array (
+  '/js/back/clock_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-30T21:08:18+08:00 ] 0.0.0.0 GET /js/back/clock.js
+[ info ] taoshutp5/js/back/clock.js [运行时间：0.143659s][吞吐率：6.96req/s] [内存消耗：2,475.17kb] [文件加载：32]
+[ info ] [ LANG ] F:\study\www\taoshu\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'back',
+    2 => 'clock.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'taoshutp5',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://taoshutp5/admin/sale/addPage',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=06aec9jhn3ke1369dcs7s99ao1',
+)
+[ info ] [ PARAM ] array (
+  '/js/back/clock_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-30T21:11:45+08:00 ] 0.0.0.0 GET /js/back/clock.js
+[ info ] taoshutp5/js/back/clock.js [运行时间：0.137024s][吞吐率：7.30req/s] [内存消耗：2,475.33kb] [文件加载：32]
+[ info ] [ LANG ] F:\study\www\taoshu\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'back',
+    2 => 'clock.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'taoshutp5',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://taoshutp5/admin/sale/saleBookList',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=06aec9jhn3ke1369dcs7s99ao1',
+)
+[ info ] [ PARAM ] array (
+  '/js/back/clock_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-30T21:11:51+08:00 ] 0.0.0.0 GET /js/back/clock.js
+[ info ] taoshutp5/js/back/clock.js [运行时间：0.134569s][吞吐率：7.43req/s] [内存消耗：2,475.21kb] [文件加载：32]
+[ info ] [ LANG ] F:\study\www\taoshu\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'back',
+    2 => 'clock.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'taoshutp5',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://taoshutp5/admin/sale/addPage',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=06aec9jhn3ke1369dcs7s99ao1',
+)
+[ info ] [ PARAM ] array (
+  '/js/back/clock_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-30T21:13:13+08:00 ] 0.0.0.0 GET /js/back/clock.js
+[ info ] taoshutp5/js/back/clock.js [运行时间：0.138801s][吞吐率：7.20req/s] [内存消耗：2,475.33kb] [文件加载：32]
+[ info ] [ LANG ] F:\study\www\taoshu\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'back',
+    2 => 'clock.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'taoshutp5',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://taoshutp5/admin/sale/saleBookList',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=06aec9jhn3ke1369dcs7s99ao1',
+)
+[ info ] [ PARAM ] array (
+  '/js/back/clock_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-30T21:13:39+08:00 ] 0.0.0.0 GET /js/back/clock.js
+[ info ] taoshutp5/js/back/clock.js [运行时间：0.126078s][吞吐率：7.93req/s] [内存消耗：2,475.33kb] [文件加载：32]
+[ info ] [ LANG ] F:\study\www\taoshu\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'back',
+    2 => 'clock.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'taoshutp5',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://taoshutp5/admin/sale/saleBookList',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=06aec9jhn3ke1369dcs7s99ao1',
+)
+[ info ] [ PARAM ] array (
+  '/js/back/clock_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-30T21:13:47+08:00 ] 0.0.0.0 GET /js/back/clock.js
+[ info ] taoshutp5/js/back/clock.js [运行时间：0.128937s][吞吐率：7.76req/s] [内存消耗：2,475.27kb] [文件加载：32]
+[ info ] [ LANG ] F:\study\www\taoshu\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'back',
+    2 => 'clock.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'taoshutp5',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://taoshutp5/admin/sale/saleBookDetail?sale_id=36',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=06aec9jhn3ke1369dcs7s99ao1',
+)
+[ info ] [ PARAM ] array (
+  '/js/back/clock_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-30T21:13:58+08:00 ] 0.0.0.0 GET /js/back/clock.js
+[ info ] taoshutp5/js/back/clock.js [运行时间：0.129656s][吞吐率：7.71req/s] [内存消耗：2,475.33kb] [文件加载：32]
+[ info ] [ LANG ] F:\study\www\taoshu\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'back',
+    2 => 'clock.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'taoshutp5',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://taoshutp5/admin/sale/saleBookList',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=06aec9jhn3ke1369dcs7s99ao1',
+)
+[ info ] [ PARAM ] array (
+  '/js/back/clock_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-30T21:14:00+08:00 ] 0.0.0.0 GET /js/back/clock.js
+[ info ] taoshutp5/js/back/clock.js [运行时间：0.134459s][吞吐率：7.44req/s] [内存消耗：2,475.33kb] [文件加载：32]
+[ info ] [ LANG ] F:\study\www\taoshu\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'back',
+    2 => 'clock.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'taoshutp5',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://taoshutp5/admin/sale/orderByVolume',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=06aec9jhn3ke1369dcs7s99ao1',
+)
+[ info ] [ PARAM ] array (
+  '/js/back/clock_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-30T21:14:13+08:00 ] 0.0.0.0 GET /js/back/clock.js
+[ info ] taoshutp5/js/back/clock.js [运行时间：0.133230s][吞吐率：7.51req/s] [内存消耗：2,475.33kb] [文件加载：32]
+[ info ] [ LANG ] F:\study\www\taoshu\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'back',
+    2 => 'clock.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'taoshutp5',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://taoshutp5/admin/sale/orderByNumber',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=06aec9jhn3ke1369dcs7s99ao1',
+)
+[ info ] [ PARAM ] array (
+  '/js/back/clock_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-30T21:14:16+08:00 ] 0.0.0.0 GET /js/back/clock.js
+[ info ] taoshutp5/js/back/clock.js [运行时间：0.112596s][吞吐率：8.88req/s] [内存消耗：2,475.33kb] [文件加载：32]
+[ info ] [ LANG ] F:\study\www\taoshu\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'back',
+    2 => 'clock.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'taoshutp5',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://taoshutp5/admin/sale/orderByVolume',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=06aec9jhn3ke1369dcs7s99ao1',
+)
+[ info ] [ PARAM ] array (
+  '/js/back/clock_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-30T21:15:50+08:00 ] 0.0.0.0 GET /js/back/clock.js
+[ info ] taoshutp5/js/back/clock.js [运行时间：0.141058s][吞吐率：7.09req/s] [内存消耗：2,475.33kb] [文件加载：32]
+[ info ] [ LANG ] F:\study\www\taoshu\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'back',
+    2 => 'clock.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'taoshutp5',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://taoshutp5/admin/sale/saleBookList',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=06aec9jhn3ke1369dcs7s99ao1',
+)
+[ info ] [ PARAM ] array (
+  '/js/back/clock_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-30T21:15:54+08:00 ] 0.0.0.0 GET /js/back/clock.js
+[ info ] taoshutp5/js/back/clock.js [运行时间：0.125489s][吞吐率：7.97req/s] [内存消耗：2,475.34kb] [文件加载：32]
+[ info ] [ LANG ] F:\study\www\taoshu\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'back',
+    2 => 'clock.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'taoshutp5',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://taoshutp5/admin/bcomment/commentList',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=06aec9jhn3ke1369dcs7s99ao1',
+)
+[ info ] [ PARAM ] array (
+  '/js/back/clock_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-30T21:16:00+08:00 ] 0.0.0.0 GET /js/back/clock.js
+[ info ] taoshutp5/js/back/clock.js [运行时间：0.123943s][吞吐率：8.07req/s] [内存消耗：2,475.33kb] [文件加载：32]
+[ info ] [ LANG ] F:\study\www\taoshu\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'back',
+    2 => 'clock.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'taoshutp5',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://taoshutp5/admin/sale/saleBookList',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=06aec9jhn3ke1369dcs7s99ao1',
+)
+[ info ] [ PARAM ] array (
+  '/js/back/clock_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-30T21:16:02+08:00 ] 0.0.0.0 GET /js/back/clock.js
+[ info ] taoshutp5/js/back/clock.js [运行时间：0.125176s][吞吐率：7.99req/s] [内存消耗：2,475.37kb] [文件加载：32]
+[ info ] [ LANG ] F:\study\www\taoshu\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'back',
+    2 => 'clock.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'taoshutp5',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://taoshutp5/admin/inquiry/inquiryBookList',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=06aec9jhn3ke1369dcs7s99ao1',
+)
+[ info ] [ PARAM ] array (
+  '/js/back/clock_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-30T21:16:04+08:00 ] 0.0.0.0 GET /js/back/clock.js
+[ info ] taoshutp5/js/back/clock.js [运行时间：0.129932s][吞吐率：7.70req/s] [内存消耗：2,475.23kb] [文件加载：32]
+[ info ] [ LANG ] F:\study\www\taoshu\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'back',
+    2 => 'clock.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'taoshutp5',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://taoshutp5/admin/inquiry/addPage',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=06aec9jhn3ke1369dcs7s99ao1',
+)
+[ info ] [ PARAM ] array (
+  '/js/back/clock_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-30T21:17:02+08:00 ] 0.0.0.0 GET /js/back/clock.js
+[ info ] taoshutp5/js/back/clock.js [运行时间：0.135690s][吞吐率：7.37req/s] [内存消耗：2,475.37kb] [文件加载：32]
+[ info ] [ LANG ] F:\study\www\taoshu\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'back',
+    2 => 'clock.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'taoshutp5',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://taoshutp5/admin/inquiry/inquiryBookList',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=06aec9jhn3ke1369dcs7s99ao1',
+)
+[ info ] [ PARAM ] array (
+  '/js/back/clock_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-30T21:17:38+08:00 ] 0.0.0.0 GET /js/back/clock.js
+[ info ] taoshutp5/js/back/clock.js [运行时间：0.126182s][吞吐率：7.93req/s] [内存消耗：2,475.37kb] [文件加载：32]
+[ info ] [ LANG ] F:\study\www\taoshu\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'back',
+    2 => 'clock.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'taoshutp5',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://taoshutp5/admin/inquiry/inquiryBookList',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=06aec9jhn3ke1369dcs7s99ao1',
+)
+[ info ] [ PARAM ] array (
+  '/js/back/clock_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-30T21:17:45+08:00 ] 0.0.0.0 GET /js/back/clock.js
+[ info ] taoshutp5/js/back/clock.js [运行时间：0.119602s][吞吐率：8.36req/s] [内存消耗：2,475.33kb] [文件加载：32]
+[ info ] [ LANG ] F:\study\www\taoshu\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'back',
+    2 => 'clock.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'taoshutp5',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://taoshutp5/admin/bcomment/commentList',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=06aec9jhn3ke1369dcs7s99ao1',
+)
+[ info ] [ PARAM ] array (
+  '/js/back/clock_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-30T21:17:48+08:00 ] 0.0.0.0 GET /js/back/clock.js
+[ info ] taoshutp5/js/back/clock.js [运行时间：0.119201s][吞吐率：8.39req/s] [内存消耗：2,475.23kb] [文件加载：32]
+[ info ] [ LANG ] F:\study\www\taoshu\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'back',
+    2 => 'clock.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'taoshutp5',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://taoshutp5/admin/bcomment/addPage',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=06aec9jhn3ke1369dcs7s99ao1',
+)
+[ info ] [ PARAM ] array (
+  '/js/back/clock_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-30T21:18:19+08:00 ] 0.0.0.0 GET /js/back/clock.js
+[ info ] taoshutp5/js/back/clock.js [运行时间：0.140269s][吞吐率：7.13req/s] [内存消耗：2,475.33kb] [文件加载：32]
+[ info ] [ LANG ] F:\study\www\taoshu\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'back',
+    2 => 'clock.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'taoshutp5',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://taoshutp5/admin/bcomment/commentList',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=06aec9jhn3ke1369dcs7s99ao1',
+)
+[ info ] [ PARAM ] array (
+  '/js/back/clock_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-30T21:21:49+08:00 ] 0.0.0.0 GET /js/back/clock.js
+[ info ] taoshutp5/js/back/clock.js [运行时间：0.170740s][吞吐率：5.86req/s] [内存消耗：2,475.35kb] [文件加载：32]
+[ info ] [ LANG ] F:\study\www\taoshu\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'back',
+    2 => 'clock.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'taoshutp5',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://taoshutp5/admin/user/userList',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=06aec9jhn3ke1369dcs7s99ao1',
+)
+[ info ] [ PARAM ] array (
+  '/js/back/clock_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-30T21:27:19+08:00 ] 0.0.0.0 GET /js/back/clock.js
+[ info ] taoshutp5/js/back/clock.js [运行时间：0.132268s][吞吐率：7.56req/s] [内存消耗：2,475.23kb] [文件加载：32]
+[ info ] [ LANG ] F:\study\www\taoshu\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'back',
+    2 => 'clock.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'taoshutp5',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://taoshutp5/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=06aec9jhn3ke1369dcs7s99ao1',
+)
+[ info ] [ PARAM ] array (
+  '/js/back/clock_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-30T21:27:29+08:00 ] 0.0.0.0 GET /js/back/clock.js
+[ info ] taoshutp5/js/back/clock.js [运行时间：0.138973s][吞吐率：7.20req/s] [内存消耗：2,475.14kb] [文件加载：32]
+[ info ] [ LANG ] F:\study\www\taoshu\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'back',
+    2 => 'clock.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'taoshutp5',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://taoshutp5/admin/index/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=06aec9jhn3ke1369dcs7s99ao1',
+)
+[ info ] [ PARAM ] array (
+  '/js/back/clock_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-30T21:27:34+08:00 ] 0.0.0.0 GET /js/back/clock.js
+[ info ] taoshutp5/js/back/clock.js [运行时间：0.134661s][吞吐率：7.43req/s] [内存消耗：2,475.23kb] [文件加载：32]
+[ info ] [ LANG ] F:\study\www\taoshu\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'back',
+    2 => 'clock.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'taoshutp5',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://taoshutp5/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=06aec9jhn3ke1369dcs7s99ao1',
+)
+[ info ] [ PARAM ] array (
+  '/js/back/clock_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-30T21:27:43+08:00 ] 0.0.0.0 GET /js/back/clock.js
+[ info ] taoshutp5/js/back/clock.js [运行时间：0.124411s][吞吐率：8.04req/s] [内存消耗：2,475.14kb] [文件加载：32]
+[ info ] [ LANG ] F:\study\www\taoshu\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'back',
+    2 => 'clock.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'taoshutp5',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://taoshutp5/admin/index/index',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=06aec9jhn3ke1369dcs7s99ao1',
+)
+[ info ] [ PARAM ] array (
+  '/js/back/clock_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-30T21:27:47+08:00 ] 0.0.0.0 GET /js/back/clock.js
+[ info ] taoshutp5/js/back/clock.js [运行时间：0.126363s][吞吐率：7.91req/s] [内存消耗：2,475.35kb] [文件加载：32]
+[ info ] [ LANG ] F:\study\www\taoshu\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'back',
+    2 => 'clock.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'taoshutp5',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://taoshutp5/admin/user/userList',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=06aec9jhn3ke1369dcs7s99ao1',
+)
+[ info ] [ PARAM ] array (
+  '/js/back/clock_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-30T21:27:49+08:00 ] 0.0.0.0 GET /js/back/clock.js
+[ info ] taoshutp5/js/back/clock.js [运行时间：0.126728s][吞吐率：7.89req/s] [内存消耗：2,475.33kb] [文件加载：32]
+[ info ] [ LANG ] F:\study\www\taoshu\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'back',
+    2 => 'clock.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'taoshutp5',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://taoshutp5/admin/sale/saleBookList',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=06aec9jhn3ke1369dcs7s99ao1',
+)
+[ info ] [ PARAM ] array (
+  '/js/back/clock_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-30T21:27:51+08:00 ] 0.0.0.0 GET /js/back/clock.js
+[ info ] taoshutp5/js/back/clock.js [运行时间：0.124250s][吞吐率：8.05req/s] [内存消耗：2,475.33kb] [文件加载：32]
+[ info ] [ LANG ] F:\study\www\taoshu\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'back',
+    2 => 'clock.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'taoshutp5',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://taoshutp5/admin/bcomment/commentList',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=06aec9jhn3ke1369dcs7s99ao1',
+)
+[ info ] [ PARAM ] array (
+  '/js/back/clock_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-30T21:27:53+08:00 ] 0.0.0.0 GET /js/back/clock.js
+[ info ] taoshutp5/js/back/clock.js [运行时间：0.120997s][吞吐率：8.26req/s] [内存消耗：2,475.33kb] [文件加载：32]
+[ info ] [ LANG ] F:\study\www\taoshu\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'back',
+    2 => 'clock.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'taoshutp5',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://taoshutp5/admin/sale/saleBookList',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=06aec9jhn3ke1369dcs7s99ao1',
+)
+[ info ] [ PARAM ] array (
+  '/js/back/clock_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-30T21:27:55+08:00 ] 0.0.0.0 GET /js/back/clock.js
+[ info ] taoshutp5/js/back/clock.js [运行时间：0.121881s][吞吐率：8.20req/s] [内存消耗：2,475.35kb] [文件加载：32]
+[ info ] [ LANG ] F:\study\www\taoshu\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'back',
+    2 => 'clock.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'taoshutp5',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://taoshutp5/admin/user/userList',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=06aec9jhn3ke1369dcs7s99ao1',
+)
+[ info ] [ PARAM ] array (
+  '/js/back/clock_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-30T21:27:58+08:00 ] 0.0.0.0 GET /js/back/clock.js
+[ info ] taoshutp5/js/back/clock.js [运行时间：0.134180s][吞吐率：7.45req/s] [内存消耗：2,475.21kb] [文件加载：32]
+[ info ] [ LANG ] F:\study\www\taoshu\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'back',
+    2 => 'clock.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'taoshutp5',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://taoshutp5/admin/user/addPage',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=06aec9jhn3ke1369dcs7s99ao1',
+)
+[ info ] [ PARAM ] array (
+  '/js/back/clock_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-30T21:29:50+08:00 ] 0.0.0.0 GET /js/back/clock.js
+[ info ] taoshutp5/js/back/clock.js [运行时间：0.147831s][吞吐率：6.76req/s] [内存消耗：2,475.21kb] [文件加载：32]
+[ info ] [ LANG ] F:\study\www\taoshu\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'back',
+    2 => 'clock.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'taoshutp5',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://taoshutp5/admin/user/addPage',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=06aec9jhn3ke1369dcs7s99ao1',
+)
+[ info ] [ PARAM ] array (
+  '/js/back/clock_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-30T21:32:05+08:00 ] 0.0.0.0 GET /js/back/clock.js
+[ info ] taoshutp5/js/back/clock.js [运行时间：0.127888s][吞吐率：7.82req/s] [内存消耗：2,475.17kb] [文件加载：32]
+[ info ] [ LANG ] F:\study\www\taoshu\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'back',
+    2 => 'clock.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'taoshutp5',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://taoshutp5/admin/user/addPage',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=06aec9jhn3ke1369dcs7s99ao1',
+)
+[ info ] [ PARAM ] array (
+  '/js/back/clock_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-30T21:32:48+08:00 ] 0.0.0.0 GET /js/back/clock.js
+[ info ] taoshutp5/js/back/clock.js [运行时间：0.133512s][吞吐率：7.49req/s] [内存消耗：2,475.35kb] [文件加载：32]
+[ info ] [ LANG ] F:\study\www\taoshu\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'back',
+    2 => 'clock.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'taoshutp5',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://taoshutp5/admin/user/userList',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=06aec9jhn3ke1369dcs7s99ao1',
+)
+[ info ] [ PARAM ] array (
+  '/js/back/clock_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-30T21:32:51+08:00 ] 0.0.0.0 GET /js/back/clock.js
+[ info ] taoshutp5/js/back/clock.js [运行时间：0.128366s][吞吐率：7.79req/s] [内存消耗：2,475.33kb] [文件加载：32]
+[ info ] [ LANG ] F:\study\www\taoshu\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'back',
+    2 => 'clock.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'taoshutp5',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://taoshutp5/admin/sale/saleBookList',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=06aec9jhn3ke1369dcs7s99ao1',
+)
+[ info ] [ PARAM ] array (
+  '/js/back/clock_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-30T21:32:56+08:00 ] 0.0.0.0 GET /js/back/clock.js
+[ info ] taoshutp5/js/back/clock.js [运行时间：0.120675s][吞吐率：8.29req/s] [内存消耗：2,475.33kb] [文件加载：32]
+[ info ] [ LANG ] F:\study\www\taoshu\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'back',
+    2 => 'clock.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'taoshutp5',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://taoshutp5/admin/sale/orderByPriceDesc',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=06aec9jhn3ke1369dcs7s99ao1',
+)
+[ info ] [ PARAM ] array (
+  '/js/back/clock_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-30T21:33:08+08:00 ] 0.0.0.0 GET /js/back/clock.js
+[ info ] taoshutp5/js/back/clock.js [运行时间：0.141549s][吞吐率：7.06req/s] [内存消耗：2,475.33kb] [文件加载：32]
+[ info ] [ LANG ] F:\study\www\taoshu\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'back',
+    2 => 'clock.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'taoshutp5',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://taoshutp5/admin/sale/saleBookList',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=06aec9jhn3ke1369dcs7s99ao1',
+)
+[ info ] [ PARAM ] array (
+  '/js/back/clock_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-30T21:33:09+08:00 ] 0.0.0.0 GET /js/back/clock.js
+[ info ] taoshutp5/js/back/clock.js [运行时间：0.126158s][吞吐率：7.93req/s] [内存消耗：2,475.21kb] [文件加载：32]
+[ info ] [ LANG ] F:\study\www\taoshu\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'back',
+    2 => 'clock.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'taoshutp5',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://taoshutp5/admin/sale/addPage',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=06aec9jhn3ke1369dcs7s99ao1',
+)
+[ info ] [ PARAM ] array (
+  '/js/back/clock_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-30T21:36:36+08:00 ] 0.0.0.0 GET /js/back/clock.js
+[ info ] taoshutp5/js/back/clock.js [运行时间：0.180326s][吞吐率：5.55req/s] [内存消耗：2,475.21kb] [文件加载：32]
+[ info ] [ LANG ] F:\study\www\taoshu\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'back',
+    2 => 'clock.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'taoshutp5',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://taoshutp5/admin/sale/addPage',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=06aec9jhn3ke1369dcs7s99ao1',
+)
+[ info ] [ PARAM ] array (
+  '/js/back/clock_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-30T21:37:29+08:00 ] 0.0.0.0 GET /js/back/clock.js
+[ info ] taoshutp5/js/back/clock.js [运行时间：0.135630s][吞吐率：7.37req/s] [内存消耗：2,475.33kb] [文件加载：32]
+[ info ] [ LANG ] F:\study\www\taoshu\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'back',
+    2 => 'clock.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'taoshutp5',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://taoshutp5/admin/sale/saleBookList',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=06aec9jhn3ke1369dcs7s99ao1',
+)
+[ info ] [ PARAM ] array (
+  '/js/back/clock_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-30T21:37:36+08:00 ] 0.0.0.0 GET /js/back/clock.js
+[ info ] taoshutp5/js/back/clock.js [运行时间：0.138758s][吞吐率：7.21req/s] [内存消耗：2,475.33kb] [文件加载：32]
+[ info ] [ LANG ] F:\study\www\taoshu\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'back',
+    2 => 'clock.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'taoshutp5',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://taoshutp5/admin/bcomment/commentList',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=06aec9jhn3ke1369dcs7s99ao1',
+)
+[ info ] [ PARAM ] array (
+  '/js/back/clock_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-30T21:37:38+08:00 ] 0.0.0.0 GET /js/back/clock.js
+[ info ] taoshutp5/js/back/clock.js [运行时间：0.125508s][吞吐率：7.97req/s] [内存消耗：2,475.23kb] [文件加载：32]
+[ info ] [ LANG ] F:\study\www\taoshu\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'back',
+    2 => 'clock.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'taoshutp5',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://taoshutp5/admin/bcomment/addPage',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=06aec9jhn3ke1369dcs7s99ao1',
+)
+[ info ] [ PARAM ] array (
+  '/js/back/clock_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-30T21:38:01+08:00 ] 0.0.0.0 GET /js/back/clock.js
+[ info ] taoshutp5/js/back/clock.js [运行时间：0.141353s][吞吐率：7.07req/s] [内存消耗：2,475.33kb] [文件加载：32]
+[ info ] [ LANG ] F:\study\www\taoshu\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'back',
+    2 => 'clock.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'taoshutp5',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://taoshutp5/admin/bcomment/commentList',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=06aec9jhn3ke1369dcs7s99ao1',
+)
+[ info ] [ PARAM ] array (
+  '/js/back/clock_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-30T21:38:11+08:00 ] 0.0.0.0 GET /js/back/clock.js
+[ info ] taoshutp5/js/back/clock.js [运行时间：0.142301s][吞吐率：7.03req/s] [内存消耗：2,475.23kb] [文件加载：32]
+[ info ] [ LANG ] F:\study\www\taoshu\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'back',
+    2 => 'clock.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'taoshutp5',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://taoshutp5/admin/breply/replyList',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=06aec9jhn3ke1369dcs7s99ao1',
+)
+[ info ] [ PARAM ] array (
+  '/js/back/clock_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-30T21:38:16+08:00 ] 0.0.0.0 GET /js/back/clock.js
+[ info ] taoshutp5/js/back/clock.js [运行时间：0.138447s][吞吐率：7.22req/s] [内存消耗：2,475.23kb] [文件加载：32]
+[ info ] [ LANG ] F:\study\www\taoshu\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'back',
+    2 => 'clock.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'taoshutp5',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://taoshutp5/admin/order/orderList',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=06aec9jhn3ke1369dcs7s99ao1',
+)
+[ info ] [ PARAM ] array (
+  '/js/back/clock_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-30T21:38:19+08:00 ] 0.0.0.0 GET /js/back/clock.js
+[ info ] taoshutp5/js/back/clock.js [运行时间：0.123842s][吞吐率：8.07req/s] [内存消耗：2,475.35kb] [文件加载：32]
+[ info ] [ LANG ] F:\study\www\taoshu\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'back',
+    2 => 'clock.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'taoshutp5',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://taoshutp5/admin/order/addPage',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=06aec9jhn3ke1369dcs7s99ao1',
+)
+[ info ] [ PARAM ] array (
+  '/js/back/clock_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-30T21:38:29+08:00 ] 0.0.0.0 GET /js/back/clock.js
+[ info ] taoshutp5/js/back/clock.js [运行时间：0.133391s][吞吐率：7.50req/s] [内存消耗：2,475.23kb] [文件加载：32]
+[ info ] [ LANG ] F:\study\www\taoshu\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'back',
+    2 => 'clock.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'taoshutp5',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://taoshutp5/admin/order/orderList',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=06aec9jhn3ke1369dcs7s99ao1',
+)
+[ info ] [ PARAM ] array (
+  '/js/back/clock_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-30T21:38:39+08:00 ] 0.0.0.0 GET /js/back/clock.js
+[ info ] taoshutp5/js/back/clock.js [运行时间：0.126400s][吞吐率：7.91req/s] [内存消耗：2,475.23kb] [文件加载：32]
+[ info ] [ LANG ] F:\study\www\taoshu\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'back',
+    2 => 'clock.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'taoshutp5',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://taoshutp5/admin/order/orderList',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=06aec9jhn3ke1369dcs7s99ao1',
+)
+[ info ] [ PARAM ] array (
+  '/js/back/clock_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-30T21:38:41+08:00 ] 0.0.0.0 GET /js/back/clock.js
+[ info ] taoshutp5/js/back/clock.js [运行时间：0.132751s][吞吐率：7.53req/s] [内存消耗：2,475.33kb] [文件加载：32]
+[ info ] [ LANG ] F:\study\www\taoshu\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'back',
+    2 => 'clock.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'taoshutp5',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://taoshutp5/admin/sale/saleBookList',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=06aec9jhn3ke1369dcs7s99ao1',
+)
+[ info ] [ PARAM ] array (
+  '/js/back/clock_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-30T21:38:55+08:00 ] 0.0.0.0 GET /js/back/clock.js
+[ info ] taoshutp5/js/back/clock.js [运行时间：0.128661s][吞吐率：7.77req/s] [内存消耗：2,475.33kb] [文件加载：32]
+[ info ] [ LANG ] F:\study\www\taoshu\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'back',
+    2 => 'clock.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'taoshutp5',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://taoshutp5/admin/notice/noticeList',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=06aec9jhn3ke1369dcs7s99ao1',
+)
+[ info ] [ PARAM ] array (
+  '/js/back/clock_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-30T21:38:56+08:00 ] 0.0.0.0 GET /js/back/clock.js
+[ info ] taoshutp5/js/back/clock.js [运行时间：0.138154s][吞吐率：7.24req/s] [内存消耗：2,475.35kb] [文件加载：32]
+[ info ] [ LANG ] F:\study\www\taoshu\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'back',
+    2 => 'clock.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'taoshutp5',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://taoshutp5/admin/notice/addPage',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=06aec9jhn3ke1369dcs7s99ao1',
+)
+[ info ] [ PARAM ] array (
+  '/js/back/clock_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-30T21:40:38+08:00 ] 0.0.0.0 GET /js/back/clock.js
+[ info ] taoshutp5/js/back/clock.js [运行时间：0.130062s][吞吐率：7.69req/s] [内存消耗：2,475.33kb] [文件加载：32]
+[ info ] [ LANG ] F:\study\www\taoshu\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'back',
+    2 => 'clock.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'taoshutp5',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://taoshutp5/admin/notice/noticeList',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=06aec9jhn3ke1369dcs7s99ao1',
+)
+[ info ] [ PARAM ] array (
+  '/js/back/clock_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-30T21:40:49+08:00 ] 0.0.0.0 GET /js/back/clock.js
+[ info ] taoshutp5/js/back/clock.js [运行时间：0.174768s][吞吐率：5.72req/s] [内存消耗：2,475.34kb] [文件加载：32]
+[ info ] [ LANG ] F:\study\www\taoshu\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'back',
+    2 => 'clock.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'taoshutp5',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://taoshutp5/admin/violate/violateList',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=06aec9jhn3ke1369dcs7s99ao1',
+)
+[ info ] [ PARAM ] array (
+  '/js/back/clock_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-30T21:40:50+08:00 ] 0.0.0.0 GET /js/back/clock.js
+[ info ] taoshutp5/js/back/clock.js [运行时间：0.146566s][吞吐率：6.82req/s] [内存消耗：2,475.23kb] [文件加载：32]
+[ info ] [ LANG ] F:\study\www\taoshu\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'back',
+    2 => 'clock.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'taoshutp5',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://taoshutp5/admin/violate/addPage',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=06aec9jhn3ke1369dcs7s99ao1',
+)
+[ info ] [ PARAM ] array (
+  '/js/back/clock_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-30T21:40:59+08:00 ] 0.0.0.0 GET /js/back/clock.js
+[ info ] taoshutp5/js/back/clock.js [运行时间：0.136336s][吞吐率：7.33req/s] [内存消耗：2,475.34kb] [文件加载：32]
+[ info ] [ LANG ] F:\study\www\taoshu\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'back',
+    2 => 'clock.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'taoshutp5',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://taoshutp5/admin/violate/violateList',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=06aec9jhn3ke1369dcs7s99ao1',
+)
+[ info ] [ PARAM ] array (
+  '/js/back/clock_js' => '',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-12-30T22:09:42+08:00 ] 0.0.0.0 GET /js/back/clock.js
+[ info ] taoshutp5/js/back/clock.js [运行时间：0.130034s][吞吐率：7.69req/s] [内存消耗：2,475.34kb] [文件加载：32]
+[ info ] [ LANG ] F:\study\www\taoshu\ThinkPHP\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'js',
+    1 => 'back',
+    2 => 'clock.js',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'taoshutp5',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://taoshutp5/admin/violate/violateList',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'cookie' => 'PHPSESSID=06aec9jhn3ke1369dcs7s99ao1',
+)
+[ info ] [ PARAM ] array (
+  '/js/back/clock_js' => '',
+)
+[ info ] [ LOG ] INIT File

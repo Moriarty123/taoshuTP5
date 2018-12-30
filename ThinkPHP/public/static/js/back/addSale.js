@@ -4,23 +4,18 @@ function Isbn(){
 }
 function checkISBN(){
 	var isbn = document.getElementsByName("isbn")[0];
-	if( isbn.value.match('#\d{12}[0-9]#i')) {
-		if(isbn.value.length == 10 || isbn.value.length == 13){
-			isbn.style.border = "1px solid #a9a9a9";
-			document.getElementById('tip-ISBN').style.display = 'none';
-			return true;
-		}
-		else{
-			isbn.style.border = "1px solid #e71304";
-			document.getElementById('tip-ISBN').style.display = 'block';
-			return false;
-		}	
+	if(isbn.value.length == 10 || isbn.value.length == 13){
+		isbn.style.border = "1px solid #a9a9a9";
+		document.getElementById('tip-ISBN').style.display = 'none';
+		return true;
 	}
 	else{
 		isbn.style.border = "1px solid #e71304";
 		document.getElementById('tip-ISBN').style.display = 'block';
 		return false;
 	}	
+	
+	
 }
 
 
