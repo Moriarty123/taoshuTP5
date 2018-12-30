@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>淘书街：添加出售书籍</title>
+		<link rel="shortcut icon" href="../../../../static/img/shu.ico" />
+		<link rel="stylesheet" href="../../../../static/css/front/personal.css" />
+		<link rel="stylesheet" href="../../../../static/css/front/addSaleBook.css" />
+		<link rel="stylesheet" href="../../../../static/font/css/font-awesome.min.css" />
+	</head>
+	<body>
+		<div class="top">
+			<div class="logo">
+				<div class="img"><a href="?"><img src="../../../../static/img/taoshujie.png" /></a></div>
+				<div class="txt"><?php echo session('username'); ?> - 添加出售</div>
+				<div class="right">
+					<a href="/index/index/index">首页</a> <span class="shu">|</span>
+					<a href="/index/sale/showAllSaleBook">出售</a> <span class="shu">|</span>
+					<a href="/index/inquire/showAllInquireBook">求购</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="asb_content">
+			<form action="/index/addsalebook/insert" method="post" enctype="multipart/form-data" onsubmit="return checkAll();">
+				<div class="asb_list">
+					<label style="letter-spacing: 0.12em;">ISBN号</label>
+					<input type="text" placeholder="请输入10位或13位ISBN码" name="isbn" onfocus="Isbn()" onblur="checkIsbn()" />
+				</div>
+				<span class="xing">*</span><span class="alarm"></span>
+				<div class="asb_list">
+					<label style="letter-spacing: 1.67em;">书名</label>
+					<input type="text" placeholder="请输入书名" name="name" onfocus="Name()" onblur="checkName()" />
+				</div>
+				<span class="xing">*</span><span class="alarm"></span>
+				<div class="asb_list">
+					<label style="letter-spacing: 1.67em;">作者</label>
+					<input type="text" placeholder="多个作者用空格隔开" name="author" onfocus="Author()" onblur="checkAuthor()" />
+				</div>
+				<span class="xing">*</span><span class="alarm"></span>
+				<div class="asb_list">
+					<label style="letter-spacing: 0.4em;">出版社</label>
+					<input type="text" placeholder="请输入出版社" name="publishing" onfocus="Publishing()" onblur="checkPublishing()" />
+				</div>
+				<span class="xing">*</span><span class="alarm"></span>
+				<div class="asb_img">
+					<label>封面图片</label>
+					<input type="file" name="img" id="image" onchange="upimg(this)"/>
+					<input type="hidden" name="imgsave" value="" id="imgsave" />
+				</div>
+				<div class="asb_list">
+					<label style="letter-spacing: 1.67em;">原价</label>
+					<input type="text" placeholder="请输入大于等于零的数字" name="beprice" onfocus="Beprice()" onblur="checkBeprice()" />
+				</div>
+				<span class="xing">*</span><span class="alarm"></span>
+				<div class="asb_list">
+					<label style="letter-spacing: 1.67em;">售价</label>
+					<input type="text" placeholder="请输入大于等于零的数字" name="afprice" onfocus="Afprice()" onblur="checkAfprice()" />
+				</div>
+				<span class="xing">*</span><span class="alarm"></span>
+				<div class="asb_list">
+					<label style="letter-spacing: 1.67em;">数量</label>
+					<input type="text" value="1" name="num" placeholder="请输入大于零的数字" onfocus="Num()" onblur="checkNum()"/>
+				</div>
+				<span class="xing">*</span><span class="alarm"></span>
+				<div class="asb_list">
+					<label style="letter-spacing: 1.67em;">页码</label>
+					<input type="text" name="page" placeholder="请输入大于零的数字" onfocus="Page()" onblur="checkPage()"/>
+				</div>
+				<span class="xing">*</span><span class="alarm"></span>
+				<div class="asb_list">
+					<label>新旧程度</label>
+					<select class="degrees" name="degrees" onfocus="Degrees()" onblur="checkDegrees()">
+						<option value="0">---------请选择---------</option>
+						<option value="全新">全新</option>
+						<option value="九成新">九成新</option>
+						<option value="八成新">八成新</option>
+						<option value="七成新">七成新</option>
+						<option value="六成新及以下">六成新及以下</option>
+					</select>
+				</div>
+				<span class="xing">*</span><span class="alarm"></span>
+				<div class="asb_list">
+					<label>书籍分类</label>
+					<select class="degrees" name="type" onfocus="Type()" onblur="checkType()">
+						<option value="0">---------请选择---------</option>
+						{foreach $ret as $vo}
+						<option value="{$vo.second_id}">{$vo.second_name}</option>
+						{/foreach}
+					</select>
+				</div>
+				<span class="xing">*</span><span class="alarm"></span>
+				<div class="asb_list aa" style="margin-bottom: 30px;">
+					<label class="bb">内容简介</label>
+					<textarea cols="20" rows="2" class="asblist_content" name="content"></textarea>
+				</div>
+				<input type="submit" class="asb_submit" value="发布" />
+			</form>
+		</div>
+		
+		{include file='../Application/index/view/common/common_foot.html'}
+		<script type="text/javascript" src="../../../../static/js/front/jquery.min.js" ></script>
+		<script type="text/javascript">
+
+		 function upimg(obj) {
+
+          if ( obj.value == "" ) return;
+          var formdata = new FormData();
+          //<input type="file" name="img" value="" />
+          formdata.append("image" , $(obj)[0].files[0]);//获取文件法二
+          $.ajax({
+              type : 'post',
+              url : '/index/addinquirybook/upimg',
+              data : formdata,
+              cache : false,
+              processData : false, // 不处理发送的数据，因为data值是Formdata对象，不需要对数据做处理
+              contentType : false, // 不设置Content-type请求头
+              success : function(ret){
+              	
+                  $('#imgsave').val(ret);
+                  
+                  // alert(ret);
+                  // $('#upimge').attr('src', ret);
+              },
+              error : function(){  }
+    });
+}
+	</script>
+	</body>
+	<script type="text/javascript" src="../../../../static/js/front/addSaleBook.js" ></script>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title><?php echo $ret['inquiry_name']; ?></title>
+		<link rel="shortcut icon" href="../../../../static/img/shu.ico" />
+		<link rel="stylesheet" href="../../../../static/css/front/sale_detail.css" />
+		<link rel="stylesheet" href="../../../../static/css/front/common_top.css" />
+	</head>
+	<body>
+		{include file='../Application/index/view/common/inquiry_common_header.html'}
+		<div class="w">
+			
+		</div>
+		<div class="book_info">
+			<div class="imgdiv">
+				<!--<span></span>-->
+				<img src="<?php echo $ret['inquiry_img']; ?>" />
+			</div>
+			<!--基本信息-->
+			<div class="info">
+				<div class="title"><?php echo $ret['inquiry_name']; ?></div>
+				<div class="detail_info">
+					<div class="info_left">
+						<dd>库存：<span><?php echo $ret['inquiry_isbn']; ?></span></dd>
+						<dd>求购量：<span><?php echo $ret['inquiry_num']; ?></span></dd>
+						<dd>作者：<span><?php echo $ret['inquiry_author']; ?></span></dd>
+						<dd>出版社：<span><?php echo $ret['inquiry_publishing']; ?></span></dd>
+					</div>
+					<div class="info_right">
+						<dd>页数：<span><?php echo $ret['inquiry_page']; ?></span></dd>
+						<dd>新旧程度：<span><?php echo $ret['inquiry_degrees']; ?></span></dd>
+						<dd>求购者：<span><?php echo $ret['user_realname']; ?></span></dd>
+					</div>
+				</div>
+			</div>
+			<!--价钱-->
+			<div class="info2">
+				<div class="price">
+					价格区间：<span>￥<?php echo $ret['inquiry_minprice']; ?> ~ ￥<?php echo $ret['inquiry_maxprice']; ?></span>
+				</div>
+			</div>
+			<!--价钱-->
+			<div class="info2" id="aa" style="margin-top: 17px;padding-bottom: 17px;font-size: 13px;color: #777;">
+				<div >
+					<span style="float: left;">求购人有话说：</span><div style="float: left;"><?php echo $ret['inquiry_attach']; ?></div>
+				</div>
+			</div>
+			<?php 
+				if( $ret['inquiry_attach'] == null ){
+					echo "<script type='text/javascript'>
+							document.getElementById('aa').style.display = 'none';
+						</script>";
+				} 
+			?>
+			<!--我有此书按钮-->
+			<!--<div class="operation" id="o" style="float: right;width: 250px;margin-top: 18px;">
+				<a href="?c=shopcar&a=addShopCar&id=<?php echo $ret['inquiry_id']; ?>">
+					<div class="collect">我有此书</div>
+				</a>
+				<a href="?c=shoporder&a=showAddShopOrder&id=<?php echo $ret['inquiry_id']; ?>"><div class="buy">购买</div></a>
+			</div>-->
+		</div>
+		<!--详细内容-->
+		<div class="content_info">
+			<div class="content_title">
+				<span>内容简介</span>
+			</div>
+			<div class="content">
+				<?php echo $ret['inquiry_content']; ?>
+				<?php if( $ret['inquiry_content'] == null ){echo "无内容";} ?>	
+			</div>
+		</div>
+		
+		<div class="content_info">
+			<div class="content_title">
+				<span>书籍留言</span>
+			</div>
+			<div class="content">
+				<div class="bcomment">
+					<form action="/index/inquire/postmsg" method="post" onsubmit="return checkComment();">
+						<textarea cols="101" rows="7" name="content"></textarea>
+						<input type="hidden" value="<?php echo $ret['inquiry_id']; ?>" name="book_id" />
+						<input type="submit" value="发表留言" />
+						<span>(限255字)</span>
+					</form>
+				</div>
+				<div class="bc_detail">
+					<ul>
+						{foreach $res as $value}
+						<li>
+							<div class="bcUser">
+								<a href="/index/personalsalecenter/index?id=<?php echo $value['user_id']; ?>" target="_blank">
+									<img src="<?php echo $value['user_img']; ?>" />
+								</a>
+								<div class="name_txt">
+									<a href="/index/personalsalecenter/index?id=<?php echo $value['user_id']; ?>" target="_blank">
+										<?php echo $value['user_realname']; ?>
+									</a>
+								</div>
+							</div>
+							<div class="bc_content">
+								<?php echo $value['scomment_content']; ?>
+								<div class="bc_time"><?php echo $value['scomment_time']; ?></div>
+							</div>
+						</li>
+						{/foreach}
+						<?php if( empty($scomment) ){echo "没有留言";} ?>	
+					</ul>
+				</div>
+			</div>
+		</div>
+		{include file='../Application/index/view/common/common_foot.html'}
+	</body>
+	<script type="text/javascript" src="../../../../static/js/front/common_top.js" ></script>
+	<script>
+		function checkComment(){
+			var content = document.getElementsByName("content")[0].value;
+			if( content.length == 0 ){
+				alert("留言不能为空！");
+				return false;
+			}
+			else if(content.length > 255){
+				alert("留言内容不能超过255字！");
+				return false;
+			}
+			return true;
+		}
+	</script>
+</html>

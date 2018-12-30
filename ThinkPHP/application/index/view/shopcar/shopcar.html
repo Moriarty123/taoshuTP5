@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>淘书街：我的购物车</title>
+		<link rel="shortcut icon" href="../../../../static/img/shu.ico" />
+		<link rel="stylesheet" href="../../../../static/css/front/common_top.css" />
+		<link rel="stylesheet" href="../../../../static/css/front/shopCar.css" />
+		<link rel="stylesheet" href="../../../../static/font/css/font-awesome.min.css" />
+	</head>
+	<body>
+		
+		{include file='../Application/index/view/common/common_header.html'}
+		
+		<!--购物车-->
+		<div class="shopcar">
+			<div class="shopcar_title">我的购物车</div>
+			<div class="shopcar_body">
+				
+				<table cellspacing="0">
+					<thead>
+						<th class="col1"><input type="checkbox" name="fullChoose" onclick="fullChecked(this)"></th>
+						<th class="col2">书名</th>
+						<th class="col3">卖家</th>
+						<th class="col4">原价</th>
+						<th class="col5">售价</th>
+						<th class="col6">库存量</th>
+						<th class="col7">购买数量</th>
+						<th class="col8">小计</th>
+						<th class="col9">操作</th>
+					</thead>
+					<tbody>
+						{foreach $ret as $value}
+						<form name="myform" action="/index/shopcar/deleteselect" method="post">
+						<tr>
+							<td class="col1"><input type="checkbox" name="ids[]" class="eachChoose" value="{$value.id}" onclick="eachChecked();"></td>
+							<td class="col2" id="td2">
+								<a href="/index/sale/saledetail?id={$value.sale_id}"><img src="{$value.sale_img}" /></a>
+								<a href="/index/sale/saledetail?id=<?php echo $value['sale_id'];?>" class="sale_name">{$value.sale_name}</a>
+							</td>
+							<td class="col3">
+								<a href="?c=user&a=showSaleUser&id=<?php echo $value['user_id']; ?>" target="_blank">
+									<?php if($value['user_realname'] == null){echo $value['user_name'];} else{echo $value['user_realname'];} ?>
+								</a>
+							</td>
+							<td class="col4">￥{$value.sale_beprice}</td>
+							<td class="col5">￥<span>{$value.sale_afprice}</span></td>
+							<td class="col6">{$value.sale_num}</td>
+							<td class="col7">
+								<a href="/index/shopcar/sub?id=<?php echo $value['id'];?>" class="op" onclick="return sub(this)">-</a>
+								<span>{$value.book_num}</span>
+								<a href="/index/shopcar/add?id=<?php echo $value['id'];?>" class="op" onclick="return add(this)">+</a>
+							</td>
+							<td class="col8">￥<span><?php echo $value['sale_afprice']*$value['book_num'] ?></span></td>
+							<td class="col9"><a href="/index/shopcar/delete?id={$value.id}" class="del" onclick='return queren();'>
+								<i class="fa fa-trash"></i>
+							</a></td>
+						</tr>
+						{/foreach}
+					</tbody>
+				</table>
+				<div class="count">
+				 	<input type="submit" name="Submit" class="deleteChecked" value="删除选中" id="delBtn" disabled="disabled" onclick='return queren();'></input>
+				 	<span class="countnum">已选书籍 <span class="num">0</span> 本</span>
+				 	<span class="countmoney">合计(不含运费) : <span class="money">￥0</span> </span>
+				 	<input type="submit" name="Submit" id="sumBtn" class="sum" value="结 算" disabled="disabled"></input>
+				</div>
+				</form>
+			</div>
+		</div>
+		
+		{include file='../Application/index/view/common/common_foot.html'}
+		
+	</body>
+	<script type="text/javascript" src="../../../../static/js/front/shopCar.js" ></script>
+	<script type="text/javascript" src="../../../../static/js/front/common_top.js" ></script>
+</html>
+<script src="../../../../static/js/front/jquery.min.js"></script>
+<script type="text/javascript">
+	function queren(){
+		return window.confirm("你确认要删除吗？");
+	}
+	function sub(obj){
+		var span = obj.nextElementSibling; // 获取-按钮下一个兄弟
+		var oldNum = parseInt(span.innerHTML); // 旧数据
+	  	if(oldNum == 1){
+	  		return window.confirm("你确认要删除吗？");
+  		
+	  	}
+	}
+	function add(obj){
+		var span = obj.previousElementSibling; // 获取+按钮上一个兄弟
+		var oldNum = parseInt(span.innerHTML); // 旧数据
+		var col6 = obj.parentElement.previousElementSibling.innerHTML;
+		if( oldNum >= col6 ){
+			alert("库存量不足！");
+			return false;
+		}
+		return true;
+	}
+</script>

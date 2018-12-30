@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>淘书街：个人中心 - 我的求购留言</title>
+		<link rel="stylesheet" href="../../../../static/css/front/personal.css" />
+		<link rel="stylesheet" href="../../../../static/css/front/personal_sale.css" />
+		<link rel="stylesheet" href="../../../../static/font/css/font-awesome.min.css" />
+		<link rel="shortcut icon" href="../../../../static/img/shu.ico" />
+	</head>
+	<script type="text/javascript" src="../../../../static/js/front/jquery.min.js" ></script>
+	<body>
+		{include file="../application/index/view/common/center_top.html"/}
+		 {include file="../application/index/view/common/center_leftmenu.html"/}
+			<!--基本信息-->
+			<div class="menu_info" style="display: block;">
+				<div class="menu_head" style="margin-bottom: 0px; border: none;">
+					<ul>
+						<li>求购留言</li>
+					</ul>
+				</div>
+				<!--我的求购-->
+				<div class="menu_detail" style="display: block;margin-top: 5px;">
+					<div class="sc_right_content">
+						<ul>
+						{foreach $ret as $value}
+							<li>
+								<div class="info_div" style="font-size: 14px;padding-left: 30px;line-height: 22px;">
+									<a href="/index/inquire/inquirydetail?id=<?php echo $value['inquiry_id']; ?>" target="_blank">
+										<div class="comment_time" style="color: #888;font-size: 12px;">
+											<?php echo $value['scomment_time']; ?>
+										</div>
+										<div class="comment_content" style="color: #555;">
+											<?php echo $value['scomment_content']; ?>
+										</div>
+										<div class="comment_book" style="color: #00C7B4;">
+											<?php echo $value['inquiry_name']; ?>
+										</div>
+									</a>
+								</div>
+							</li>
+							{/foreach}
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		 {include file="../application/index/view/common/common_foot.html"/}
+	</body>
+	<!--<script type="text/javascript" src="../../../../static/js/front/personal_center.js" ></script>-->
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>淘书街：修改登录密码</title>
+		<link rel="stylesheet" href="../../../../static/css/front/personal.css" />
+		<link rel="stylesheet" href="../../../../static/css/front/personal_center.css" />
+		<link rel="stylesheet" href="../../../../static/font/css/font-awesome.min.css" />
+		<link rel="shortcut icon" href="../../../../static/img/shu.ico" />
+	</head>
+	<body>
+		
+	
+		
+		 {include file="../application/index/view/common/center_top.html"/}
+		 {include file="../application/index/view/common/center_leftmenu.html"/}
+			
+			<div class="menu_info" style="display: block;">
+				<div class="menu_head">
+					<ul><li>修改登录密码</li></ul>
+				</div>
+				<!--修改登录密码-->
+				<div class="menu_detail" style="display: block;">
+					<form action="/index/updatepwd/updatepwd" method="post" onsubmit="return checkAll();">
+						<input type="hidden" name="id" />
+						<div class="menu_list">
+							<label class="title">原始密码</label>
+							<input type="password" class="content" name="prepwd" onblur="checkPre();" onfocus="Pre();"/>
+						</div>
+						<div class="msg" id="prePwd"></div>
+						
+						<div class="menu_list">
+							<label class="title">设置密码</label>
+							<input type="password" class="content" name="newPwd" onblur="checkNew();" onfocus="New();" />
+						</div>
+						<div class="msg" id="newPwd"></div>
+						
+						<div class="menu_list">
+							<label class="title">确认密码</label>
+							<input type="password" class="content" name="rePwd" onblur="checkRe();" onfocus="Re();" />
+						</div>
+						<div class="msg" id="rePwd"></div>
+						
+						<input type="submit" class="button" value="修改"></input>
+					</form>
+				</div>
+			</div>
+		</div>
+		   {include file="../application/index/view/common/common_foot.html"/}
+	</body>
+</html>
+<script type="text/javascript" src="../../../../static/js/front/personal_updatePwd.js" ></script>

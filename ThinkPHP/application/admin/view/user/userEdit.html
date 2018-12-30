@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>淘书街修改会员信息</title>
+		<link rel="shortcut icon" href="__IMG__/shu.ico" />
+		<link rel="stylesheet" href="__CSS__/back/user.css" />
+		<link rel="stylesheet" href="__CSS__/back/common.css" />
+		<link rel="stylesheet" href="__CSS__/back/add.css" />
+		<link rel="stylesheet" href="__CSS__/back/edit.css" />
+		
+		<script type="text/javascript" src="__JS__/back/jquery.min.js"></script>
+		<script type="text/javascript" src="__JS__/back/public.js"></script>
+		<script type="text/javascript" src="__JS__/back/addUser.js"></script>
+		<!-- <script type="text/javascript" src="__JS__/back/showImg.js"></script> -->
+
+
+		<style>
+			.tip {
+				display: none; padding-left: 83px; padding-top: 5px; color: red;
+			}
+		</style>
+	</head>
+	<body>
+	<!-- 头部	 -->
+	{include file="../application/admin/view/common/header.html"}
+	<!-- 头部结束	 -->
+
+	<!-- 左边节点 -->
+	{include file="../application/admin/view/common/menu.html"}
+	<!--左边结点结束-->
+	
+	<!--main开始-->
+	<div id="MainForm">
+		<div class="form_boxA">
+			<div class="a">
+				<h2>淘书街-修改 {$user.user_realname} 基本信息</h2>
+			</div>
+			<form action="/admin/user/userUpdate" method="post" enctype="multipart/form-data" class="add_form" onsubmit="return checkEdit()" style="width: 700px;">
+				<div style="float: left;">
+				<input type="hidden" name="id" value="{$user.user_id}" />
+				<div class="add_list">
+					<label class="add_label"><span class="xing">*</span>学号：</label>
+					<input type="text" name="" class="add_input" placeholder="输入12位学号" value="{$user.user_name}" disabled="true" />
+					<input type="hidden" name="name" class="add_input" placeholder="输入12位学号" value="{$user.user_name}" />
+				</div>
+				<div class="add_list">
+					<label class="add_label"><span class="xing">*</span>性别：</label>
+					{eq name="user.user_sex" value="男"}
+					<input type="radio" value="男" name="sex" class="add_radio" checked /> 男
+					<input type="radio" value="女" name="sex" class="add_radio"/> 女
+					{else}
+					<input type="radio" value="男" name="sex" class="add_radio" /> 男
+					<input type="radio" value="女" name="sex" class="add_radio" checked /> 女
+					{/eq}
+				</div>
+				<div class="add_list">
+					<label class="add_label"><span class="xing">*</span>真实姓名：</label>
+					<input type="text" name="realname" class="add_input" placeholder="请输入真实姓名" value="{$user.user_realname}" onfocus="Real()" onblur="checkReal()" />
+					<span class="tip" id="tip-realname">请输入真实姓名</span>
+				</div>
+				<div class="add_list">
+					<label class="add_label"><span class="xing">*</span>联系方式：</label>
+					<input type="text" name="tel" placeholder="输入联系方式" class="add_input" value="{$user.user_tel}" onfocus="Tel()" onblur="checkTel()"/>
+					<span class="tip" id="tip-tel">请输入联系方式</span>
+				</div>
+				<div class="add_list">
+					<label class="add_label"><span class="xing">*</span>地址：</label>
+					<input type="text" name="addr" placeholder="输入详细地址" class="add_input" value="{$user.user_addr}" onfocus="Addr()" onblur="checkAddr()"/>
+					<span class="tip" id="tip-addr">请输入详细地址</span>
+				</div>
+				<div class="add_list">
+					<label class="add_label"><span class="xing">*</span>年级：</label>
+					<select name="grade" class="add_input">
+						<option value="2014" <?php if($user['grade'] == "2014") {echo "selected";} ?> >2014</option>
+						<option value="2015" <?php if($user['grade'] == "2015") {echo "selected";} ?> >2015</option>
+						<option value="2016" <?php if($user['grade'] == "2016") {echo "selected";} ?> >2016</option>
+						<option value="2017" <?php if($user['grade'] == "2017") {echo "selected";} ?> >2017</option>
+					</select>
+				</div>
+				<div class="add_list">
+					<label class="add_label"><span class="xing">*</span>专业：</label>
+					<select name="class" class="add_input">
+
+						{volist name="classes" id="class"}
+							
+							<option value="{$class.class_id}" <?php if ($class['class_id'] ==$user['class_id'] ) {echo "selected";} ?> >{$class.class_name}</option>
+						{/volist}
+					</select>
+				</div>
+				<div class="add_list">
+					<label class="add_label" style="margin-top: 30px;">个人说明：</label>
+					<textarea name="content" class="add_textarea">{$user.user_content}</textarea>
+				</div>
+				</div>
+				<div class="user_right">
+					<div class="img_icon" id="preview">
+						<img src="{$user.user_img}" class="edituser_img" id="headImgBox"/>
+					</div>
+					<input type="file" name="img" style="margin: 30px 63px 0 40px;" onchange="uploadsimage(this);" />
+					<input type="hidden" name="headImg" value="{$user.user_img}" id="headImg">
+				</div>
+				<input type="submit" value="修改" class="add_submit" style="margin-left: 300px;" />
+			</form>
+		</div>
+	</div>
+	<!--main结束-->
+	
+	</body>
+</html>
+<script>
+	var user = document.getElementById("user");
+	user.getElementsByClassName("icon1")[0].style.display = "block";
+	user.getElementsByClassName("icon2")[0].style.display = "none";
+	user.getElementsByClassName("icon3")[0].style.display = "block";
+	user.getElementsByClassName("icon4")[0].style.display = "none";
+	user.getElementsByClassName("icon5")[0].style.display = "block";
+	user.getElementsByClassName("coin11")[0].style.display = "block";
+	user.getElementsByClassName("coin22")[0].style.display = "none";
+	user.getElementsByClassName("cks")[0].setAttribute("class", "menu_chioce2");
+	user.getElementsByTagName("dd")[0].style.display = "block";
+</script>
+
+<script type="text/javascript">
+//上传图片
+function uploadsimage(obj) {
+	if ( obj.value == "" ) return;
+
+	var formdata = new FormData();
+
+    formdata.append("image" , $(obj)[0].files[0]);//$(obj)[0].files[0]为文件对象
+
+    $.ajax({
+    	type : 'post',
+    	url : '/admin/common/UserImage',
+    	data : formdata,
+    	cache : false,
+        processData : false, // 不处理发送的数据，因为data值是Formdata对象，不需要对数据做处理
+        contentType : false, // 不设置Content-type请求头
+        success : function(ret){
+
+        	$('#headImg').attr('value', ret);
+ 			$('#headImgBox').attr('src', ret);
+        },
+        error : function(){ 
+        	alert('图片上传失败');
+        }
+    });
+}
+
+</script>

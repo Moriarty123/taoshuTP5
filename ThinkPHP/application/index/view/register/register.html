@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>淘书街用户注册</title>
+		<link rel="shortcut icon" href="../../../../static/img/shu.ico" />
+		<link rel="stylesheet" href="../../../../static/css/front/register.css" />
+		<link rel="stylesheet" href="../../../../static/font/css/font-awesome.min.css" />
+	</head>
+	<body>
+		<div class="top">
+			<div class="logo">
+				<div class="img"><a href="?"><img src="../../../../static/img/taoshujie.png" /></a></div>
+				<div class="txt">欢迎注册淘书街</div>
+				<div class="right">已有账号？ <a href="/index/login/index">请登录</a></div>
+			</div>
+		</div>
+		<div class="form">
+			<form action="/index/register/insert" method="post" onsubmit="return checkAll();">
+				<div class="form_item">
+					<label style="letter-spacing: 0.76em;">用户名</label>
+					<input type="text" id="username" name="username" onblur="checkName();" onfocus="alertName();" />
+				</div>
+				<div class="form_alert" id="usermsg"></div>
+				
+				<div class="form_item">
+					<label style="letter-spacing: 0.2em;">设置密码</label>
+					<input type="password" id="password" name="password" onblur="checkPwd();" onfocus="alertPwd();" />
+				</div>
+				<div class="form_alert" id="pwdmsg"></div>
+				
+				<div class="form_item">
+					<label style="letter-spacing: 0.2em;">确认密码</label>
+					<input type="password" id="repassword" name="repassword" onblur="checkRePwd();" onfocus="alertRePwd();"  />
+				</div>
+				<div class="form_alert" id="repwdmsg"></div>
+				
+				<div class="form_item">
+					<label style="letter-spacing: 0.76em;">验证码</label>
+					<input type="text" class="code_input" id="code" onblur="confirmCode();" onfocus="alertCode();"/>
+					<button type="button" class="code" id="codeImg" onclick="createCode();"></button>
+				</div>
+				<div class="form_alert" id="codemsg"></div>
+				
+				<input type="submit" value="立即注册" class="submit_input"/>
+			</form>
+		</div>
+		 {include file="../application/index/view/common/common_foot.html"/}
+	</body>
+	<script type="text/javascript" src="../../../../static/js/front/register.js" ></script>
+</html>

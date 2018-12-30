@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>淘书街后台管理首页</title>
+		<link rel="shortcut icon" href="img/shu.ico" />
+		<link rel="stylesheet" href="__CSS__/back/user.css" />
+		<link rel="stylesheet" href="__CSS__/back/common.css" />
+		<link rel="stylesheet" href="__CSS__/back/add.css" />
+		
+		<script type="text/javascript" src="__JS__/back/jquery.min.js"></script>
+		<script type="text/javascript" src="__JS__/back/public.js"></script>
+		<script type="text/javascript" src="__JS__/back/updatePwd.js"></script>
+	</head>
+	<body>
+	<!-- 头部	 -->
+	{include file="../application/admin/view/common/header.html"}
+	<!-- 头部结束	 -->
+
+	<!-- 左边节点 -->
+	{include file="../application/admin/view/common/menu.html"}
+	<!--左边结点结束-->
+		
+	<!--main开始-->
+	<div id="MainForm">
+		<div class="form_boxA">
+			<div class="a">
+				<h2>淘书街-{$Think.session.admin_name}修改登录密码</h2>
+			</div>
+			<form action="/admin/admin/updatePwd" method="post" class="add_form">
+				<div class="add_list">
+					<label class="add_label"><span class="xing">*</span>原始密码：</label>
+					<input type="password" name="prepwd" class="add_input"/>
+				</div>
+				<div class="add_list">
+					<label class="add_label"><span class="xing">*</span>新密码：</label>
+					<input type="password" name="pwd" class="add_input"/>
+				</div>
+				<div class="add_list">
+					<label class="add_label"><span class="xing">*</span>确认密码：</label>
+					<input type="password" name="repwd" class="add_input" />
+				</div>
+				<input type="submit" value="修改" class="add_submit" />
+			</form>
+		</div>
+	</div>
+	<!--main结束-->
+	
+	</body>
+</html>
+

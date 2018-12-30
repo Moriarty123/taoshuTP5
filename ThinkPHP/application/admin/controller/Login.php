@@ -34,7 +34,7 @@ use app\admin\validate\admin as adminValidate;
 		$adminValidate = new adminValidate();
 
 		//2.3验证数据，返回boolean
-		$result = $adminValidate->check($data);
+		$result = $adminValidate->scene('login')->check($data);
 
 		//2.4验证失败输出错误信息
 		if(true !== $result){
@@ -59,9 +59,39 @@ use app\admin\validate\admin as adminValidate;
 		}
 
 		//4.后续操作
+		//4.1存入session
+		$count = $ret['times'];
+		$admin_id = $ret['id'];
+		session('admin_id', $admin_id);
 		session('admin_name', $name);
-		$this->success('登录成功');
+		session('lastLoginTime', $ret['last_time']);
+		session('loginTime', time());
+		session('count', $count);
+		//4.2页面传值
+		// $count = $ret['times'];
+		// $this->assign('lastLoginTime', $ret['last_time']);
+		// $this->assign('count', $count);
 
+		//4.3更新最后登录时间和登录次数
+		$where = "id={$admin_id}";
+		Db::table('admin')->where($where)->setInc('times',1);
+		// $loginTime = date('Y-m-d H:i:s', time());
+		$loginTime = time();
+		Db::table('admin')->where($where)->setField('last_time', $loginTime);	
+
+
+		// return $this->fetch('index/index');
+		$this->success('登录成功', '/admin/index/index');//不能使用success，this->assign()失效
+
+	}
+
+	//退出登录
+	public function logout()
+	{
+		session('admin_id', NULL);
+		session('admin_name', NULL);
+		
+		$this->success('退出成功！', 'admin/index/index');
 	}
 
 

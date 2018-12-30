@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>淘书街：个人中心</title>
+		<link rel="stylesheet" href="../../../../static/css/front/personal.css" />
+		<link rel="stylesheet" href="../../../../static/css/front/personal_center.css" />
+		<link rel="stylesheet" href="../../../../static/font/css/font-awesome.min.css" />
+		<link rel="shortcut icon" href="../../../../static/img/shu.ico" />
+	</head>
+	<script type="text/javascript" src="../../../../static/js/front/jquery.min.js" ></script>
+	<body>
+		
+		
+		 {include file="../application/index/view/common/center_top.html"/}
+		 {include file="../application/index/view/common/center_leftmenu.html"/}
+		
+		
+			
+			<!--基本信息-->
+			<div class="menu_info" style="display: block;">
+				<div class="menu_head">
+					<ul>
+						<li id="active">会员基本信息</li>
+						<li>头像信息</li>
+					</ul>
+				</div>
+				<!--会员基本信息-->
+				<div class="menu_detail" style="display: block;">
+					<form action="/index/personalcenter/update" method="post" onsubmit="return checkAll()">
+						<input type="hidden" name="id" value="<?php echo session('user_id'); ?>" />
+						<div class="menu_list">
+							<label class="title" style="letter-spacing: 0.95em;">昵 称</label>
+							<input type="text" class="content" name="nickname" value="{$ret.nickname}" onfocus="nickName()" onblur="checkNick()" />
+						</div>
+						<div class="msg" id="nick_msg"></div>
+						
+						<div class="menu_list">
+							<label class="title">真实姓名</label>
+							<input type="text" class="content" name="realname" value="{$ret.user_realname}" onfocus="realName()" onblur="checkReal()" />
+						</div>
+						<span class="xing">*</span>
+						<div class="msg" id="real_msg"></div>
+						
+						<div class="menu_list">
+							<label class="title" style="letter-spacing: 0.95em;">性 别</label>
+							<input type="radio" value="男" name="sex" class="sex" checked <?php if($ret['user_sex'] == "男") {echo "checked";} ?> /> 男
+							<input type="radio" value="女" name="sex" class="sex" <?php if($ret['user_sex'] == "女") {echo "checked";} ?> /> 女
+						</div>
+						<span class="xing">*</span>
+						<div class="msg" id="sex_msg"></div>
+						
+						<div class="menu_list">
+							<label class="title">所在班别</label>
+							<select class="grade" name="grade">
+								<option value="0" selected>请选择年级</option>
+								<option value="2014" <?php if($ret['grade'] == "2014") {echo "selected";} ?> >2014</option>
+								<option value="2015" <?php if($ret['grade'] == "2015") {echo "selected";} ?> >2015</option>
+								<option value="2016" <?php if($ret['grade'] == "2016") {echo "selected";} ?> >2016</option>
+								<option value="2017" <?php if($ret['grade'] == "2017") {echo "selected";} ?> >2017</option>
+							</select>
+							<select class="class" name="class1">
+								<option value="0">请选择专业</option>
+								 {foreach $class as $vo}  
+								<option value="<?php echo $vo['class_id'];?>" <?php if( $ret['class_id']==$vo['class_id'] ) echo "selected"; ?> > <?php echo $vo['class_name'];?></option>
+								  {/foreach} 
+							</select>
+						</div>
+						<span class="xing">*</span>
+						<div class="msg" id="grade_msg"></div>
+						
+						<div class="menu_list">
+							<label class="title">详细地址</label>
+							<input type="text" class="content" name="addr" value="<?php echo $ret['user_addr']; ?>" onfocus="Addr()" onblur="checkAddr()" />
+						</div>
+						<span class="xing">*</span>
+						<div class="msg" id="addr_msg"></div>
+						
+						<div class="menu_list">
+							<label class="title">联系方式</label>
+							<input type="text" class="content" name="tel" value="<?php echo $ret['user_tel']; ?>" onfocus="Tel()" onblur="checkTel()" />
+						</div>
+						<span class="xing">*</span>
+						<div class="msg" id="tel_msg"></div>
+						
+						<div class="menu_list r5">
+							<label class="title t5">个人说明</label>
+							<textarea cols="20" rows="2" class="c5" name="content" onfocus="Content()" onblur="checkContent()" ><?php echo $ret['user_content']; ?></textarea>
+						</div>
+						<div class="msg" id="content_msg"></div>
+						
+						<input type="submit" class="button" value="修改"></input>
+					</form>
+				</div>
+				
+				<!--头像信息-->
+				<div class="menu_detail" >
+					<div class="imgdiv">
+						<form action="/index/personalcenter/uploadimg" name="form" method="post" enctype="multipart/form-data">
+							<div class="img_icon" id="preview"><img src="<?php echo session('user_img') ?>" /></div>
+							<input type="file" name="img" onchange="upimg(this)" style="margin: 30px 63px 0 183px;"  id="image" />
+							<input type="hidden" name="imgsave" value="" id="imgsave" />
+							<input type="submit" value="上传" class="img_button"/>
+						</form>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		
+		 {include file="../application/index/view/common/common_foot.html"/}
+		
+	<script type="text/javascript">
+
+		 function upimg(obj) {
+
+          if ( obj.value == "" ) return;
+          var formdata = new FormData();
+          //<input type="file" name="img" value="" />
+          formdata.append("image" , $(obj)[0].files[0]);//获取文件法二
+          $.ajax({
+              type : 'post',
+              url : '/index/personalcenter/upimg',
+              data : formdata,
+              cache : false,
+              processData : false, // 不处理发送的数据，因为data值是Formdata对象，不需要对数据做处理
+              contentType : false, // 不设置Content-type请求头
+              success : function(ret){
+              	
+                  $('#imgsave').val(ret);
+                  
+                  // alert(ret);
+                  // $('#upimge').attr('src', ret);
+              },
+              error : function(){  }
+    });
+}
+	</script>
+	</body>
+	<script type="text/javascript" src="../../../../static/js/front/personal_center.js" ></script>
+
+</html>

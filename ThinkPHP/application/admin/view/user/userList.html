@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>淘书街会员管理</title>
+		<link rel="shortcut icon" href="__IMG__/shu.ico" />
+		<link rel="stylesheet" href="__CSS__/back/user.css" />
+		<link rel="stylesheet" href="__CSS__/back/common.css" />
+		<link rel="stylesheet" href="__CSS__/back/page.css" />
+		<link rel="stylesheet" type="text/css" href="__CSS__/back/think-page.css">
+		<!-- <link rel="stylesheet" href="/static/font/css/font-awesome.min.css" /> -->
+		<link rel="stylesheet" href="/static/fontawesome-5.5.0/css/all.css" />
+		
+		<script type="text/javascript" src="__JS__/back/jquery.min.js"></script>
+		<script type="text/javascript" src="__JS__/back/public.js"></script>
+		<script type="text/javascript" src="__JS__/back/search.js"></script>
+		<script type="text/javascript" src="__JS__/back/CheckBox.js"></script>
+	</head>
+	<body>
+	<!-- 头部	 -->
+	{include file="../application/admin/view/common/header.html"}
+	<!-- 头部结束	 -->
+
+	<!-- 左边节点 -->
+	{include file="../application/admin/view/common/menu.html"}
+	<!--左边结点结束-->
+	
+	<!--用户列表开始-->
+	<div id="MainForm">
+		<div class="form_boxA">
+			<div class="a">
+				<h2>淘书街会员列表</h2>
+				<form action="/admin/user/userSearch" method="post" onsubmit="return checkSearch()" class="searchform">
+					<input type="text" class="search" placeholder="用户名" name="search" />
+					<input type="submit" class="search_button" value="搜索" />
+				</form>
+				<a href="/admin/user/addPage" class="addUser"><i class="fa fa-plus-circle"></i> 添加新用户</a>
+			</div>
+			<form action="/admin/user/checkedUserDelete" method="post">
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<th><input type="checkbox" name="fullChoose" onclick="fullChecked(this)" /></th>
+					<th>ID</th>
+					<th>用户名</th>
+					<th>真实姓名</th>
+					<th>性别</th>
+					<th>手机</th>
+					<th>地址</th>
+					<th>年级</th>
+					<th>专业</th>
+					<th>登陆次数</th>
+					<th>操作</th>
+				</tr>
+				{volist name="userList" id="vo"}
+				<tr>
+					<!-- TP5的post方法不能提交数组，在表单name添加/a表示要提交有关数组，获取时同样要添加/a -->
+					<td><input type="checkbox" name="ids[]/a" onclick="eachChecked()" class="eachChoose" value="{$vo.user_id}"/></td>
+					<td>{$vo.user_id}</td>
+					<td>
+						<img src="{$vo.user_img}" class="user_img"/>
+						{$vo.user_name}
+					</td>
+					<td>{$vo.user_realname}</td>
+					<td>{$vo.user_sex}</td>
+					<td>{$vo.user_tel}</td>
+					<td>{$vo.user_addr}</td>
+					<td>{$vo.grade}</td>
+					<td>{$vo.class_id}</td>
+					<td>{$vo.login_times}</td>
+					<td>
+						<a href="/admin/user/editPage?user_id={$vo.user_id}" class="op"><i class="fa fa-edit" title="编辑"></i></a> 
+						<a href="/admin/user/pwdPage?user_id={$vo.user_id}" class="op"><i class="fa fa-key" title="修改密码"></i></a> 
+						<a href="/admin/user/userDelete?user_id={$vo.user_id}" class="op" onclick="return del()">
+							<!-- <i class="fa fa-trash-o" title="删除"></i> -->
+
+							<i class="fa fa-trash-alt" title="删除"></i>
+						</a> 
+					</td>
+				</tr>
+				{/volist}
+			</table>
+			<p class="msg">
+				<span id="notdisplay" style="display: none;"></span>
+				<input type="submit" value="删除选中" class="delBtn" id="delBtn" disabled="disabled" onclick='return checkdel();'/>
+				共找到 {$userNumber} 条会员信息，每页显示15条记录
+			</p>
+			<div class="" style="text-align: center;margin-bottom:20px; ">
+			{$userList->render()}
+			</div>
+			</form>
+		</div>
+	</div>
+	<!--用户列表结束-->
+	
+	</body>
+</html>
+
+
+<script>
+	var user = document.getElementById("user");
+	user.getElementsByClassName("icon1")[0].style.display = "block";
+	user.getElementsByClassName("icon2")[0].style.display = "none";
+	user.getElementsByClassName("icon3")[0].style.display = "block";
+	user.getElementsByClassName("icon4")[0].style.display = "none";
+	user.getElementsByClassName("icon5")[0].style.display = "block";
+	user.getElementsByClassName("coin11")[0].style.display = "block";
+	user.getElementsByClassName("coin22")[0].style.display = "none";
+	user.getElementsByClassName("cks")[0].setAttribute("class", "menu_chioce2");
+	user.getElementsByTagName("dd")[0].style.display = "block";
+	
+	function del(){
+		return window.confirm("你确认要删除该用户、包括该用户的所有书籍和订单信息吗？");
+	}
+	function checkdel(){
+		return window.confirm("你确认要删除选中的用户、包括用户的所有书籍和订单信息吗？");
+	}
+</script>

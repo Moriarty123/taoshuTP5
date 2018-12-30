@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>【<?php echo session('second_name'); ?>】：淘书街</title>
+		<link rel="stylesheet" href="../../../../static/css/front/classify_detail.css" />
+		<link rel="stylesheet" href="../../../../static/css/front/common_top.css" />
+		<link rel="stylesheet" href="../../../../static/css/front/page.css" />
+		<link rel="stylesheet" href="../../../../static/font/css/font-awesome.min.css" />
+		<link rel="shortcut icon" href="../../../../static/img/shu.ico" />
+	</head>
+	<body>
+			{include file='../Application/index/view/common/common_header.html'}
+
+		<!--详细部分-->
+		<div class="classify_detail">
+			<div class="detail_left">
+				<div class="detail_head">
+					<i class="fa fa-circle-o"></i><?php echo session('first_type'); ?>
+				</div>
+				<div class="detail_body">
+					<ul>
+						{foreach $res as $vo}
+						<li><a href="/index/sale/classdetail?second_name={$vo.second_name}">
+							
+								
+									{$vo.second_name}
+							
+								
+						</a></li>
+						{/foreach}
+					</ul>
+				</div>
+			</div>
+			
+			<div class="detail_right">
+				<div class="right_head">
+					<span class="head"><?php echo session('second_name'); ?></span>
+					<span class="number">共有图书 {$ret|count} 册</span>
+				</div>
+				<div class="right_body">
+					<ul>
+						{foreach $ret as $value}
+						<li>
+							<div class="right_img">
+								<a href="/index/sale/saledetail?id=<?php echo $value['sale_id']; ?>" target="_blank">
+									<img src="<?php echo $value['sale_img']; ?>" title="<?php echo $value['sale_name']; ?>" />
+								</a>
+							</div>
+							<div class="info">
+								<!--书名-->
+								<div class="title">
+									<a href="/index/sale/saledetail?id=<?php echo $value['sale_id']; ?>" target="_blank">
+										<?php echo $value['sale_name']; ?>
+									</a>
+								</div>
+								<!--具体信息-->
+								<div class="more">
+									<?php echo $value['sale_author']; ?>
+									<span class="xie">/</span>
+									<?php echo $value['sale_publishing']; ?>
+									<span class="xie">/</span>
+									<?php echo $value['sale_page']; ?>页
+									<span class="xie">/</span>
+									<?php echo $value['sale_degrees']; ?>
+									<span class="xie">/</span>
+									<?php echo $value['sale_num']; ?>本
+									<span class="xie">/</span>
+									<span class="pre_price">￥<?php echo $value['sale_beprice']; ?></span>
+									<span class="price">￥<?php echo $value['sale_afprice']; ?></span>
+								</div>
+								<!--内容详情-->
+								<div class="summary">
+									<?php echo $value['sale_content']; ?>
+								</div>
+								<!--发布者-->
+								<div class="owner">
+									<span class="username"><?php echo $value['user_realname']; ?></span>
+									<span class="dept"><?php echo $value['dept_name']; ?></span>
+									<span class="class"><?php echo $value['class_name']; ?>(<?php echo $value['grade']; ?>级)</span>
+								</div>
+							<div class="operation">
+								<a href="/index/shopcar/insert?id=<?php echo $value['sale_id']; ?>"><div class="collect">加入购物车</div></a>
+								<a href="/index/ordersend/index?id=<?php echo $value['sale_id']; ?>"><div class="buy">购买</div></a>
+							</div>
+							</div>
+						</li>
+						{/foreach}
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="page">
+			
+		</div>
+		
+		{include file='../Application/index/view/common/common_foot.html'}
+
+	</body>
+	<script type="text/javascript" src="../../../../static/js/front/common_top.js" ></script>
+</html>

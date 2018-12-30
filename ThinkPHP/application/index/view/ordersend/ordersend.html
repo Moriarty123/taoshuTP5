@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>淘书街：确认订单</title>
+		<link rel="shortcut icon" href="../../../../static/img/shu.ico" />
+		<link rel="stylesheet" href="../../../../static/css/front/personal.css" />
+		<link rel="stylesheet" href="../../../../static/css/front/order_send.css" />
+	</head>
+	<body>
+		<div class="top">
+			<div class="logo">
+				<div class="img"><a href="?"><img src="../../../../static/img/taoshujie.png" /></a></div>
+				<div class="txt">提交订单</div>
+				<div class="right">
+					<a href="/index/index/index">首页</a> <span class="shu">|</span>
+					<a href="/index/sale/showAllSaleBook">出售</a> <span class="shu">|</span>
+					<a href="/index/inquire/showAllInquireBook">求购</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="order_send">
+			<div class="os_msg">收货人信息</div>
+			<div class="os_msg_content" style="display: none;">
+				未设置收货人信息 
+				<a href="/index/personalcenter/edit?id=<?php echo session('userid') ?>" target="_blank" class="setMsg">立即设置</a>
+			</div>
+			<div class="os_msg_content">
+				<dd id="name"><?php echo $res['user_realname']; ?></dd> ( <dd><?php echo $res['user_tel']; ?></dd> )<span style="margin-right: 15px;"></span>
+				东莞理工学院 <dd><?php echo $res['user_addr']; ?></dd>
+				<a href="/index/personalcenter/edit?id=<?php echo session('userid'); ?>" target="_blank" class="setMsg">修改收货人信息</a>
+			</div>
+			<?php
+			if($res['user_addr'] == null || $res['user_tel'] == null){
+				echo "<script type='text/javascript'>
+						document.getElementsByClassName('os_msg_content')[0].style.display = 'block';
+						document.getElementsByClassName('os_msg_content')[1].style.display = 'none';
+					</script>";
+			}
+			?>
+			
+			<div class="os_msg">确认订单信息</div>
+			<div class="os_content">
+				<div class="os_top">
+					<div class="top_list top1">书名</div>
+					<div class="top_list">购买数量</div>
+					<div class="top_list">原价</div>
+					<div class="top_list">现价</div>
+					<div class="top_list">小计</div>
+					<div class="top_list">卖家</div>
+				</div>
+				<div class="os_detail">
+					<ul>
+						<li>
+							<div class="os_li1">
+								<a href="?c=saleBook&a=each&id=<?php echo $ret['sale_id']; ?> "><img src="<?php echo $ret['sale_img']; ?>" title="<?php echo $ret['sale_name']; ?>" /></a>
+								<a href="?c=saleBook&a=each&id=<?php echo $ret['sale_id']; ?> " class="os_name"><?php echo $ret['sale_name']; ?></a>
+							</div>
+							<div class="os_li2">×1</div>
+							<div class="os_li2">￥<?php echo $ret['sale_beprice']; ?></div>
+							<div class="os_li2">￥<?php echo $ret['sale_afprice']; ?></div>
+							<div class="os_li2">￥<?php echo $ret['sale_afprice']; ?></div>
+							<div class="os_li2"><a href="/index/personalsalecenter/index?id=<?php echo $ret['user_id']; ?>"><?php echo $ret['user_realname']; ?></a></div>
+						</li>
+					</ul>
+				</div>
+				<a href="/index/ordersend/submitorder?id=<?php echo $ret['sale_id']; ?>" class="send">提交订单</a>
+			</div>
+		</div>
+		
+		{include file='../Application/index/view/common/common_foot.html'}
+		
+	</body>
+	<script type="text/javascript" src="../../../../static/js/front/order_send.js" ></script>
+</html>

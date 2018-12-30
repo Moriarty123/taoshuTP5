@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>淘书街-检索：<?php echo $keyword; ?></title>
+		<link rel="shortcut icon" href="../../../../static/img/shu.ico" />
+		<link rel="stylesheet" href="../../../../static/css/front/common_top.css" />
+		<link rel="stylesheet" href="../../../../static/css/front/search_no.css" />
+		<link rel="stylesheet" href="../../../../static/css/front/search_yes.css" />
+		<link rel="stylesheet" href="../../../../static/css/front/page.css" />
+		<link rel="stylesheet" href="../../../../static/css/front/common_foot.css" />
+		<style>
+	a{
+		color: #888;
+	}
+	#sort-nav1{
+		margin-right: 30px;
+		width: 100%;
+		height: 50px;
+		float:left;	
+		color:  #888;
+		border: 1px solid #e3e3e3;
+		cursor:pointer;
+		margin-top: 10px;
+		background: #f9f9f9;
+	}
+	#sort-nav1 ul,.sort-nav1 li{
+		list-style: none;
+		font-size: 14px;
+	}
+	#sort-nav1 li{
+		float: left;
+		text-align: center;
+		border-color: #f9f9f9;
+		padding: 0px 10px;
+		height: 50px;
+		width: 120px;
+		line-height: 50px;
+	}
+
+	.item a,#sort-nav1 li a{
+		padding: 0px 15px;
+		text-decoration: none;
+		font-size: 14px;
+	}
+	#sort-nav1 li a:hover{
+		color: rgb(13, 179, 148);
+	}
+	.lihover,.selecthover{
+		background-color:#FFF;
+		
+	}
+	.prize-box {
+		position: relative;
+		display: inline-block;
+	}
+	.prize-content {
+		display: none;
+		position: absolute;
+		left: -40px;
+		top: 0px;
+		width: 140px;
+		height: 100px;
+		background: #f9f9f9;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	}
+	.prize-content li {
+		display: block;
+		font-size: 14px;
+		left: 300px;
+	}
+	.prize-box:hover .prize-content {
+		display: block;
+
+	}
+	.prize-content li:hover {
+		color:#19a97b;
+	}
+	.content {
+		width: 1145px;
+		margin: 0px auto;
+
+	}
+	.related{
+		border: 1px solid #e3e3e3;
+		height: 18px;
+		overflow: hidden;
+		padding: 12px 19px;
+		color: #9a9a9a;
+		font-size: 14px;
+	}
+	.guess{
+		color: #888;
+		padding-left: 15px;
+		float: left;
+	}
+	.link{
+		overflow: hidden;
+		color: #6c6c6c
+	}
+	.link span{
+		padding: 0px 20px;
+		text-align:center;
+		cursor:pointer;
+	}
+	.reslut{
+		width: 1200px;
+		
+	}
+	.result-book{
+		width: 210px;
+		height: 350px;
+		border: 1px solid #e3e3e3;
+		float: left;
+		margin: 20px 8px 0px 8px;
+		text-align: center;
+	}
+	.cover img{
+		width: 210px;
+		height: 210px;
+
+	}
+	.decoration{
+		padding:10px;
+		font-size: 13px;
+	}
+	.prize{
+		color:red;
+		font-weight: bold;
+		font-size: 16px;
+		float: left;
+		line-height: 30px;
+
+	}
+	.owner,.sold{
+		color: #888;
+		float: right;
+		line-height: 30px;
+	}
+	.title{
+		overflow: hidden;
+		height: 56px;
+		width: 200px;
+		line-height: 18px;
+		margin-top: 5px;
+	}
+	.quality{
+		font-size: 15px;
+		color: #888;
+		line-height: 30px;
+		float: left;
+	}
+	.owner a{
+		text-decoration: underline;
+	}
+</style>
+	</head>
+	<body>
+		
+		{include file='../Application/index/view/common/common_header.html'}
+		
+		<div class="content">
+		<div class="related">
+			<div class="guess">亲是不是想找：</div>
+			<div class="link">
+				{foreach $wantsearch as $want}
+				<span onclick="search('{$want}')">{$want}</span>
+				{/foreach}
+			</div>
+		</div>
+		<div id="sort-nav1" >
+			<ul>
+				<li>
+					<a href="/index/search/orderbycomprehensive?keyword={$keyword}">综合排序</a>
+				</li>
+				<li>
+				<a href="/index/search/orderbyprice?keyword={$keyword}&type=desc&control=sale_new">新旧程度</a>
+				</li>
+				<li>
+					<a href="/index/search/orderbysalesum?keyword={$keyword}">销量</a>
+				</li>
+				<li>
+					<a href="/index/search/orderbyprice?keyword={$keyword}&type=desc&control=sale_num">库存</a>
+				</li>
+				<li><span class="prize-box">价格<img src="../../../../static/img/coin20.png">
+					<div class="prize-content" > 
+						<ul>
+							
+								<li style="font-weight: normal" onclick=""><a href="/index/search/orderbyprice?keyword={$keyword}&type=desc&control=sale_afprice">价格从高到低</a></li>
+							
+							
+								<li style="font-weight: normal" onclick=""><a href="/index/search/orderbyprice?keyword={$keyword}&type=asc&control=sale_afprice">价格从低到高</a></li>
+							
+						</ul>
+					</div>
+					</span>
+				</li>
+			</ul>
+		</div>
+		{foreach $res as $vo}
+		<div class="result">
+			<div class="result-book">
+				<div class="cover">
+					<a href="/index/sale/saledetail?id={$vo.sale_id}"><img src="<?php echo '/static/'.$vo['sale_img']; ?>"></a>
+					<div class="decoration">
+						<div style="height: 20px">
+							<div class="prize">{$vo.sale_afprice}</div>
+							<div class="sold">
+
+								{foreach $rew as $re}
+								
+									{if ($vo['sale_id']==$re['book_id'])}
+										 {$re.a}
+									{/if}
+								
+								{/foreach}
+								{if !in_array($vo['sale_id'],$data)}
+								<?php echo '0'; ?>
+								{/if}
+							人付款
+							</div>
+						</div>
+						<div class="title">{$vo.sale_content}</div>
+						<div class="quality">
+							{$vo.sale_degrees}
+						</div>
+						<div class="owner">来自<a href="/index/personalsalecenter/index?id={$vo.user_id}">{$vo.user_realname}</a></div>
+					</div>
+				</div>
+			</div>
+			{/foreach}
+		</div>
+
+	</div>
+	<!-- footer开始 -->
+		<div class="foot" style="clear: both;position: relative;top: 80px;">
+			<div class="foot_a">
+				<span>买卖二手书,正版旧书,大学教材,旧书,就上校园二手书籍交易网:淘书街。
+					<br>做最专业的校园二手书籍交易网站,求购或出售二手书,方便你我他。</span>
+			</div>
+		</div>
+		<!-- footer结束 -->
+	<script src="../../../../static/js/front/jquery.min.js"></script>
+	<script type="text/javascript">
+		$("#sort-nav1 ul li").click(function(){
+			$(this).addClass("selecthover").siblings().removeClass("selecthover");
+		}).hover(function(){
+			$(this).addClass("lihover");
+		},function () {
+			$(this).removeClass("lihover");
+		});
+      //点击发送关键词查找
+		function search(obj) {
+			$.post('/index/search/searchsale',{'keyword':obj},function(ret){
+			
+			},'html');
+		}
+	</script>
+	</body>
+	<script type="text/javascript" src="../../../../static/js/front/common_top.js" ></script>
+</html>

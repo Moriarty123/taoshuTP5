@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>淘书街添加求购书籍</title>
+		<link rel="shortcut icon" href="__IMG__/shu.ico" />
+		<link rel="stylesheet" href="__CSS__/back/user.css" />
+		<link rel="stylesheet" href="__CSS__/back/common.css" />
+		<link rel="stylesheet" href="__CSS__/back/add.css" />
+		
+		<script type="text/javascript" src="__JS__/back/jquery.min.js"></script>
+		<script type="text/javascript" src="__JS__/back/public.js"></script>
+		<script type="text/javascript" src="__JS__/back/addinquiry.js"></script>
+	</head>
+	<body>
+	<!-- 头部	 -->
+	{include file="../application/admin/view/common/header.html"}
+	<!-- 头部结束	 -->
+
+	<!-- 左边节点 -->
+	{include file="../application/admin/view/common/menu.html"}
+	<!--左边结点结束-->
+	
+	<!--添加用户开始-->
+	<div id="MainForm">
+		<div class="form_boxA">
+			<div class="a">
+				<h2>淘书街添加新求购留言</h2>
+			</div>
+			<form action="/admin/scomment/commentEdit" method="post" class="add_form" onsubmit="return checkComment()">
+				<div style="float: left;">
+				<input type="hidden" name="scomment_id" value="<?php echo $edit['scomment_id']; ?>" />
+				<div class="add_list">
+					<label class="add_label"><span class="xing">*</span>留言书籍：</label>
+					<select name="inquiry_id" class="add_input">
+						{volist name="inquiry_book" id="value"}
+						<option value="{$value.inquiry_id}" <?php if( $edit['inquiry_name'] == $value['inquiry_name'] ) echo "selected"; ?> > {$value.inquiry_name}</option>
+						{/volist}
+					</select>
+				</div>
+				
+				<div class="add_list">
+					<label class="add_label"><span class="xing">*</span>留言人：</label>
+					<select name="user_id" class="add_input">
+						{volist name="users" id="vo"}
+						<option value="{$vo.user_id}" <?php if( $edit['user_realname'] == $vo['user_realname'] ) echo "selected"; ?> > {$vo.user_realname}</option>
+						{/volist}
+					</select>
+				</div>
+				<div class="add_list">
+					<label class="add_label" style="margin-top: 30px;"><span class="xing">*</span>留言内容：</label>
+					<textarea name="content" class="add_textarea" onfocus="Content()" onblur="checkContent()">{$edit.scomment_content}</textarea>
+				</div>
+				</div>
+				<input type="submit" value="修改" class="add_submit" />
+			</form>
+		</div>
+	</div>
+	<!--添加用户结束-->
+	</body>
+</html>
+
+<script>
+	var user = document.getElementById("user");
+	user.getElementsByClassName("icon1")[0].style.display = "block";
+	user.getElementsByClassName("icon2")[0].style.display = "none";
+	user.getElementsByClassName("icon3")[0].style.display = "block";
+	user.getElementsByClassName("icon4")[0].style.display = "none";
+	user.getElementsByClassName("icon5")[0].style.display = "block";
+	user.getElementsByClassName("coin11")[0].style.display = "block";
+	user.getElementsByClassName("coin22")[0].style.display = "none";
+	
+	user.getElementsByTagName("dd")[1].style.display = "block";
+	
+	user.getElementsByClassName("cks")[0].setAttribute("class", "menu_chioce2");
+	user.getElementsByTagName("dd")[0].style.display = "block";
+</script>

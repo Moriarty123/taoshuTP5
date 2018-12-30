@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>淘书街添加新违规记录</title>
+		<link rel="shortcut icon" href="__IMG__/shu.ico" />
+		<link rel="stylesheet" href="__CSS__/back/user.css" />
+		<link rel="stylesheet" href="__CSS__/back/common.css" />
+		<link rel="stylesheet" href="__CSS__/back/add.css" />
+		
+		<script type="text/javascript" src="__JS__/back/jquery.min.js"></script>
+		<script type="text/javascript" src="__JS__/back/public.js"></script>
+		<script type="text/javascript" src="__JS__/back/addUser.js"></script>
+
+		<style>
+			.tip {
+				display: none; padding-left: 83px; padding-top: 5px; color: red;
+			}
+		</style>
+
+	</head>
+	<body>
+	<!-- 头部	 -->
+	{include file="../application/admin/view/common/header.html"}
+	<!-- 头部结束	 -->
+
+	<!-- 左边节点 -->
+	{include file="../application/admin/view/common/menu.html"}
+	<!--左边结点结束-->
+	
+	<!--添加用户开始-->
+	<div id="MainForm">
+		<div class="form_boxA">
+			<div class="a">
+				<h2>淘书街添加新违规</h2>
+			</div>
+			<form action="/admin/violate/violateAdd" method="post" enctype="multipart/form-data" class="add_form" onsubmit="return checkAddUser()">
+				<div class="add_list">
+					<label class="add_label"><span class="xing">*</span>违规用户：</label>
+					<select name="user_id" class="add_input">
+						{volist name="user" id="vo"}
+						<option value="{$vo.user_id}">
+						{$vo.user_realname}
+						</option>
+						{/volist}
+					</select>
+				</div>
+				<div class="add_list">
+					<label class="add_label"><span class="xing">*</span>惩罚时间：</label>
+					<select name="punish_time" class="add_input">
+						<option value="+1 hours">一小时</option>
+						<option value="+10 hours">十小时</option>
+						<option value="+1 day">一天</option>
+						<option value="+1 week">一周</option>
+						<option value="+1 month">一个月</option>
+						<option value="+1 year">一年</option>
+					</select>
+				</div>
+				
+				<div class="add_list">
+					<label class="add_label" ><span class="xing">*</span>惩罚方式：</label>
+					<!-- <textarea name="punish_way" class="add_textarea"></textarea> -->
+					<select name="punish_way" class="add_input">
+						<option value="封号">封号</option>
+						<option value="禁言">禁言</option>
+
+					</select>
+				</div>
+				<div class="add_list">
+					<label class="add_label" style="margin-top: 30px;"><span class="xing">*</span>惩罚原因：</label>
+					<textarea name="punish_case" class="add_textarea"></textarea>
+				</div>
+				<input type="submit" value="提交" class="add_submit" />
+			</form>
+		</div>
+	</div>
+	<!--添加用户结束-->
+	</body>
+</html>
+
+<script>
+	var user = document.getElementById("user");
+	user.getElementsByClassName("icon1")[0].style.display = "block";
+	user.getElementsByClassName("icon2")[0].style.display = "none";
+	user.getElementsByClassName("icon3")[0].style.display = "block";
+	user.getElementsByClassName("icon4")[0].style.display = "none";
+	user.getElementsByClassName("icon5")[0].style.display = "block";
+	user.getElementsByClassName("coin11")[0].style.display = "block";
+	user.getElementsByClassName("coin22")[0].style.display = "none";
+	user.getElementsByClassName("cks")[0].setAttribute("class", "menu_chioce2");
+	user.getElementsByTagName("dd")[0].style.display = "block";
+</script>
+
+<script type="text/javascript">
+//上传图片
+function uploadsimage(obj) {
+	if ( obj.value == "" ) return;
+
+	var formdata = new FormData();
+
+    formdata.append("image" , $(obj)[0].files[0]);//$(obj)[0].files[0]为文件对象
+
+    $.ajax({
+    	type : 'post',
+    	url : '/admin/common/UserImage',
+    	data : formdata,
+    	cache : false,
+        processData : false, // 不处理发送的数据，因为data值是Formdata对象，不需要对数据做处理
+        contentType : false, // 不设置Content-type请求头
+        success : function(ret){
+        	var html = '<img src="'+ret+'" style="width:120px">';
+
+
+         	console.log(html);
+         	$('#imgBox').html(html);
+         	
+         	
+        	console.log(ret);
+        	// $('#headImg').val(ret);
+        	$('#headImg').attr('value', ret);
+        },
+        error : function(){ 
+        	alert('图片上传失败');
+        }
+    });
+}
+
+</script>

@@ -7,10 +7,12 @@ function checkPwd(){
 	var pwd = document.getElementsByName("pwd")[0];
 	if(pwd.value.match( /(?!^\d+$)(?!^[A-Za-z]+$)(?!^_+$)^\w{6,16}$/ )){
 		pwd.style.border = "1px solid #a9a9a9";
+		document.getElementById('tip-pwd').style.display = 'none';
 		return true;
 	}
 	else{
 		pwd.style.border = "1px solid #e71304";
+		document.getElementById('tip-pwd').style.display = 'block';
 		return false;
 	}
 }
@@ -25,10 +27,12 @@ function checkRepwd(){
 	var newpwd = document.getElementsByName("pwd")[0].value;
 	if(newpwd != "" && repwd.value != "" && newpwd == repwd.value){
 		repwd.style.border = "1px solid #a9a9a9";
+		document.getElementById('tip-repwd').style.display = 'none';
 		return true;
 	}
 	else{
 		repwd.style.border = "1px solid #e71304";
+		document.getElementById('tip-repwd').style.display = 'block';
 		return false ;
 	}
 }

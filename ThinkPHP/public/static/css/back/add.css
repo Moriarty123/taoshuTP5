@@ -48,3 +48,8 @@
 	outline: none;
 	padding: 3px;
 }
+
+
+.tip{
+    display: none; padding-left: 83px; padding-top: 5px; color: red;
+}

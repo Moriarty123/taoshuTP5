@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>淘书街出售书籍管理</title>
+	<link rel="shortcut icon" href="img/shu.ico" />
+	<link rel="stylesheet" href="__CSS__/back/user.css" />
+	<link rel="stylesheet" href="__CSS__/back/common.css" />
+	<link rel="stylesheet" href="__CSS__/back/page.css" />
+	<link rel="stylesheet" href="/static/font/css/font-awesome.min.css" />
+
+	<style>
+	#sort-nav{
+		margin-right: 30px;
+		width: 100%;
+		height: 40px;
+		float:left;	
+		background: #f9f9f9;
+		border-bottom: 1px solid #e3e3e3;
+		cursor:pointer;
+	}
+	#sort-nav ul,.sort-nav li{
+		list-style: none;
+		font-size: 14px;
+	}
+	#sort-nav li{
+		float: left;
+		text-align: center;
+		border-color: background: #f9f9f9;
+		padding: 0px 10px;
+		height: 40px;
+		width: 100px;
+		line-height: 40px;
+	}
+	#sort-nav li span{
+		font-weight: bold;
+	}
+	.item a,#sort-nav li a{
+		padding: 0px 15px;
+		text-decoration: none;
+		font-size: 14px;
+		font-weight: bold;
+	}
+	#sort-nav li a:hover{
+		color:#19a97b;
+	}
+	.lihover,.selecthover{
+		background-color:#FFF;
+		
+	}
+	.prize-box {
+		position: relative;
+		display: inline-block;
+	}
+	.prize-content {
+		display: none;
+		position: absolute;
+		left: -40px;
+		top: 0px;
+		width: 120px;
+		height: 80px;
+		background-color: #f9f9f9;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		padding: 10px 0px;
+	}
+	.prize-content li {
+		display: block;
+		font-size: 14px;
+		left: 300px;
+	}
+	.prize-box:hover .prize-content {
+		display: block;
+
+	}
+	.prize-content li:hover {
+		color:#19a97b;
+	}
+
+	.sort-book{
+		width: 100%;
+		height: 230px;
+		margin-top: 35px;
+	}
+	.book-img{
+		padding: 15px;
+		float: left;
+	}
+	.book-img img{
+		width: 150px;
+	}
+	.item{
+		float: left;
+		padding: 15px 25px;
+		width: 600px;
+	}
+
+	.book-info{
+		padding: 15px;
+	}
+	.book-info p{
+		padding-bottom: 5px;
+	}
+	.decoration{
+		width: 600px;
+		height:80px;
+		overflow: hidden;
+	}
+	.item-other{
+		float: left;
+		padding: 15px;
+	}
+	.quality{
+		font-size: 15px;
+		font-weight: bold;
+		width: 110px;
+		float: left
+	}
+	.prize{
+		font-size: 15px;
+		font-weight: bold;
+		width: 100px;
+		float:right;
+		color: red;
+		text-align: right;
+	}
+	.sold{
+		margin-top: 50px;
+		text-align: right;
+	}
+	.owner,.act,.time,.kucun{
+		text-align: right;
+	}
+	.owner{
+		margin-top: 10px;
+	}
+	.op i{
+		font-size: 16px;
+	}
+	.act{
+		margin-top: 45px
+	}
+
+</style>
+</head>
+<body>
+
+	<!-- 头部	 -->
+	{include file="../application/admin/view/common/header.html"}
+	<!-- 头部结束	 -->
+
+	<!-- 左边节点 -->
+	{include file="../application/admin/view/common/menu.html"}
+	<!--左边结点结束-->
+	
+	<!--用户列表开始-->
+	<div id="MainForm">
+		<div class="form_boxA">
+			<div class="a">
+				<h2>淘书街搜索结果详情</h2>
+				<form action="" method="post" onsubmit="" class="searchform">
+					<input type="text" class="search" placeholder="书名" name="search" value="高等数学" />
+					<input type="submit" class="search_button" value="搜索" />
+				</form>
+			</div>
+			<div id="sort-nav" >
+				<ul>
+					<li><a>综合排序</a></li>
+					<li><a>新旧程度</a></li>
+					<li><a>销量</a></li>
+					<li><a>库存</a></li>
+					<li><span class="prize-box">价格<img src="__IMG__/coin20.png">
+						<div class="prize-content" > 
+							<ul>
+								<li style="font-weight: normal" onclick="">价格从高到低</li>
+								<li style="font-weight: normal" onclick="">价格从低到高</li>
+							</ul>
+						</div>
+					</span>
+				</li>
+			</ul>
+		</div>
+		<div class="sort-book">
+			<div class="book-img"><img src="__IMG__/6-1.jpg"></div>
+			<div class="item">
+				<a href="#">高等数学第六版下册</a>
+				<div class="book-table">
+					<div class="book-info">
+						<p>作者：方桂英，崔克俭</p>
+						<p>出版社：科学出版社有限责任公司</p>
+						<p>ISBN：9787030444967</p>
+						<p>书籍分类：计算机系列丛书</p>
+						<div class="decoration">简介:本书内容包括：函数与极限、导数与微分、微分中值定理与导数的应用、不定积分、定积分及其应用、多元函数微积分、微分方程与差分方程、无穷级数、高等数学实验。每一节有习题，每章有总习题,书末附有部分习题答案与提示。本书从内容体系和风格上与第二版相比没有太大的变化，本次修改遵循“坚持改革、与时俱进”的原则，对第二版中的个别概念定义的叙述、定理的证明作了修改，对全书的文字表达进行细致推敲，对例题与习题进行合理的增删，解决了与中学数学的衔接问题，注重高等数学的应用，侧重了在经济方面的应用.同时制作了与书配套的供教师上课用的电子课件、供学生观看的习题讲解视频。本次修改使书更加完善，适应时代要求，便于教与学。</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="item-other">
+				<div class="quality">九成新</div>
+				<div class="prize">￥15</div>
+				<div class="sold">销量：20</div>
+				<div class="kucun">库存：10</div>
+				<div class="owner">出售人：小明</div>
+				<div class="time">上架时间：2018-12-23</div>
+				<div class="act">
+					<a href="" class="op"><i class="fa fa-edit" title="编辑"></i></a> 
+					<a href="" class="op" onclick="">
+						<i class="fa fa-trash-o" title="删除"></i>
+				    </a> 
+				</div>
+			</div>
+		</div>
+		<div class="sort-book">
+			<div class="book-img"><img src="__IMG__/6-1.jpg"></div>
+			<div class="item">
+				<a href="#">高等数学第六版下册</a>
+				<div class="book-table">
+					<div class="book-info">
+						<p>作者：方桂英，崔克俭</p>
+						<p>出版社：科学出版社有限责任公司</p>
+						<p>ISBN：9787030444967</p>
+						<p>书籍分类：计算机系列丛书</p>
+						<div class="decoration">简介:本书内容包括：函数与极限、导数与微分、微分中值定理与导数的应用、不定积分、定积分及其应用、多元函数微积分、微分方程与差分方程、无穷级数、高等数学实验。每一节有习题，每章有总习题,书末附有部分习题答案与提示。本书从内容体系和风格上与第二版相比没有太大的变化，本次修改遵循“坚持改革、与时俱进”的原则，对第二版中的个别概念定义的叙述、定理的证明作了修改，对全书的文字表达进行细致推敲，对例题与习题进行合理的增删，解决了与中学数学的衔接问题，注重高等数学的应用，侧重了在经济方面的应用.同时制作了与书配套的供教师上课用的电子课件、供学生观看的习题讲解视频。本次修改使书更加完善，适应时代要求，便于教与学。</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="item-other">
+				<div class="quality">九成新</div>
+				<div class="prize">￥15</div>
+				<div class="sold">销量：20</div>
+				<div class="kucun">库存：10</div>
+				<div class="owner">出售人：小明</div>
+				<div class="time">上架时间：2018-12-23</div>
+				<div class="act">
+					<a href="" class="op"><i class="fa fa-edit" title="编辑"></i></a> 
+					<a href="" class="op" onclick="">
+						<i class="fa fa-trash-o" title="删除"></i>
+				    </a> 
+				</div>
+			</div>
+		</div>
+		<div class="sort-book">
+			<div class="book-img"><img src="__IMG__/6-1.jpg"></div>
+			<div class="item">
+				<a href="#">高等数学第六版下册</a>
+				<div class="book-table">
+					<div class="book-info">
+						<p>作者：方桂英，崔克俭</p>
+						<p>出版社：科学出版社有限责任公司</p>
+						<p>ISBN：9787030444967</p>
+						<p>书籍分类：计算机系列丛书</p>
+						<div class="decoration">简介:本书内容包括：函数与极限、导数与微分、微分中值定理与导数的应用、不定积分、定积分及其应用、多元函数微积分、微分方程与差分方程、无穷级数、高等数学实验。每一节有习题，每章有总习题,书末附有部分习题答案与提示。本书从内容体系和风格上与第二版相比没有太大的变化，本次修改遵循“坚持改革、与时俱进”的原则，对第二版中的个别概念定义的叙述、定理的证明作了修改，对全书的文字表达进行细致推敲，对例题与习题进行合理的增删，解决了与中学数学的衔接问题，注重高等数学的应用，侧重了在经济方面的应用.同时制作了与书配套的供教师上课用的电子课件、供学生观看的习题讲解视频。本次修改使书更加完善，适应时代要求，便于教与学。</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="item-other">
+				<div class="quality">九成新</div>
+				<div class="prize">￥15</div>
+				<div class="sold">销量：20</div>
+				<div class="kucun">库存：10</div>
+				<div class="owner">出售人：小明</div>
+				<div class="time">上架时间：2018-12-23</div>
+				<div class="act">
+					<a href="" class="op"><i class="fa fa-edit" title="编辑"></i></a> 
+					<a href="" class="op" onclick="">
+						<i class="fa fa-trash-o" title="删除"></i>
+				    </a> 
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--用户列表结束-->
+	<script src="jquery.min.js"></script>
+	<script type="text/javascript">
+		$("li").click(function(){
+			$(this).addClass("selecthover").siblings().removeClass("selecthover");
+		}).hover(function(){
+			$(this).addClass("lihover");
+		},function () {
+			$(this).removeClass("lihover");
+		})
+	</script>
+</body>
+</html>
+

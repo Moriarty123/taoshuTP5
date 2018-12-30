@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>淘书街-检索：<?php echo $keyword; ?></title>
+		<link rel="shortcut icon" href="../../../../static/img/shu.ico" />
+		<link rel="stylesheet" href="../../../../static/css/front/common_top.css" />
+		<link rel="stylesheet" href="../../../../static/css/front/search_no.css" />
+		<link rel="stylesheet" href="../../../../static/css/front/search_yes.css" />
+		<link rel="stylesheet" href="../../../../static/css/front/page.css" />
+	</head>
+	<body>
+		
+		{include file='../Application/index/view/common/inquiry_common_header.html'}
+		
+		<div class="search_content">
+			<div class="search_title">关键字：<?php echo $keyword; ?></div>
+			<div class="search_yes">
+				<div class="yes_info">
+					<ul>
+						{foreach $ret as $value}
+						<li>
+							<div class="info_div">
+								<div class="info_img">
+									<a href="/index/inquire/inquirydetail?id=<?php echo $value['inquiry_id']; ?> " target="_blank">
+										<img src="<?php echo $value['inquiry_img']; ?>" title="<?php echo $value['inquiry_name']; ?>" />
+									</a>
+								</div>
+								<div class="info">
+									<!--书名-->
+									<div class="title">
+										<a href="/index/inquire/inquirydetail?id=<?php echo $value['inquiry_id']; ?> " target="_blank">
+											<?php $value['inquiry_name']=preg_replace("/($keyword)/i","<b style=\"color:#00a082\">\\1</b>",$value['inquiry_name']);?>
+											<?php echo $value['inquiry_name']; ?>
+										</a>
+									</div>
+									<!--具体信息-->
+									<div class="more">
+										<?php echo $value['inquiry_author']; ?>
+										<span class="xie">/</span>
+										<?php echo $value['inquiry_publishing']; ?>
+										<span class="xie">/</span>
+										<?php echo $value['inquiry_page']; ?>页
+										<span class="xie">/</span>
+										<?php echo $value['inquiry_degrees']; ?>
+										<span class="xie">/</span>
+										<span class="price">￥<?php echo $value['inquiry_minprice']; ?> ~ ￥<?php echo $value['inquiry_maxprice']; ?></span>
+									</div>
+									<!--内容详情-->
+									<div class="summary">
+										<?php $value['inquiry_content']=preg_replace("/($keyword)/i","<b style=\"color:#00a082\">\\1</b>",$value['inquiry_content']);?>
+										<?php echo $value['inquiry_content']; ?>
+									</div>
+									<!--发布者-->
+									<div class="owner">
+										<span class="username"><?php echo $value['user_realname']; ?></span>
+										<span class="dept"><?php echo $value['dept_name']; ?></span>
+										<span class="class"><?php echo $value['class_name']; ?>(<?php echo $value['grade']; ?>级)</span>
+									</div>
+								</div>
+							</div>
+							
+						</li>
+						{/foreach}
+					</ul>
+				</div>
+			</div>
+		</div>
+		
+		<div class="page">
+			{$ret->render()}
+		</div>
+		
+		{include file='../Application/index/view/common/common_foot.html'}
+		
+	</body>
+	<script type="text/javascript" src="../../../../static/js/front/common_top.js" ></script>
+</html>
