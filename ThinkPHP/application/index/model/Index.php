@@ -103,7 +103,7 @@ class index extends Controller
 	}
 	
 	function GetNewSaleBook(){
-		$sql = "select * from sale_book where sale_state = 0 order by sale_time desc limit 0,10;";
+		$sql = "select * from sale_book where sale_num!= 0 order by sale_time desc limit 0,8;";
 		// $data = $this->_dao->GetRows($sql);
 		$data = Db::query($sql);
 		return $data;
@@ -117,7 +117,7 @@ class index extends Controller
 	}
 	
 	function GetNewInquiry(){
-		$sql = "select * from inquiry_book where inquiry_state = 0 order by inquiry_time desc limit 0,10;";
+		$sql = "select * from inquiry_book where inquiry_state = 0 order by inquiry_time desc limit 0,8;";
 		// $data = $this->_dao->GetRows($sql);
 		$data = Db::query($sql);
 		return $data;

@@ -35,8 +35,8 @@ class Type extends Controller
 		$res = [];
 		foreach ($bookType as $key => $value) {
 			
-			$typeSecond = Db::table('type_second')->field('second_name')->where("type_id={$value['type_id']}")->select();
-
+			$typeSecond = Db::table('type_second')->field('second_id,second_name')->where("type_id={$value['type_id']}")->select();
+           
 			$temp = [];
 
 			foreach ($typeSecond as $key => $second_name) {
@@ -47,7 +47,7 @@ class Type extends Controller
 			$res[$value['type_name']] = $temp;
 
 		}
-
+		
 		$this->assign('typeSecond', $res);
 
 		return $this->fetch('showAllTypeSecond');

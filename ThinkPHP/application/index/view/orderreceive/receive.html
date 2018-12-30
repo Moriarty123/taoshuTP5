@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>淘书街：我收到的订单</title>
+		<link rel="shortcut icon" href="../../../../static/img/shu.ico" />
+		<link rel="stylesheet" href="../../../../static/css/front/personal.css" />
+		<link rel="stylesheet" href="../../../../static/css/front/personal_order.css" />
+		<link rel="stylesheet" href="../../../../static/font/css/font-awesome.min.css" />
+	</head>
+	<body>
+		 {include file="../application/index/view/common/center_top.html"/}
+		 {include file="../application/index/view/common/center_leftmenu.html"/}
+			
+			<div class="menu_info" style="display: block;">
+				<div class="menu_head">
+					<ul><li>我收到的订单</li></ul>
+				</div>
+				<!--修改登录密码-->
+				<div class="menu_detail" style="display: block;">
+					<div class="order_top">
+						<div class="a">订单详情</div>
+						<div class="b">总金额</div>
+						<div class="c">购买者</div>
+						<div class="d">出售者</div>
+						<div class="e">操作</div>
+					</div>
+					<ul>
+						{foreach $ret as $vo}
+						<li class="order_li">
+							<div class="order_head">
+								<input type="checkbox" />
+								<span class="order_time"><?php echo date('Y-m-d', strtotime($vo['create_time'])); ?></span>
+								<span class="order_num">订单号：<?php echo $vo['order_id']; ?></span>
+								
+								<?php
+								if($vo['order_state'] == 0){
+								?>
+								<span id="s1" style="float: right; margin-right: 10px; color: #00c7b4;">等待买家确认</span>
+								<?php } ?>
+								
+								<?php
+								if($vo['order_state'] == 1){
+								?>
+								<span id="s2" style="float: right; margin-right: 10px;">交易成功</span>
+								<?php } ?>
+							</div>
+							<div class="order_info">
+								<div class="order_img">
+									<a href="?c=saleBook&a=each&id=<?php echo $vo['sale_id']; ?>"><img src="<?php echo $vo['sale_img']; ?>" /></a>
+								</div>
+								<div class="order_name">
+									<a href="?c=saleBook&a=each&id=<?php echo $vo['sale_id']; ?>"><?php echo $vo['sale_name']; ?></a>
+								</div>
+								<div class="order_price">
+									<span class="be">￥<?php echo $vo['sale_beprice']; ?></span><br />
+									<span class="af">￥<?php echo $vo['sale_afprice']; ?></span>
+								</div>
+								<div class="order_sum">×<?php echo $vo['order_sum']; ?></div>
+								<div class="order_pay">￥<?php echo $vo['order_price']; ?></div>
+								<div class="order_buy"><a href="?c=user&a=showSaleUser&id=<?php echo $vo['user_id']; ?>" target="_blank"><?php echo $vo['user_realname']; ?></a></div>
+								<div class="order_sale"><?php echo session('username'); ?></div>
+								<?php 
+								if($vo['order_state'] == 1){
+								?>
+								<a href="?c=shoporder&a=delReceive&id=<?php echo $vo['order_id']; ?>" id="d1" onclick="return queren()"><i class="fa fa-trash"></i></a>
+								<?php } ?>
+							</div>
+						</li>
+						{/foreach}
+					</ul>
+				</div>
+			</div>
+		</div>
+		 {include file="../application/index/view/common/common_foot.html"/}
+	</body>
+</html>
+<script>
+	function queren(){
+		return window.confirm("你确认要删除吗？确认后不可恢复！");
+	}
+	function queren1(){
+		return window.confirm("你确认要购买该书籍吗？确认后不可更改");
+	}
+</script>
