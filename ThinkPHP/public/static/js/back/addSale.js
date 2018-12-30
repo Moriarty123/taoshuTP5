@@ -4,23 +4,14 @@ function Isbn(){
 }
 function checkISBN(){
 	var isbn = document.getElementsByName("isbn")[0];
-	if( isbn.value.match('#\d{12}[0-9]#i')) {
-		if(isbn.value.length == 10 || isbn.value.length == 13){
-			isbn.style.border = "1px solid #a9a9a9";
-			document.getElementById('tip-ISBN').style.display = 'none';
-			return true;
-		}
-		else{
-			isbn.style.border = "1px solid #e71304";
-			document.getElementById('tip-ISBN').style.display = 'block';
-			return false;
-		}	
+	if(isbn.value.length == 10 || isbn.value.length == 13){
+		isbn.style.border = "1px solid #a9a9a9";
+		return true;
 	}
 	else{
 		isbn.style.border = "1px solid #e71304";
-		document.getElementById('tip-ISBN').style.display = 'block';
 		return false;
-	}	
+	}
 }
 
 
@@ -32,12 +23,10 @@ function checkName(){
 	var name = document.getElementsByName("name")[0];
 	if(name.value.length > 0){
 		name.style.border = "1px solid #a9a9a9";
-		document.getElementById('tip-name').style.display = 'none';
 		return true;
 	}
 	else{
 		name.style.border = "1px solid #e71304";
-		document.getElementById('tip-name').style.display = 'block';
 		return false;
 	}
 }
@@ -51,12 +40,10 @@ function checkAuthor(){
 	var author = document.getElementsByName("author")[0];
 	if(author.value.length > 0){
 		author.style.border = "1px solid #a9a9a9";
-		document.getElementById('tip-author').style.display = 'none';
 		return true;
 	}
 	else{
 		author.style.border = "1px solid #e71304";
-		document.getElementById('tip-author').style.display = 'block';
 		return false;
 	}
 }
@@ -70,12 +57,10 @@ function checkPublishing(){
 	var publishing = document.getElementsByName("publishing")[0];
 	if(publishing.value.length > 0){
 		publishing.style.border = "1px solid #a9a9a9";
-		document.getElementById('tip-publishing').style.display = 'none';
 		return true;
 	}
 	else{
 		publishing.style.border = "1px solid #e71304";
-		document.getElementById('tip-publishing').style.display = 'block';
 		return false;
 	}
 }
@@ -89,12 +74,10 @@ function checkBeprice(){
 	var beprice = document.getElementsByName("beprice")[0];
 	if(beprice.value.length == 0 || !beprice.value.match(/^[0-9]\d*(\.\d+)?$/) ){
 		beprice.style.border = "1px solid #e71304";
-		document.getElementById('tip-beprice').style.display = 'block';
 		return false;
 	}
 	else{
 		beprice.style.border = "1px solid #a9a9a9";
-		document.getElementById('tip-beprice').style.display = 'none';
 		return true;
 	}
 }
@@ -108,12 +91,10 @@ function checkAfprice(){
 	var afprice = document.getElementsByName("afprice")[0];
 	if(afprice.value.length == 0 || !afprice.value.match(/^[0-9]\d*(\.\d+)?$/) ){
 		afprice.style.border = "1px solid #e71304";
-		document.getElementById('tip-afprice').style.display = 'block';
 		return false;
 	}
 	else{
 		afprice.style.border = "1px solid #a9a9a9";
-		document.getElementById('tip-afprice').style.display = 'none';
 		return true;
 	}
 }
@@ -127,12 +108,10 @@ function checkNum(){
 	var num = document.getElementsByName("num")[0];
 	if(num.value.length == 0 || !num.value.match(/^[1-9]\d*(\.\d+)?$/) ){
 		num.style.border = "1px solid #e71304";
-		document.getElementById('tip-num').style.display = 'block';
 		return false;
 	}
 	else{
 		num.style.border = "1px solid #a9a9a9";
-		document.getElementById('tip-num').style.display = 'none';
 		return true;
 	}
 }
@@ -146,12 +125,10 @@ function checkPage(){
 	var page = document.getElementsByName("page")[0];
 	if(page.value.length == 0 || !page.value.match(/^[1-9]\d*(\.\d+)?$/) ){
 		page.style.border = "1px solid #e71304";
-		document.getElementById('tip-page').style.display = 'block';
 		return false;
 	}
 	else{
 		page.style.border = "1px solid #a9a9a9";
-		document.getElementById('tip-page').style.display = 'none';
 		return true;
 	}
 }
@@ -164,12 +141,10 @@ function checkContent(){
 	var content = document.getElementsByName("content")[0];
 	if(content.value.length > 0){
 		content.style.border = "1px solid #a9a9a9";
-		document.getElementById('tip-content').style.display = 'none';
 		return true;
 	}
 	else{
 		content.style.border = "1px solid #e71304";
-		document.getElementById('tip-content').style.display = 'block';
 		return false;
 	}
 }

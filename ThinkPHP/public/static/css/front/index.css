@@ -153,11 +153,129 @@ a{
 .newbook_li:last-child{
 	border-bottom: none;
 }
+/*tab切换内容开始*/ 
+#list-title {
+            width: 230.4px;
+            height: 36px;
+            margin: 0;
+            list-style-type: none;
+            padding-left: 0;
+            border: 1px solid #ddd;
+            /*border-bottom: none;*/
+            border-top:none;
+        }
+.list-item {
+            float: left;
+            width: 72px;
+            height: 36px;
+            margin: 0px 2px;
+            line-height: 36px;
+            font-size: 16px;
+            text-align: center;
+            cursor: pointer;
+        }
 
+.list-item-checked {
+	background-color: #ddd;
+	color: #ffffff;
+}
+#content-box {
+            position: relative;
+            clear: both;
+            width:232.5px;
+            height:100%;
+            margin: 0;
+        }
+
+.contents {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 232.5px;
+           /* height: 300px;*/
+            margin: 0;
+            font-size: 32px;
+            /*line-height: 300px;*/
+            /*text-align: center;*/
+            /*border: 1px solid #ddd;*/
+            z-index: 0;
+            opacity: 0;
+            visibility: hidden;
+            -webkit-transition: all .5s;
+            -moz-transition: all .5s;
+            -ms-transition: all .5s;
+            -o-transition: all .5s;
+            transition: all .5s;
+        }
+
+.contents-checked {
+            z-index: 1;
+            opacity: 1;
+            visibility: visible;
+        }
+ /*tab切换内容结束*/
+ 
 .content_b{
 	float: left;
 	margin: 10px 12px;
+	width:660px;
+	height: 440px;
+    position: relative;
 }
+/*照片轮播开始*/
+.content_img{
+    width: 100%;
+    height:100%;
+	position: relative;
+	overflow: hidden;
+}
+.img_box{
+  overflow: hidden;
+  width:660px;
+  height:440px;
+  position:relative;
+ }  
+  .img_box img{
+  width:100%;
+  position:absolute;
+ }  
+  .ul5{
+  list-style: none;
+  position:absolute;
+  left:300px;
+  top:400px;
+  } 
+  .ul5 li{
+  float:left;
+  margin-left:20px;
+  width:10px;
+  height:10px;
+  border:0px;
+  border-radius: 50%;
+  background:#f0f0f0;
+ }
+  .d1,.d2{
+  width:50px;
+  height:60px;
+  background-color: rgba(10,10,10,0.5);
+  color: #fff;
+  text-align: center;
+  font-size:26px;
+  font-weight: 800px;
+  line-height:60px;
+  cursor: pointer;
+  }
+  .d1{
+  position:absolute;
+  top:220px;
+  left:25px;
+  }
+  .d2{
+  position:absolute;
+  top:220px;
+  left:600px;
+  }
+  /*照片轮播结束*/
 
 
 .content_c{

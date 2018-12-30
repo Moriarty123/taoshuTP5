@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>淘书街：图书分类大全</title>
-		<link rel="shortcut icon" href="img/shu.ico" />
+		<link rel="shortcut icon" href="/static/img/shu.ico" />
 		<link rel="stylesheet" href="/static/css/front/classify.css" />
 		<link rel="stylesheet" href="/static/css/front/common_top.css" />
 	</head>
@@ -20,7 +20,7 @@
 						<div class="classify1">{$type_name}</div><span class="shu shu1">|</span>
 						<div class="classify2">
 							{foreach $second_type as $second_name}
-							<a href="" target="_blank">{$second_name}</a>
+							<a href="/index/sale/classdetail?second_name={$second_name}" target="_blank">{$second_name}</a>
 							<span class="shu">|</span>
 							{/foreach}
 						</div>
@@ -30,8 +30,8 @@
 			</div>
 		</div>
 		
-		{include file='../Application/index/view/common/common_footer.html'}
+		{include file='../Application/index/view/common/common_foot.html'}
 
 	</body>
-	<script type="text/javascript" src="js/front/common_top.js" ></script>
+	<script type="text/javascript" src="/static/js/front/common_top.js" ></script>
 </html>

@@ -3,15 +3,15 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>淘书街：求购图书大全</title>
-		<link rel="shortcut icon" href="img/shu.ico" />
-		<link rel="stylesheet" href="/static/css/front/common_top.css" />
-		<link rel="stylesheet" href="/static/css/front/search_yes.css" />
-		<link rel="stylesheet" href="/static/css/front/page.css" />
-		<link rel="stylesheet" href="/static/css/front/inquiry.css" />
-		<link rel="stylesheet" href="/static/css/front/think-page.css" />
+		<link rel="shortcut icon" href="../../../../static/img/shu.ico" />
+		<link rel="stylesheet" href="../../../../static/css/front/common_top.css" />
+		<link rel="stylesheet" href="../../../../static/css/front/search_yes.css" />
+		<link rel="stylesheet" href="../../../../static/css/front/page.css" />
+		<link rel="stylesheet" href="../../../../static/css/front/sale.css" />
+		<link rel="stylesheet" href="../../../../static/css/front/think_page.css" />
 	</head>
 	<body>
-		{include file='../Application/index/view/common/common_header.html'}
+		{include file='../Application/index/view/common/inquiry_common_header.html'}
 		
 		<!--所有出售书籍详细部分-->
 		<div class="search_content">
@@ -22,14 +22,14 @@
 						<li>
 							<div class="info_div">
 								<div class="info_img">
-									<a href="" target="_blank">
-										<img src="/uploads/{$vo.inquiry_img}" title="{$vo.inquiry_name}" />
+									<a href="/index/inquire/inquirydetail?id={$vo.inquiry_id}" target="_blank">
+										<img src="{$vo.inquiry_img}" title="{$vo.inquiry_name}" />
 									</a>
 								</div>
 								<div class="info">
 									<!--书名-->
 									<div class="title">
-										<a href="" target="_blank">
+										<a href="/index/inquire/inquirydetail?id={$vo.inquiry_id}" target="_blank">
 											
 											{$vo.inquiry_name}
 										</a>
@@ -70,8 +70,8 @@
 			</div>
 		</div>
 		
-		{include file='../Application/index/view/common/common_footer.html'}
+		{include file='../Application/index/view/common/common_foot.html'}
 		
 	</body>
-	<script type="text/javascript" src="js/front/common_top.js" ></script>
+	<script type="text/javascript" src="../../../../static/js/front/common_top.js" ></script>
 </html>
