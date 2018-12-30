@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title><?php echo $ret['sale_name']; ?></title>
+		<link rel="shortcut icon" href="../../../../static/img/shu.ico" />
+		<link rel="stylesheet" href="../../../../static/css/front/sale_detail.css" />
+		<link rel="stylesheet" href="../../../../static/css/front/common_top.css" />
+	</head>
+	<body>
+		{include file='../Application/index/view/common/common_header.html'}
+		<div class="w">
+			<div class="location">
+				你现在的位置：
+				<a href="/index/type/showAllTypeSecond">全部图书分类</a>
+				<span>></span>
+				<?php echo $ret['type_name']; ?>
+				<span>></span>
+				<a href="/index/sale/classdetail?second_name=<?php echo $ret['second_name']; ?>"><?php echo $ret['second_name']; ?></a>
+			</div>
+		</div>
+		<div class="book_info">
+			<div class="imgdiv">
+				<!--<span></span>-->
+				<img src="<?php echo $ret['sale_img']; ?>" />
+			</div>
+			<!--基本信息-->
+			<div class="info">
+				<div class="title"><?php echo $ret['sale_name']; ?></div>
+				<div class="detail_info">
+					<div class="info_left">
+						<dd>ISBN：<span><?php echo $ret['sale_isbn']; ?></span></dd>
+						<dd>库存：<span><?php echo $ret['sale_num']; ?></span></dd>
+						<dd>作者：<span><?php echo $ret['sale_author']; ?></span></dd>
+						<dd>出版社：<span><?php echo $ret['sale_publishing']; ?></span></dd>
+					</div>
+					<div class="info_right">
+						<dd>页数：<span><?php echo $ret['sale_page']; ?></span></dd>
+						<dd>新旧程度：<span><?php echo $ret['sale_degrees']; ?></span></dd>
+						<dd>出售者：<span><?php echo $ret['user_realname']; ?></span></dd>
+					</div>
+				</div>
+			</div>
+			<!--价钱-->
+			<div class="info2">
+				<div class="price">
+					现价：<span>￥<?php echo $ret['sale_afprice']; ?></span>
+				</div>
+				<div class="pre_price">
+					原价：<span>￥<?php echo $ret['sale_beprice']; ?></span>
+				</div>
+			</div>
+			<!--加购收藏按钮-->
+			<div class="operation" id="o">
+				<a href="/index/shopcar/insert?id=<?php echo $ret['sale_id']; ?>"><div class="collect">加入购物车</div></a>
+				<a href="/index/ordersend/index?id=<?php echo $ret['sale_id']; ?>"><div class="buy">购买</div></a>
+			</div>
+		</div>
+		<!--详细内容-->
+		<div class="content_info">
+			<div class="content_title">
+				<span>内容简介</span>
+			</div>
+			<div class="content">
+				<?php echo $ret['sale_content']; ?>
+				<?php if( $ret['sale_content'] == null ){echo "无内容";} ?>	
+			</div>
+		</div>
+		
+		<div class="content_info">
+			<div class="content_title">
+				<span>书籍留言</span>
+			</div>
+			<div class="content">
+				<div class="bcomment">
+					<form action="/index/sale/postmsg" method="post" onsubmit="return checkComment();">
+						<textarea cols="101" rows="7" name="content"></textarea>
+						
+						<input type="hidden" value="<?php echo $ret['sale_id']; ?>" name="book_id" />
+						<input type="submit" value="发表留言" />
+						<span>(限255字)</span>
+					</form>
+				</div>
+				<div class="bc_detail">
+					<ul>
+						{foreach $res as $value}
+						<li>
+							<div class="bcUser">
+								<a href="/index/personalsalecenter/index?id=<?php echo $value['user_id']; ?>" target="_blank">
+									<img src="<?php echo session('user_img'); ?>" />
+								</a>
+								<div class="name_txt">
+									<a href="/index/personalsalecenter/index?id=<?php echo $value['user_id']; ?>" target="_blank">
+										<?php 
+											if($value['user_realname'] != null){
+												echo $value['user_realname'];
+											}
+											else if($value['nickname'] != null){
+												echo $value['nickname'];
+											}
+											else{
+												echo $value['user_name'];
+											}
+										?>
+										<!--<?php echo $value['user_realname']; ?>-->
+									</a>
+								</div>
+							</div>
+							<div class="bc_content">
+								<?php echo $value['bcomment_content']; ?>
+								<div class="bc_time">{$value.bcomment_time}
+									<div style="width: 200px;height: 25px;float: right;">
+										<a href="/index/sale/dianzan?ids=<?php echo $value['bcomment_id']; ?>">
+											<img src="
+											../../../../static/img/dianzan.png" style="margin-left:110px;width: 25px;"></a><font>{$value.dzsum}</font>
+										<img src="../../../../static/img/pinlun.png" style="margin-left:20px;width: 23px;" onclick="show({$value.bcomment_id})">
+									</div>
+								</div>
+								<!-- 回复评论内容 -->
+								<div>
+
+									{foreach $reply as $key => $vo}
+
+										{if $vo.comment_id==$value.bcomment_id}
+										<p>{$vo.user_realname}：{$vo.reply_content}&nbsp;&nbsp;&nbsp;&nbsp;<font style="color: gray;font-size: 10px;">{$vo.addtime|date="y-m-d H:m:s",###}</font></p>
+										{/if}
+									{/foreach}
+								</div>
+							</div>
+							<input type="hidden" value="" id="hiddenzhi">
+						</li>
+						{/foreach}
+						<?php if( empty($res) ){echo "没有留言";} ?>	
+					</ul>
+				</div>
+			</div>
+		</div>
+		{include file='../Application/index/view/common/common_foot.html'}
+		<!-- 回复评论输入框开始 -->
+		<div style="display:none;position: fixed;top:0px; width: 100%;height: 100%;background: rgba(0,0,0,0.4);z-index:900;" id="show_pinlundiv">
+			<div style="position: absolute;top: 50%;left: 50%;background: #FFF;width: 500px;height: 350px;transform: translate(-50%,-50%);border-radius: 10px;z-index: 1000;">
+
+				<div style="margin: 10px;">
+					<span style="font-size: 15px; color: gray;" id="kuanzhi">回复评论</span><a onclick="noshow()" style="display: block;width: 20px;height: 20px;border:1px solid gray; border-radius: 30px;float: right;line-height: 20px;color: gray;font: 20px;cursor: pointer;"><center>X</center></a>
+				</div>
+
+				<div style="padding: 10px 20px;">
+
+					<div style="width: 100%;height: 230px;border: 1px solid gray;" contenteditable="true" id="shuru"></div>
+				  
+				</div>
+				
+		 <input type="submit" name="submit" value="提交" style="background: green; width: 50px;height: 20px;margin-left:44%; " onclick="postdiv()">
+	</div>
+		</div>
+		<!-- 回复评论输入框结束 -->
+		<!-- 回复评论成功与失败 -->
+		<div style="width: 200px;height: 100px;background: rgba(0,0,0,0.4);z-index: 1200;position:fixed;top: 50%;left: 50%;transform: translate(-50%,-50%); display:none; color: #FFF;font-size: 16px;line-height: 100px;text-align: center;" id="pinluncg">   </div>
+		<!-- 回复评论成功与失败 -->
+		<script type="text/javascript" src="../../../../static/js/front/common_top.js" ></script>
+	<script src="../../../../static/js/front/jquery.min.js"></script>
+	<script>
+		function checkComment(){
+			var content = document.getElementsByName("content")[0].value;
+			if( content.length == 0 ){
+				alert("留言不能为空！");
+				return false;
+			}
+			else if(content.length > 255){
+				alert("留言内容不能超过255字！");
+				return false;
+			}
+			return true;
+		}
+		function show(obj){
+ 				$('#hiddenzhi').val(obj);
+ 				$('#show_pinlundiv').fadeIn();
+ 		}
+ 		function noshow(){
+            $('#show_pinlundiv').fadeOut();
+ 		}
+
+ 		function postdiv(){
+
+				var data = $('#shuru').html();
+				var hiddenzhi = $('#hiddenzhi').val();
+
+				$.post('/index/sale/pinlun',{'data':data,'hiddenzhi':hiddenzhi},
+						function(ret){
+							$('#pinluncg').html("");
+							if (ret.code==0) {
+								if (ret.data==1) {
+								      windows.location.href = ret.url;
+								}
+							}
+
+							noshow();
+							$('#pinluncg').fadeIn();
+							$('#pinluncg').append(ret.msg);
+							 
+			  setTimeout(function(){
+							  $('#pinluncg').fadeOut();
+							 },2000);
+
+							},'json');
+					    $('#shuru').html("");
+					    window.location.reload();
+		}
+
+		function changeddz(obj){
+				$.post('/index/sale/changeddz',{'bcomment_id':obj},
+						function(ret){
+							
+							if (ret.code==0) {
+								if (ret.data==1) {
+								      windows.location.href = ret.url;
+								}
+							}
+
+							
+							 
+			 
+
+							},'json');
+					   
+					    window.location.reload();
+
+		}
+	</script>
+	</body>
+</html>

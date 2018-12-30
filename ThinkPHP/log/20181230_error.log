@@ -1,0 +1,6 @@
+---------------------------------------------------------------
+[2018-12-30T16:00:01+08:00] 0.0.0.0 GET /admin/violate/violateList
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'tao_shu.violation' doesn't exist[F:\study\www\taoshu\ThinkPHP\thinkphp\library\think\db\Connection.php:390]
+---------------------------------------------------------------
+[2018-12-30T16:49:57+08:00] 0.0.0.0 POST /admin/user/userAdd
+[ error ] [10501]SQLSTATE[HY000]: General error: 1364 Field 'login_error' doesn't have a default value[F:\study\www\taoshu\ThinkPHP\thinkphp\library\think\db\Connection.php:463]

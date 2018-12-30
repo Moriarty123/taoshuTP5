@@ -75,7 +75,8 @@ use app\admin\validate\admin as adminValidate;
 		//4.3更新最后登录时间和登录次数
 		$where = "id={$admin_id}";
 		Db::table('admin')->where($where)->setInc('times',1);
-		$loginTime = date('Y-m-d H:i:s', time());
+		// $loginTime = date('Y-m-d H:i:s', time());
+		$loginTime = time();
 		Db::table('admin')->where($where)->setField('last_time', $loginTime);	
 
 

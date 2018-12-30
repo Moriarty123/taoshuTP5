@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>淘书街：图书分类大全</title>
+		<link rel="shortcut icon" href="/static/img/shu.ico" />
+		<link rel="stylesheet" href="/static/css/front/classify.css" />
+		<link rel="stylesheet" href="/static/css/front/common_top.css" />
+	</head>
+	<body>
+
+		{include file='../Application/index/view/common/common_header.html'}
+		
+		<div class="classify">
+			<div class="classify_title">图书分类大全</div>
+			<div class="classify_all">
+				<ul>
+					{foreach $typeSecond as $type_name => $second_type}
+					<li>
+						<div class="classify1">{$type_name}</div><span class="shu shu1">|</span>
+						<div class="classify2">
+							{foreach $second_type as $second_name}
+							<a href="/index/sale/classdetail?second_name={$second_name}" target="_blank">{$second_name}</a>
+							<span class="shu">|</span>
+							{/foreach}
+						</div>
+					</li>
+					{/foreach}
+				</ul>
+			</div>
+		</div>
+		
+		{include file='../Application/index/view/common/common_foot.html'}
+
+	</body>
+	<script type="text/javascript" src="/static/js/front/common_top.js" ></script>
+</html>

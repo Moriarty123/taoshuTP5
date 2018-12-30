@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>淘书街：个人中心 - 我的出售</title>
+		<link rel="stylesheet" href="../../../../static/css/front/personal.css" />
+		<link rel="stylesheet" href="../../../../static/css/front/personal_sale.css" />
+		<link rel="stylesheet" href="../../../../static/font/css/font-awesome.min.css" />
+		<link rel="shortcut icon" href="../../../../static/img/shu.ico" />
+	</head>
+	<script type="text/javascript" src="../../../../static/js/front/jquery.min.js" ></script>
+	<body>
+		 {include file="../application/index/view/common/center_top.html"/}
+		 {include file="../application/index/view/common/center_leftmenu.html"/}
+			
+			<!--基本信息-->
+			<div class="menu_info" style="display: block;">
+				<div class="menu_head" style="margin-bottom: 0px; border: none;">
+					<ul>
+						<li>我的出售</li>
+					</ul>
+				</div>
+				<!--我的出售-->
+				<div class="menu_detail" style="display: block;margin-top: 5px;">
+					<div class="sc_right_content">
+						<ul>
+						{foreach $ret as $vo}
+							<li>
+								<div class="info_div">
+									<div class="info_img">
+										<a href="?c=saleBook&a=each&id=<?php echo $vo['sale_id']; ?> " target="_blank">
+											<img src="<?php echo $vo['sale_img']; ?>" title="<?php echo $vo['sale_name']; ?>" />
+										</a>
+									</div>
+									<div class="info">
+										<!--书名-->
+										<div class="info_title">
+											<a href="?c=saleBook&a=each&id=<?php echo $vo['sale_id']; ?> " target="_blank">
+												<?php echo $vo['sale_name']; ?>
+											</a>
+										</div>
+										<!--具体信息-->
+										<div class="more">
+											<?php echo $vo['sale_author']; ?>
+											<span class="xie">/</span>
+											<?php echo $vo['sale_publishing']; ?>
+											<span class="xie">/</span>
+											<?php echo $vo['sale_page']; ?>页
+											<span class="xie">/</span>
+											<?php echo $vo['sale_degrees']; ?>
+											<span class="xie">/</span>
+											<?php echo $vo['sale_num']; ?>本
+											<span class="xie">/</span>
+											<span class="pre_price">￥<?php echo $vo['sale_beprice']; ?></span>
+											<span class="price">￥<?php echo $vo['sale_afprice']; ?></span>
+										</div>
+										<!--内容详情-->
+										<div class="summary">
+											<?php echo $vo['sale_content']; ?>
+										</div>
+									</div>
+									
+									<!--收藏购买按钮
+									<div class="operation" id="o">
+										<a href="?c=shopcar&a=addShopCar&id=<?php echo $vo['sale_id']; ?>"><div class="collect">加入购物车</div></a>
+										<a href="#"><div class="buy">购买</div></a>
+									</div>-->
+								</div>
+							</li>
+							{/foreach}
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		{include file="../application/index/view/common/common_foot.html"/}
+	</body>
+	<!--<script type="text/javascript" src="../../../../static/js/front/personal_center.js" ></script>-->
+</html>

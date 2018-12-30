@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>淘书街：求购图书大全</title>
+		<link rel="shortcut icon" href="../../../../static/img/shu.ico" />
+		<link rel="stylesheet" href="../../../../static/css/front/common_top.css" />
+		<link rel="stylesheet" href="../../../../static/css/front/search_yes.css" />
+		<link rel="stylesheet" href="../../../../static/css/front/page.css" />
+		<link rel="stylesheet" href="../../../../static/css/front/sale.css" />
+		<link rel="stylesheet" href="../../../../static/css/front/think_page.css" />
+	</head>
+	<body>
+		{include file='../Application/index/view/common/inquiry_common_header.html'}
+		
+		<!--所有出售书籍详细部分-->
+		<div class="search_content">
+			<div class="search_yes">
+				<div class="yes_info">
+					<ul>
+						{volist name="inquireBookList" id="vo"}
+						<li>
+							<div class="info_div">
+								<div class="info_img">
+									<a href="/index/inquire/inquirydetail?id={$vo.inquiry_id}" target="_blank">
+										<img src="{$vo.inquiry_img}" title="{$vo.inquiry_name}" />
+									</a>
+								</div>
+								<div class="info">
+									<!--书名-->
+									<div class="title">
+										<a href="/index/inquire/inquirydetail?id={$vo.inquiry_id}" target="_blank">
+											
+											{$vo.inquiry_name}
+										</a>
+									</div>
+									<!--具体信息-->
+									<div class="more">
+										{$vo.inquiry_author}
+										<span class="xie">/</span>
+										{$vo.inquiry_publishing}
+										<span class="xie">/</span>
+										{$vo.inquiry_page}页
+										<span class="xie">/</span>
+										{$vo.inquiry_degrees}
+										<span class="xie">/</span>
+										{$vo.inquiry_num}本
+										<span class="xie">/</span>
+										<span style="color: #00C7B4;">￥{$vo.inquiry_minprice}~ ￥{$vo.inquiry_maxprice}</span>
+									</div>
+									<!--内容详情-->
+									<div class="summary">
+										{$vo.inquiry_content}
+									</div>
+									
+									
+								</div>
+								<!--收藏购买按钮-->
+								<!--<div class="operation" id="o" style="width: 200px;">
+									<a href="#">
+										<div class="collect" style="width: 113px;">我有此书</div>
+									</a>
+								</div>-->
+							</div>
+						</li>
+						{/volist}
+					</ul>
+				</div>
+				{$inquireBookList->render()}
+			</div>
+		</div>
+		
+		{include file='../Application/index/view/common/common_foot.html'}
+		
+	</body>
+	<script type="text/javascript" src="../../../../static/js/front/common_top.js" ></script>
+</html>

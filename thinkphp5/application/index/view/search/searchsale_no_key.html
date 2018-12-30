@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>淘书街-检索：<?php echo $keyword; ?></title>
+		<link rel="shortcut icon" href="../../../../static/img/shu.ico" />
+		<link rel="stylesheet" href="../../../../static/css/front/common_top.css" />
+		<link rel="stylesheet" href="../../../../static/css/front/search_no.css" />
+	</head>
+	<body>
+		
+		{include file='../Application/index/view/common/common_header.html'}
+		
+		<div class="search_content">
+			<div class="search_title">关键字：无</div>
+			<div class="search_no">
+				<div class="no_up">
+					<span class="icon_box"></span>
+					<span>请输入关键词再进行搜索，谢谢</span>
+				</div>
+				<div class="no_down">
+					<div class="tip_txt">
+						<span>建议你：</span><br />
+						<span>1、查看输入的文字是否有误</span><br />
+						<span>2、修改或减少关键字，用空格隔开，不要带标点符号，不要使用繁体字 </span><br />
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	{include file='../Application/index/view/common/common_foot.html'}
+		
+	</body>
+	<script type="text/javascript" src="../../../../static/js/front/common_top.js" ></script>
+</html>
