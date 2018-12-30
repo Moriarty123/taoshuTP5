@@ -1,0 +1,904 @@
+---------------------------------------------------------------
+[ 2018-12-30T15:54:24+08:00 ] 0.0.0.0 GET taoshu2/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006993s ] mysql:host=127.0.0.1;dbname=taoshu;charset=utf8
+[ sql ] [ SQL ] select * from book_type limit 0,8; [ RunTime:0.007938s ]
+[ sql ] [ SQL ] select * from type_second where type_id=1 limit 0,5; [ RunTime:0.009152s ]
+[ sql ] [ SQL ] select * from type_second where type_id=2 limit 0,5; [ RunTime:0.001096s ]
+[ sql ] [ SQL ] select * from type_second where type_id=3 limit 0,6; [ RunTime:0.000990s ]
+[ sql ] [ SQL ] select * from type_second where type_id=4 limit 0,8; [ RunTime:0.000966s ]
+[ sql ] [ SQL ] select * from type_second where type_id=5 limit 0,6; [ RunTime:0.000955s ]
+[ sql ] [ SQL ] select * from type_second where type_id=6 limit 0,8; [ RunTime:0.001006s ]
+[ sql ] [ SQL ] select * from type_second where type_id=7 limit 0,5; [ RunTime:0.001141s ]
+[ sql ] [ SQL ] select * from type_second where type_id=1; [ RunTime:0.001766s ]
+[ sql ] [ SQL ] select * from type_second where type_id=2; [ RunTime:0.001826s ]
+[ sql ] [ SQL ] select * from type_second where type_id=3; [ RunTime:0.001326s ]
+[ sql ] [ SQL ] select * from type_second where type_id=4; [ RunTime:0.001578s ]
+[ sql ] [ SQL ] select * from type_second where type_id=5; [ RunTime:0.001411s ]
+[ sql ] [ SQL ] select * from type_second where type_id=6; [ RunTime:0.001179s ]
+[ sql ] [ SQL ] select * from type_second where type_id=7; [ RunTime:0.001067s ]
+[ sql ] [ SQL ] select * from sale_book where sale_num!= 0 order by sale_time desc limit 0,8; [ RunTime:0.009662s ]
+[ sql ] [ SQL ] select * from inquiry_book where inquiry_state = 0 order by inquiry_time desc limit 0,8; [ RunTime:0.008279s ]
+[ sql ] [ SQL ] select * from notice order by notice_time desc [ RunTime:0.008554s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `shoporder` [ RunTime:0.009546s ]
+[ sql ] [ SQL ] SELECT book_id,sum(order_sum) as a FROM `shoporder` WHERE  (  create_time<1546790399 and create_time>1546185600 ) GROUP BY `book_id` ORDER BY `a` DESC LIMIT 0,5 [ RunTime:0.001813s ]
+[ sql ] [ SQL ] SELECT book_id,sum(order_sum) as a FROM `shoporder` WHERE  (  create_time<1546271999 and create_time>1543593600 ) GROUP BY `book_id` ORDER BY `a` DESC LIMIT 0,5 [ RunTime:0.002056s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sale_book` [ RunTime:0.003022s ]
+[ sql ] [ SQL ] SELECT * FROM `sale_book` WHERE  (  sale_id=3 ) LIMIT 1 [ RunTime:0.001473s ]
+[ sql ] [ SQL ] SELECT * FROM `sale_book` WHERE  (  sale_id=1 ) LIMIT 1 [ RunTime:0.001223s ]
+[ sql ] [ SQL ] SELECT * FROM `sale_book` WHERE  (  sale_id=2 ) LIMIT 1 [ RunTime:0.001258s ]
+[ sql ] [ SQL ] SELECT * FROM `sale_book` WHERE  (  sale_id=4 ) LIMIT 1 [ RunTime:0.002364s ]
+[ sql ] [ SQL ] SELECT * FROM `sale_book` WHERE  (  sale_id=30 ) LIMIT 1 [ RunTime:0.001465s ]
+[ sql ] [ SQL ] SELECT book_id,sum(order_sum) as a FROM `shoporder` WHERE  (  create_time<1546358399 and create_time>1514736000 ) GROUP BY `book_id` ORDER BY `a` DESC LIMIT 0,5 [ RunTime:0.001920s ]
+[ sql ] [ SQL ] SELECT * FROM `sale_book` WHERE  (  sale_id=3 ) LIMIT 1 [ RunTime:0.001166s ]
+[ sql ] [ SQL ] SELECT * FROM `sale_book` WHERE  (  sale_id=1 ) LIMIT 1 [ RunTime:0.002507s ]
+[ sql ] [ SQL ] SELECT * FROM `sale_book` WHERE  (  sale_id=2 ) LIMIT 1 [ RunTime:0.001835s ]
+[ sql ] [ SQL ] SELECT * FROM `sale_book` WHERE  (  sale_id=4 ) LIMIT 1 [ RunTime:0.001344s ]
+[ sql ] [ SQL ] SELECT * FROM `sale_book` WHERE  (  sale_id=30 ) LIMIT 1 [ RunTime:0.001269s ]
+---------------------------------------------------------------
+[ 2018-12-30T16:47:14+08:00 ] 0.0.0.0 GET taoshu2/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005422s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] select * from book_type limit 0,8; [ RunTime:0.001362s ]
+[ sql ] [ SQL ] select * from type_second where type_id=1 limit 0,5; [ RunTime:0.001681s ]
+[ sql ] [ SQL ] select * from type_second where type_id=2 limit 0,5; [ RunTime:0.001698s ]
+[ sql ] [ SQL ] select * from type_second where type_id=3 limit 0,6; [ RunTime:0.001637s ]
+[ sql ] [ SQL ] select * from type_second where type_id=4 limit 0,8; [ RunTime:0.001561s ]
+[ sql ] [ SQL ] select * from type_second where type_id=5 limit 0,6; [ RunTime:0.001562s ]
+[ sql ] [ SQL ] select * from type_second where type_id=6 limit 0,8; [ RunTime:0.001854s ]
+[ sql ] [ SQL ] select * from type_second where type_id=7 limit 0,5; [ RunTime:0.001904s ]
+[ sql ] [ SQL ] select * from type_second where type_id=1; [ RunTime:0.001922s ]
+[ sql ] [ SQL ] select * from type_second where type_id=2; [ RunTime:0.001461s ]
+[ sql ] [ SQL ] select * from type_second where type_id=3; [ RunTime:0.001480s ]
+[ sql ] [ SQL ] select * from type_second where type_id=4; [ RunTime:0.001658s ]
+[ sql ] [ SQL ] select * from type_second where type_id=5; [ RunTime:0.001856s ]
+[ sql ] [ SQL ] select * from type_second where type_id=6; [ RunTime:0.001483s ]
+[ sql ] [ SQL ] select * from type_second where type_id=7; [ RunTime:0.002412s ]
+[ sql ] [ SQL ] select * from sale_book where sale_num!= 0 order by sale_time desc limit 0,8; [ RunTime:0.027856s ]
+[ sql ] [ SQL ] select * from inquiry_book where inquiry_state = 0 order by inquiry_time desc limit 0,8; [ RunTime:0.015636s ]
+[ sql ] [ SQL ] select * from notice order by notice_time desc [ RunTime:0.014908s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `shoporder` [ RunTime:0.011160s ]
+[ sql ] [ SQL ] SELECT book_id,sum(order_sum) as a FROM `shoporder` WHERE  (  create_time<1546790399 and create_time>1546185600 ) GROUP BY `book_id` ORDER BY `a` DESC LIMIT 0,5 [ RunTime:0.001648s ]
+[ sql ] [ SQL ] SELECT book_id,sum(order_sum) as a FROM `shoporder` WHERE  (  create_time<1546271999 and create_time>1543593600 ) GROUP BY `book_id` ORDER BY `a` DESC LIMIT 0,5 [ RunTime:0.001306s ]
+[ sql ] [ SQL ] SELECT book_id,sum(order_sum) as a FROM `shoporder` WHERE  (  create_time<1546358399 and create_time>1514736000 ) GROUP BY `book_id` ORDER BY `a` DESC LIMIT 0,5 [ RunTime:0.001092s ]
+---------------------------------------------------------------
+[ 2018-12-30T16:51:55+08:00 ] 0.0.0.0 POST taoshu2/index/login/login
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004592s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.008918s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  (  user_name='201541402313' and user_pwd='59b618b9fbe7f75cd16b45eb28e971b3' ) LIMIT 1 [ RunTime:0.001512s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  (  user_name='201541402313' ) LIMIT 1 [ RunTime:0.000963s ]
+[ error ] [8]未定义数组索引: error_state
+---------------------------------------------------------------
+[ 2018-12-30T16:53:22+08:00 ] 0.0.0.0 POST taoshu2/index/login/login
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004102s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.008829s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  (  user_name='201541402313' and user_pwd='59b618b9fbe7f75cd16b45eb28e971b3' ) LIMIT 1 [ RunTime:0.001683s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  (  user_name='201541402313' ) LIMIT 1 [ RunTime:0.001570s ]
+[ error ] [8]未定义数组索引: error_state
+---------------------------------------------------------------
+[ 2018-12-30T16:54:06+08:00 ] 0.0.0.0 POST taoshu2/index/login/login
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005348s ] mysql:host=127.0.0.1;dbname=taoshu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.011687s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  (  user_name='201541402313' and user_pwd='59b618b9fbe7f75cd16b45eb28e971b3' ) LIMIT 1 [ RunTime:0.002659s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  (  user_name='201541402313' ) LIMIT 1 [ RunTime:0.002165s ]
+[ error ] [8]未定义数组索引: login_error
+---------------------------------------------------------------
+[ 2018-12-30T16:54:18+08:00 ] 0.0.0.0 POST taoshu2/index/login/login
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004352s ] mysql:host=127.0.0.1;dbname=taoshu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.002506s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  (  user_name='201541402313' and user_pwd='59b618b9fbe7f75cd16b45eb28e971b3' ) LIMIT 1 [ RunTime:0.001404s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  (  user_name='201541402313' ) LIMIT 1 [ RunTime:0.001151s ]
+[ error ] [8]未定义数组索引: login_error
+---------------------------------------------------------------
+[ 2018-12-30T16:57:09+08:00 ] 0.0.0.0 POST taoshu2/index/login/login
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004401s ] mysql:host=127.0.0.1;dbname=taoshu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.008994s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  (  user_name='12345' and user_pwd='200820e3227815ed1756a6b531e7e0d2' ) LIMIT 1 [ RunTime:0.002199s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  (  user_name='12345' ) LIMIT 1 [ RunTime:0.001198s ]
+[ sql ] [ SQL ] UPDATE `user`  SET `user_id`=27,`user_name`='12345',`user_pwd`='200820e3227815ed1756a6b531e7e0d2',`user_sex`='女',`nickname`='asd',`user_realname`='asd',`user_content`='',`user_tel`='13414920843',`user_addr`='asd',`user_img`='img/2018_04_12_13_07_25.jpg',`grade`=2014,`class_id`=11,`login_times`=1,`login_error`=0,`login_error_time`=0,`error_state`=0,`Sensitivewords`=0  WHERE  (  user_id=27 ) [ RunTime:0.386051s ]
+---------------------------------------------------------------
+[ 2018-12-30T16:57:13+08:00 ] 0.0.0.0 GET taoshu2/index/index/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005389s ] mysql:host=127.0.0.1;dbname=taoshu;charset=utf8
+[ sql ] [ SQL ] select * from book_type limit 0,8; [ RunTime:0.001144s ]
+[ sql ] [ SQL ] select * from type_second where type_id=1 limit 0,5; [ RunTime:0.001096s ]
+[ sql ] [ SQL ] select * from type_second where type_id=2 limit 0,5; [ RunTime:0.001002s ]
+[ sql ] [ SQL ] select * from type_second where type_id=3 limit 0,6; [ RunTime:0.000795s ]
+[ sql ] [ SQL ] select * from type_second where type_id=4 limit 0,8; [ RunTime:0.001583s ]
+[ sql ] [ SQL ] select * from type_second where type_id=5 limit 0,6; [ RunTime:0.001985s ]
+[ sql ] [ SQL ] select * from type_second where type_id=6 limit 0,8; [ RunTime:0.001512s ]
+[ sql ] [ SQL ] select * from type_second where type_id=7 limit 0,5; [ RunTime:0.001658s ]
+[ sql ] [ SQL ] select * from type_second where type_id=1; [ RunTime:0.001393s ]
+[ sql ] [ SQL ] select * from type_second where type_id=2; [ RunTime:0.001061s ]
+[ sql ] [ SQL ] select * from type_second where type_id=3; [ RunTime:0.001022s ]
+[ sql ] [ SQL ] select * from type_second where type_id=4; [ RunTime:0.001033s ]
+[ sql ] [ SQL ] select * from type_second where type_id=5; [ RunTime:0.001040s ]
+[ sql ] [ SQL ] select * from type_second where type_id=6; [ RunTime:0.001481s ]
+[ sql ] [ SQL ] select * from type_second where type_id=7; [ RunTime:0.001207s ]
+[ sql ] [ SQL ] select * from sale_book where sale_num!= 0 order by sale_time desc limit 0,8; [ RunTime:0.076185s ]
+[ sql ] [ SQL ] select * from inquiry_book where inquiry_state = 0 order by inquiry_time desc limit 0,8; [ RunTime:0.085883s ]
+[ sql ] [ SQL ] select * from notice order by notice_time desc [ RunTime:0.001459s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `shoporder` [ RunTime:0.002494s ]
+[ sql ] [ SQL ] SELECT book_id,sum(order_sum) as a FROM `shoporder` WHERE  (  create_time<1546790399 and create_time>1546185600 ) GROUP BY `book_id` ORDER BY `a` DESC LIMIT 0,5 [ RunTime:0.002085s ]
+[ sql ] [ SQL ] SELECT book_id,sum(order_sum) as a FROM `shoporder` WHERE  (  create_time<1546271999 and create_time>1543593600 ) GROUP BY `book_id` ORDER BY `a` DESC LIMIT 0,5 [ RunTime:0.002808s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sale_book` [ RunTime:0.002757s ]
+[ sql ] [ SQL ] SELECT * FROM `sale_book` WHERE  (  sale_id=3 ) LIMIT 1 [ RunTime:0.001210s ]
+[ sql ] [ SQL ] SELECT * FROM `sale_book` WHERE  (  sale_id=1 ) LIMIT 1 [ RunTime:0.001221s ]
+[ sql ] [ SQL ] SELECT * FROM `sale_book` WHERE  (  sale_id=2 ) LIMIT 1 [ RunTime:0.001538s ]
+[ sql ] [ SQL ] SELECT * FROM `sale_book` WHERE  (  sale_id=4 ) LIMIT 1 [ RunTime:0.001329s ]
+[ sql ] [ SQL ] SELECT * FROM `sale_book` WHERE  (  sale_id=30 ) LIMIT 1 [ RunTime:0.001132s ]
+[ sql ] [ SQL ] SELECT book_id,sum(order_sum) as a FROM `shoporder` WHERE  (  create_time<1546358399 and create_time>1514736000 ) GROUP BY `book_id` ORDER BY `a` DESC LIMIT 0,5 [ RunTime:0.002273s ]
+[ sql ] [ SQL ] SELECT * FROM `sale_book` WHERE  (  sale_id=3 ) LIMIT 1 [ RunTime:0.001344s ]
+[ sql ] [ SQL ] SELECT * FROM `sale_book` WHERE  (  sale_id=1 ) LIMIT 1 [ RunTime:0.001215s ]
+[ sql ] [ SQL ] SELECT * FROM `sale_book` WHERE  (  sale_id=2 ) LIMIT 1 [ RunTime:0.001192s ]
+[ sql ] [ SQL ] SELECT * FROM `sale_book` WHERE  (  sale_id=4 ) LIMIT 1 [ RunTime:0.001242s ]
+[ sql ] [ SQL ] SELECT * FROM `sale_book` WHERE  (  sale_id=30 ) LIMIT 1 [ RunTime:0.001414s ]
+---------------------------------------------------------------
+[ 2018-12-30T16:58:57+08:00 ] 0.0.0.0 GET taoshu2/index/index/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005640s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] select * from book_type limit 0,8; [ RunTime:0.001160s ]
+[ sql ] [ SQL ] select * from type_second where type_id=1 limit 0,5; [ RunTime:0.001617s ]
+[ sql ] [ SQL ] select * from type_second where type_id=2 limit 0,5; [ RunTime:0.001374s ]
+[ sql ] [ SQL ] select * from type_second where type_id=3 limit 0,6; [ RunTime:0.000813s ]
+[ sql ] [ SQL ] select * from type_second where type_id=4 limit 0,8; [ RunTime:0.000715s ]
+[ sql ] [ SQL ] select * from type_second where type_id=5 limit 0,6; [ RunTime:0.000757s ]
+[ sql ] [ SQL ] select * from type_second where type_id=6 limit 0,8; [ RunTime:0.000767s ]
+[ sql ] [ SQL ] select * from type_second where type_id=7 limit 0,5; [ RunTime:0.000818s ]
+[ sql ] [ SQL ] select * from type_second where type_id=1; [ RunTime:0.001209s ]
+[ sql ] [ SQL ] select * from type_second where type_id=2; [ RunTime:0.001098s ]
+[ sql ] [ SQL ] select * from type_second where type_id=3; [ RunTime:0.001020s ]
+[ sql ] [ SQL ] select * from type_second where type_id=4; [ RunTime:0.000856s ]
+[ sql ] [ SQL ] select * from type_second where type_id=5; [ RunTime:0.000802s ]
+[ sql ] [ SQL ] select * from type_second where type_id=6; [ RunTime:0.000824s ]
+[ sql ] [ SQL ] select * from type_second where type_id=7; [ RunTime:0.001485s ]
+[ sql ] [ SQL ] select * from sale_book where sale_num!= 0 order by sale_time desc limit 0,8; [ RunTime:0.008659s ]
+[ sql ] [ SQL ] select * from inquiry_book where inquiry_state = 0 order by inquiry_time desc limit 0,8; [ RunTime:0.008388s ]
+[ sql ] [ SQL ] select * from notice order by notice_time desc [ RunTime:0.001430s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `shoporder` [ RunTime:0.009138s ]
+[ sql ] [ SQL ] SELECT book_id,sum(order_sum) as a FROM `shoporder` WHERE  (  create_time<1546790399 and create_time>1546185600 ) GROUP BY `book_id` ORDER BY `a` DESC LIMIT 0,5 [ RunTime:0.001273s ]
+[ sql ] [ SQL ] SELECT book_id,sum(order_sum) as a FROM `shoporder` WHERE  (  create_time<1546271999 and create_time>1543593600 ) GROUP BY `book_id` ORDER BY `a` DESC LIMIT 0,5 [ RunTime:0.002190s ]
+[ sql ] [ SQL ] SELECT book_id,sum(order_sum) as a FROM `shoporder` WHERE  (  create_time<1546358399 and create_time>1514736000 ) GROUP BY `book_id` ORDER BY `a` DESC LIMIT 0,5 [ RunTime:0.001608s ]
+---------------------------------------------------------------
+[ 2018-12-30T16:59:22+08:00 ] 0.0.0.0 POST taoshu2/index/login/login
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004366s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.003890s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  (  user_name='201541402313' and user_pwd='59b618b9fbe7f75cd16b45eb28e971b3' ) LIMIT 1 [ RunTime:0.001349s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  (  user_name='201541402313' ) LIMIT 1 [ RunTime:0.001160s ]
+[ error ] [8]未定义数组索引: error_state
+---------------------------------------------------------------
+[ 2018-12-30T16:59:57+08:00 ] 0.0.0.0 GET taoshu2/index/login/login
+[ error ] [8]未定义数组索引: username
+---------------------------------------------------------------
+[ 2018-12-30T17:04:57+08:00 ] 0.0.0.0 GET taoshu2/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007476s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] select * from book_type limit 0,8; [ RunTime:0.001382s ]
+[ sql ] [ SQL ] select * from type_second where type_id=1 limit 0,5; [ RunTime:0.002386s ]
+[ sql ] [ SQL ] select * from type_second where type_id=2 limit 0,5; [ RunTime:0.001702s ]
+[ sql ] [ SQL ] select * from type_second where type_id=3 limit 0,6; [ RunTime:0.001392s ]
+[ sql ] [ SQL ] select * from type_second where type_id=4 limit 0,8; [ RunTime:0.001530s ]
+[ sql ] [ SQL ] select * from type_second where type_id=5 limit 0,6; [ RunTime:0.001112s ]
+[ sql ] [ SQL ] select * from type_second where type_id=6 limit 0,8; [ RunTime:0.000954s ]
+[ sql ] [ SQL ] select * from type_second where type_id=7 limit 0,5; [ RunTime:0.000879s ]
+[ sql ] [ SQL ] select * from type_second where type_id=1; [ RunTime:0.001044s ]
+[ sql ] [ SQL ] select * from type_second where type_id=2; [ RunTime:0.001647s ]
+[ sql ] [ SQL ] select * from type_second where type_id=3; [ RunTime:0.001839s ]
+[ sql ] [ SQL ] select * from type_second where type_id=4; [ RunTime:0.002742s ]
+[ sql ] [ SQL ] select * from type_second where type_id=5; [ RunTime:0.002593s ]
+[ sql ] [ SQL ] select * from type_second where type_id=6; [ RunTime:0.001680s ]
+[ sql ] [ SQL ] select * from type_second where type_id=7; [ RunTime:0.001031s ]
+[ sql ] [ SQL ] select * from sale_book where sale_num!= 0 order by sale_time desc limit 0,8; [ RunTime:0.002078s ]
+[ sql ] [ SQL ] select * from inquiry_book where inquiry_state = 0 order by inquiry_time desc limit 0,8; [ RunTime:0.001698s ]
+[ sql ] [ SQL ] select * from notice order by notice_time desc [ RunTime:0.001537s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `shoporder` [ RunTime:0.003399s ]
+[ sql ] [ SQL ] SELECT book_id,sum(order_sum) as a FROM `shoporder` WHERE  (  create_time<1546790399 and create_time>1546185600 ) GROUP BY `book_id` ORDER BY `a` DESC LIMIT 0,5 [ RunTime:0.003477s ]
+[ sql ] [ SQL ] SELECT book_id,sum(order_sum) as a FROM `shoporder` WHERE  (  create_time<1546271999 and create_time>1543593600 ) GROUP BY `book_id` ORDER BY `a` DESC LIMIT 0,5 [ RunTime:0.001938s ]
+[ sql ] [ SQL ] SELECT book_id,sum(order_sum) as a FROM `shoporder` WHERE  (  create_time<1546358399 and create_time>1514736000 ) GROUP BY `book_id` ORDER BY `a` DESC LIMIT 0,5 [ RunTime:0.001807s ]
+---------------------------------------------------------------
+[ 2018-12-30T17:06:04+08:00 ] 0.0.0.0 POST taoshu2/index/login/login
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004741s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.009062s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  (  user_name='12345' and user_pwd='200820e3227815ed1756a6b531e7e0d2' ) LIMIT 1 [ RunTime:0.001409s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  (  user_name='12345' ) LIMIT 1 [ RunTime:0.001236s ]
+[ sql ] [ SQL ] UPDATE `user`  SET `user_id`=27,`user_name`='12345',`user_pwd`='200820e3227815ed1756a6b531e7e0d2',`user_sex`='女',`nickname`='asd',`user_realname`='asd',`user_content`='',`user_tel`='13414920843',`user_addr`='asd',`user_img`='img/2018_04_12_13_07_25.jpg',`grade`=2014,`class_id`=11,`login_times`=1,`login_error`=0,`login_error_time`=0,`error_state`=0,`Sensitivewords`=0  WHERE  (  user_id=27 ) [ RunTime:0.409385s ]
+---------------------------------------------------------------
+[ 2018-12-30T17:06:06+08:00 ] 0.0.0.0 GET taoshu2/index/index/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005047s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] select * from book_type limit 0,8; [ RunTime:0.001490s ]
+[ sql ] [ SQL ] select * from type_second where type_id=1 limit 0,5; [ RunTime:0.000958s ]
+[ sql ] [ SQL ] select * from type_second where type_id=2 limit 0,5; [ RunTime:0.000766s ]
+[ sql ] [ SQL ] select * from type_second where type_id=3 limit 0,6; [ RunTime:0.000738s ]
+[ sql ] [ SQL ] select * from type_second where type_id=4 limit 0,8; [ RunTime:0.000769s ]
+[ sql ] [ SQL ] select * from type_second where type_id=5 limit 0,6; [ RunTime:0.000722s ]
+[ sql ] [ SQL ] select * from type_second where type_id=6 limit 0,8; [ RunTime:0.000728s ]
+[ sql ] [ SQL ] select * from type_second where type_id=7 limit 0,5; [ RunTime:0.001164s ]
+[ sql ] [ SQL ] select * from type_second where type_id=1; [ RunTime:0.001601s ]
+[ sql ] [ SQL ] select * from type_second where type_id=2; [ RunTime:0.000926s ]
+[ sql ] [ SQL ] select * from type_second where type_id=3; [ RunTime:0.000838s ]
+[ sql ] [ SQL ] select * from type_second where type_id=4; [ RunTime:0.000850s ]
+[ sql ] [ SQL ] select * from type_second where type_id=5; [ RunTime:0.000784s ]
+[ sql ] [ SQL ] select * from type_second where type_id=6; [ RunTime:0.000835s ]
+[ sql ] [ SQL ] select * from type_second where type_id=7; [ RunTime:0.000927s ]
+[ sql ] [ SQL ] select * from sale_book where sale_num!= 0 order by sale_time desc limit 0,8; [ RunTime:0.009131s ]
+[ sql ] [ SQL ] select * from inquiry_book where inquiry_state = 0 order by inquiry_time desc limit 0,8; [ RunTime:0.008052s ]
+[ sql ] [ SQL ] select * from notice order by notice_time desc [ RunTime:0.000735s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `shoporder` [ RunTime:0.008603s ]
+[ sql ] [ SQL ] SELECT book_id,sum(order_sum) as a FROM `shoporder` WHERE  (  create_time<1546790399 and create_time>1546185600 ) GROUP BY `book_id` ORDER BY `a` DESC LIMIT 0,5 [ RunTime:0.001586s ]
+[ sql ] [ SQL ] SELECT book_id,sum(order_sum) as a FROM `shoporder` WHERE  (  create_time<1546271999 and create_time>1543593600 ) GROUP BY `book_id` ORDER BY `a` DESC LIMIT 0,5 [ RunTime:0.001520s ]
+[ sql ] [ SQL ] SELECT book_id,sum(order_sum) as a FROM `shoporder` WHERE  (  create_time<1546358399 and create_time>1514736000 ) GROUP BY `book_id` ORDER BY `a` DESC LIMIT 0,5 [ RunTime:0.001137s ]
+---------------------------------------------------------------
+[ 2018-12-30T17:07:48+08:00 ] 0.0.0.0 GET taoshu2/index/index/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004268s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] select * from book_type limit 0,8; [ RunTime:0.010765s ]
+[ sql ] [ SQL ] select * from type_second where type_id=1 limit 0,5; [ RunTime:0.001417s ]
+[ sql ] [ SQL ] select * from type_second where type_id=2 limit 0,5; [ RunTime:0.001413s ]
+[ sql ] [ SQL ] select * from type_second where type_id=3 limit 0,6; [ RunTime:0.001658s ]
+[ sql ] [ SQL ] select * from type_second where type_id=4 limit 0,8; [ RunTime:0.002440s ]
+[ sql ] [ SQL ] select * from type_second where type_id=5 limit 0,6; [ RunTime:0.001757s ]
+[ sql ] [ SQL ] select * from type_second where type_id=6 limit 0,8; [ RunTime:0.001791s ]
+[ sql ] [ SQL ] select * from type_second where type_id=7 limit 0,5; [ RunTime:0.001575s ]
+[ sql ] [ SQL ] select * from type_second where type_id=1; [ RunTime:0.001733s ]
+[ sql ] [ SQL ] select * from type_second where type_id=2; [ RunTime:0.001564s ]
+[ sql ] [ SQL ] select * from type_second where type_id=3; [ RunTime:0.001571s ]
+[ sql ] [ SQL ] select * from type_second where type_id=4; [ RunTime:0.001803s ]
+[ sql ] [ SQL ] select * from type_second where type_id=5; [ RunTime:0.001801s ]
+[ sql ] [ SQL ] select * from type_second where type_id=6; [ RunTime:0.001899s ]
+[ sql ] [ SQL ] select * from type_second where type_id=7; [ RunTime:0.001464s ]
+[ sql ] [ SQL ] select * from sale_book where sale_num!= 0 order by sale_time desc limit 0,8; [ RunTime:0.017474s ]
+[ sql ] [ SQL ] select * from inquiry_book where inquiry_state = 0 order by inquiry_time desc limit 0,8; [ RunTime:0.011708s ]
+[ sql ] [ SQL ] select * from notice order by notice_time desc [ RunTime:0.010041s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `shoporder` [ RunTime:0.012336s ]
+[ sql ] [ SQL ] SELECT book_id,sum(order_sum) as a FROM `shoporder` WHERE  (  create_time<1546790399 and create_time>1546185600 ) GROUP BY `book_id` ORDER BY `a` DESC LIMIT 0,5 [ RunTime:0.001913s ]
+[ sql ] [ SQL ] SELECT book_id,sum(order_sum) as a FROM `shoporder` WHERE  (  create_time<1546271999 and create_time>1543593600 ) GROUP BY `book_id` ORDER BY `a` DESC LIMIT 0,5 [ RunTime:0.002597s ]
+[ sql ] [ SQL ] SELECT book_id,sum(order_sum) as a FROM `shoporder` WHERE  (  create_time<1546358399 and create_time>1514736000 ) GROUP BY `book_id` ORDER BY `a` DESC LIMIT 0,5 [ RunTime:0.001835s ]
+---------------------------------------------------------------
+[ 2018-12-30T17:08:18+08:00 ] 0.0.0.0 GET taoshu2/index/index/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004603s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] select * from book_type limit 0,8; [ RunTime:0.001031s ]
+[ sql ] [ SQL ] select * from type_second where type_id=1 limit 0,5; [ RunTime:0.000862s ]
+[ sql ] [ SQL ] select * from type_second where type_id=2 limit 0,5; [ RunTime:0.000867s ]
+[ sql ] [ SQL ] select * from type_second where type_id=3 limit 0,6; [ RunTime:0.000916s ]
+[ sql ] [ SQL ] select * from type_second where type_id=4 limit 0,8; [ RunTime:0.000804s ]
+[ sql ] [ SQL ] select * from type_second where type_id=5 limit 0,6; [ RunTime:0.000794s ]
+[ sql ] [ SQL ] select * from type_second where type_id=6 limit 0,8; [ RunTime:0.000762s ]
+[ sql ] [ SQL ] select * from type_second where type_id=7 limit 0,5; [ RunTime:0.000713s ]
+[ sql ] [ SQL ] select * from type_second where type_id=1; [ RunTime:0.000775s ]
+[ sql ] [ SQL ] select * from type_second where type_id=2; [ RunTime:0.000897s ]
+[ sql ] [ SQL ] select * from type_second where type_id=3; [ RunTime:0.002209s ]
+[ sql ] [ SQL ] select * from type_second where type_id=4; [ RunTime:0.002008s ]
+[ sql ] [ SQL ] select * from type_second where type_id=5; [ RunTime:0.001501s ]
+[ sql ] [ SQL ] select * from type_second where type_id=6; [ RunTime:0.001222s ]
+[ sql ] [ SQL ] select * from type_second where type_id=7; [ RunTime:0.000896s ]
+[ sql ] [ SQL ] select * from sale_book where sale_num!= 0 order by sale_time desc limit 0,8; [ RunTime:0.010739s ]
+[ sql ] [ SQL ] select * from inquiry_book where inquiry_state = 0 order by inquiry_time desc limit 0,8; [ RunTime:0.007900s ]
+[ sql ] [ SQL ] select * from notice order by notice_time desc [ RunTime:0.000743s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `shoporder` [ RunTime:0.009040s ]
+[ sql ] [ SQL ] SELECT book_id,sum(order_sum) as a FROM `shoporder` WHERE  (  create_time<1546790399 and create_time>1546185600 ) GROUP BY `book_id` ORDER BY `a` DESC LIMIT 0,5 [ RunTime:0.002265s ]
+[ sql ] [ SQL ] SELECT book_id,sum(order_sum) as a FROM `shoporder` WHERE  (  create_time<1546271999 and create_time>1543593600 ) GROUP BY `book_id` ORDER BY `a` DESC LIMIT 0,5 [ RunTime:0.001299s ]
+[ sql ] [ SQL ] SELECT book_id,sum(order_sum) as a FROM `shoporder` WHERE  (  create_time<1546358399 and create_time>1514736000 ) GROUP BY `book_id` ORDER BY `a` DESC LIMIT 0,5 [ RunTime:0.001399s ]
+---------------------------------------------------------------
+[ 2018-12-30T17:08:39+08:00 ] 0.0.0.0 GET taoshu2/index/personalcenter/edit
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004221s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.009989s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  (  user_id=27 ) LIMIT 1 [ RunTime:0.001354s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `class` [ RunTime:0.002360s ]
+[ sql ] [ SQL ] SELECT * FROM `class` [ RunTime:0.001826s ]
+---------------------------------------------------------------
+[ 2018-12-30T17:11:34+08:00 ] 0.0.0.0 GET taoshu2/index/personalcenter/edit?
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004626s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.002078s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  (  user_id=27 ) LIMIT 1 [ RunTime:0.001499s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `class` [ RunTime:0.002926s ]
+[ sql ] [ SQL ] SELECT * FROM `class` [ RunTime:0.001468s ]
+---------------------------------------------------------------
+[ 2018-12-30T17:11:37+08:00 ] 0.0.0.0 GET taoshu2/index/personalcenter/edit?
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013292s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.002826s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  (  user_id=27 ) LIMIT 1 [ RunTime:0.001937s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `class` [ RunTime:0.010156s ]
+[ sql ] [ SQL ] SELECT * FROM `class` [ RunTime:0.001191s ]
+---------------------------------------------------------------
+[ 2018-12-30T17:11:42+08:00 ] 0.0.0.0 POST taoshu2/index/personalcenter/update
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004278s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.002880s ]
+[ sql ] [ SQL ] UPDATE `user`  SET `user_sex`='女',`nickname`='asd',`user_realname`='asd',`grade`=2014,`class_id`=11,`user_addr`='asd',`user_tel`='13414920843',`user_content`=''  WHERE  (  user_id=27 ) [ RunTime:0.060804s ]
+---------------------------------------------------------------
+[ 2018-12-30T17:11:43+08:00 ] 0.0.0.0 GET taoshu2/index/personalcenter/edit
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006625s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.003565s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  (  user_id=27 ) LIMIT 1 [ RunTime:0.002118s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `class` [ RunTime:0.012567s ]
+[ sql ] [ SQL ] SELECT * FROM `class` [ RunTime:0.002072s ]
+---------------------------------------------------------------
+[ 2018-12-30T17:11:48+08:00 ] 0.0.0.0 POST taoshu2/index/personalcenter/update
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003266s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.002644s ]
+[ sql ] [ SQL ] UPDATE `user`  SET `user_sex`='女',`nickname`='asd',`user_realname`='asd',`grade`=2014,`class_id`=11,`user_addr`='asd',`user_tel`='13414920843',`user_content`='的非官方个'  WHERE  (  user_id=27 ) [ RunTime:0.125611s ]
+---------------------------------------------------------------
+[ 2018-12-30T17:11:50+08:00 ] 0.0.0.0 GET taoshu2/index/personalcenter/edit
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004148s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.002315s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  (  user_id=27 ) LIMIT 1 [ RunTime:0.017596s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `class` [ RunTime:0.001800s ]
+[ sql ] [ SQL ] SELECT * FROM `class` [ RunTime:0.027038s ]
+---------------------------------------------------------------
+[ 2018-12-30T17:11:57+08:00 ] 0.0.0.0 GET taoshu2/index/index/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004365s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] select * from book_type limit 0,8; [ RunTime:0.014037s ]
+[ sql ] [ SQL ] select * from type_second where type_id=1 limit 0,5; [ RunTime:0.013343s ]
+[ sql ] [ SQL ] select * from type_second where type_id=2 limit 0,5; [ RunTime:0.001270s ]
+[ sql ] [ SQL ] select * from type_second where type_id=3 limit 0,6; [ RunTime:0.000959s ]
+[ sql ] [ SQL ] select * from type_second where type_id=4 limit 0,8; [ RunTime:0.001199s ]
+[ sql ] [ SQL ] select * from type_second where type_id=5 limit 0,6; [ RunTime:0.000992s ]
+[ sql ] [ SQL ] select * from type_second where type_id=6 limit 0,8; [ RunTime:0.000795s ]
+[ sql ] [ SQL ] select * from type_second where type_id=7 limit 0,5; [ RunTime:0.000774s ]
+[ sql ] [ SQL ] select * from type_second where type_id=1; [ RunTime:0.000838s ]
+[ sql ] [ SQL ] select * from type_second where type_id=2; [ RunTime:0.000803s ]
+[ sql ] [ SQL ] select * from type_second where type_id=3; [ RunTime:0.000812s ]
+[ sql ] [ SQL ] select * from type_second where type_id=4; [ RunTime:0.000788s ]
+[ sql ] [ SQL ] select * from type_second where type_id=5; [ RunTime:0.000803s ]
+[ sql ] [ SQL ] select * from type_second where type_id=6; [ RunTime:0.000832s ]
+[ sql ] [ SQL ] select * from type_second where type_id=7; [ RunTime:0.001238s ]
+[ sql ] [ SQL ] select * from sale_book where sale_num!= 0 order by sale_time desc limit 0,8; [ RunTime:0.002083s ]
+[ sql ] [ SQL ] select * from inquiry_book where inquiry_state = 0 order by inquiry_time desc limit 0,8; [ RunTime:0.001137s ]
+[ sql ] [ SQL ] select * from notice order by notice_time desc [ RunTime:0.000671s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `shoporder` [ RunTime:0.003049s ]
+[ sql ] [ SQL ] SELECT book_id,sum(order_sum) as a FROM `shoporder` WHERE  (  create_time<1546790399 and create_time>1546185600 ) GROUP BY `book_id` ORDER BY `a` DESC LIMIT 0,5 [ RunTime:0.016303s ]
+[ sql ] [ SQL ] SELECT book_id,sum(order_sum) as a FROM `shoporder` WHERE  (  create_time<1546271999 and create_time>1543593600 ) GROUP BY `book_id` ORDER BY `a` DESC LIMIT 0,5 [ RunTime:0.001100s ]
+[ sql ] [ SQL ] SELECT book_id,sum(order_sum) as a FROM `shoporder` WHERE  (  create_time<1546358399 and create_time>1514736000 ) GROUP BY `book_id` ORDER BY `a` DESC LIMIT 0,5 [ RunTime:0.001002s ]
+---------------------------------------------------------------
+[ 2018-12-30T17:12:03+08:00 ] 0.0.0.0 GET taoshu2/index/index/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004503s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] select * from book_type limit 0,8; [ RunTime:0.001433s ]
+[ sql ] [ SQL ] select * from type_second where type_id=1 limit 0,5; [ RunTime:0.001661s ]
+[ sql ] [ SQL ] select * from type_second where type_id=2 limit 0,5; [ RunTime:0.001152s ]
+[ sql ] [ SQL ] select * from type_second where type_id=3 limit 0,6; [ RunTime:0.002082s ]
+[ sql ] [ SQL ] select * from type_second where type_id=4 limit 0,8; [ RunTime:0.001388s ]
+[ sql ] [ SQL ] select * from type_second where type_id=5 limit 0,6; [ RunTime:0.001266s ]
+[ sql ] [ SQL ] select * from type_second where type_id=6 limit 0,8; [ RunTime:0.001245s ]
+[ sql ] [ SQL ] select * from type_second where type_id=7 limit 0,5; [ RunTime:0.000985s ]
+[ sql ] [ SQL ] select * from type_second where type_id=1; [ RunTime:0.000971s ]
+[ sql ] [ SQL ] select * from type_second where type_id=2; [ RunTime:0.000988s ]
+[ sql ] [ SQL ] select * from type_second where type_id=3; [ RunTime:0.000950s ]
+[ sql ] [ SQL ] select * from type_second where type_id=4; [ RunTime:0.001362s ]
+[ sql ] [ SQL ] select * from type_second where type_id=5; [ RunTime:0.001135s ]
+[ sql ] [ SQL ] select * from type_second where type_id=6; [ RunTime:0.001580s ]
+[ sql ] [ SQL ] select * from type_second where type_id=7; [ RunTime:0.001404s ]
+[ sql ] [ SQL ] select * from sale_book where sale_num!= 0 order by sale_time desc limit 0,8; [ RunTime:0.009610s ]
+[ sql ] [ SQL ] select * from inquiry_book where inquiry_state = 0 order by inquiry_time desc limit 0,8; [ RunTime:0.008853s ]
+[ sql ] [ SQL ] select * from notice order by notice_time desc [ RunTime:0.000961s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `shoporder` [ RunTime:0.009279s ]
+[ sql ] [ SQL ] SELECT book_id,sum(order_sum) as a FROM `shoporder` WHERE  (  create_time<1546790399 and create_time>1546185600 ) GROUP BY `book_id` ORDER BY `a` DESC LIMIT 0,5 [ RunTime:0.001440s ]
+[ sql ] [ SQL ] SELECT book_id,sum(order_sum) as a FROM `shoporder` WHERE  (  create_time<1546271999 and create_time>1543593600 ) GROUP BY `book_id` ORDER BY `a` DESC LIMIT 0,5 [ RunTime:0.001497s ]
+[ sql ] [ SQL ] SELECT book_id,sum(order_sum) as a FROM `shoporder` WHERE  (  create_time<1546358399 and create_time>1514736000 ) GROUP BY `book_id` ORDER BY `a` DESC LIMIT 0,5 [ RunTime:0.001346s ]
+---------------------------------------------------------------
+[ 2018-12-30T17:12:26+08:00 ] 0.0.0.0 POST taoshu2/index/login/login
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004277s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.009824s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  (  user_name='201541402301' and user_pwd='59b618b9fbe7f75cd16b45eb28e971b3' ) LIMIT 1 [ RunTime:0.001414s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  (  user_name='201541402301' ) LIMIT 1 [ RunTime:0.001263s ]
+[ sql ] [ SQL ] UPDATE `user`  SET `user_id`=41,`user_name`='201541402301',`user_pwd`='59b618b9fbe7f75cd16b45eb28e971b3',`user_sex`='男',`nickname`=NULL,`user_realname`='邹玉堂',`user_content`='阿尔而分',`user_tel`='13537142683',`user_addr`='东莞理工',`user_img`='/uploads/user/20181230\\4a90b74e552b2dd8a752658d032c005b.jpg',`grade`=2015,`class_id`=19,`login_times`=0,`login_error`=0,`login_error_time`=0,`error_state`=0,`Sensitivewords`=0  WHERE  (  user_id=41 ) [ RunTime:0.366470s ]
+---------------------------------------------------------------
+[ 2018-12-30T17:12:29+08:00 ] 0.0.0.0 GET taoshu2/index/index/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005397s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] select * from book_type limit 0,8; [ RunTime:0.001180s ]
+[ sql ] [ SQL ] select * from type_second where type_id=1 limit 0,5; [ RunTime:0.000951s ]
+[ sql ] [ SQL ] select * from type_second where type_id=2 limit 0,5; [ RunTime:0.000817s ]
+[ sql ] [ SQL ] select * from type_second where type_id=3 limit 0,6; [ RunTime:0.000901s ]
+[ sql ] [ SQL ] select * from type_second where type_id=4 limit 0,8; [ RunTime:0.000964s ]
+[ sql ] [ SQL ] select * from type_second where type_id=5 limit 0,6; [ RunTime:0.001396s ]
+[ sql ] [ SQL ] select * from type_second where type_id=6 limit 0,8; [ RunTime:0.001056s ]
+[ sql ] [ SQL ] select * from type_second where type_id=7 limit 0,5; [ RunTime:0.000872s ]
+[ sql ] [ SQL ] select * from type_second where type_id=1; [ RunTime:0.001496s ]
+[ sql ] [ SQL ] select * from type_second where type_id=2; [ RunTime:0.001487s ]
+[ sql ] [ SQL ] select * from type_second where type_id=3; [ RunTime:0.001416s ]
+[ sql ] [ SQL ] select * from type_second where type_id=4; [ RunTime:0.001319s ]
+[ sql ] [ SQL ] select * from type_second where type_id=5; [ RunTime:0.001082s ]
+[ sql ] [ SQL ] select * from type_second where type_id=6; [ RunTime:0.000856s ]
+[ sql ] [ SQL ] select * from type_second where type_id=7; [ RunTime:0.000773s ]
+[ sql ] [ SQL ] select * from sale_book where sale_num!= 0 order by sale_time desc limit 0,8; [ RunTime:0.001731s ]
+[ sql ] [ SQL ] select * from inquiry_book where inquiry_state = 0 order by inquiry_time desc limit 0,8; [ RunTime:0.001144s ]
+[ sql ] [ SQL ] select * from notice order by notice_time desc [ RunTime:0.000661s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `shoporder` [ RunTime:0.002402s ]
+[ sql ] [ SQL ] SELECT book_id,sum(order_sum) as a FROM `shoporder` WHERE  (  create_time<1546790399 and create_time>1546185600 ) GROUP BY `book_id` ORDER BY `a` DESC LIMIT 0,5 [ RunTime:0.001205s ]
+[ sql ] [ SQL ] SELECT book_id,sum(order_sum) as a FROM `shoporder` WHERE  (  create_time<1546271999 and create_time>1543593600 ) GROUP BY `book_id` ORDER BY `a` DESC LIMIT 0,5 [ RunTime:0.001890s ]
+[ sql ] [ SQL ] SELECT book_id,sum(order_sum) as a FROM `shoporder` WHERE  (  create_time<1546358399 and create_time>1514736000 ) GROUP BY `book_id` ORDER BY `a` DESC LIMIT 0,5 [ RunTime:0.001483s ]
+---------------------------------------------------------------
+[ 2018-12-30T17:14:07+08:00 ] 0.0.0.0 GET taoshu2/index/personalcenter/edit
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004114s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.002964s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  (  user_id=41 ) LIMIT 1 [ RunTime:0.001796s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `class` [ RunTime:0.001948s ]
+[ sql ] [ SQL ] SELECT * FROM `class` [ RunTime:0.001588s ]
+---------------------------------------------------------------
+[ 2018-12-30T17:14:27+08:00 ] 0.0.0.0 POST taoshu2/index/personalcenter/uploadimg
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004919s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.002249s ]
+[ sql ] [ SQL ] UPDATE `user`  SET `user_img`='/uploads/20181230\\3d66aa88afcfcba84909ceb039f874d7.jpg'  WHERE  (  user_id=41 ) [ RunTime:0.078165s ]
+---------------------------------------------------------------
+[ 2018-12-30T17:14:29+08:00 ] 0.0.0.0 GET taoshu2/index/personalcenter/edit
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004122s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.002365s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  (  user_id=41 ) LIMIT 1 [ RunTime:0.001385s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `class` [ RunTime:0.001894s ]
+[ sql ] [ SQL ] SELECT * FROM `class` [ RunTime:0.000955s ]
+---------------------------------------------------------------
+[ 2018-12-30T17:14:31+08:00 ] 0.0.0.0 GET taoshu2/index/index/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004193s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] select * from book_type limit 0,8; [ RunTime:0.000995s ]
+[ sql ] [ SQL ] select * from type_second where type_id=1 limit 0,5; [ RunTime:0.000826s ]
+[ sql ] [ SQL ] select * from type_second where type_id=2 limit 0,5; [ RunTime:0.001129s ]
+[ sql ] [ SQL ] select * from type_second where type_id=3 limit 0,6; [ RunTime:0.001542s ]
+[ sql ] [ SQL ] select * from type_second where type_id=4 limit 0,8; [ RunTime:0.001654s ]
+[ sql ] [ SQL ] select * from type_second where type_id=5 limit 0,6; [ RunTime:0.000957s ]
+[ sql ] [ SQL ] select * from type_second where type_id=6 limit 0,8; [ RunTime:0.000833s ]
+[ sql ] [ SQL ] select * from type_second where type_id=7 limit 0,5; [ RunTime:0.000889s ]
+[ sql ] [ SQL ] select * from type_second where type_id=1; [ RunTime:0.000953s ]
+[ sql ] [ SQL ] select * from type_second where type_id=2; [ RunTime:0.000949s ]
+[ sql ] [ SQL ] select * from type_second where type_id=3; [ RunTime:0.000960s ]
+[ sql ] [ SQL ] select * from type_second where type_id=4; [ RunTime:0.001012s ]
+[ sql ] [ SQL ] select * from type_second where type_id=5; [ RunTime:0.000981s ]
+[ sql ] [ SQL ] select * from type_second where type_id=6; [ RunTime:0.001169s ]
+[ sql ] [ SQL ] select * from type_second where type_id=7; [ RunTime:0.001466s ]
+[ sql ] [ SQL ] select * from sale_book where sale_num!= 0 order by sale_time desc limit 0,8; [ RunTime:0.001768s ]
+[ sql ] [ SQL ] select * from inquiry_book where inquiry_state = 0 order by inquiry_time desc limit 0,8; [ RunTime:0.000980s ]
+[ sql ] [ SQL ] select * from notice order by notice_time desc [ RunTime:0.000668s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `shoporder` [ RunTime:0.002712s ]
+[ sql ] [ SQL ] SELECT book_id,sum(order_sum) as a FROM `shoporder` WHERE  (  create_time<1546790399 and create_time>1546185600 ) GROUP BY `book_id` ORDER BY `a` DESC LIMIT 0,5 [ RunTime:0.001246s ]
+[ sql ] [ SQL ] SELECT book_id,sum(order_sum) as a FROM `shoporder` WHERE  (  create_time<1546271999 and create_time>1543593600 ) GROUP BY `book_id` ORDER BY `a` DESC LIMIT 0,5 [ RunTime:0.001383s ]
+[ sql ] [ SQL ] SELECT book_id,sum(order_sum) as a FROM `shoporder` WHERE  (  create_time<1546358399 and create_time>1514736000 ) GROUP BY `book_id` ORDER BY `a` DESC LIMIT 0,5 [ RunTime:0.001551s ]
+---------------------------------------------------------------
+[ 2018-12-30T17:22:22+08:00 ] 0.0.0.0 GET taoshu2/index/personalcenter/edit
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004140s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.002297s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  (  user_id=41 ) LIMIT 1 [ RunTime:0.001385s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `class` [ RunTime:0.001762s ]
+[ sql ] [ SQL ] SELECT * FROM `class` [ RunTime:0.001240s ]
+---------------------------------------------------------------
+[ 2018-12-30T17:22:25+08:00 ] 0.0.0.0 GET taoshu2/index/index/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004121s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] select * from book_type limit 0,8; [ RunTime:0.001104s ]
+[ sql ] [ SQL ] select * from type_second where type_id=1 limit 0,5; [ RunTime:0.001322s ]
+[ sql ] [ SQL ] select * from type_second where type_id=2 limit 0,5; [ RunTime:0.001668s ]
+[ sql ] [ SQL ] select * from type_second where type_id=3 limit 0,6; [ RunTime:0.001197s ]
+[ sql ] [ SQL ] select * from type_second where type_id=4 limit 0,8; [ RunTime:0.001294s ]
+[ sql ] [ SQL ] select * from type_second where type_id=5 limit 0,6; [ RunTime:0.001206s ]
+[ sql ] [ SQL ] select * from type_second where type_id=6 limit 0,8; [ RunTime:0.000830s ]
+[ sql ] [ SQL ] select * from type_second where type_id=7 limit 0,5; [ RunTime:0.000762s ]
+[ sql ] [ SQL ] select * from type_second where type_id=1; [ RunTime:0.000803s ]
+[ sql ] [ SQL ] select * from type_second where type_id=2; [ RunTime:0.000789s ]
+[ sql ] [ SQL ] select * from type_second where type_id=3; [ RunTime:0.000799s ]
+[ sql ] [ SQL ] select * from type_second where type_id=4; [ RunTime:0.000794s ]
+[ sql ] [ SQL ] select * from type_second where type_id=5; [ RunTime:0.000820s ]
+[ sql ] [ SQL ] select * from type_second where type_id=6; [ RunTime:0.001138s ]
+[ sql ] [ SQL ] select * from type_second where type_id=7; [ RunTime:0.001495s ]
+[ sql ] [ SQL ] select * from sale_book where sale_num!= 0 order by sale_time desc limit 0,8; [ RunTime:0.008799s ]
+[ sql ] [ SQL ] select * from inquiry_book where inquiry_state = 0 order by inquiry_time desc limit 0,8; [ RunTime:0.009042s ]
+[ sql ] [ SQL ] select * from notice order by notice_time desc [ RunTime:0.001086s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `shoporder` [ RunTime:0.009181s ]
+[ sql ] [ SQL ] SELECT book_id,sum(order_sum) as a FROM `shoporder` WHERE  (  create_time<1546790399 and create_time>1546185600 ) GROUP BY `book_id` ORDER BY `a` DESC LIMIT 0,5 [ RunTime:0.001467s ]
+[ sql ] [ SQL ] SELECT book_id,sum(order_sum) as a FROM `shoporder` WHERE  (  create_time<1546271999 and create_time>1543593600 ) GROUP BY `book_id` ORDER BY `a` DESC LIMIT 0,5 [ RunTime:0.001586s ]
+[ sql ] [ SQL ] SELECT book_id,sum(order_sum) as a FROM `shoporder` WHERE  (  create_time<1546358399 and create_time>1514736000 ) GROUP BY `book_id` ORDER BY `a` DESC LIMIT 0,5 [ RunTime:0.001261s ]
+---------------------------------------------------------------
+[ 2018-12-30T17:22:29+08:00 ] 0.0.0.0 GET taoshu2/index/sale/classdetail?second_name=%E6%95%B0%E6%8D%AE%E5%BA%93
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004625s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `type_second` [ RunTime:0.001838s ]
+[ sql ] [ SQL ] SELECT `a`.`second_id`,`b`.`type_name`,`b`.`type_id` FROM `type_second` `a` INNER JOIN `book_type` `b` ON `a`.`second_name`='数据库' and b.type_id = a.type_id LIMIT 1 [ RunTime:0.001061s ]
+[ sql ] [ SQL ] SELECT * FROM `type_second` WHERE  (  type_id=2 ) [ RunTime:0.001604s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sale_book` [ RunTime:0.002372s ]
+[ sql ] [ SQL ] SELECT `a`.*,`b`.`user_realname`,`b`.`nickname`,`b`.`grade`,`c`.`class_name`,`d`.`dept_name` FROM `sale_book` `a` INNER JOIN `user` `b` ON `a`.`user_id`=b.user_id and a.sale_secondtype = 12 INNER JOIN `class` `c` ON `b`.`class_id`=`c`.`class_id` INNER JOIN `dept` `d` ON `c`.`dept_id`=`d`.`dept_id` [ RunTime:0.046607s ]
+---------------------------------------------------------------
+[ 2018-12-30T17:22:32+08:00 ] 0.0.0.0 GET taoshu2/index/shopcar/insert?id=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003810s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sale_book` [ RunTime:0.002904s ]
+[ sql ] [ SQL ] SELECT * FROM `sale_book` WHERE  (  sale_id=1 ) LIMIT 1 [ RunTime:0.002144s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `shopcar` [ RunTime:0.009320s ]
+[ sql ] [ SQL ] SELECT * FROM `shopcar` WHERE  (  user_id=41 ) [ RunTime:0.016235s ]
+[ sql ] [ SQL ] INSERT INTO `shopcar` (`user_id` , `book_id` , `create_time` , `book_num`) VALUES (41 , 1 , '1546161752' , 1) [ RunTime:0.102144s ]
+---------------------------------------------------------------
+[ 2018-12-30T17:22:34+08:00 ] 0.0.0.0 GET taoshu2/index/shopcar/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004226s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sale_book` [ RunTime:0.002551s ]
+[ sql ] [ SQL ] SELECT `a`.*,`b`.`book_num`,`b`.`id`,`c`.`user_realname` FROM `sale_book` `a` INNER JOIN `shopcar` `b` ON `b`.`user_id`=41 and b.book_id=a.sale_id INNER JOIN `user` `c` ON `b`.`user_id`=`c`.`user_id` [ RunTime:0.008738s ]
+---------------------------------------------------------------
+[ 2018-12-30T17:22:40+08:00 ] 0.0.0.0 POST taoshu2/index/shopcar/deleteselect
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004508s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `shopcar` [ RunTime:0.009505s ]
+[ sql ] [ SQL ] SELECT * FROM `shopcar` WHERE  (  id=44 ) LIMIT 1 [ RunTime:0.001070s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sale_book` [ RunTime:0.002208s ]
+[ sql ] [ SQL ] SELECT * FROM `sale_book` WHERE  (  sale_id=1 ) LIMIT 1 [ RunTime:0.002376s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `shoporder` [ RunTime:0.002601s ]
+[ error ] [10501]SQLSTATE[HY000]: General error: 1364 Field 'order_state' doesn't have a default value
+---------------------------------------------------------------
+[ 2018-12-30T17:22:45+08:00 ] 0.0.0.0 GET taoshu2/index/shopcar/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004504s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sale_book` [ RunTime:0.002855s ]
+[ sql ] [ SQL ] SELECT `a`.*,`b`.`book_num`,`b`.`id`,`c`.`user_realname` FROM `sale_book` `a` INNER JOIN `shopcar` `b` ON `b`.`user_id`=41 and b.book_id=a.sale_id INNER JOIN `user` `c` ON `b`.`user_id`=`c`.`user_id` [ RunTime:0.009137s ]
+---------------------------------------------------------------
+[ 2018-12-30T17:29:43+08:00 ] 0.0.0.0 POST taoshu2/index/shopcar/deleteselect
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014372s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `shopcar` [ RunTime:0.008961s ]
+[ sql ] [ SQL ] SELECT * FROM `shopcar` WHERE  (  id=44 ) LIMIT 1 [ RunTime:0.001208s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sale_book` [ RunTime:0.010039s ]
+[ sql ] [ SQL ] SELECT * FROM `sale_book` WHERE  (  sale_id=1 ) LIMIT 1 [ RunTime:0.001442s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `shoporder` [ RunTime:0.008839s ]
+[ error ] [10501]SQLSTATE[HY000]: General error: 1364 Field 'order_state' doesn't have a default value
+---------------------------------------------------------------
+[ 2018-12-30T17:36:37+08:00 ] 0.0.0.0 GET taoshu2/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005781s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] select * from book_type limit 0,8; [ RunTime:0.002105s ]
+[ sql ] [ SQL ] select * from type_second where type_id=1 limit 0,5; [ RunTime:0.002680s ]
+[ sql ] [ SQL ] select * from type_second where type_id=2 limit 0,5; [ RunTime:0.002041s ]
+[ sql ] [ SQL ] select * from type_second where type_id=3 limit 0,6; [ RunTime:0.002175s ]
+[ sql ] [ SQL ] select * from type_second where type_id=4 limit 0,8; [ RunTime:0.002248s ]
+[ sql ] [ SQL ] select * from type_second where type_id=5 limit 0,6; [ RunTime:0.002124s ]
+[ sql ] [ SQL ] select * from type_second where type_id=6 limit 0,8; [ RunTime:0.002148s ]
+[ sql ] [ SQL ] select * from type_second where type_id=7 limit 0,5; [ RunTime:0.003059s ]
+[ sql ] [ SQL ] select * from type_second where type_id=1; [ RunTime:0.002554s ]
+[ sql ] [ SQL ] select * from type_second where type_id=2; [ RunTime:0.003423s ]
+[ sql ] [ SQL ] select * from type_second where type_id=3; [ RunTime:0.002136s ]
+[ sql ] [ SQL ] select * from type_second where type_id=4; [ RunTime:0.002543s ]
+[ sql ] [ SQL ] select * from type_second where type_id=5; [ RunTime:0.003426s ]
+[ sql ] [ SQL ] select * from type_second where type_id=6; [ RunTime:0.002495s ]
+[ sql ] [ SQL ] select * from type_second where type_id=7; [ RunTime:0.002257s ]
+[ sql ] [ SQL ] select * from sale_book where sale_num!= 0 order by sale_time desc limit 0,8; [ RunTime:0.003742s ]
+[ sql ] [ SQL ] select * from inquiry_book where inquiry_state = 0 order by inquiry_time desc limit 0,8; [ RunTime:0.002564s ]
+[ sql ] [ SQL ] select * from notice order by notice_time desc [ RunTime:0.003307s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `shoporder` [ RunTime:0.003845s ]
+[ sql ] [ SQL ] SELECT book_id,sum(order_sum) as a FROM `shoporder` WHERE  (  create_time<1546790399 and create_time>1546185600 ) GROUP BY `book_id` ORDER BY `a` DESC LIMIT 0,5 [ RunTime:0.003049s ]
+[ sql ] [ SQL ] SELECT book_id,sum(order_sum) as a FROM `shoporder` WHERE  (  create_time<1546271999 and create_time>1543593600 ) GROUP BY `book_id` ORDER BY `a` DESC LIMIT 0,5 [ RunTime:0.003574s ]
+[ sql ] [ SQL ] SELECT book_id,sum(order_sum) as a FROM `shoporder` WHERE  (  create_time<1546358399 and create_time>1514736000 ) GROUP BY `book_id` ORDER BY `a` DESC LIMIT 0,5 [ RunTime:0.001606s ]
+---------------------------------------------------------------
+[ 2018-12-30T17:39:40+08:00 ] 0.0.0.0 GET taoshutp5/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.037627s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] select * from book_type limit 0,8; [ RunTime:0.001025s ]
+[ sql ] [ SQL ] select * from type_second where type_id=1 limit 0,5; [ RunTime:0.001157s ]
+[ sql ] [ SQL ] select * from type_second where type_id=2 limit 0,5; [ RunTime:0.001367s ]
+[ sql ] [ SQL ] select * from type_second where type_id=3 limit 0,6; [ RunTime:0.001295s ]
+[ sql ] [ SQL ] select * from type_second where type_id=4 limit 0,8; [ RunTime:0.001380s ]
+[ sql ] [ SQL ] select * from type_second where type_id=5 limit 0,6; [ RunTime:0.001045s ]
+[ sql ] [ SQL ] select * from type_second where type_id=6 limit 0,8; [ RunTime:0.000900s ]
+[ sql ] [ SQL ] select * from type_second where type_id=7 limit 0,5; [ RunTime:0.001333s ]
+[ sql ] [ SQL ] select * from type_second where type_id=1; [ RunTime:0.001432s ]
+[ sql ] [ SQL ] select * from type_second where type_id=2; [ RunTime:0.001325s ]
+[ sql ] [ SQL ] select * from type_second where type_id=3; [ RunTime:0.000998s ]
+[ sql ] [ SQL ] select * from type_second where type_id=4; [ RunTime:0.000751s ]
+[ sql ] [ SQL ] select * from type_second where type_id=5; [ RunTime:0.001134s ]
+[ sql ] [ SQL ] select * from type_second where type_id=6; [ RunTime:0.001202s ]
+[ sql ] [ SQL ] select * from type_second where type_id=7; [ RunTime:0.001471s ]
+[ sql ] [ SQL ] select * from sale_book where sale_num!= 0 order by sale_time desc limit 0,8; [ RunTime:0.001786s ]
+[ sql ] [ SQL ] select * from inquiry_book where inquiry_state = 0 order by inquiry_time desc limit 0,8; [ RunTime:0.001400s ]
+[ sql ] [ SQL ] select * from notice order by notice_time desc [ RunTime:0.001241s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `shoporder` [ RunTime:0.002228s ]
+[ sql ] [ SQL ] SELECT book_id,sum(order_sum) as a FROM `shoporder` WHERE  (  create_time<1546790399 and create_time>1546185600 ) GROUP BY `book_id` ORDER BY `a` DESC LIMIT 0,5 [ RunTime:0.001276s ]
+[ sql ] [ SQL ] SELECT book_id,sum(order_sum) as a FROM `shoporder` WHERE  (  create_time<1546271999 and create_time>1543593600 ) GROUP BY `book_id` ORDER BY `a` DESC LIMIT 0,5 [ RunTime:0.001870s ]
+[ sql ] [ SQL ] SELECT book_id,sum(order_sum) as a FROM `shoporder` WHERE  (  create_time<1546358399 and create_time>1514736000 ) GROUP BY `book_id` ORDER BY `a` DESC LIMIT 0,5 [ RunTime:0.001709s ]
+---------------------------------------------------------------
+[ 2018-12-30T17:40:12+08:00 ] 0.0.0.0 POST taoshutp5/index/login/login
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004264s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.003469s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  (  user_name='201541402301' and user_pwd='59b618b9fbe7f75cd16b45eb28e971b3' ) LIMIT 1 [ RunTime:0.001648s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  (  user_name='201541402301' ) LIMIT 1 [ RunTime:0.001379s ]
+[ sql ] [ SQL ] UPDATE `user`  SET `user_id`=41,`user_name`='201541402301',`user_pwd`='59b618b9fbe7f75cd16b45eb28e971b3',`user_sex`='男',`nickname`=NULL,`user_realname`='邹玉堂',`user_content`='阿尔而分',`user_tel`='13537142683',`user_addr`='东莞理工',`user_img`='/uploads/20181230\\3d66aa88afcfcba84909ceb039f874d7.jpg',`grade`=2015,`class_id`=19,`login_times`=0,`login_error`=0,`login_error_time`=0,`error_state`=0,`Sensitivewords`=0  WHERE  (  user_id=41 ) [ RunTime:0.084784s ]
+---------------------------------------------------------------
+[ 2018-12-30T17:40:15+08:00 ] 0.0.0.0 GET taoshutp5/index/index/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004944s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] select * from book_type limit 0,8; [ RunTime:0.001163s ]
+[ sql ] [ SQL ] select * from type_second where type_id=1 limit 0,5; [ RunTime:0.001384s ]
+[ sql ] [ SQL ] select * from type_second where type_id=2 limit 0,5; [ RunTime:0.000986s ]
+[ sql ] [ SQL ] select * from type_second where type_id=3 limit 0,6; [ RunTime:0.000782s ]
+[ sql ] [ SQL ] select * from type_second where type_id=4 limit 0,8; [ RunTime:0.000794s ]
+[ sql ] [ SQL ] select * from type_second where type_id=5 limit 0,6; [ RunTime:0.000782s ]
+[ sql ] [ SQL ] select * from type_second where type_id=6 limit 0,8; [ RunTime:0.000738s ]
+[ sql ] [ SQL ] select * from type_second where type_id=7 limit 0,5; [ RunTime:0.000896s ]
+[ sql ] [ SQL ] select * from type_second where type_id=1; [ RunTime:0.000993s ]
+[ sql ] [ SQL ] select * from type_second where type_id=2; [ RunTime:0.000803s ]
+[ sql ] [ SQL ] select * from type_second where type_id=3; [ RunTime:0.000779s ]
+[ sql ] [ SQL ] select * from type_second where type_id=4; [ RunTime:0.000813s ]
+[ sql ] [ SQL ] select * from type_second where type_id=5; [ RunTime:0.000813s ]
+[ sql ] [ SQL ] select * from type_second where type_id=6; [ RunTime:0.000817s ]
+[ sql ] [ SQL ] select * from type_second where type_id=7; [ RunTime:0.000766s ]
+[ sql ] [ SQL ] select * from sale_book where sale_num!= 0 order by sale_time desc limit 0,8; [ RunTime:0.001611s ]
+[ sql ] [ SQL ] select * from inquiry_book where inquiry_state = 0 order by inquiry_time desc limit 0,8; [ RunTime:0.001047s ]
+[ sql ] [ SQL ] select * from notice order by notice_time desc [ RunTime:0.000662s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `shoporder` [ RunTime:0.002067s ]
+[ sql ] [ SQL ] SELECT book_id,sum(order_sum) as a FROM `shoporder` WHERE  (  create_time<1546790399 and create_time>1546185600 ) GROUP BY `book_id` ORDER BY `a` DESC LIMIT 0,5 [ RunTime:0.001181s ]
+[ sql ] [ SQL ] SELECT book_id,sum(order_sum) as a FROM `shoporder` WHERE  (  create_time<1546271999 and create_time>1543593600 ) GROUP BY `book_id` ORDER BY `a` DESC LIMIT 0,5 [ RunTime:0.001984s ]
+[ sql ] [ SQL ] SELECT book_id,sum(order_sum) as a FROM `shoporder` WHERE  (  create_time<1546358399 and create_time>1514736000 ) GROUP BY `book_id` ORDER BY `a` DESC LIMIT 0,5 [ RunTime:0.001284s ]
+---------------------------------------------------------------
+[ 2018-12-30T17:46:15+08:00 ] 0.0.0.0 GET taoshutp5/index/index/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006144s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] select * from book_type limit 0,8; [ RunTime:0.001164s ]
+[ sql ] [ SQL ] select * from type_second where type_id=1 limit 0,5; [ RunTime:0.000947s ]
+[ sql ] [ SQL ] select * from type_second where type_id=2 limit 0,5; [ RunTime:0.001239s ]
+[ sql ] [ SQL ] select * from type_second where type_id=3 limit 0,6; [ RunTime:0.001017s ]
+[ sql ] [ SQL ] select * from type_second where type_id=4 limit 0,8; [ RunTime:0.001480s ]
+[ sql ] [ SQL ] select * from type_second where type_id=5 limit 0,6; [ RunTime:0.001535s ]
+[ sql ] [ SQL ] select * from type_second where type_id=6 limit 0,8; [ RunTime:0.001243s ]
+[ sql ] [ SQL ] select * from type_second where type_id=7 limit 0,5; [ RunTime:0.001220s ]
+[ sql ] [ SQL ] select * from type_second where type_id=1; [ RunTime:0.000998s ]
+[ sql ] [ SQL ] select * from type_second where type_id=2; [ RunTime:0.000980s ]
+[ sql ] [ SQL ] select * from type_second where type_id=3; [ RunTime:0.000937s ]
+[ sql ] [ SQL ] select * from type_second where type_id=4; [ RunTime:0.000925s ]
+[ sql ] [ SQL ] select * from type_second where type_id=5; [ RunTime:0.001121s ]
+[ sql ] [ SQL ] select * from type_second where type_id=6; [ RunTime:0.001343s ]
+[ sql ] [ SQL ] select * from type_second where type_id=7; [ RunTime:0.001025s ]
+[ sql ] [ SQL ] select * from sale_book where sale_num!= 0 order by sale_time desc limit 0,8; [ RunTime:0.002735s ]
+[ sql ] [ SQL ] select * from inquiry_book where inquiry_state = 0 order by inquiry_time desc limit 0,8; [ RunTime:0.001782s ]
+[ sql ] [ SQL ] select * from notice order by notice_time desc [ RunTime:0.001075s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `shoporder` [ RunTime:0.003607s ]
+[ sql ] [ SQL ] SELECT book_id,sum(order_sum) as a FROM `shoporder` WHERE  (  create_time<1546790399 and create_time>1546185600 ) GROUP BY `book_id` ORDER BY `a` DESC LIMIT 0,5 [ RunTime:0.001366s ]
+[ sql ] [ SQL ] SELECT book_id,sum(order_sum) as a FROM `shoporder` WHERE  (  create_time<1546271999 and create_time>1543593600 ) GROUP BY `book_id` ORDER BY `a` DESC LIMIT 0,5 [ RunTime:0.001252s ]
+[ sql ] [ SQL ] SELECT book_id,sum(order_sum) as a FROM `shoporder` WHERE  (  create_time<1546358399 and create_time>1514736000 ) GROUP BY `book_id` ORDER BY `a` DESC LIMIT 0,5 [ RunTime:0.001759s ]
+---------------------------------------------------------------
+[ 2018-12-30T17:46:23+08:00 ] 0.0.0.0 GET taoshutp5/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005957s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] select * from book_type limit 0,8; [ RunTime:0.001373s ]
+[ sql ] [ SQL ] select * from type_second where type_id=1 limit 0,5; [ RunTime:0.001717s ]
+[ sql ] [ SQL ] select * from type_second where type_id=2 limit 0,5; [ RunTime:0.001378s ]
+[ sql ] [ SQL ] select * from type_second where type_id=3 limit 0,6; [ RunTime:0.001173s ]
+[ sql ] [ SQL ] select * from type_second where type_id=4 limit 0,8; [ RunTime:0.001180s ]
+[ sql ] [ SQL ] select * from type_second where type_id=5 limit 0,6; [ RunTime:0.000897s ]
+[ sql ] [ SQL ] select * from type_second where type_id=6 limit 0,8; [ RunTime:0.000796s ]
+[ sql ] [ SQL ] select * from type_second where type_id=7 limit 0,5; [ RunTime:0.000738s ]
+[ sql ] [ SQL ] select * from type_second where type_id=1; [ RunTime:0.000761s ]
+[ sql ] [ SQL ] select * from type_second where type_id=2; [ RunTime:0.000813s ]
+[ sql ] [ SQL ] select * from type_second where type_id=3; [ RunTime:0.000768s ]
+[ sql ] [ SQL ] select * from type_second where type_id=4; [ RunTime:0.000789s ]
+[ sql ] [ SQL ] select * from type_second where type_id=5; [ RunTime:0.000876s ]
+[ sql ] [ SQL ] select * from type_second where type_id=6; [ RunTime:0.001422s ]
+[ sql ] [ SQL ] select * from type_second where type_id=7; [ RunTime:0.001294s ]
+[ sql ] [ SQL ] select * from sale_book where sale_num!= 0 order by sale_time desc limit 0,8; [ RunTime:0.002139s ]
+[ sql ] [ SQL ] select * from inquiry_book where inquiry_state = 0 order by inquiry_time desc limit 0,8; [ RunTime:0.001388s ]
+[ sql ] [ SQL ] select * from notice order by notice_time desc [ RunTime:0.000840s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `shoporder` [ RunTime:0.002696s ]
+[ sql ] [ SQL ] SELECT book_id,sum(order_sum) as a FROM `shoporder` WHERE  (  create_time<1546790399 and create_time>1546185600 ) GROUP BY `book_id` ORDER BY `a` DESC LIMIT 0,5 [ RunTime:0.001522s ]
+[ sql ] [ SQL ] SELECT book_id,sum(order_sum) as a FROM `shoporder` WHERE  (  create_time<1546271999 and create_time>1543593600 ) GROUP BY `book_id` ORDER BY `a` DESC LIMIT 0,5 [ RunTime:0.001464s ]
+[ sql ] [ SQL ] SELECT book_id,sum(order_sum) as a FROM `shoporder` WHERE  (  create_time<1546358399 and create_time>1514736000 ) GROUP BY `book_id` ORDER BY `a` DESC LIMIT 0,5 [ RunTime:0.001530s ]
+---------------------------------------------------------------
+[ 2018-12-30T17:46:57+08:00 ] 0.0.0.0 GET taoshutp5/index/personalcenter/edit
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004131s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `user` [ RunTime:0.002748s ]
+[ sql ] [ SQL ] SELECT * FROM `user` WHERE  (  user_id=41 ) LIMIT 1 [ RunTime:0.001170s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `class` [ RunTime:0.002618s ]
+[ sql ] [ SQL ] SELECT * FROM `class` [ RunTime:0.001301s ]
+---------------------------------------------------------------
+[ 2018-12-30T17:47:06+08:00 ] 0.0.0.0 GET taoshutp5/index/index/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004952s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] select * from book_type limit 0,8; [ RunTime:0.001444s ]
+[ sql ] [ SQL ] select * from type_second where type_id=1 limit 0,5; [ RunTime:0.001494s ]
+[ sql ] [ SQL ] select * from type_second where type_id=2 limit 0,5; [ RunTime:0.002707s ]
+[ sql ] [ SQL ] select * from type_second where type_id=3 limit 0,6; [ RunTime:0.001549s ]
+[ sql ] [ SQL ] select * from type_second where type_id=4 limit 0,8; [ RunTime:0.001060s ]
+[ sql ] [ SQL ] select * from type_second where type_id=5 limit 0,6; [ RunTime:0.001061s ]
+[ sql ] [ SQL ] select * from type_second where type_id=6 limit 0,8; [ RunTime:0.001721s ]
+[ sql ] [ SQL ] select * from type_second where type_id=7 limit 0,5; [ RunTime:0.001632s ]
+[ sql ] [ SQL ] select * from type_second where type_id=1; [ RunTime:0.001598s ]
+[ sql ] [ SQL ] select * from type_second where type_id=2; [ RunTime:0.001419s ]
+[ sql ] [ SQL ] select * from type_second where type_id=3; [ RunTime:0.002831s ]
+[ sql ] [ SQL ] select * from type_second where type_id=4; [ RunTime:0.001631s ]
+[ sql ] [ SQL ] select * from type_second where type_id=5; [ RunTime:0.001475s ]
+[ sql ] [ SQL ] select * from type_second where type_id=6; [ RunTime:0.001684s ]
+[ sql ] [ SQL ] select * from type_second where type_id=7; [ RunTime:0.001292s ]
+[ sql ] [ SQL ] select * from sale_book where sale_num!= 0 order by sale_time desc limit 0,8; [ RunTime:0.002001s ]
+[ sql ] [ SQL ] select * from inquiry_book where inquiry_state = 0 order by inquiry_time desc limit 0,8; [ RunTime:0.001480s ]
+[ sql ] [ SQL ] select * from notice order by notice_time desc [ RunTime:0.002223s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `shoporder` [ RunTime:0.009364s ]
+[ sql ] [ SQL ] SELECT book_id,sum(order_sum) as a FROM `shoporder` WHERE  (  create_time<1546790399 and create_time>1546185600 ) GROUP BY `book_id` ORDER BY `a` DESC LIMIT 0,5 [ RunTime:0.001384s ]
+[ sql ] [ SQL ] SELECT book_id,sum(order_sum) as a FROM `shoporder` WHERE  (  create_time<1546271999 and create_time>1543593600 ) GROUP BY `book_id` ORDER BY `a` DESC LIMIT 0,5 [ RunTime:0.001824s ]
+[ sql ] [ SQL ] SELECT book_id,sum(order_sum) as a FROM `shoporder` WHERE  (  create_time<1546358399 and create_time>1514736000 ) GROUP BY `book_id` ORDER BY `a` DESC LIMIT 0,5 [ RunTime:0.001147s ]
+---------------------------------------------------------------
+[ 2018-12-30T17:47:10+08:00 ] 0.0.0.0 GET taoshutp5/index/type/showAllTypeSecond
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004794s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `book_type` [ RunTime:0.010607s ]
+[ sql ] [ SQL ] SELECT * FROM `book_type` [ RunTime:0.000963s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `type_second` [ RunTime:0.008519s ]
+[ sql ] [ SQL ] SELECT `second_id`,`second_name` FROM `type_second` WHERE  (  type_id=1 ) [ RunTime:0.001064s ]
+[ sql ] [ SQL ] SELECT `second_id`,`second_name` FROM `type_second` WHERE  (  type_id=2 ) [ RunTime:0.001420s ]
+[ sql ] [ SQL ] SELECT `second_id`,`second_name` FROM `type_second` WHERE  (  type_id=3 ) [ RunTime:0.001019s ]
+[ sql ] [ SQL ] SELECT `second_id`,`second_name` FROM `type_second` WHERE  (  type_id=4 ) [ RunTime:0.000938s ]
+[ sql ] [ SQL ] SELECT `second_id`,`second_name` FROM `type_second` WHERE  (  type_id=5 ) [ RunTime:0.000965s ]
+[ sql ] [ SQL ] SELECT `second_id`,`second_name` FROM `type_second` WHERE  (  type_id=6 ) [ RunTime:0.000892s ]
+[ sql ] [ SQL ] SELECT `second_id`,`second_name` FROM `type_second` WHERE  (  type_id=7 ) [ RunTime:0.001323s ]
+[ sql ] [ SQL ] SELECT `second_id`,`second_name` FROM `type_second` WHERE  (  type_id=8 ) [ RunTime:0.001472s ]
+[ sql ] [ SQL ] SELECT `second_id`,`second_name` FROM `type_second` WHERE  (  type_id=9 ) [ RunTime:0.000986s ]
+[ sql ] [ SQL ] SELECT `second_id`,`second_name` FROM `type_second` WHERE  (  type_id=10 ) [ RunTime:0.000832s ]
+[ sql ] [ SQL ] SELECT `second_id`,`second_name` FROM `type_second` WHERE  (  type_id=11 ) [ RunTime:0.001273s ]
+[ sql ] [ SQL ] SELECT `second_id`,`second_name` FROM `type_second` WHERE  (  type_id=12 ) [ RunTime:0.000945s ]
+[ sql ] [ SQL ] SELECT `second_id`,`second_name` FROM `type_second` WHERE  (  type_id=13 ) [ RunTime:0.001565s ]
+[ sql ] [ SQL ] SELECT `second_id`,`second_name` FROM `type_second` WHERE  (  type_id=14 ) [ RunTime:0.001397s ]
+---------------------------------------------------------------
+[ 2018-12-30T17:47:13+08:00 ] 0.0.0.0 GET taoshutp5/index/sale/classdetail?second_name=%E6%88%90%E5%8A%9F%E6%BF%80%E5%8A%B1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005533s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `type_second` [ RunTime:0.005178s ]
+[ sql ] [ SQL ] SELECT `a`.`second_id`,`b`.`type_name`,`b`.`type_id` FROM `type_second` `a` INNER JOIN `book_type` `b` ON `a`.`second_name`='成功激励' and b.type_id = a.type_id LIMIT 1 [ RunTime:0.001725s ]
+[ sql ] [ SQL ] SELECT * FROM `type_second` WHERE  (  type_id=13 ) [ RunTime:0.001381s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sale_book` [ RunTime:0.002891s ]
+[ sql ] [ SQL ] SELECT `a`.*,`b`.`user_realname`,`b`.`nickname`,`b`.`grade`,`c`.`class_name`,`d`.`dept_name` FROM `sale_book` `a` INNER JOIN `user` `b` ON `a`.`user_id`=b.user_id and a.sale_secondtype = 138 INNER JOIN `class` `c` ON `b`.`class_id`=`c`.`class_id` INNER JOIN `dept` `d` ON `c`.`dept_id`=`d`.`dept_id` [ RunTime:0.001734s ]
+---------------------------------------------------------------
+[ 2018-12-30T17:47:15+08:00 ] 0.0.0.0 GET taoshutp5/index/type/showAllTypeSecond
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004347s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `book_type` [ RunTime:0.008271s ]
+[ sql ] [ SQL ] SELECT * FROM `book_type` [ RunTime:0.001560s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `type_second` [ RunTime:0.009154s ]
+[ sql ] [ SQL ] SELECT `second_id`,`second_name` FROM `type_second` WHERE  (  type_id=1 ) [ RunTime:0.001182s ]
+[ sql ] [ SQL ] SELECT `second_id`,`second_name` FROM `type_second` WHERE  (  type_id=2 ) [ RunTime:0.001368s ]
+[ sql ] [ SQL ] SELECT `second_id`,`second_name` FROM `type_second` WHERE  (  type_id=3 ) [ RunTime:0.000971s ]
+[ sql ] [ SQL ] SELECT `second_id`,`second_name` FROM `type_second` WHERE  (  type_id=4 ) [ RunTime:0.000850s ]
+[ sql ] [ SQL ] SELECT `second_id`,`second_name` FROM `type_second` WHERE  (  type_id=5 ) [ RunTime:0.000882s ]
+[ sql ] [ SQL ] SELECT `second_id`,`second_name` FROM `type_second` WHERE  (  type_id=6 ) [ RunTime:0.000895s ]
+[ sql ] [ SQL ] SELECT `second_id`,`second_name` FROM `type_second` WHERE  (  type_id=7 ) [ RunTime:0.001122s ]
+[ sql ] [ SQL ] SELECT `second_id`,`second_name` FROM `type_second` WHERE  (  type_id=8 ) [ RunTime:0.001707s ]
+[ sql ] [ SQL ] SELECT `second_id`,`second_name` FROM `type_second` WHERE  (  type_id=9 ) [ RunTime:0.001187s ]
+[ sql ] [ SQL ] SELECT `second_id`,`second_name` FROM `type_second` WHERE  (  type_id=10 ) [ RunTime:0.000979s ]
+[ sql ] [ SQL ] SELECT `second_id`,`second_name` FROM `type_second` WHERE  (  type_id=11 ) [ RunTime:0.001168s ]
+[ sql ] [ SQL ] SELECT `second_id`,`second_name` FROM `type_second` WHERE  (  type_id=12 ) [ RunTime:0.000884s ]
+[ sql ] [ SQL ] SELECT `second_id`,`second_name` FROM `type_second` WHERE  (  type_id=13 ) [ RunTime:0.000906s ]
+[ sql ] [ SQL ] SELECT `second_id`,`second_name` FROM `type_second` WHERE  (  type_id=14 ) [ RunTime:0.001125s ]
+---------------------------------------------------------------
+[ 2018-12-30T17:47:18+08:00 ] 0.0.0.0 GET taoshutp5/index/sale/classdetail?second_name=%E6%95%B0%E6%8D%AE%E5%BA%93
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007949s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `type_second` [ RunTime:0.004567s ]
+[ sql ] [ SQL ] SELECT `a`.`second_id`,`b`.`type_name`,`b`.`type_id` FROM `type_second` `a` INNER JOIN `book_type` `b` ON `a`.`second_name`='数据库' and b.type_id = a.type_id LIMIT 1 [ RunTime:0.001436s ]
+[ sql ] [ SQL ] SELECT * FROM `type_second` WHERE  (  type_id=2 ) [ RunTime:0.001962s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sale_book` [ RunTime:0.002963s ]
+[ sql ] [ SQL ] SELECT `a`.*,`b`.`user_realname`,`b`.`nickname`,`b`.`grade`,`c`.`class_name`,`d`.`dept_name` FROM `sale_book` `a` INNER JOIN `user` `b` ON `a`.`user_id`=b.user_id and a.sale_secondtype = 12 INNER JOIN `class` `c` ON `b`.`class_id`=`c`.`class_id` INNER JOIN `dept` `d` ON `c`.`dept_id`=`d`.`dept_id` [ RunTime:0.002509s ]
+---------------------------------------------------------------
+[ 2018-12-30T17:47:21+08:00 ] 0.0.0.0 GET taoshutp5/index/shopcar/insert?id=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004311s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sale_book` [ RunTime:0.009638s ]
+[ sql ] [ SQL ] SELECT * FROM `sale_book` WHERE  (  sale_id=1 ) LIMIT 1 [ RunTime:0.001761s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `shopcar` [ RunTime:0.008625s ]
+[ sql ] [ SQL ] SELECT * FROM `shopcar` WHERE  (  user_id=41 ) [ RunTime:0.000948s ]
+---------------------------------------------------------------
+[ 2018-12-30T17:47:23+08:00 ] 0.0.0.0 GET taoshutp5/index/sale/classdetail?second_name=%E6%95%B0%E6%8D%AE%E5%BA%93
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004245s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `type_second` [ RunTime:0.002444s ]
+[ sql ] [ SQL ] SELECT `a`.`second_id`,`b`.`type_name`,`b`.`type_id` FROM `type_second` `a` INNER JOIN `book_type` `b` ON `a`.`second_name`='数据库' and b.type_id = a.type_id LIMIT 1 [ RunTime:0.002163s ]
+[ sql ] [ SQL ] SELECT * FROM `type_second` WHERE  (  type_id=2 ) [ RunTime:0.001244s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sale_book` [ RunTime:0.002654s ]
+[ sql ] [ SQL ] SELECT `a`.*,`b`.`user_realname`,`b`.`nickname`,`b`.`grade`,`c`.`class_name`,`d`.`dept_name` FROM `sale_book` `a` INNER JOIN `user` `b` ON `a`.`user_id`=b.user_id and a.sale_secondtype = 12 INNER JOIN `class` `c` ON `b`.`class_id`=`c`.`class_id` INNER JOIN `dept` `d` ON `c`.`dept_id`=`d`.`dept_id` [ RunTime:0.002887s ]
+---------------------------------------------------------------
+[ 2018-12-30T17:47:25+08:00 ] 0.0.0.0 GET taoshutp5/index/shopcar/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004342s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sale_book` [ RunTime:0.002958s ]
+[ sql ] [ SQL ] SELECT `a`.*,`b`.`book_num`,`b`.`id`,`c`.`user_realname` FROM `sale_book` `a` INNER JOIN `shopcar` `b` ON `b`.`user_id`=41 and b.book_id=a.sale_id INNER JOIN `user` `c` ON `b`.`user_id`=`c`.`user_id` [ RunTime:0.010362s ]
+---------------------------------------------------------------
+[ 2018-12-30T17:47:29+08:00 ] 0.0.0.0 POST taoshutp5/index/shopcar/deleteselect
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004472s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `shopcar` [ RunTime:0.002021s ]
+[ sql ] [ SQL ] SELECT * FROM `shopcar` WHERE  (  id=44 ) LIMIT 1 [ RunTime:0.001213s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sale_book` [ RunTime:0.003566s ]
+[ sql ] [ SQL ] SELECT * FROM `sale_book` WHERE  (  sale_id=1 ) LIMIT 1 [ RunTime:0.001477s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `shoporder` [ RunTime:0.001849s ]
+[ error ] [10501]SQLSTATE[HY000]: General error: 1364 Field 'order_state' doesn't have a default value
+---------------------------------------------------------------
+[ 2018-12-30T17:47:33+08:00 ] 0.0.0.0 GET taoshutp5/index/shopcar/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003730s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sale_book` [ RunTime:0.003773s ]
+[ sql ] [ SQL ] SELECT `a`.*,`b`.`book_num`,`b`.`id`,`c`.`user_realname` FROM `sale_book` `a` INNER JOIN `shopcar` `b` ON `b`.`user_id`=41 and b.book_id=a.sale_id INNER JOIN `user` `c` ON `b`.`user_id`=`c`.`user_id` [ RunTime:0.008656s ]
+---------------------------------------------------------------
+[ 2018-12-30T17:47:37+08:00 ] 0.0.0.0 POST taoshutp5/index/shopcar/deleteselect
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003237s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `shopcar` [ RunTime:0.003201s ]
+[ sql ] [ SQL ] DELETE FROM `shopcar`    WHERE  (  id=44 ) [ RunTime:0.047152s ]
+---------------------------------------------------------------
+[ 2018-12-30T17:47:40+08:00 ] 0.0.0.0 GET taoshutp5/index/shopcar/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004606s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sale_book` [ RunTime:0.003025s ]
+[ sql ] [ SQL ] SELECT `a`.*,`b`.`book_num`,`b`.`id`,`c`.`user_realname` FROM `sale_book` `a` INNER JOIN `shopcar` `b` ON `b`.`user_id`=41 and b.book_id=a.sale_id INNER JOIN `user` `c` ON `b`.`user_id`=`c`.`user_id` [ RunTime:0.001694s ]
+---------------------------------------------------------------
+[ 2018-12-30T17:47:48+08:00 ] 0.0.0.0 GET taoshutp5/index/sale/showAllSaleBook
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003413s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sale_book` [ RunTime:0.002209s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `sale_book` LIMIT 1 [ RunTime:0.024950s ]
+[ sql ] [ SQL ] SELECT * FROM `sale_book` LIMIT 0,5 [ RunTime:0.001239s ]
+---------------------------------------------------------------
+[ 2018-12-30T17:47:51+08:00 ] 0.0.0.0 GET taoshutp5/index/shopcar/insert?id=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004998s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sale_book` [ RunTime:0.002249s ]
+[ sql ] [ SQL ] SELECT * FROM `sale_book` WHERE  (  sale_id=1 ) LIMIT 1 [ RunTime:0.001295s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `shopcar` [ RunTime:0.002701s ]
+[ sql ] [ SQL ] SELECT * FROM `shopcar` WHERE  (  user_id=41 ) [ RunTime:0.001510s ]
+[ sql ] [ SQL ] INSERT INTO `shopcar` (`user_id` , `book_id` , `create_time` , `book_num`) VALUES (41 , 1 , '1546163270' , 1) [ RunTime:0.095030s ]
+---------------------------------------------------------------
+[ 2018-12-30T17:47:52+08:00 ] 0.0.0.0 GET taoshutp5/index/shopcar/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004419s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sale_book` [ RunTime:0.002414s ]
+[ sql ] [ SQL ] SELECT `a`.*,`b`.`book_num`,`b`.`id`,`c`.`user_realname` FROM `sale_book` `a` INNER JOIN `shopcar` `b` ON `b`.`user_id`=41 and b.book_id=a.sale_id INNER JOIN `user` `c` ON `b`.`user_id`=`c`.`user_id` [ RunTime:0.001660s ]
+---------------------------------------------------------------
+[ 2018-12-30T17:47:55+08:00 ] 0.0.0.0 GET taoshutp5/index/index/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004674s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] select * from book_type limit 0,8; [ RunTime:0.001365s ]
+[ sql ] [ SQL ] select * from type_second where type_id=1 limit 0,5; [ RunTime:0.001270s ]
+[ sql ] [ SQL ] select * from type_second where type_id=2 limit 0,5; [ RunTime:0.000800s ]
+[ sql ] [ SQL ] select * from type_second where type_id=3 limit 0,6; [ RunTime:0.000920s ]
+[ sql ] [ SQL ] select * from type_second where type_id=4 limit 0,8; [ RunTime:0.000795s ]
+[ sql ] [ SQL ] select * from type_second where type_id=5 limit 0,6; [ RunTime:0.000915s ]
+[ sql ] [ SQL ] select * from type_second where type_id=6 limit 0,8; [ RunTime:0.000719s ]
+[ sql ] [ SQL ] select * from type_second where type_id=7 limit 0,5; [ RunTime:0.000707s ]
+[ sql ] [ SQL ] select * from type_second where type_id=1; [ RunTime:0.001339s ]
+[ sql ] [ SQL ] select * from type_second where type_id=2; [ RunTime:0.001485s ]
+[ sql ] [ SQL ] select * from type_second where type_id=3; [ RunTime:0.001200s ]
+[ sql ] [ SQL ] select * from type_second where type_id=4; [ RunTime:0.000773s ]
+[ sql ] [ SQL ] select * from type_second where type_id=5; [ RunTime:0.000772s ]
+[ sql ] [ SQL ] select * from type_second where type_id=6; [ RunTime:0.000794s ]
+[ sql ] [ SQL ] select * from type_second where type_id=7; [ RunTime:0.000774s ]
+[ sql ] [ SQL ] select * from sale_book where sale_num!= 0 order by sale_time desc limit 0,8; [ RunTime:0.001689s ]
+[ sql ] [ SQL ] select * from inquiry_book where inquiry_state = 0 order by inquiry_time desc limit 0,8; [ RunTime:0.001434s ]
+[ sql ] [ SQL ] select * from notice order by notice_time desc [ RunTime:0.000913s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `shoporder` [ RunTime:0.002275s ]
+[ sql ] [ SQL ] SELECT book_id,sum(order_sum) as a FROM `shoporder` WHERE  (  create_time<1546790399 and create_time>1546185600 ) GROUP BY `book_id` ORDER BY `a` DESC LIMIT 0,5 [ RunTime:0.001572s ]
+[ sql ] [ SQL ] SELECT book_id,sum(order_sum) as a FROM `shoporder` WHERE  (  create_time<1546271999 and create_time>1543593600 ) GROUP BY `book_id` ORDER BY `a` DESC LIMIT 0,5 [ RunTime:0.001059s ]
+[ sql ] [ SQL ] SELECT book_id,sum(order_sum) as a FROM `shoporder` WHERE  (  create_time<1546358399 and create_time>1514736000 ) GROUP BY `book_id` ORDER BY `a` DESC LIMIT 0,5 [ RunTime:0.001210s ]
+---------------------------------------------------------------
+[ 2018-12-30T17:54:04+08:00 ] 0.0.0.0 GET taoshutp5/index/index/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.022488s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] select * from book_type limit 0,8; [ RunTime:0.071541s ]
+[ sql ] [ SQL ] select * from type_second where type_id=1 limit 0,5; [ RunTime:0.036263s ]
+[ sql ] [ SQL ] select * from type_second where type_id=2 limit 0,5; [ RunTime:0.001502s ]
+[ sql ] [ SQL ] select * from type_second where type_id=3 limit 0,6; [ RunTime:0.001227s ]
+[ sql ] [ SQL ] select * from type_second where type_id=4 limit 0,8; [ RunTime:0.001296s ]
+[ sql ] [ SQL ] select * from type_second where type_id=5 limit 0,6; [ RunTime:0.001501s ]
+[ sql ] [ SQL ] select * from type_second where type_id=6 limit 0,8; [ RunTime:0.001952s ]
+[ sql ] [ SQL ] select * from type_second where type_id=7 limit 0,5; [ RunTime:0.002333s ]
+[ sql ] [ SQL ] select * from type_second where type_id=1; [ RunTime:0.002067s ]
+[ sql ] [ SQL ] select * from type_second where type_id=2; [ RunTime:0.001779s ]
+[ sql ] [ SQL ] select * from type_second where type_id=3; [ RunTime:0.001874s ]
+[ sql ] [ SQL ] select * from type_second where type_id=4; [ RunTime:0.001845s ]
+[ sql ] [ SQL ] select * from type_second where type_id=5; [ RunTime:0.001997s ]
+[ sql ] [ SQL ] select * from type_second where type_id=6; [ RunTime:0.001967s ]
+[ sql ] [ SQL ] select * from type_second where type_id=7; [ RunTime:0.001422s ]
+[ sql ] [ SQL ] select * from sale_book where sale_num!= 0 order by sale_time desc limit 0,8; [ RunTime:0.020749s ]
+[ sql ] [ SQL ] select * from inquiry_book where inquiry_state = 0 order by inquiry_time desc limit 0,8; [ RunTime:0.012594s ]
+[ sql ] [ SQL ] select * from notice order by notice_time desc [ RunTime:0.013443s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `shoporder` [ RunTime:0.012949s ]
+[ sql ] [ SQL ] SELECT book_id,sum(order_sum) as a FROM `shoporder` WHERE  (  create_time<1546790399 and create_time>1546185600 ) GROUP BY `book_id` ORDER BY `a` DESC LIMIT 0,5 [ RunTime:0.002076s ]
+[ sql ] [ SQL ] SELECT book_id,sum(order_sum) as a FROM `shoporder` WHERE  (  create_time<1546271999 and create_time>1543593600 ) GROUP BY `book_id` ORDER BY `a` DESC LIMIT 0,5 [ RunTime:0.001674s ]
+[ sql ] [ SQL ] SELECT book_id,sum(order_sum) as a FROM `shoporder` WHERE  (  create_time<1546358399 and create_time>1514736000 ) GROUP BY `book_id` ORDER BY `a` DESC LIMIT 0,5 [ RunTime:0.001971s ]
+---------------------------------------------------------------
+[ 2018-12-30T17:54:11+08:00 ] 0.0.0.0 GET taoshu3/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006259s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] select * from book_type limit 0,8; [ RunTime:0.010177s ]
+[ sql ] [ SQL ] select * from type_second where type_id=1 limit 0,5; [ RunTime:0.011720s ]
+[ sql ] [ SQL ] select * from type_second where type_id=2 limit 0,5; [ RunTime:0.002444s ]
+[ sql ] [ SQL ] select * from type_second where type_id=3 limit 0,6; [ RunTime:0.001808s ]
+[ sql ] [ SQL ] select * from type_second where type_id=4 limit 0,8; [ RunTime:0.001108s ]
+[ sql ] [ SQL ] select * from type_second where type_id=5 limit 0,6; [ RunTime:0.001903s ]
+[ sql ] [ SQL ] select * from type_second where type_id=6 limit 0,8; [ RunTime:0.002722s ]
+[ sql ] [ SQL ] select * from type_second where type_id=7 limit 0,5; [ RunTime:0.001322s ]
+[ sql ] [ SQL ] select * from type_second where type_id=1; [ RunTime:0.001069s ]
+[ sql ] [ SQL ] select * from type_second where type_id=2; [ RunTime:0.001122s ]
+[ sql ] [ SQL ] select * from type_second where type_id=3; [ RunTime:0.001685s ]
+[ sql ] [ SQL ] select * from type_second where type_id=4; [ RunTime:0.001338s ]
+[ sql ] [ SQL ] select * from type_second where type_id=5; [ RunTime:0.001137s ]
+[ sql ] [ SQL ] select * from type_second where type_id=6; [ RunTime:0.001533s ]
+[ sql ] [ SQL ] select * from type_second where type_id=7; [ RunTime:0.001877s ]
+[ sql ] [ SQL ] select * from sale_book where sale_num!= 0 order by sale_time desc limit 0,8; [ RunTime:0.008331s ]
+[ sql ] [ SQL ] select * from inquiry_book where inquiry_state = 0 order by inquiry_time desc limit 0,8; [ RunTime:0.008535s ]
+[ sql ] [ SQL ] select * from notice order by notice_time desc [ RunTime:0.007623s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `shoporder` [ RunTime:0.009045s ]
+[ sql ] [ SQL ] SELECT book_id,sum(order_sum) as a FROM `shoporder` WHERE  (  create_time<1546790399 and create_time>1546185600 ) GROUP BY `book_id` ORDER BY `a` DESC LIMIT 0,5 [ RunTime:0.001612s ]
+[ sql ] [ SQL ] SELECT book_id,sum(order_sum) as a FROM `shoporder` WHERE  (  create_time<1546271999 and create_time>1543593600 ) GROUP BY `book_id` ORDER BY `a` DESC LIMIT 0,5 [ RunTime:0.001452s ]
+[ sql ] [ SQL ] SELECT book_id,sum(order_sum) as a FROM `shoporder` WHERE  (  create_time<1546358399 and create_time>1514736000 ) GROUP BY `book_id` ORDER BY `a` DESC LIMIT 0,5 [ RunTime:0.001492s ]
+---------------------------------------------------------------
+[ 2018-12-30T17:54:27+08:00 ] 0.0.0.0 GET taoshutp5/
+[ sql ] [ DB ] CONNECT:[ UseTime:0.017011s ] mysql:host=127.0.0.1;dbname=tao_shu;charset=utf8
+[ sql ] [ SQL ] select * from book_type limit 0,8; [ RunTime:0.009656s ]
+[ sql ] [ SQL ] select * from type_second where type_id=1 limit 0,5; [ RunTime:0.011541s ]
+[ sql ] [ SQL ] select * from type_second where type_id=2 limit 0,5; [ RunTime:0.001947s ]
+[ sql ] [ SQL ] select * from type_second where type_id=3 limit 0,6; [ RunTime:0.002310s ]
+[ sql ] [ SQL ] select * from type_second where type_id=4 limit 0,8; [ RunTime:0.002169s ]
+[ sql ] [ SQL ] select * from type_second where type_id=5 limit 0,6; [ RunTime:0.002227s ]
+[ sql ] [ SQL ] select * from type_second where type_id=6 limit 0,8; [ RunTime:0.001325s ]
+[ sql ] [ SQL ] select * from type_second where type_id=7 limit 0,5; [ RunTime:0.001040s ]
+[ sql ] [ SQL ] select * from type_second where type_id=1; [ RunTime:0.001855s ]
+[ sql ] [ SQL ] select * from type_second where type_id=2; [ RunTime:0.002352s ]
+[ sql ] [ SQL ] select * from type_second where type_id=3; [ RunTime:0.001661s ]
+[ sql ] [ SQL ] select * from type_second where type_id=4; [ RunTime:0.002180s ]
+[ sql ] [ SQL ] select * from type_second where type_id=5; [ RunTime:0.001064s ]
+[ sql ] [ SQL ] select * from type_second where type_id=6; [ RunTime:0.001034s ]
+[ sql ] [ SQL ] select * from type_second where type_id=7; [ RunTime:0.001434s ]
+[ sql ] [ SQL ] select * from sale_book where sale_num!= 0 order by sale_time desc limit 0,8; [ RunTime:0.014229s ]
+[ sql ] [ SQL ] select * from inquiry_book where inquiry_state = 0 order by inquiry_time desc limit 0,8; [ RunTime:0.010116s ]
+[ sql ] [ SQL ] select * from notice order by notice_time desc [ RunTime:0.008754s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `shoporder` [ RunTime:0.010871s ]
+[ sql ] [ SQL ] SELECT book_id,sum(order_sum) as a FROM `shoporder` WHERE  (  create_time<1546790399 and create_time>1546185600 ) GROUP BY `book_id` ORDER BY `a` DESC LIMIT 0,5 [ RunTime:0.001667s ]
+[ sql ] [ SQL ] SELECT book_id,sum(order_sum) as a FROM `shoporder` WHERE  (  create_time<1546271999 and create_time>1543593600 ) GROUP BY `book_id` ORDER BY `a` DESC LIMIT 0,5 [ RunTime:0.001686s ]
+[ sql ] [ SQL ] SELECT book_id,sum(order_sum) as a FROM `shoporder` WHERE  (  create_time<1546358399 and create_time>1514736000 ) GROUP BY `book_id` ORDER BY `a` DESC LIMIT 0,5 [ RunTime:0.001797s ]

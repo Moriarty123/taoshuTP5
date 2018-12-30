@@ -1,0 +1,96 @@
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+.content_a{
+	width: 234px;
+	float: left;
+}
+.content_a_down{
+	margin-top: 50px;
+}
+.content_a_down_title{
+	border-radius: 5px 5px 0 0;
+	background: #00C7B4;
+	color: white;
+	line-height: 45px;
+	font-weight: bold;
+	text-indent: 0.5em;
+	letter-spacing: 0.03em;
+}
+.container{
+	border: 1px solid #DEDEDE;
+	border-top: none;
+	margin:0;
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 6px 6px 24px rgba(0, 0, 0, 0.1);
+	cursor: pointer;
+}
+.box{
+	line-height: 40px;
+	border-bottom: 1px dotted #999999;
+	font-size: 14px;
+	letter-spacing: 0.05em;
+}
+.box a{
+	display:block;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	color: #696969;
+	text-align: center;
+}
+.book_dec{
+	display: none;
+	padding:10px;
+}
+
+
+.container .box .name {
+	width:100%;
+}
+
+.box:hover .book_dec{
+	display: block;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	color: #696969;	
+}
+.box:hover .name{
+	display: none;
+}
+.book_dec_title{
+	font-size: 14px;
+	margin-top: 10px;
+	padding-right: 8x;
+	color: black;
+    font-weight: bold;
+    width: 110px;
+    height: 40px;
+    line-height: 20px;
+    float: left;
+    overflow: hidden;
+    white-space: pre-wrap;
+    text-align: left;
+}
+.book_dec_prize{
+	font-size: 14px;
+	float: left;
+	color: red;
+	line-height: 20px;
+}
+.book_dec_pub{
+	font-size: 12px;
+	color: grey;
+	float: left;
+	line-height: 20px;
+}
+.book_dec_img img{
+	padding: 10px;
+	width: 100px;
+	height: 100px;
+	float: left;
+}
