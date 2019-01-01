@@ -29,6 +29,6 @@ class admin extends Validate
     protected $scene = [
         'add'   =>  ['name', 'pwd', 'repwd'],
         'edit'  =>  ['pwd', 'prepwd', 'repwd'],
-        'login' =>  ['name', 'pwd'],
+        'login' =>  ['name|require', 'pwd'],
     ];
 }

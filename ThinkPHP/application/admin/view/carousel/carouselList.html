@@ -29,12 +29,12 @@
 	<div id="MainForm">
 		<div class="form_boxA">
 			<div class="a">
-				<h2>淘书街违规处理列表</h2>
+				<h2>淘书街轮播图列表</h2>
 				<form action="/admin/violate/violateSearch" method="post" onsubmit="return checkSearch()" class="searchform">
 					<input type="text" class="search" placeholder="用户名" name="search" />
 					<input type="submit" class="search_button" value="搜索" />
 				</form>
-				<a href="/admin/violate/addPage" class="addUser"><i class="fa fa-plus-circle"></i> 添加新违规</a>
+				<a href="/admin/violate/addPage" class="addUser"><i class="fa fa-plus-circle"></i> 添加轮播图</a>
 			</div>
 			<form action="/admin/violate/checkedViolateDelete" method="post">
 			<table cellpadding="0" cellspacing="0">
@@ -42,24 +42,33 @@
 					<th><input type="checkbox" name="fullChoose" onclick="fullChecked(this)" /></th>
 					<th>ID</th>
 					<!-- <th>图片位置</th> -->
+					<td>图片</td>
 					<th>图片名</th>
+					<th>状态</th>
 					<th>添加时间</th>
 					<th>操作</th>
 				</tr>
 				{volist name="carouselList" id="vo"}
 				<tr>
 					<!-- TP5的post方法不能提交数组，在表单name添加/a表示要提交有关数组，获取时同样要添加/a -->
-					<td><input type="checkbox" name="ids[]/a" onclick="eachChecked()" class="eachChoose" value="{$vo.violate_id}"/></td>
+					<td><input type="checkbox" name="ids[]/a" onclick="eachChecked()" class="eachChoose" value="{$vo.carousel_id}"/></td>
 					<td>{$vo.carousel_id}</td>
+					<td><img src="{$vo.carousel_path}" class="user_img" style="width: 180px; height: 120px;" /></td>
 					<td>
-						<img src="{$vo.carousel_path}" class="user_img"/>
 						{$vo.carousel_img}
+					</td>
+					<td>
+						{eq name="vo.carousel_state" value="0"}
+						<a href="/admin/carousel/changeState?carousel_id={$vo.carousel_id}" style="color: #00C7B4;" onclick="return queren()">显示</a>
+						{else}
+						不显示
+						{/eq}
 					</td>
 					<!-- <td>{$vo.carousel_path}</td> -->
 					<td>{$vo.add_time|date="Y-m-d H:i:s",###}</td>
 					<td>
-						<a href="/admin/violate/editPage?violate_id={$vo.violate_id}" class="op"><i class="fa fa-edit" title="编辑"></i></a> 
-						<a href="/admin/violate/violateDelete?violate_id={$vo.violate_id}" class="op" onclick="return del()">
+						<a href="/admin/violate/editPage?violate_id={$vo.carousel_id}" class="op"><i class="fa fa-edit" title="编辑"></i></a> 
+						<a href="/admin/violate/violateDelete?violate_id={$vo.carousel_id}" class="op" onclick="return del()">
 							<i class="fa fa-trash-alt" title="删除"></i>
 						</a> 
 					</td>
@@ -69,7 +78,7 @@
 			<p class="msg">
 				<span id="notdisplay" style="display: none;"></span>
 				<input type="submit" value="删除选中" class="delBtn" id="delBtn" disabled="disabled" onclick='return checkdel();'/>
-				共找到 {$carouselNumber} 张图片，每页显示15条记录
+				共找到 {$carouselNumber}张图片，每页显示15条记录
 			</p>
 			<div class="" style="text-align: center;margin-bottom:20px; ">
 			{$carouselList->render()}
