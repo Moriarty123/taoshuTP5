@@ -309,6 +309,29 @@ class Sale extends Common
 		
 	}
 
+	//按新旧排序
+	public function orderByNew()
+	{
+		$saleBooklist = Db::table('sale_book')
+		->alias('a')
+		->join('type_second b', 'a.sale_secondtype = b.second_id')
+		->join('user c', 'a.user_id = c.user_id')
+		->order('sale_new', 'desc')
+		->paginate(15);
+
+		// dump($volume);
+		
+
+		$bookNumber = Db::table('sale_book')
+		->order('sale_new', 'desc')
+		->count();
+
+		$this->assign('saleBookList', $saleBooklist);
+		$this->assign('bookNumber', $bookNumber);
+
+		return $this->fetch('saleBooklist');
+	}
+
 	//按销量排序
 	public function orderByVolume()
 	{

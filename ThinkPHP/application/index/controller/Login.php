@@ -18,6 +18,11 @@ class Login extends \think\Controller
     	$ret = db('user')->where("user_name='{$username}' and user_pwd='{$password}'")->find();
         $res = db('user')->where("user_name='{$username}'")->find();
         
+
+        if(empty($ret)) {
+            $this->error('用户名或密码错误，请重新登录！');
+        }
+
         //判断用户是否已经被封号
         if ($res['Sensitivewords']==1) {
             $this->assign('Sensitivewords',$res['Sensitivewords']);
