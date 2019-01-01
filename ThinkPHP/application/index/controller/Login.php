@@ -53,14 +53,10 @@ class Login extends \think\Controller
                 $this->error("密码错误3次以上，请5分钟后再登录",'/index/login/index');
 
             }else{
-                   if($res==true){
                     $res['login_error']+=1;
                     db('user')->where("user_id={$res['user_id']}")->update($res);
 
-                    $this->error("用户名与密码不匹配",'/index/login/index');}
-                    else{
-                        $this->error("用户名与密码不匹配",'/index/login/index');}
-                    }
+                    $this->error("用户名与密码不匹配",'/index/login/index');
             }
         }
     }

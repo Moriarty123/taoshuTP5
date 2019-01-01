@@ -19,11 +19,13 @@ class Updatepwd extends \think\Controller
      			'user_pwd' =>$password
      		];
 
-     		$ret = db('user')->where("user_pwd=$prepwd2")->update($data);
+            $where = "user_id= $id";
+
+     		$ret = db('user')->where($where)->update($data);
      		if($ret==true){
-     			$this->success("修改密码成功",'index/updatepwd/index');
+     			$this->success("修改密码成功",'index/index/index');
      		}else{
-     			$this->error("修改密码失败",'index/updatepwd/index');
+     			$this->error("修改密码失败",'index/index/index');
      		}
 
     }
