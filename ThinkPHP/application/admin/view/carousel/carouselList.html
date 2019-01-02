@@ -30,13 +30,13 @@
 		<div class="form_boxA">
 			<div class="a">
 				<h2>淘书街轮播图列表</h2>
-				<form action="/admin/violate/violateSearch" method="post" onsubmit="return checkSearch()" class="searchform">
+				<form action="/admin/carousel/carouselSearch" method="post" onsubmit="return checkSearch()" class="searchform">
 					<input type="text" class="search" placeholder="用户名" name="search" />
 					<input type="submit" class="search_button" value="搜索" />
 				</form>
-				<a href="/admin/violate/addPage" class="addUser"><i class="fa fa-plus-circle"></i> 添加轮播图</a>
+				<a href="/admin/carousel/addPage" class="addUser"><i class="fa fa-plus-circle"></i> 添加轮播图</a>
 			</div>
-			<form action="/admin/violate/checkedViolateDelete" method="post">
+			<form action="/admin/carousel/checkedcarouselDelete" method="post">
 			<table cellpadding="0" cellspacing="0">
 				<tr>
 					<th><input type="checkbox" name="fullChoose" onclick="fullChecked(this)" /></th>
@@ -67,8 +67,8 @@
 					<!-- <td>{$vo.carousel_path}</td> -->
 					<td>{$vo.add_time|date="Y-m-d H:i:s",###}</td>
 					<td>
-						<a href="/admin/violate/editPage?violate_id={$vo.carousel_id}" class="op"><i class="fa fa-edit" title="编辑"></i></a> 
-						<a href="/admin/violate/violateDelete?violate_id={$vo.carousel_id}" class="op" onclick="return del()">
+						<a href="/admin/carousel/carouselEdit?carousel_id={$vo.carousel_id}" class="op"><i class="fa fa-edit" title="编辑"></i></a> 
+						<a href="/admin/carousel/carouselDelete?carousel_id={$vo.carousel_id}" class="op" onclick="return del()">
 							<i class="fa fa-trash-alt" title="删除"></i>
 						</a> 
 					</td>

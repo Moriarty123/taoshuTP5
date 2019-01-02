@@ -27,4 +27,41 @@ class Carousel extends Common
 		return $this->fetch('carouselList');
 	} 
 
+	//改变状态
+	public function changeState()
+	{
+		$carousel_id = input('get.carousel_id');
+
+		$where = "carousel_id = {$carousel_id}";
+
+		$ret = Db::table('carousel')->where($where)->update(['carousel_state' => 1]);
+
+		if ($ret == false) {
+			$this->error('修改状态失败！');
+		}
+
+		$this->success('修改状态成功！', '/admin/carousel/carouselList');
+	}
+
+	public function carouselEdit()
+	{
+		$carousel_id = input('get.carousel_id');
+
+		$where = "carousel_id = {$carousel_id}";
+
+		$carousel = Db::table('carousel')->where($where)->find();
+
+		$carousel_state = $carousel['carousel_state'];
+
+		$change = $carousel_state == 0? 1:0;
+
+		$ret = Db::table('carousel')->where($where)->update(['carousel_state' => $change]);
+
+		if ($ret == false) {
+			$this->error('修改状态失败！');
+		}
+
+		$this->success('修改状态成功！', '/admin/carousel/carouselList');
+	}
+
 }
