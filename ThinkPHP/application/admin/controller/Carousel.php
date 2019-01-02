@@ -147,10 +147,9 @@ class Carousel extends Common
 		$carousel_id = input('get.carousel_id');
 		$where = "carousel_id = {$carousel_id}";
 
-		//暂时取消外链，删除后恢复
-		Db::query('SET FOREIGN_KEY_CHECKS = 0;');
+
 		$ret = Db::table('carousel')->where($where)->delete();
-		Db::query('SET FOREIGN_KEY_CHECKS = 1;');
+
 
 		if ($ret == false) {
 			$this->error('删除失败！');
