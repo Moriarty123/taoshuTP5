@@ -106,14 +106,14 @@ class Carousel extends Common
 
 		//暂时取消外链，删除后恢复
 		Db::query('SET FOREIGN_KEY_CHECKS = 0;');
-		$ret = Db::table('shopcarousel')->where($where)->delete();
+		$ret = Db::table('carousel')->where($where)->delete();
 		Db::query('SET FOREIGN_KEY_CHECKS = 1;');
 
 		if ($ret == false) {
-			$this->error('删除订单失败！');
+			$this->error('删除失败！');
 		}
 
-		$this->success('删除订单成功！', '/admin/carousel/carouselList');
+		$this->success('删除成功！', '/admin/carousel/carouselList');
 	}
 	
 	//批量删除
