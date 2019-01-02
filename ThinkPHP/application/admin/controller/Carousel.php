@@ -64,4 +64,77 @@ class Carousel extends Common
 		$this->success('修改状态成功！', '/admin/carousel/carouselList');
 	}
 
+	//模糊查找
+	public function carouselSearch()
+	{
+		// dump($_POST);
+		$search = input('post.search');
+
+		if(!empty($search)) {
+			session('carouselsearch', $search);
+			$where['carousel_img'] = array('like','%'.$search.'%');//封装模糊查询 赋值到数组	
+		}
+		else 
+		{
+			$search = session('carouselsearch');
+			$where['carousel_img'] = array('like','%'.$search.'%');	
+		}
+		// dump();
+		
+		//获取订单
+		$carousel = Db::table('carousel')
+		->where($where)
+		->paginate(15);
+
+		$carouselNumber = Db::table('carousel')
+		->where($where)
+		->count();
+
+		$this->assign('carouselList', $carousel);
+		$this->assign('carouselNumber', $carouselNumber);
+
+		return $this->fetch('carouselList');
+
+	}
+
+	//删除订单
+	public function carouselDelete()
+	{
+		// dump($_GET);
+		$carousel_id = input('get.carousel_id');
+		$where = "carousel_id = {$carousel_id}";
+
+		//暂时取消外链，删除后恢复
+		Db::query('SET FOREIGN_KEY_CHECKS = 0;');
+		$ret = Db::table('shopcarousel')->where($where)->delete();
+		Db::query('SET FOREIGN_KEY_CHECKS = 1;');
+
+		if ($ret == false) {
+			$this->error('删除订单失败！');
+		}
+
+		$this->success('删除订单成功！', '/admin/carousel/carouselList');
+	}
+	
+	//批量删除
+	public function checkedcarouselDelete()
+	{
+		// dump($_POST);
+		//TP5的post方法不能提交数组，在表单name添加/a表示要提交有关数组，获取时同样要添加/a
+		$ids = input('post.ids/a');
+		// dump($ids);
+		// $count = count($ids);
+
+		foreach ($ids as $key => $id) {
+			$where = "carousel_id = {$id}";
+			//暂时取消外链，删除后恢复
+			Db::query('SET FOREIGN_KEY_CHECKS = 0;');
+			$ret = Db::table('shopcarousel')->where($where)->delete();
+			Db::query('SET FOREIGN_KEY_CHECKS = 1;');
+		}
+
+		$this->success('删除订单成功！', '/admin/carousel/carouselList');
+
+	}
+
 }
